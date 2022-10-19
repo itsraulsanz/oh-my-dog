@@ -99,9 +99,6 @@ export const pageQuery = graphql`
     contentfulBlogPost(slug: { eq: $slug }) {
       slug
       title
-      author {
-        name
-      }
       publishDate(formatString: "MMMM Do, YYYY")
       rawDate: publishDate
       heroImage {
@@ -114,7 +111,6 @@ export const pageQuery = graphql`
         raw
         
       }
-      tags
       description {
         raw
       }
