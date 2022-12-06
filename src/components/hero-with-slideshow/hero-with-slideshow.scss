@@ -6,13 +6,13 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100vw;
-    background: transparent linear-gradient(54deg, #FCEEDD 0%, #FFF8EF 100%) 0% 0% no-repeat padding-box;
+    background: linear-gradient(90deg, rgba(252,238,221,1) 0%, rgba(255,248,239,1) 100%);
     z-index: 1;
 
     &::after {
         border-radius: 100%;
         position: absolute;
-        background: transparent linear-gradient(54deg, #FCEEDD 0%, #FFF8EF 100%) 0% 0% no-repeat padding-box;
+        background: linear-gradient(90deg, rgba(252,238,221,1) 0%, rgba(255,248,239,1) 100%);
         right: -200px;
         left: -200px;
         top: 148px;
