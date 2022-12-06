@@ -1,0 +1,143 @@
+// LAYOUT
+// ---------------------------
+
+@import 'resets';
+@import 'colors';
+@import 'fonts';
+
+main {
+    margin-top: 40px;
+
+    @media (min-width: 600px) {
+        margin-top: 0;
+    }
+}
+
+body {
+    background: $core-color-background;
+}
+
+.container-fluid {
+    display: flex;
+    padding: 35px 20px 0 20px;
+    width: 100%;
+    max-width: 1200px;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 1;
+
+    @media (min-width: 600px) {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 50px 20px 0 20px;
+    }
+}
+
+@mixin button-primary {
+    @include button-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $core-color-primary;
+    color: $core-color-background;
+    border: 1px solid $core-color-primary;
+    padding: 15px 30px;
+    margin: 30px 0;
+    cursor: pointer;
+    height: fit-content;
+    border-radius: 31px;
+    width: max-content;
+
+    &:hover{
+        background-color: $core-color-secondary;
+        color: $core-color-primary;
+        border: 1px solid $core-color-secondary;
+    }
+}
+
+@mixin button-secondary {
+    @include button-text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    background: $core-color-background;
+    border: 1px solid $core-color-secondary;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    height: fit-content;
+
+    &:hover{
+        text-decoration: underline;
+        color: $core-color-primary;
+    }
+}
+
+@mixin button-tertiary {
+    @include button-text;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: $core-color-background;
+    color: $core-color-secondary;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    height: fit-content;
+
+    &:hover{
+        background-color: $core-color-primary;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+.button-primary {
+    @include button-primary;
+    &--dark{
+        background-color: $core-color-secondary;
+    color: $core-color-background;
+    border: 1px solid $core-color-secondary;
+    }
+}
+
+.button-secondary {
+    @include button-secondary;
+    &--dark{
+        background-color: $core-color-secondary;
+        color: $core-color-background;
+        border: 1px solid $core-color-secondary;
+    }
+}
+
+.button-tertiary {
+    @include button-tertiary;
+    &--dark{
+        background-color: $core-color-secondary;
+        color: $core-color-background;
+        border: 1px solid $core-color-secondary;
+    }
+}
+
+.color-block {
+    height: 100px;
+    width: 100px;
+    border: 1px solid $core-color-neutral;
+
+    &--primary{
+        background-color: $core-color-primary;
+    }
+    &--secondary{
+        background-color: $core-color-secondary;
+    }
+    &--background{
+        background-color: $core-color-background;
+    }
+    &--neutral{
+        background-color: $core-color-neutral;
+    }
+}
