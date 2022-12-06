@@ -1,0 +1,157 @@
+// FONTS
+// ---------------------------
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+@mixin heading-primary {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 42px;
+    line-height: 120%;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 65px;
+        line-height: 78px;
+    }
+}
+
+@mixin heading-secondary {
+    font-family: 'MuseoModerno', cursive;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@mixin text-banner-heading {
+    font-family: 'MuseoModerno', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+
+    @media (min-width: 768px) {
+        font-size: 45px;
+        line-height: 54px;
+    }
+}
+
+@mixin subtitle {
+    font-family: 'Poppins', sans-serif;
+    color: #696C78;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    @media (min-width: 768px) {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+@mixin body-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@mixin body-text-bold {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $core-color-neutral;
+}
+
+@mixin button-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: center;
+}
+
+@mixin stat {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 68px;
+
+    @media (min-width: 900px) {
+        font-size: 100px;
+        line-height: 137px;
+    }
+}
+
+@mixin stat-last-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+    margin-bottom: 35px;
+    color: $core-color-secondary;
+
+    @media (min-width: 900px) {
+        font-size: 45px;
+        line-height: 54px;
+    }
+}
+
+h1 {
+    @include heading-primary;
+}
+
+h2 {
+    @include heading-secondary;
+    font-size: 32px;
+    line-height: 15px;
+    
+    @media (min-width: 600px) {
+        font-size: 44px;
+        line-height: 20px;
+    }
+}
+
+p {
+    @include body-text;
+}
+
+.subtitle {
+    @include subtitle;
+}
+
+.stat {
+    @include stat;
+}
+
+.stat-last-text {
+    @include stat-last-text;
+}
+
+.text-center {
+    text-align: center;
+}

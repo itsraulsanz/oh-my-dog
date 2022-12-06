@@ -2,6 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
+import '../styles/_layout.scss';
+
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
