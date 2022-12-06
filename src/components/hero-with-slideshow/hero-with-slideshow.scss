@@ -1,11 +1,98 @@
 .hero-with-slideshow__container {
+    background-size: cover;
     display: flex;
-}
+    margin-left: 50%;
+    margin-bottom: 120px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 100vw;
+    background: transparent linear-gradient(54deg, #FCEEDD 0%, #FFF8EF 100%) 0% 0% no-repeat padding-box;
+    z-index: 1;
 
-.hero-with-slideshow__text {
-    width: 50%;
-}
+    &::after {
+        border-radius: 100%;
+        position: absolute;
+        background: transparent linear-gradient(54deg, #FCEEDD 0%, #FFF8EF 100%) 0% 0% no-repeat padding-box;
+        right: -200px;
+        left: -200px;
+        top: 148px;
+        content: "";
+        bottom: -75px;
+        z-index: 0;
+    }
 
-.carousel-root {
-    width: 30%;
+    .hero-with-slideshow__text {
+        width: 100%;
+        justify-content: center;
+
+        @media (min-width: 600px) {
+            width: 50%;
+        }
+
+        p {
+            font-size: 16px;
+
+            @media (min-width: 600px) {
+                font-size: 20px;
+            }
+        }
+
+        .button-primary {
+            display: block;
+            width: fit-content;
+            margin: 30px auto;
+
+            @media (min-width: 600px) {
+                margin: 30px 0;
+            }
+        }
+    }
+
+    .carousel * {
+        box-sizing: border-box;
+        border-radius: 12px;
+
+        & .slide {
+            opacity: 0.5;
+            scale: 0.9;
+            z-index: 0;
+            width: auto;
+            max-height: 80px;
+
+            @media (min-width: 600px) {
+                max-height: unset;
+                scale: 0.9;
+            }
+        }
+
+        .slide.selected {
+            opacity: 1;
+            z-index: 1;
+            scale: 1;
+            width: 50%;
+            max-height: unset;
+
+            @media (min-width: 600px) {
+                max-height: unset;
+                scale: 1;
+            }
+        }
+
+        .selectedItem img {
+            opacity: 5;
+            max-height: 250px;
+
+            @media (min-width: 600px) {
+                max-height: unset;
+            }
+        }
+    }
+    
+    .carousel-root {
+        width: 100%;
+
+        @media (min-width: 600px) {
+            width: 40%;
+        }
+    }
 }

@@ -11,24 +11,26 @@ export default function HeroWithSlideshow() {
 
   return (
     <div className="hero-with-slideshow__container">
-        <div className="hero-with-slideshow__text">
-            <h2 className="hero-with-slideshow__text-heading">Our goal is the comfort and Safety of your pet during The trip</h2>
-            <p className="hero-with-slideshow__text-description">We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning</p>
-            <a href='#contactus' className="primary-banner__button-container">
-              Contact us
-            </a>
-        </div>
-        <Carousel centerSlidePercentage={50} showThumbs={false} showStatus={false} infiniteLoop={true} autoPlay={true} stopOnHover={true} interval={7000} transitionTime={1000}>
-          <div>
-            <img src={Image1} />
+      <div className="container-fluid">
+          <div className="hero-with-slideshow__text">
+              <h2 className="hero-with-slideshow__text-heading">Our goal is the comfort and Safety of your pet during The trip</h2>
+              <p className="hero-with-slideshow__text-description">We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning</p>
+              <a href='#contactus' className="button-primary">
+                Contact us
+              </a>
           </div>
-          <div>
-            <img src={Image2} />
-          </div>
-          <div>
-            <img src={Image3} />
-          </div>
-        </Carousel>
+          <Carousel showThumbs={false} showStatus={false} showIndicators={false} showArrows={false} infiniteLoop={true} autoPlay={true} stopOnHover={true} centerMode={true} centerSlidePercentage={70} interval={7000} transitionTime={1000}>
+            <div>
+              <img src={Image1} />
+            </div>
+            <div>
+              <img src={Image2} />
+            </div>
+            <div>
+              <img src={Image3} />
+            </div>
+          </Carousel>
+      </div>
     </div>
   )
 }
