@@ -1,38 +1,55 @@
-.hero-with-slideshow__container {
-    background-size: cover;
+.hero-with-slideshow {
+    background: linear-gradient(90deg, rgb(252, 238, 221) 0%, rgb(255, 248, 239) 100%);
     display: flex;
     margin-left: 50%;
     margin-bottom: 120px;
     -webkit-transform: translateX(-50%);
+    padding-top: 110px;
     transform: translateX(-50%);
     width: 100vw;
-    background: linear-gradient(90deg, rgba(252,238,221,1) 0%, rgba(255,248,239,1) 100%);
-    z-index: 1;
 
-    &::after {
-        border-radius: 100%;
+    svg {
         position: absolute;
-        background: linear-gradient(90deg, rgba(252,238,221,1) 0%, rgba(255,248,239,1) 100%);
-        right: -200px;
-        left: -200px;
-        top: 148px;
-        content: "";
-        bottom: -75px;
-        z-index: 0;
+        bottom: -60px;
+        width: 100%;
+        fill: linear-gradient(90deg, rgb(252, 238, 221) 0%, rgb(255, 248, 239) 100%);
     }
 
     .hero-with-slideshow__text {
         width: 100%;
         justify-content: center;
 
-        @media (min-width: 600px) {
+        @media only screen and (min-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        @media only screen and (min-width: 800px) {
             width: 50%;
         }
 
-        p {
+        h2 {
+            margin-top: 0;
+
+            @media only screen and (max-width: 399px) {
+                font-size: 22px;
+            }
+
+            @media only screen and (min-width: 400px) and (max-width: 800px) {
+                font-size: 30px;
+            }
+
+        }
+
+        p.hero-with-slideshow__text-description {
             font-size: 16px;
 
             @media (min-width: 600px) {
+                font-size: 18px;
+            }
+
+            @media (min-width: 900px) {
                 font-size: 20px;
             }
         }
@@ -55,7 +72,6 @@
         & .slide {
             opacity: 0.5;
             scale: 0.9;
-            z-index: 0;
             width: auto;
             max-height: 80px;
 
@@ -67,7 +83,6 @@
 
         .slide.selected {
             opacity: 1;
-            z-index: 1;
             scale: 1;
             width: 50%;
             max-height: unset;
@@ -92,7 +107,46 @@
         width: 100%;
 
         @media (min-width: 600px) {
+            width: 50%;
+        }
+
+        @media (min-width: 800px) {
             width: 40%;
         }
     }
+}
+
+.swiper.swiper-cards {
+    width: 60%;
+    height: auto;
+    max-height: 320px;
+
+    @media (min-width: 600px) {
+        width: 270px;
+        height: 350px;
+        margin-right: 5%;
+        max-height: unset;
+    }
+
+    @media (min-width: 900px) {
+        width: 300px;
+        height: 390px;
+        margin-right: auto;
+    }
+
+    @media (min-width: 1100px) {
+        width: 370px;
+        height: 480px;
+        margin-right: auto;
+    }
+}
+  
+.swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
 }
