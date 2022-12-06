@@ -12,11 +12,6 @@ const Navigation = () => (
       </Link>
       <ul className="navigation">
         <li className="navigationItem">
-          <Link to="/" activeClassName="active">
-            Home
-          </Link>
-        </li>
-        <li className="navigationItem">
           <Link to="/blog/" activeClassName="active">
             Services
           </Link>
@@ -31,14 +26,9 @@ const Navigation = () => (
             About Us
           </Link>
         </li>
-        <li className="navigationItem">
+        <li className="navigationItem contactus">
           <Link to="/blog/" activeClassName="active">
             Contact Us
-          </Link>
-        </li>
-        <li className="navigationItem">
-          <Link to="/blog/" activeClassName="active">
-            Blog
           </Link>
         </li>
       </ul>
