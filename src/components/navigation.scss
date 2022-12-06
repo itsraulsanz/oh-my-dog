@@ -1,7 +1,15 @@
 @import '../styles/colors';
 
 header {
-  background: linear-gradient(90deg, rgba(252,238,221,1) 0%, rgba(255,248,239,1) 100%);
+  background: linear-gradient(90deg, rgba(252, 238, 221, 0.9) 0%, rgba(255, 248, 239, 0.9) 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.container-fluid {
+  padding: 12px 20px;
 }
 
 .navigation {
@@ -9,12 +17,26 @@ header {
   list-style: none;
   margin: 0;
   gap: var(--space-xl);
+  justify-content: center;
+  padding-top: 15px;
+
+  @media (min-width: 600px) {
+    padding: 0;
+  }
 }
 
 .navigationItem {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
+
+  &.contactus {
+    display: none;
+
+    @media (min-width: 400px) {
+      display: inline-flex;
+    }
+  }
 }
 
 .navigationItem a {
@@ -41,6 +63,7 @@ header {
   flex-direction: row;
   flex-shrink: 0;
   gap: var(--space-md);
+  justify-content: center;
 }
 
 @media (max-width: 767px) {
