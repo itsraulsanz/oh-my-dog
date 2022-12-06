@@ -23,7 +23,8 @@
     "react-helmet": "^6.1.0",
     "react-responsive-carousel": "^3.2.23",
     "reading-time": "^2.0.0-1",
-    "sass": "^1.56.1"
+    "sass": "^1.56.1",
+    "swiper": "^8.4.5"
   },
   "devDependencies": {
     "contentful-import": "^8.0.0",
