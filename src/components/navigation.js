@@ -12,7 +12,7 @@ const Navigation = () => (
       </Link>
       <ul className="navigation">
         <li className="navigationItem">
-          <Link to="/blog/" activeClassName="active">
+          <Link to="#services" activeClassName="active">
             Services
           </Link>
         </li>
@@ -22,12 +22,12 @@ const Navigation = () => (
           </Link>
         </li>
         <li className="navigationItem">
-          <Link to="/blog/" activeClassName="active">
+          <Link to="#about-us" activeClassName="active">
             About Us
           </Link>
         </li>
         <li className="navigationItem contactus">
-          <Link to="/blog/" activeClassName="active">
+          <Link to="#contact-us" activeClassName="active">
             Contact Us
           </Link>
         </li>
