@@ -14,22 +14,23 @@
     }
 
     .text-banner__text {
-        background: #E0F2D3;
-        color: #32530B;
         width: 100%;
         align-items: center;
         justify-content: center;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        padding: 60px 10%;
 
         @media only screen and (min-width: 600px) {
-            display: flex;
-            flex-direction: column;
-            border-radius: 15px;
             padding: 60px 20%;
         }
 
         h2 {
             margin-top: 0;
             line-height: 48px;
+            text-align: center;
+            z-index: 1;
 
             @media only screen and (max-width: 399px) {
                 font-size: 22px;
@@ -48,6 +49,7 @@
             padding-bottom: 15px;
             text-align: center;
             line-height: normal;
+            z-index: 1;
 
             @media (min-width: 600px) {
                 font-size: 18px;
@@ -55,21 +57,54 @@
 
             @media (min-width: 900px) {
                 font-size: 20px;
+                max-width: 500px;
             }
         }
 
         .button-secondary {
             margin-bottom: 0;
+            z-index: 1;
         }
+    }
+
+    #green {
+        background: #E0F2D3;
+        color: #32530B;
+    }
+
+    #orange {
+        background: #FFDB9F;
     }
 
     &__background {
         display: flex;
         flex-direction: row;
         width: 70%;
-        gap: 80%;
         position: absolute;
         align-items: center;
         justify-content: center;
+        filter: opacity(0.2);
+        z-index: 0;
+        scale: 0.7;
+        bottom: 70px;
+        justify-content: space-between;
+        width: 110%;
+
+        @media (min-width: 600px) {
+            width: 110%;
+            scale: 0.8;
+            bottom: unset;
+        }
+
+        @media (min-width: 1000px) {
+            width: 85%;
+            max-width: 1050px;
+            scale: 1;
+        }
+
+        .footprint-right {
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+        }
     }
 }

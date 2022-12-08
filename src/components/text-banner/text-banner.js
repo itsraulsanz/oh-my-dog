@@ -8,7 +8,7 @@ export default function TextBanner(props) {
   return (
     <div className='text-banner' id={props.id}>
       <div className='container-fluid'>
-          <div className='text-banner__text'>
+          <div className='text-banner__text' id={props.color}>
               <h2 className='text-banner__text-heading'>{props.headingText}</h2>
               {props.bodyTexts.map((bodyText, index) => {
                 return (
