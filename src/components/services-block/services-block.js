@@ -85,6 +85,10 @@ export default function ServicesBlock() {
             </div>
           </section>
         </div>
+
+        <a href='#contactus' className="button-secondary">
+          Contact us
+        </a>
       </div>
     </div>
   )
