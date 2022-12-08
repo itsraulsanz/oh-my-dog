@@ -93,7 +93,11 @@ body {
 }
 
 a {
-    text-decoration: none;
+    color: $core-color-primary;
+
+    &:hover {
+        color: $core-color-secondary;
+    }
 }
 
 .button-primary {
@@ -139,5 +143,21 @@ a {
     }
     &--neutral{
         background-color: $core-color-neutral;
+    }
+}
+
+.desktop {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: block;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @media (max-width: 900px) {
+        display: block;
     }
 }

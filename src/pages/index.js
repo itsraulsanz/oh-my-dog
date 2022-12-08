@@ -7,6 +7,7 @@ import '../styles/_layout.scss';
 import Layout from '../components/layout'
 import Hero from '../components/hero'
 import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
+import ServicesBlock from '../components/services-block/services-block'
 import ArticlePreview from '../components/article-preview'
 
 class RootIndex extends React.Component {
@@ -16,6 +17,7 @@ class RootIndex extends React.Component {
     return (
       <Layout location={this.props.location}>
         <HeroWithSlideshow />
+        <ServicesBlock />
         <ArticlePreview posts={posts} />
       </Layout>
     )
