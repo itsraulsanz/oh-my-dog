@@ -1,3 +1,6 @@
+@import '../../styles/colors';
+@import '../../styles/fonts';
+
 .hero-with-slideshow {
     background: linear-gradient(90deg, rgb(252, 238, 221) 0%, rgb(255, 248, 239) 100%);
     display: flex;
@@ -31,13 +34,16 @@
 
         h2 {
             margin-top: 0;
+            line-height: 48px;
 
             @media only screen and (max-width: 399px) {
                 font-size: 22px;
+                line-height: 28px;
             }
 
             @media only screen and (min-width: 400px) and (max-width: 800px) {
                 font-size: 30px;
+                line-height: 38px;
             }
 
         }
