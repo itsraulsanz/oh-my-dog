@@ -19,6 +19,10 @@
         line-height: 30px;
     }
 
+    .button-secondary {
+        align-self: center;
+    }
+
     .services-block__container {
         display: flex;
         justify-content: center;
@@ -188,6 +192,5 @@
             transform: rotate(45deg);
             font-size: 2rem;
         }
-        
     }
 }
