@@ -6,7 +6,45 @@
 @import 'fonts';
 
 body {
-    background: $core-color-background;
+    background: $core-color-background;;
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    font-size: 16px;
+    font-weight: var(--body);
+    line-height: var(--default);
+    margin: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+  
+img {
+    display: block;
+}
+  
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: var(--semibold);
+    line-height: var(--dense);
+}
+  
+a {
+    color: currentColor;
+    text-decoration: none;
+    border-bottom: 1px transparent;
+}
+  
+a:hover {
+    color: var(--primary);
+    border-bottom: 1px solid;
+    border-bottom-color: var(--primary);
+}
+  
+a.active {
+    font-weight: var(--bold);
 }
 
 .container-fluid {
