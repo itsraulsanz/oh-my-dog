@@ -1,10 +1,15 @@
-.container {
-  display: flex;
-  justify-content: space-between;
-  max-width: var(--size-max-width);
-  align-items: center;
-  margin: 0 auto;
-  padding: var(--space-2xl) var(--size-gutter);
+@import '../styles/colors';
+
+header {
+  background: linear-gradient(90deg, rgba(252, 238, 221, 0.9) 0%, rgba(255, 248, 239, 0.9) 100%);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+.container-fluid {
+  padding: 12px 20px;
 }
 
 .container-fluid {
@@ -28,18 +33,32 @@ ul.navigation {
   display: inline-flex;
   align-items: center;
   flex-direction: row;
+
+  &.contactus {
+    display: none;
+
+    @media (min-width: 400px) {
+      display: inline-flex;
+    }
+  }
 }
 
 .navigationItem a {
   border-bottom: 1.5px solid transparent;
   color: currentColor;
   text-decoration: none;
+  font-weight: 600;
+
+  &.active {
+    color: $core-color-primary;
+    border-bottom-color: $core-color-primary;
+  }
+
+  &:hover {
+    color: $core-color-primary;
+  }
 }
 
-.navigationItem a:hover {
-  border-bottom-color: var(--primary);
-  color: var(--primary);
-}
 
 
 .logoLink {

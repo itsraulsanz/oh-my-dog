@@ -5,6 +5,14 @@
 @import 'colors';
 @import 'fonts';
 
+main {
+    margin-top: 40px;
+
+    @media (min-width: 600px) {
+        margin-top: 0;
+    }
+}
+
 body {
     background: $core-color-background;;
     color: var(--text-color);
@@ -91,16 +99,19 @@ a.active {
     justify-content: center;
     align-items: center;
     width: fit-content;
+    color: $core-color-primary;
     background: $core-color-background;
-    border: 1px solid $core-color-secondary;
-    padding: 10px;
-    margin-bottom: 15px;
+    border: 1px solid $core-color-primary;
+    padding: 15px 30px;
+    margin: 30px 0;
     cursor: pointer;
     height: fit-content;
+    border-radius: 31px;
 
     &:hover{
-        text-decoration: underline;
-        color: $core-color-primary;
+        text-decoration: none;
+        color: $core-color-background;
+        background-color: $core-color-primary;
     }
 }
 
@@ -123,7 +134,11 @@ a.active {
 }
 
 a {
-    text-decoration: none;
+    color: $core-color-primary;
+
+    &:hover {
+        color: $core-color-secondary;
+    }
 }
 
 .button-primary {
@@ -169,5 +184,21 @@ a {
     }
     &--neutral{
         background-color: $core-color-neutral;
+    }
+}
+
+.desktop {
+    display: none;
+
+    @media (min-width: 900px) {
+        display: block;
+    }
+}
+
+.mobile {
+    display: none;
+
+    @media (max-width: 900px) {
+        display: block;
     }
 }
