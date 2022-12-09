@@ -5,7 +5,7 @@ import OhMyDogVideo from '../../images/ohmydogvideo.mp4'
 
 export default function ServicesBlock() {
   return (
-    <div className="services-block">
+    <div className="services-block" id='services'>
       <div className="container-fluid">
         <h2 className="services-block__heading">The kind of service we provide</h2>
         

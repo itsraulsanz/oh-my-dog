@@ -12,13 +12,17 @@ header {
   padding: 12px 20px;
 }
 
-.navigation {
+.container-fluid {
+  padding: 12px 20px;
+}
+
+ul.navigation {
   display: flex;
   list-style: none;
   margin: 0;
-  gap: var(--space-xl);
   justify-content: center;
   padding-top: 15px;
+  gap: 25px;
 
   @media (min-width: 600px) {
     padding: 0;
@@ -56,6 +60,7 @@ header {
 }
 
 
+
 .logoLink {
   display: flex;
   font-weight: var(--medium);
@@ -64,6 +69,11 @@ header {
   flex-shrink: 0;
   gap: var(--space-md);
   justify-content: center;
+  border: none;
+
+  &:hover {
+    border: none;
+  }
 }
 
 @media (max-width: 767px) {
