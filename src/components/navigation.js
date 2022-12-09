@@ -17,7 +17,7 @@ const Navigation = () => (
           </Link>
         </li>
         <li className="navigationItem">
-          <Link to="/blog/" activeClassName="active">
+          <Link to="#blog" activeClassName="active">
             Gallery
           </Link>
         </li>

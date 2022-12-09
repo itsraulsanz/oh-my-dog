@@ -1,0 +1,124 @@
+@import '../../styles/colors';
+
+.article-preview {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article-preview__heading {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 25px;
+
+    @media only screen and (min-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    h2 {
+        margin-top: 0;
+        line-height: 48px;
+
+        @media only screen and (max-width: 399px) {
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 800px) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+    }
+
+    p.article-preview__heading-description {
+        font-size: 16px;
+        padding-bottom: 15px;
+        text-align: center;
+        line-height: normal;
+
+        @media (min-width: 600px) {
+            font-size: 18px;
+        }
+
+        @media (min-width: 900px) {
+            font-size: 20px;
+        }
+    }
+  }
+  
+  ul.article-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5%;
+    flex-flow: row wrap;
+
+    &::after {
+      content: "";
+      flex: auto;
+    }
+  
+    li.article {
+      width: 100%;
+      background-color: $core-color-light;
+      border-radius: 20px;
+      margin-bottom: 30px;
+  
+      @media (min-width: 600px) {
+        width: 48%;
+      }
+      @media (min-width: 900px) {
+        width: 31%;
+      }
+
+      &:hover {
+        box-shadow: 5px 5px 5px rgb(0 0 0 / 20%);
+      }
+
+      .gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+      }
+
+      .article-description {
+        padding: 15px 20px;
+        color: $core-color-secondary;
+
+        .title {
+          display: inline-block;
+          font-size: var(--text-lg);
+          margin-bottom: var(--space-xs);
+          margin-top: var(--space-lg);
+          border-bottom: 1.5px solid transparent;
+        }
+
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+        
+        .link {
+          text-decoration: none;
+        }
+        
+        .link:hover .title {
+          border-bottom-color: var(--primary);
+        }
+        
+        .meta {
+          display: flex;
+          justify-content: space-between;
+        }  
+      }
+  
+  
+    }
+  }  
+}
