@@ -70,6 +70,10 @@ ul.navigation {
   gap: var(--space-md);
   justify-content: center;
   border: none;
+
+  &:hover {
+    border: none;
+  }
 }
 
 @media (max-width: 767px) {

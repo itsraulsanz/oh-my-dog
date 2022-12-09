@@ -101,10 +101,17 @@
                         padding: 10px;
                     }
                     
-                    button svg {
-                        fill: white;
-                        margin-left: 10px;
+                    button {
+                        svg {
+                            fill: white;
+                            margin-left: 10px;
+                        }
+
+                        &:hover svg {
+                            fill: $core-color-primary;
+                        }
                     }
+
                 }
             }
         }
