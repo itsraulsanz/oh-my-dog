@@ -15,12 +15,10 @@ import * as styles from './blog-post.module.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = get(this.props, 'data.contentfulBlogPost')
+    const post = get(this.props, 'data.contentfulBlog')
     const previous = get(this.props, 'data.previous')
     const next = get(this.props, 'data.next')
-    const plainTextDescription = documentToPlainTextString(
-      JSON.parse(post.description.raw)
-    )
+    const plainTextDescription = documentToPlainTextString(JSON.parse(post.description.raw))
     const plainTextBody = documentToPlainTextString(JSON.parse(post.body.raw))
     const { minutes: timeToRead } = readingTime(plainTextBody)
     
@@ -40,11 +38,11 @@ class BlogPostTemplate extends React.Component {
 
     return (
       <Layout location={this.props.location}>
-        <Seo
+        {/* <Seo
           title={post.title}
           description={plainTextDescription}
           image={`http:${post.heroImage.resize.src}`}
-        />
+        /> */}
         <Hero
           image={post.heroImage?.gatsbyImage}
           title={post.title}
@@ -66,14 +64,14 @@ class BlogPostTemplate extends React.Component {
                 <ul className={styles.articleNavigation}>
                   {previous && (
                     <li>
-                      <Link to={`/blog/${previous.slug}`} rel="prev">
+                      <Link to={`/blog/${previous.path}`} rel="prev">
                         ← {previous.title}
                       </Link>
                     </li>
                   )}
                   {next && (
                     <li>
-                      <Link to={`/blog/${next.slug}`} rel="next">
+                      <Link to={`/blog/${next.path}`} rel="next">
                         {next.title} →
                       </Link>
                     </li>
@@ -91,13 +89,14 @@ class BlogPostTemplate extends React.Component {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug(
-    $slug: String!
-    $previousPostSlug: String
-    $nextPostSlug: String
+  query BlogPostQuery(
+    $slug: String
+    $language: String
+    $previousPostPath: String
+    $nextPostPath: String
   ) {
-    contentfulBlogPost(slug: { eq: $slug }) {
-      slug
+    contentfulBlog(path: { eq: $slug }, node_locale: { eq: $language }) {
+      path
       title
       publishDate(formatString: "MMMM Do, YYYY")
       rawDate: publishDate
@@ -115,12 +114,12 @@ export const pageQuery = graphql`
         raw
       }
     }
-    previous: contentfulBlogPost(slug: { eq: $previousPostSlug }) {
-      slug
+    previous: contentfulBlog(path: { eq: $previousPostPath }) {
+      path
       title
     }
-    next: contentfulBlogPost(slug: { eq: $nextPostSlug }) {
-      slug
+    next: contentfulBlog(path: { eq: $nextPostPath }) {
+      path
       title
     }
   }

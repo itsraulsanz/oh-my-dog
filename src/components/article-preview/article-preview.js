@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import Img from "gatsby-image"
 
 import Container from '../container'
 import Tags from '../tags'
@@ -21,8 +22,8 @@ export default function ArticlePreview({ posts }) {
         <ul className='article-list'>
           {posts.map((post) => {
             return (
-              <li key={post.slug} className='article'>
-                <Link to={`/blog/${post.slug}`} className='link'>
+              <li key={post.path} className='article'>
+                <Link to={`/blog/${post.path}`} className='link'>
                   <GatsbyImage alt="" image={post.heroImage.gatsbyImage} />
                 <div className='article-description'>
                   <h2 className='title'>{post.title}</h2>

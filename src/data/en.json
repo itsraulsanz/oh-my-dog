@@ -1,0 +1,53 @@
+{
+    "hero": {
+        "title": "Our goal is the comfort and Safety of your pet during The trip",
+        "description": "We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning"
+    },
+    "services-block": {
+        "title": "The kind of service we provide",
+        "block-1": {
+            "title": "Vehicles",
+            "text": "At Ohmydog Pet Travel we have: Vehicles with international pet transport license type 2 approved in the EU and the UK. Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+        },
+        "block-2": {
+            "title": "Temperature",
+            "text": "At Ohmydog Pet Travel we have: Vehicles with international pet transport license type 2 approved in the EU and the UK. Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+        },
+        "block-3": {
+            "title": "Stops",
+            "text": "At Ohmydog Pet Travel we have: Vehicles with international pet transport license type 2 approved in the EU and the UK. Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+        }
+    },
+    "passport-banner": {
+        "title": "How to check a pet Passport?",
+        "description": "You can all the informations regarding pet passport in the PDF in the link below",
+        "button-text": "How to Complete Pet Passports.pdf"
+    },
+    "about-us": {
+        "title": "About us",
+        "description": "Ohmydog Pet Travel: We are an international pet travel company specialized in fast and safe journeys between the United Kingdom, Ireland and Spain. We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning. Our vehicles are equipped with an advanced temperature control system and a GPS tracker. The vans have large bespoke crates and veterinary bedding for the comfort of the pets. All our vehicles are ATES and DEFRA approved."
+    },
+    "our-trips-banner": {
+        "title": "Our Trips for 2022",
+        "description": "You can all the informations regarding our trips program for 2022 in the pdf below",
+        "button-text": "Trips Program 2022.pdf"
+    },
+    "contact-us": {
+        "title": "Contact us",
+        "description": "If you have any questions about our services, please fill out the following form and we will contact you shortly. You can also call us during office hours.",
+        "open-days": "Monday-Friday",
+        "open-hours": "8:30am-5:30pm",
+        "closed-days": "Saturday-Sunday",
+        "closed-text": "(Closed)",
+        "call-text": "Call us",
+        "phone": "1-659-876-768",
+        "email-text": "Email us",
+        "email": "Ohmydog@mail.com",
+        "user-name": "Name",
+        "user-email": "Email address",
+        "user-phone": "Telephone",
+        "user-city": "Pick-up city",
+        "user-message": "Message",
+        "btn-text": "Contact Us"
+    }
+}

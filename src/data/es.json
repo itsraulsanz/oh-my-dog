@@ -1,0 +1,60 @@
+{
+    "hero": {
+        "title": "Nuestro objetivo es el confort y seguridad de tu mascota durante el viaje.",
+        "description": [
+            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."},
+            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."},
+            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."}
+        ]
+    },
+    "services-block": {
+        "title": "Servicios que ofrecemos",
+        "block-1": {
+            "title": "Vehículos",
+            "text": "Vehicles with international pet transport license type 2 approved in the EU and the UK."
+        },
+        "block-2": {
+            "title": "Temperatura",
+            "text": "Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+        },
+        "block-3": {
+            "title": "Paradas",
+            "text": "The best van conversions for pet travelling."
+        }
+    },
+    "passport-banner": {
+        "title": "¿Cómo validar el pasaporte de tu mascota?",
+        "description": "Comprueba toda la información acerca del pasaporte de tu mascota en el PDF clicando el link",
+        "button-text": "¿Cómo completar el Pasaporte de tu Mascota.pdf"
+    },
+    "about-us": {
+        "title": "Sobre nosotros",
+        "description": [
+            {"text": "Ohmydog Pet Travel: Somos un servicio de viaje de mascotas internacional especializado en viajes cortos y seguros entre Reino Unido, Irlanda y España."},
+            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."}
+        ]
+    },
+    "our-trips-banner": {
+        "title": "Nuestros viajes para 2022",
+        "description": "Puedes revisar futuras fechas de nuestros viajes en el siguiente link",
+        "button-text": "Programa de Viajes 2022.pdf"
+    },
+    "contact-us": {
+        "title": "Contáctanos",
+        "description": "Si tienes cualquier duda sobre nuestros servicios, por favor rellena el formulario y nos pondremos en contacto cuanto antes. También puedes llamarnos durante nuestras horas de apertura.",
+        "open-days": "Lunes - Viernes",
+        "open-hours": "8:30 - 17:30",
+        "closed-days": "Sábado - Domingo",
+        "closed-text": "(Cerrado)",
+        "call-text": "Llámanos",
+        "phone": "1-659-876-768",
+        "email-text": "Envíanos un Email",
+        "email": "Ohmydog@mail.com",
+        "user-name": "Nombre",
+        "user-email": "Correo electrónico",
+        "user-phone": "Teléfono",
+        "user-city": "Ciudad de recogida",
+        "user-message": "Mensaje",
+        "btn-text": "Enviar mensaje"
+    }
+}
