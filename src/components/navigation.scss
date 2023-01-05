@@ -59,7 +59,12 @@ ul.navigation {
   }
 }
 
-
+.languageSelector a.language {
+  margin: 0;
+  padding: 7px;
+  border-radius: 15px;
+  cursor: pointer;
+}
 
 .logoLink {
   display: flex;

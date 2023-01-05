@@ -1,11 +1,8 @@
 {
     "hero": {
-        "title": "Nuestro objetivo es el confort y seguridad de tu mascota durante el viaje.",
-        "description": [
-            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."},
-            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."},
-            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."}
-        ]
+        "title": "Viaje para tu mascota en Primera Clase",
+        "description": "El confort y seguridad de tu mascota en el viaje son nuestra prioridad. Ofrecemos un servicio puerta a puerta con dos conductores con formación en comportamiento animal.",
+        "button": "Contacto"
     },
     "services-block": {
         "title": "Servicios que ofrecemos",
@@ -22,6 +19,10 @@
             "text": "The best van conversions for pet travelling."
         }
     },
+    "blog": {
+        "title": "Oh my dog - Blog",
+        "description": "Comprueba toda la información acerca del pasaporte de tu mascota en el PDF clicando el link"
+    },
     "passport-banner": {
         "title": "¿Cómo validar el pasaporte de tu mascota?",
         "description": "Comprueba toda la información acerca del pasaporte de tu mascota en el PDF clicando el link",
@@ -29,10 +30,11 @@
     },
     "about-us": {
         "title": "Sobre nosotros",
-        "description": [
-            {"text": "Ohmydog Pet Travel: Somos un servicio de viaje de mascotas internacional especializado en viajes cortos y seguros entre Reino Unido, Irlanda y España."},
-            {"text": "Ofrecemos un cuidad servicio de entrega puerta a puerta."}
-        ]
+        "description1": "Ohmydog Pet Travel: Somos un servicio de viaje de mascotas internacional especializado en viajes cortos y seguros entre Reino Unido, Irlanda y España.",
+        "description2": "Ofrecemos un cuidad servicio de entrega puerta a puerta.",
+        "description3": "Lorem ipsum",
+        "description4": "Lorem ipsum",
+        "description5": "Lorem ipsum"
     },
     "our-trips-banner": {
         "title": "Nuestros viajes para 2022",

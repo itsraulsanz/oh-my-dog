@@ -32,9 +32,9 @@ const Navigation = () => (
             Contact Us
           </Link>
         </li>
+        <li className='navigationItem languageSelector'><Language /></li>
       </ul>
     </nav>
-    <Language />
   </header>
 )
 

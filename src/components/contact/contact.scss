@@ -8,7 +8,7 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100vw;
-    padding: 70px 0;
+    padding: 50px 0 70px;
 
     .container-fluid {
         flex-direction: column;
@@ -45,7 +45,7 @@
 
         p.contact__text-description {
             font-size: 16px;
-            padding-bottom: 15px;
+            padding-bottom: 40px;
             text-align: center;
             line-height: normal;
 
@@ -95,6 +95,7 @@
                     gap: 10px;
 
                     input, textarea {
+                        font-family: var(--font-sans);
                         background: #FFFFFF 0% 0% no-repeat padding-box;
                         border: 1px solid #D6D6D6;
                         border-radius: 12px;

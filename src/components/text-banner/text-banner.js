@@ -15,7 +15,7 @@ export default function TextBanner(props) {
                   <p key={index} className='text-banner__text-description'>{bodyText.text}</p>
                 )
               })}
-              <a className="button-secondary" src={props.logo} alt='Logo Defra' width='100px'>{props.buttonText}</a>
+              <a className="button-secondary" href={props.pdf} target="_blank">{props.buttonText}</a>
               <div className='text-banner__background'>
                 <img src={Footprint} className='footprint-left' />
                 <img src={Footprint} className='footprint-right' />

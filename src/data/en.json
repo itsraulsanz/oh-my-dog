@@ -1,43 +1,69 @@
 {
     "hero": {
-        "title": "Our goal is the comfort and Safety of your pet during The trip",
-        "description": "We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning"
+        "title": "Your pets trip in First Class",
+        "description": "Our goal is the comfort and Safety of your pet during The trip. We offer a luxury door-to-door service with two drivers animal welfare trained.",
+        "button": "Contact Us"
     },
     "services-block": {
-        "title": "The kind of service we provide",
+        "title": "Why us",
+        "description": "Trust us to transport your pet safely and comfortably with the latest in pet transportation technology.",
         "block-1": {
-            "title": "Vehicles",
-            "text": "At Ohmydog Pet Travel we have: Vehicles with international pet transport license type 2 approved in the EU and the UK. Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+            "title": "Requirements",
+            "text": "We follow all the legally requirements to transport your pets legally and ensure their safety and comfort.",
+            "advantage1": "Highly trained team with animal welfare training.",
+            "advantage2": "Vehicles possessing both DEFRA (UK) and ATES (EU) licenses.",
+            "advantage3": "Contingency plan in place for cases of emergency."
         },
         "block-2": {
-            "title": "Temperature",
-            "text": "At Ohmydog Pet Travel we have: Vehicles with international pet transport license type 2 approved in the EU and the UK. Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+            "title": "Vehicles",
+            "text": "Our vehicles are equipped with top-of-the-line van conversions featuring state-of-the-art technology, including:",
+            "advantage1": "GPS tracker that shows temperatures and locations.",
+            "advantage2": "Live webcams.",
+            "advantage3": "Temperature controlled system.",
+            "advantage4": "Vet beds."
         },
         "block-3": {
+            "title": "Anti-stress technology",
+            "text": "Our vans are designed with your pet's comfort and well-being in mind. The interior features:",
+            "advantage1": "Antistress decor and relaxing music: keeps your pet calm and relaxed during the journey.",
+            "advantage2": "Natural light cycle: helps to regulate your pet's body clock, making the trip more comfortable for them."
+        },
+        "block-4": {
             "title": "Stops",
-            "text": "At Ohmydog Pet Travel we have: Vehicles with international pet transport license type 2 approved in the EU and the UK. Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+            "text": "We understand that pets need regular breaks and attention during long journeys. That’s why we make regular stops to:",
+            "advantage1": "Walk the dogs.",
+            "advantage2": "Ensure dogs, cats and other animals are hydrated, fed and their crates are cleaned.",
+            "advantage3": "Send many updates to their families with photos and videos."
         }
+    },
+    "blog": {
+        "title": "Ohmydog Pet Travel blog!",
+        "description": "Here you can find helpful information and tips about pet transportation, as well as get to know our team and company better. We will be regularly posting videos and updates to keep you informed and connected with us. Follow our blog to stay up-to-date on all things pet transportation and to learn more about how we can help you and your furry friend."
     },
     "passport-banner": {
         "title": "How to check a pet Passport?",
-        "description": "You can all the informations regarding pet passport in the PDF in the link below",
+        "description": "Feel free to check all the information regarding pet passports in the PDF by clicking the link below:",
         "button-text": "How to Complete Pet Passports.pdf"
     },
     "about-us": {
         "title": "About us",
-        "description": "Ohmydog Pet Travel: We are an international pet travel company specialized in fast and safe journeys between the United Kingdom, Ireland and Spain. We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning. Our vehicles are equipped with an advanced temperature control system and a GPS tracker. The vans have large bespoke crates and veterinary bedding for the comfort of the pets. All our vehicles are ATES and DEFRA approved."
+        "description1": "Welcome to Ohmydog, a trusted and reliable pet transport company. At Ohmydog, our top priority is the safety and comfort of your furry friend. We understand that leaving your pet behind can be stressful and emotional, which is why we strive to make the transportation process as seamless and stress-free as possible.",
+        "description2": "Our team of experienced and dedicated professionals will handle every aspect of your pet's transportation, from pick-up to drop-off. We understand that your pet is a beloved member of your family, and we will treat them with the same care and attention that we would our own pets.",
+        "description3": "Our state-of-the-art vehicles are equipped with the latest technology and resources, including climate control, comfortable bedding, relaxing music, an anti-stress decor to ensure a smooth and stress-free journey for your pet.",
+        "description4": "At Ohmydog, we prioritize the safety and well-being of your pet above all else. Our team is trained in handling and caring for a variety of pets, and we are equipped with the latest technology and resources to ensure a safe and smooth journey.",
+        "description5": "At Ohmydog, we go above and beyond to ensure that your pet's travels are safe and comfortable. Contact us today to learn more about how we can help you and your furry friend. So, if you need to transport your pet, whether it be for a move or a vacation, trust Ohmydog to provide the best care and service. Contact us today to learn more and start planning your pet's travels."   
     },
     "our-trips-banner": {
-        "title": "Our Trips for 2022",
-        "description": "You can all the informations regarding our trips program for 2022 in the pdf below",
-        "button-text": "Trips Program 2022.pdf"
+        "title": "Our next Trips for 2023",
+        "description": "You can check all the information regarding our trips program for 2023 in the pdf below:",
+        "button-text": "Trips Program 2023.pdf"
     },
     "contact-us": {
         "title": "Contact us",
-        "description": "If you have any questions about our services, please fill out the following form and we will contact you shortly. You can also call us during office hours.",
-        "open-days": "Monday-Friday",
-        "open-hours": "8:30am-5:30pm",
-        "closed-days": "Saturday-Sunday",
+        "description": "If you have any enquiries regarding to our services, feel free to fill in the next section and we will get in touch with you.",
+        "open-days": "Monday - Friday",
+        "open-hours": "8:30am - 5:30pm",
+        "closed-days": "Saturday - Sunday",
         "closed-text": "(Closed)",
         "call-text": "Call us",
         "phone": "1-659-876-768",
@@ -46,7 +72,10 @@
         "user-name": "Name",
         "user-email": "Email address",
         "user-phone": "Telephone",
-        "user-city": "Pick-up city",
+        "user-pickup-city": "Pick up city",
+        "user-dropoff-city": "Drop off city",
+        "user-pet-number": "Number of pets",
+        "user-pet-info": "Species, breed, age and weight",
         "user-message": "Message",
         "btn-text": "Contact Us"
     }
