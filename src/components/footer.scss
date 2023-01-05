@@ -1,0 +1,42 @@
+@import '../styles/colors';
+
+footer.homepageFooter {
+  display: flex;
+  background: $core-color-dark-background;
+  width: 100%;
+  padding: 23px 20px;
+  z-index: 2;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+  
+  .navigationItem a {
+    color: $core-color-background;
+  }
+
+  .navigationItem a {
+    color: $core-color-background;
+
+    &.active {
+      color: $core-color-primary;
+      border-bottom-color: $core-color-primary;
+    }
+  
+    &:hover {
+      color: $core-color-primary;
+    }
+  }
+
+  .languageSelector a.language {
+    margin: 0;
+    padding: 7px;
+    border-radius: 15px;
+    cursor: pointer;
+    color: $core-color-background !important;
+  }
+}
+
+.container-fluid {
+  padding: 12px 20px;
+}
+
