@@ -1,11 +1,11 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
+import { useIntl } from "gatsby-plugin-intl"
 
 import '../styles/_layout.scss';
 
 import Layout from '../components/layout'
-import Hero from '../components/hero'
 import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
 import ServicesBlock from '../components/services-block/services-block'
 import ArticlePreview from '../components/article-preview/article-preview'
@@ -13,42 +13,59 @@ import TextBlock from '../components/text-block/text-block'
 import TextBanner from '../components/text-banner/text-banner'
 import Contact from '../components/contact/contact'
 
+import Calendar from '../pdf/TripsProgram2022.pdf'
+import Passport from '../pdf/HowtoCompletePetPassports.pdf'
+
 import LogoDefra from '../images/logo-defra.png'
 
-class RootIndex extends React.Component {
+function withMyHook(Component) {
+  return function WrappedComponent(props) {
+    const intlValue = useIntl();
+    return <Component {...props} intlValue={intlValue} />;
+  }
+}
+
+class IndexPage extends React.Component {
   render() {
-    const posts = get(this, 'props.data.allContentfulBlogPost.nodes')
+    const posts = get(this, 'props.data.allContentfulBlog.nodes')
+    const intl = this.props.intlValue;
 
     return (
-      <Layout location={this.props.location}>
-        <HeroWithSlideshow />
-        <ServicesBlock />
-        <ArticlePreview posts={posts} />
-        <TextBanner color="green" headingText="How to check a pet Passport?" bodyTexts={[ {text: "You can all the informations regarding pet passport in the PDF in the link below"} ]} buttonText="How to Complete Pet Passports.pdf" />
-        <TextBlock id="about-us" headingText="About us" bodyTexts={[ {text: "Ohmydog Pet Travel: We are an international pet travel company specialized in fast and safe journeys between the United Kingdom, Ireland and Spain."}, {text: "We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning."}, {text: "Our vehicles are equipped with an advanced temperature control system and a GPS tracker. The vans have large bespoke crates and veterinary bedding for the comfort of the pets. All our vehicles are ATES and DEFRA approved."} ]} logo={LogoDefra} />
-        <TextBanner color="orange" headingText="Our Trips for 2022" bodyTexts={[ {text: "You can all the informations regarding our trips program for 2022 in the pdf below"} ]} buttonText="Trips Program 2022.pdf" />
-        <Contact id="contact-us" headingText="Contact us" bodyTexts={[ {text: "If you have any questions about our services, please fill out the following form and we will contact you shortly. You can also call us during office hours."} ]} openDays="Monday-Friday" openHours="8:30am-5:30pm" closedDays="Saturday-Sunday" telephone="1-659-876-768" email="Ohmydog@mail.com" buttonText="Contact Us" />
+      <Layout>
+        <HeroWithSlideshow headingText={intl.formatMessage({ id: "hero.title" })} descriptionText={intl.formatMessage({ id: "hero.description" })} buttonText={intl.formatMessage({ id: "hero.button" })} />
+        <ServicesBlock headingText={intl.formatMessage({ id: "services-block.title" })} descriptionText={intl.formatMessage({ id: "services-block.description" })} block1Title={intl.formatMessage({ id: "services-block.block-1.title" })} block1Text={intl.formatMessage({ id: "services-block.block-1.text" })} block1Advantage1={intl.formatMessage({ id: "services-block.block-1.advantage1" })} block1Advantage2={intl.formatMessage({ id: "services-block.block-1.advantage2" })} block1Advantage3={intl.formatMessage({ id: "services-block.block-1.advantage3" })} 
+        block2Title={intl.formatMessage({ id: "services-block.block-2.title" })} block2Text={intl.formatMessage({ id: "services-block.block-2.text" })} block2Advantage1={intl.formatMessage({ id: "services-block.block-2.advantage1" })} block2Advantage2={intl.formatMessage({ id: "services-block.block-2.advantage2" })} block2Advantage3={intl.formatMessage({ id: "services-block.block-2.advantage3" })} block2Advantage4={intl.formatMessage({ id: "services-block.block-2.advantage4" })}
+        block3Title={intl.formatMessage({ id: "services-block.block-3.title" })} block3Text={intl.formatMessage({ id: "services-block.block-3.text" })} block3Advantage1={intl.formatMessage({ id: "services-block.block-3.advantage1" })} block3Advantage2={intl.formatMessage({ id: "services-block.block-3.advantage2" })} block3Advantage3={intl.formatMessage({ id: "services-block.block-3.advantage3" })}
+        block4Title={intl.formatMessage({ id: "services-block.block-4.title" })} block4Text={intl.formatMessage({ id: "services-block.block-4.text" })} block4Advantage1={intl.formatMessage({ id: "services-block.block-4.advantage1" })} block4Advantage2={intl.formatMessage({ id: "services-block.block-4.advantage2" })} block4Advantage3={intl.formatMessage({ id: "services-block.block-4.advantage3" })}
+        />
+        <ArticlePreview posts={posts} headingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} />
+        <TextBanner color="green" pdf={Passport} headingText="How to check a pet Passport?" bodyTexts={[ {text: "You can all the informations regarding pet passport in the PDF in the link below"} ]} buttonText="How to Complete Pet Passports.pdf" />
+        <TextBlock id="about-us" headingText={intl.formatMessage({ id: "about-us.title" })} bodyTexts={intl.formatMessage({ id: "about-us.description1" }, { id: "about-us.description2" })} bodyText2={intl.formatMessage({ id: "about-us.description2" })} bodyText3={intl.formatMessage({ id: "about-us.description3" })} bodyText4={intl.formatMessage({ id: "about-us.description4" })} bodyText5={intl.formatMessage({ id: "about-us.description5" })} logo={LogoDefra} />
+        <TextBanner color="orange" pdf={Calendar} headingText="Our Trips for 2022" bodyTexts={[ {text: "You can all the informations regarding our trips program for 2022 in the pdf below"} ]} buttonText="Trips Program 2022.pdf" />
+        <Contact id="contact-us" headingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formCityText={intl.formatMessage({ id: "contact-us.user-city" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>
     )
   }
 }
 
-export default RootIndex
-
 export const pageQuery = graphql`
-  query HomeQuery {
-    allContentfulBlogPost(sort: { fields: [publishDate], order: DESC }) {
+  query HomeQuery($language: String) {
+    allContentfulBlog(sort: { fields: [publishDate], order: DESC } filter: { node_locale: { eq: $language } }) {
       nodes {
         title
-        slug
+        path
         publishDate(formatString: "MMMM Do, YYYY")
         heroImage {
+          url
           gatsbyImage(
             layout: FULL_WIDTH
             placeholder: BLURRED
             width: 424
             height: 212
           )
+          file {
+            url
+          }
         }
         description {
           raw
@@ -57,3 +74,4 @@ export const pageQuery = graphql`
     }
   }
 `
+export default withMyHook(IndexPage);

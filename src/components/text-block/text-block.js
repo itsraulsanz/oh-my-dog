@@ -8,11 +8,12 @@ export default function TextBlock(props) {
       <div className='container-fluid'>
           <div className='text-block__text'>
               <h2 className='text-block__text-heading'>{props.headingText}</h2>
-              {props.bodyTexts.map((bodyText, index) => {
-                return (
-                  <p key={index} className='text-block__text-description'>{bodyText.text}</p>
-                )
-              })}
+              <p className='text-block__text-description'>{props.bodyText1}</p>
+               <p className='text-block__text-description'>{props.bodyText2}</p>
+               <p className='text-block__text-description'>{props.bodyText3}</p>
+               <p className='text-block__text-description'>{props.bodyText4}</p>
+               <p className='text-block__text-description'>{props.bodyText5}</p>
+               <p className='text-block__text-description'>{props.bodyText6}</p>
               <img src={props.logo} alt='Logo Defra' width='100px' />
           </div>
       </div>

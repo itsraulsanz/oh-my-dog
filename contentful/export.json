@@ -202,8 +202,8 @@
           "omitted": false
         },
         {
-          "id": "slug",
-          "name": "Slug",
+          "id": "path",
+          "name": "Path",
           "type": "Symbol",
           "localized": false,
           "required": true,
@@ -375,8 +375,8 @@
           "widgetId": "singleLine"
         },
         {
-          "fieldId": "slug",
-          "widgetId": "slugEditor"
+          "fieldId": "path",
+          "widgetId": "pathEditor"
         },
         {
           "fieldId": "heroImage",
@@ -494,16 +494,16 @@
       },
       "fields": {
         "name": {
-          "en-US": "John Doe"
+          "en": "John Doe"
         },
         "title": {
-          "en-US": "Web Developer"
+          "en": "Web Developer"
         },
         "company": {
-          "en-US": "ACME"
+          "en": "ACME"
         },
         "shortBio": {
-          "en-US": {
+          "en": {
             "nodeType": "document",
             "data": {
             },
@@ -527,22 +527,22 @@
           }
         },
         "email": {
-          "en-US": "john@doe.com"
+          "en": "john@doe.com"
         },
         "phone": {
-          "en-US": "0176 / 1234567"
+          "en": "0176 / 1234567"
         },
         "facebook": {
-          "en-US": "johndoe"
+          "en": "johndoe"
         },
         "twitter": {
-          "en-US": "johndoe"
+          "en": "johndoe"
         },
         "github": {
-          "en-US": "johndoe"
+          "en": "johndoe"
         },
         "image": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -601,13 +601,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Automate with webhooks"
+          "en": "Automate with webhooks"
         },
-        "slug": {
-          "en-US": "automate-with-webhooks"
+        "path": {
+          "en": "automate-with-webhooks"
         },
         "heroImage": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -616,7 +616,7 @@
           }
         },
         "description": {
-          "en-US": {
+          "en": {
             "data": {
             },
             "content": [
@@ -640,7 +640,7 @@
           }
         },
         "body": {
-          "en-US": {
+          "en": {
             "nodeType": "document",
             "data": {
             },
@@ -778,7 +778,7 @@
           }
         },
         "author": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Entry",
@@ -787,10 +787,10 @@
           }
         },
         "publishDate": {
-          "en-US": "2017-05-12T00:00+02:00"
+          "en": "2017-05-12T00:00+02:00"
         },
         "tags": {
-          "en-US": ["javascript"]
+          "en": ["javascript"]
         }
       }
     },
@@ -843,13 +843,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Hello world"
+          "en": "Hello world"
         },
-        "slug": {
-          "en-US": "hello-world"
+        "path": {
+          "en": "hello-world"
         },
         "heroImage": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -858,7 +858,7 @@
           }
         },
         "description": {
-          "en-US": {
+          "en": {
             "data": {
             },
             "content": [
@@ -882,7 +882,7 @@
           }
         },
         "body": {
-          "en-US": {
+          "en": {
             "data": {
             },
             "content": [
@@ -1460,7 +1460,7 @@
           }
         },
         "author": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Entry",
@@ -1469,10 +1469,10 @@
           }
         },
         "publishDate": {
-          "en-US": "2017-05-15T00:00+02:00"
+          "en": "2017-05-15T00:00+02:00"
         },
         "tags": {
-          "en-US": ["general"]
+          "en": ["general"]
         }
       }
     },
@@ -1525,13 +1525,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Static sites are great"
+          "en": "Static sites are great"
         },
-        "slug": {
-          "en-US": "static-sites-are-great"
+        "path": {
+          "en": "static-sites-are-great"
         },
         "heroImage": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
@@ -1540,7 +1540,7 @@
           }
         },
         "description": {
-          "en-US": {
+          "en": {
             "data": {
             },
             "content": [
@@ -1564,7 +1564,7 @@
           }
         },
         "body": {
-          "en-US": {
+          "en": {
             "nodeType": "document",
             "data": {
             },
@@ -1884,7 +1884,7 @@
           }
         },
         "author": {
-          "en-US": {
+          "en": {
             "sys": {
               "type": "Link",
               "linkType": "Entry",
@@ -1893,10 +1893,10 @@
           }
         },
         "publishDate": {
-          "en-US": "2017-05-16T00:00+02:00"
+          "en": "2017-05-16T00:00+02:00"
         },
         "tags": {
-          "en-US": ["javascript", "static-sites"]
+          "en": ["javascript", "static-sites"]
         }
       }
     }
@@ -1944,13 +1944,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Sparkler"
+          "en": "Sparkler"
         },
         "description": {
-          "en-US": "John with Sparkler"
+          "en": "John with Sparkler"
         },
         "file": {
-          "en-US": {
+          "en": {
             "url": "//images.contentful.com/28p9vvm1oxuw/7orLdboQQowIUs22KAW4U/a97cd3b3415b51c5facfa6f4d184b650/matt-palmer-254999.jpg",
             "details": {
               "size": 2293094,
@@ -2007,13 +2007,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Woman with black hat"
+          "en": "Woman with black hat"
         },
         "description": {
-          "en-US": "Woman wearing a black hat"
+          "en": "Woman wearing a black hat"
         },
         "file": {
-          "en-US": {
+          "en": {
             "url": "//images.contentful.com/28p9vvm1oxuw/6Od9v3wzLOysiMum0Wkmme/95675d379a1284015a8210ca66cc53a5/cameron-kirby-88711.jpg",
             "details": {
               "size": 7316629,
@@ -2070,13 +2070,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "City"
+          "en": "City"
         },
         "description": {
-          "en-US": "City pictured from the sky"
+          "en": "City pictured from the sky"
         },
         "file": {
-          "en-US": {
+          "en": {
             "url": "//images.contentful.com/28p9vvm1oxuw/4NzwDSDlGECGIiokKomsyI/d04a5154fa2e2ab02857950639325684/denys-nevozhai-100695.jpg",
             "details": {
               "size": 15736986,
@@ -2133,13 +2133,13 @@
       },
       "fields": {
         "title": {
-          "en-US": "Man in the fields"
+          "en": "Man in the fields"
         },
         "description": {
-          "en-US": "Tattooed man walking in a field"
+          "en": "Tattooed man walking in a field"
         },
         "file": {
-          "en-US": {
+          "en": {
             "url": "//images.contentful.com/28p9vvm1oxuw/4shwYI3POEGkw0Eg6kcyaQ/eeaa6df85fb4452ea69ad18c98ffc015/felix-russell-saw-112140.jpg",
             "details": {
               "size": 4539181,
@@ -2158,7 +2158,7 @@
   "locales": [
     {
       "name": "U.S. English",
-      "code": "en-US",
+      "code": "en",
       "fallbackCode": null,
       "default": true,
       "contentManagementApi": true,

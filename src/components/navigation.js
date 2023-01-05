@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import Logo from '../images/logo.svg'
+import Language from './language'
 
 import './navigation.scss'
 
@@ -31,6 +32,7 @@ const Navigation = () => (
             Contact Us
           </Link>
         </li>
+        <li className='navigationItem languageSelector'><Language /></li>
       </ul>
     </nav>
   </header>

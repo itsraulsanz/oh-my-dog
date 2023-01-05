@@ -10,15 +10,15 @@ import Image1 from '../../images/img-slider-1.png'
 import Image2 from '../../images/img-slider-2.png'
 import Image3 from '../../images/img-slider-3.png'
 
-export default function HeroWithSlideshow() {
+export default function HeroWithSlideshow(props) {
   return (
     <div className="hero-with-slideshow">
       <div className="container-fluid">
           <div className="hero-with-slideshow__text">
-              <h2 className="hero-with-slideshow__text-heading">Our goal is the comfort and Safety of your pet during The trip</h2>
-              <p className="hero-with-slideshow__text-description">We offer a luxury door-to-door service, with a reduced number of pets and 2 drivers with animal welfare trainning</p>
+              <h2 className="hero-with-slideshow__text-heading">{props.headingText}</h2>
+              <p className="hero-with-slideshow__text-description">{props.descriptionText}</p>
               <a href='#contactus' className="button-primary">
-                Contact us
+                {props.buttonText}
               </a>
           </div>
           <Swiper autoplay={{ delay: 3000, disableOnInteraction: false }} effect={"cards"} grabCursor={true} modules={[Autoplay, EffectCards]} className="mySwiper">

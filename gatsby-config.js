@@ -21,5 +21,14 @@ module.exports = {
         host: process.env.CONTENTFUL_HOST
       },
     },
+    {
+      resolve: `gatsby-plugin-intl`,
+      options: {
+        path: `${__dirname}/src/data`,
+        languages: [`en`, `es`],
+        defaultLanguage: `en`,
+        redirect: true
+      },
+    }
   ],
 };
