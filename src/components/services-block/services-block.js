@@ -8,7 +8,7 @@ export default function ServicesBlock(props) {
     <div className="services-block" id='services'>
       <div className="container-fluid">
         <h2 className="services-block__heading">{props.headingText}</h2>
-        <p className="hero-with-slideshow__text-description">{props.descriptionText}</p>
+        <p className="services-block__text-description">{props.descriptionText}</p>
         
         <div className="services-block__container">
           <section>
@@ -18,9 +18,9 @@ export default function ServicesBlock(props) {
                 <summary>
                   <div className='heading-container'>
                     <span className='card-icon transport mobile' />
-                    <h3 className="services-block__text-heading">{props.block1Title}</h3>
+                    <h3 className="services-block-card__text-heading">{props.block1Title}</h3>
                   </div>
-                    <p className="services-block__text-description">{props.block1Text}</p>
+                    <p className="services-block-card__text-description">{props.block1Text}</p>
                       <ul className='check-list'>
                         <li>{props.block1Advantage1}</li>
                         <li>{props.block1Advantage2}</li>
@@ -41,9 +41,9 @@ export default function ServicesBlock(props) {
                 <summary>
                   <div className='heading-container'>
                     <span className='card-icon map mobile' />
-                    <h3 className="services-block__text-heading">{props.block2Title}</h3>
+                    <h3 className="services-block-card__text-heading">{props.block2Title}</h3>
                   </div>
-                  <p className="services-block__text-description">{props.block2Text}</p>
+                  <p className="services-block-card__text-description">{props.block2Text}</p>
                   <ul className='check-list'>
                     <li>{props.block2Advantage1}</li>
                     <li>{props.block2Advantage2}</li>
@@ -63,14 +63,14 @@ export default function ServicesBlock(props) {
 
           <section>
             <div className='service-block-card'>
-              <span className='card-icon temperature desktop' />
+              <span className='card-icon relaxing desktop' />
               <details>
                 <summary>
                   <div className='heading-container'>
-                    <span className='card-icon temperature mobile' />
-                    <h3 className="services-block__text-heading">{props.block3Title}</h3>
+                    <span className='card-icon relaxing mobile' />
+                    <h3 className="services-block-card__text-heading">{props.block3Title}</h3>
                   </div>
-                  <p className="services-block__text-description">{props.block3Text}</p>
+                  <p className="services-block-card__text-description">{props.block3Text}</p>
                   <ul className='check-list'>
                     <li>{props.block3Advantage1}</li>
                     <li>{props.block3Advantage2}</li>
@@ -91,9 +91,9 @@ export default function ServicesBlock(props) {
                 <summary>
                   <div className='heading-container'>
                     <span className='card-icon map mobile' />
-                    <h3 className="services-block__text-heading">{props.block4Title}</h3>
+                    <h3 className="services-block-card__text-heading">{props.block4Title}</h3>
                   </div>
-                  <p className="services-block__text-description">{props.block4Text}</p>
+                  <p className="services-block-card__text-description">{props.block4Text}</p>
                   <ul className='check-list'>
                     <li>{props.block4Advantage1}</li>
                     <li>{props.block4Advantage2}</li>
