@@ -9,7 +9,7 @@ import Layout from '../components/layout'
 import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
 import ServicesBlock from '../components/services-block/services-block'
 import ArticlePreview from '../components/article-preview/article-preview'
-import TextBlock from '../components/text-block/text-block'
+import TextBlock2Columns from '../components/text-block-2columns/text-block-2columns'
 import TextBanner from '../components/text-banner/text-banner'
 import Contact from '../components/contact/contact'
 
@@ -40,7 +40,7 @@ class IndexPage extends React.Component {
         />
         <ArticlePreview posts={posts} headingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} />
         <TextBanner color="green" pdf={Passport} headingText="How to check a pet Passport?" bodyTexts={[ {text: "You can all the informations regarding pet passport in the PDF in the link below"} ]} buttonText="How to Complete Pet Passports.pdf" />
-        <TextBlock id="about-us" headingText={intl.formatMessage({ id: "about-us.title" })} bodyTexts={intl.formatMessage({ id: "about-us.description1" }, { id: "about-us.description2" })} bodyText2={intl.formatMessage({ id: "about-us.description2" })} bodyText3={intl.formatMessage({ id: "about-us.description3" })} bodyText4={intl.formatMessage({ id: "about-us.description4" })} bodyText5={intl.formatMessage({ id: "about-us.description5" })} logo={LogoDefra} />
+        <TextBlock2Columns id="about-us" headingText={intl.formatMessage({ id: "about-us.title" })} bodyText1={intl.formatMessage({ id: "about-us.description1" })} bodyText2={intl.formatMessage({ id: "about-us.description2" })} bodyText3={intl.formatMessage({ id: "about-us.description3" })} bodyText4={intl.formatMessage({ id: "about-us.description4" })} bodyText5={intl.formatMessage({ id: "about-us.description5" })} logo={LogoDefra} />
         <TextBanner color="orange" pdf={Calendar} headingText="Our Trips for 2022" bodyTexts={[ {text: "You can all the informations regarding our trips program for 2022 in the pdf below"} ]} buttonText="Trips Program 2022.pdf" />
         <Contact id="contact-us" headingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formCityText={intl.formatMessage({ id: "contact-us.user-city" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>
