@@ -50,7 +50,7 @@ class IndexPage extends React.Component {
 
 export const pageQuery = graphql`
   query HomeQuery($language: String) {
-    allContentfulBlog(sort: { fields: [publishDate], order: DESC } filter: { node_locale: { eq: $language } }) {
+    allContentfulBlog(sort: { fields: orderId, order: DESC } filter: { node_locale: { eq: $language } }) {
       nodes {
         title
         path
