@@ -7,9 +7,13 @@
     margin-left: 50%;
     margin-bottom: 120px;
     -webkit-transform: translateX(-50%);
-    padding-top: 110px;
+    padding-top: 100px;
     transform: translateX(-50%);
     width: 100vw;
+
+    @media (min-width: 600px) {
+        padding-top: 20px;
+    }
 
     svg {
         position: absolute;

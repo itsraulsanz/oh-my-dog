@@ -2,9 +2,11 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import get from 'lodash/get'
 
+import '../styles/_layout.scss';
+
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Hero from '../components/hero/hero'
 import ArticlePreview from '../components/article-preview/article-preview'
 import '../components/article-preview/article-preview'
 
@@ -26,7 +28,7 @@ export default BlogIndex
 
 export const pageQuery = graphql`
   query BlogIndexQuery {
-    allContentfulBlog(sort: { fields: [publishDate], order: DESC }) {
+    allContentfulBlog {
       nodes {
         title
         path
