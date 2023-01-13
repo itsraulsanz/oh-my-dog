@@ -53,7 +53,7 @@ class BlogPostTemplate extends React.Component {
 
           if (node.data.target.gatsbyImageData === null) {
             return (
-              <video src={node.data.target.file.url} title={node.data.target.title} width="100%" controls />
+              <video src={node.data.target.file.url} title={node.data.target.title} className='article-body-video' width="100%" controls />
             );
           }        
         },

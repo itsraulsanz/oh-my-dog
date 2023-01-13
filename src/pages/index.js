@@ -8,7 +8,7 @@ import '../styles/_layout.scss';
 import Layout from '../components/layout'
 import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
 import ServicesBlock from '../components/services-block/services-block'
-import ArticlePreview from '../components/article-preview/article-preview'
+import BlogList from '../components/blog-list/blog-list';
 import TextBlock2Columns from '../components/text-block-2columns/text-block-2columns'
 import TextBanner from '../components/text-banner/text-banner'
 import Contact from '../components/contact/contact'
@@ -27,6 +27,10 @@ function withMyHook(Component) {
 
 class IndexPage extends React.Component {
   render() {
+    const { currentPage, numPages } = this.props.pageContext
+    console.log('props', this.props)
+    console.log('currentPage', currentPage)
+    console.log('numPages' ,numPages)
     const posts = get(this, 'props.data.allContentfulBlog.nodes')
     const intl = this.props.intlValue;
 
@@ -38,7 +42,7 @@ class IndexPage extends React.Component {
         block3Title={intl.formatMessage({ id: "services-block.block-3.title" })} block3Text={intl.formatMessage({ id: "services-block.block-3.text" })} block3Advantage1={intl.formatMessage({ id: "services-block.block-3.advantage1" })} block3Advantage2={intl.formatMessage({ id: "services-block.block-3.advantage2" })} block3Advantage3={intl.formatMessage({ id: "services-block.block-3.advantage3" })}
         block4Title={intl.formatMessage({ id: "services-block.block-4.title" })} block4Text={intl.formatMessage({ id: "services-block.block-4.text" })} block4Advantage1={intl.formatMessage({ id: "services-block.block-4.advantage1" })} block4Advantage2={intl.formatMessage({ id: "services-block.block-4.advantage2" })} block4Advantage3={intl.formatMessage({ id: "services-block.block-4.advantage3" })}
         />
-        <ArticlePreview posts={posts} headingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} />
+        <BlogList posts={posts} headingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} />
         <TextBanner color="green" pdf={Passport} headingText="How to check a pet Passport?" bodyTexts={[ {text: "You can all the informations regarding pet passport in the PDF in the link below"} ]} buttonText="How to Complete Pet Passports.pdf" />
         <TextBlock2Columns id="about-us" headingText={intl.formatMessage({ id: "about-us.title" })} bodyText1={intl.formatMessage({ id: "about-us.description1" })} bodyText2={intl.formatMessage({ id: "about-us.description2" })} bodyText3={intl.formatMessage({ id: "about-us.description3" })} bodyText4={intl.formatMessage({ id: "about-us.description4" })} bodyText5={intl.formatMessage({ id: "about-us.description5" })} logo={LogoDefra} />
         <TextBanner color="orange" pdf={Calendar} headingText="Our Trips for 2022" bodyTexts={[ {text: "You can all the informations regarding our trips program for 2022 in the pdf below"} ]} buttonText="Trips Program 2022.pdf" />
@@ -70,6 +74,7 @@ export const pageQuery = graphql`
         description {
           raw
         }
+        buttonText
       }
     }
   }

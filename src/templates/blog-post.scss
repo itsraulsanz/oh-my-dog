@@ -26,6 +26,20 @@
     letter-spacing: var(--text-prose-tracking);
     line-height: var(--loose);
     padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
+
+    &-body {
+      & .gatsby-image-wrapper, & .article-body-video {
+        margin: 15px 0;
+      }
+
+      ul {
+        margin: 30px 0 10px 35px;
+
+        li p {
+          margin: 0;
+        }        
+      }
+    }
   }
   
   & .blog-post__blogNavigation {
@@ -50,10 +64,6 @@
     & time {
     font-weight: bold;
     }
-  }
-
-  &__content {
-    padding-top: 25px;
   }
 
   .overlay-block__box {
@@ -99,6 +109,7 @@
 
   h1 {
     font-size: 30px;
+    line-height: 0;
   }
 
   h2 {
@@ -108,6 +119,8 @@
   h3 {
     font-family: "Poppins", sans-serif;
     font-size: 22px;
+    padding: 0;
+    margin: 0;
   }
 
   h4 {
@@ -120,17 +133,6 @@
 
   h6 {
     font-size: 16px;
-  }
-
-  &__content {
-    ul {
-      margin: 0px 0px 1.25rem 2.25rem;
-      list-style-type: disc;
-    }
-
-    li {
-      list-style: disc;
-    }
   }
 
   .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
