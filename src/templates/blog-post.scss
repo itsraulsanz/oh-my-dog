@@ -1,0 +1,141 @@
+@import '../styles/layout';
+@import '../styles/colors';
+@import '../styles/resets';
+@import '../styles/fonts';
+
+.blog-post {
+  display: flex;
+  flex-direction: column;
+
+  &.container-fluid {
+    @media (min-width: 768px) {
+      padding: 12px 80px;
+    }
+  }
+
+  &__meta {
+    font-size: var(--text-lg);
+    font-style: italic;
+    padding-top: 20px;
+  }
+  
+  &__article {
+    display: grid;
+    font-size: var(--text-prose);
+    gap: var(--space-xl);
+    letter-spacing: var(--text-prose-tracking);
+    line-height: var(--loose);
+    padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
+
+    &-body {
+      & .gatsby-image-wrapper, & .article-body-video {
+        margin: 15px 0;
+      }
+
+      ul {
+        margin: 30px 0 10px 35px;
+
+        li p {
+          margin: 0;
+        }        
+      }
+    }
+  }
+  
+  & .blog-post__blogNavigation {
+    padding: 10px 0;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      list-style: none;
+      padding: 10px 0;
+    }
+  }
+
+  &__date {
+    font-size: 14px;
+
+    & li {
+      margin-bottom: 10px;
+    }
+
+    & time {
+    font-weight: bold;
+    }
+  }
+
+  .overlay-block__box {
+    top: 190px;
+    border: 3px solid $core-color-secondary;
+    box-shadow: 10px 10px;
+  }
+
+  &__body {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+
+  a {
+    color: $core-color-secondary;
+    font-weight: bold;
+
+    &:hover {
+      color: $core-color-primary;
+    }
+  }
+
+  p {
+    padding-bottom: 20px;
+  }
+
+  b {
+    font-weight: bold;
+  }
+
+  i {
+    font-style: italic;
+  }
+
+  small {
+    font-size: 14px;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 18px;
+  }
+
+  h6 {
+    font-size: 16px;
+  }
+
+  .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
+    margin: 30px 0px 50px 0px;
+  }
+}

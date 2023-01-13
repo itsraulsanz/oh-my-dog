@@ -117,5 +117,32 @@
   
   
     }
-  }  
+  } 
+  
+  ul.pagination {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    list-style: none;
+
+    li.selected a.page-number {
+      background-color: $core-color-primary;
+      color: $core-color-light;
+    }
+
+    a.page-number {
+      background-color: $core-color-light;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      padding: 10px 20px;
+      transition: unset;
+
+      &:hover {
+        background-color: $core-color-primary;
+        color: $core-color-light;
+      }
+    }
+  }
 }

@@ -72,14 +72,15 @@
 
                 @media only screen and (min-width: 900px) {
                     margin-bottom: 20px;
-                    padding: 15px 0;
+                    padding: 0;
                 }
 
                 .services-block-card__text-heading {
                     font-family: 'MuseoModerno', cursive;
-                    font-size: 20px;
+                    font-size: 18px;
                     font-weight: 900;
                     flex-grow: 1;
+                    margin: 15px 0;
     
                     @media only screen and (min-width: 700px) {
                         font-size: 22px;

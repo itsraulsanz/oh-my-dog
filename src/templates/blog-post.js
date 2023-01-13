@@ -2,16 +2,16 @@ import React from 'react'
 import { Link, graphql } from 'gatsby'
 import get from 'lodash/get'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer'
-import { BLOCKS } from '@contentful/rich-text-types'
-import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import readingTime from 'reading-time'
+import './blog-post.scss'
 
 import Seo from '../components/seo'
 import Layout from '../components/layout'
-import Hero from '../components/hero'
+import Hero from '../components/hero/hero'
 import Tags from '../components/tags'
-import * as styles from './blog-post.module.css'
 
 class BlogPostTemplate extends React.Component {
   render() {
@@ -22,46 +22,77 @@ class BlogPostTemplate extends React.Component {
     const plainTextBody = documentToPlainTextString(JSON.parse(post.body.raw))
     const { minutes: timeToRead } = readingTime(plainTextBody)
     
-    const options = {
+    const renderOptions = {
+      renderMark: {
+        [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
+      },
       renderNode: {
+        [INLINES.HYPERLINK]: (node, children) => {
+          const { uri } = node.data
+          return (
+            <a href={uri} className="underline">
+              {children}
+            </a>
+          )
+        },
+        [BLOCKS.HEADING_2]: (node, children) => {
+          return <h2>{children}</h2>
+        },
         [BLOCKS.EMBEDDED_ASSET]: (node) => {
-        const { gatsbyImage, description } = node.data.target
-        return (
-           <GatsbyImage
-              image={getImage(gatsbyImage)}
-              alt={description}
-           />
-         )
+          const gatsbyImageData = node.data.target.gatsbyImageData
+          const postGatsbyImageDescription = node.data.target.title
+
+          if (node.data.target.gatsbyImageData) {
+            return (
+              <GatsbyImage
+              image={gatsbyImageData}
+              alt={postGatsbyImageDescription}
+            />
+            );
+          }
+
+          if (node.data.target.gatsbyImageData === null) {
+            return (
+              <video src={node.data.target.file.url} title={node.data.target.title} className='article-body-video' width="100%" controls />
+            );
+          }        
         },
       },
-    };
+    }
 
     return (
       <Layout location={this.props.location}>
-        {/* <Seo
+        <Seo
           title={post.title}
           description={plainTextDescription}
           image={`http:${post.heroImage.resize.src}`}
-        /> */}
+        />
         <Hero
           image={post.heroImage?.gatsbyImage}
           title={post.title}
           content={post.description}
         />
-        <div className={styles.container}>
-          <span className={styles.meta}>
-            {post.author?.name} &middot;{' '}
+        <div className="blog-post container-fluid">
+          <span className="blog-post__meta">
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
             {timeToRead} minute read
           </span>
-          <div className={styles.article}>
-            <div className={styles.body}>
-              {post.body?.raw && renderRichText(post.body, options)}
+          <div className="blog-post__details">
+            <h1 className="blog-post__details-title">{post.title}</h1>
+            <div className="blog-post__details-content">
+              {post.content?.raw && renderRichText(post.content, renderOptions)}
+            </div>
+          </div>
+          <div className="blog-post__article">
+            <div className="blog-post__article-body">
+              {post.body?.raw && renderRichText(post.body, renderOptions)}
             </div>
             <Tags tags={post.tags} />
-            {(previous || next) && (
+          </div>
+          <div className='blog-post__blogNavigation'>
+          {(previous || next) && (
               <nav>
-                <ul className={styles.articleNavigation}>
+                <ul className="blog-post__articleNavigation">
                   {previous && (
                     <li>
                       <Link to={`/blog/${previous.path}`} rel="prev">
@@ -108,7 +139,19 @@ export const pageQuery = graphql`
       }
       body {
         raw
-        
+        references {
+          ... on Node {
+            ... on ContentfulAsset {
+              contentful_id
+              __typename
+              title
+              gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
+              file {
+                url
+              }
+            }
+          }
+        }
       }
       description {
         raw

@@ -36,8 +36,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   if (posts.length > 0) {
     posts.forEach((post, index) => {
       const previousPostPath = index === 0 ? null : posts[index - 1].path
-      const nextPostPath =
-        index === posts.length - 1 ? null : posts[index + 1].path
+      const nextPostPath = index === posts.length - 1 ? null : posts[index + 1].path
 
       createPage({
         path: `/blog/${post.path}/`,
