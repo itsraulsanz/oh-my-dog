@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image'
+import Lightbox from 'react-image-lightbox';
 
 import './gallery.scss'
 
-const imageGallery = ({galleryImages, headingText, descriptionText}) => {
+const ImageGallery = ({galleryImages, headingText, descriptionText}) => {
+  const [isOpen, setIsOpen, photoIndex] = useState(false);
+
+  const toggleIsOpen = () => {
+		setIsOpen(!isOpen);
+	};
 
   return (
     <div className='gallery' id='blog'>
@@ -13,11 +19,29 @@ const imageGallery = ({galleryImages, headingText, descriptionText}) => {
           <p className='gallery__heading-description'>{descriptionText}</p>
         </div>
         <ul className='gallery__list'>
-          {galleryImages.map((galleryImages) => (
-            <li key={galleryImages.order} className={`gallery__list-image ${galleryImages.order}`}>
-              <a>
-              <GatsbyImage alt={galleryImages.title} image={galleryImages.image.gatsbyImage} />
-              </a>
+          {galleryImages.map((galleryImage, i) => (
+            <li className={`gallery__list-image ${galleryImage.order}`} onClick={() => ({ isOpen: true })}>
+              <GatsbyImage alt={galleryImage.title} image={galleryImage.image.gatsbyImage} key={i} />
+              {/* <img alt={galleryImage.title} src={galleryImage.image.url} key={i} className={i} /> */}
+            
+              {isOpen ?
+                <Lightbox
+                mainSrc={galleryImage[i].image.url}
+                nextSrc={galleryImage[(i + 1) % galleryImage.length]}
+                prevSrc={galleryImage[(i + galleryImage.length - 1) % galleryImage.length]}
+                onCloseRequest={() => this.setState({ isOpen: false })}
+                onMovePrevRequest={() =>
+                  this.setState({
+                    i: (i + galleryImage.length - 1) % galleryImage.length,
+                  })
+                }
+                onMoveNextRequest={() =>
+                  this.setState({
+                    i: (i + 1) % galleryImage.length,
+                  })
+                }
+              />
+				      : null}
             </li>
           ))}
         </ul>
@@ -26,4 +50,4 @@ const imageGallery = ({galleryImages, headingText, descriptionText}) => {
   )
 }
 
-export default imageGallery
+export default ImageGallery
