@@ -156,6 +156,7 @@
 
     .lightbox-navigation {
       width: 100%;
+      z-index: 2;
     }
     
     .lightbox-navigation__list {
@@ -163,7 +164,6 @@
       flex-wrap: wrap;
       display: flex;
       gap: 10px;
-      z-index: 2;
       justify-content: center;
 
       @media only screen and (min-width: 700px) {
