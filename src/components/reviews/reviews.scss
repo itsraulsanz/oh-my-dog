@@ -1,0 +1,281 @@
+@import '../../styles/colors';
+
+.reviews {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__heading {
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 50px;
+
+    @media only screen and (min-width: 600px) {
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    h2 {
+        margin-top: 0;
+        line-height: 48px;
+        text-align: center;
+
+        @media only screen and (max-width: 399px) {
+            font-size: 22px;
+            line-height: 28px;
+        }
+
+        @media only screen and (min-width: 400px) and (max-width: 800px) {
+            font-size: 30px;
+            line-height: 38px;
+        }
+
+    }
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    p.reviews__heading-description {
+        font-size: 16px;
+        padding-bottom: 15px;
+        text-align: center;
+        line-height: normal;
+
+        @media (min-width: 600px) {
+            font-size: 17px;
+        }
+    }
+  }
+  
+  .review__card {
+    .review__user {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .reviews__list {
+    display: grid;
+    grid-auto-rows: 50px;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
+    @media only screen and (min-width: 399px) {
+      grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    }
+
+    @media only screen and (min-width: 799px) {
+      grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    }
+
+    @media only screen and (min-width: 1199px) {
+      grid-template-columns: repeat(auto-fill, minmax(23%, 1fr));
+    }
+  
+    .reviews__list-image {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3em;
+      font-weight: bold;
+      color: white;
+      grid-row: span 4;
+      cursor: pointer;
+      
+      &:first-child, &:nth-child(3n) {
+        grid-row: span 5;
+      }
+      
+      &:last-child, &:nth-child(4n) {
+        grid-row: span 6;
+      }
+
+      &:nth-child(2) {
+        grid-row: span 3;
+      }
+
+      .gatsby-image-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 20px;
+        width: 100%;
+        height: -webkit-fill-available;
+      }  
+
+      & img {
+        width: 100%;
+        height: -webkit-fill-available;
+      }
+    }
+  }
+
+  .reviews__heading-rating {
+    display: flex;
+    gap: 25px;
+  }
+
+  p.reviews__heading-rating {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+
+    .bold {
+      display: flex;
+      font-size: x-large;
+      font-weight: 600;
+      align-items: center;
+    }
+  }
+
+  .star-rating-5 {
+    display: block;
+    background-image: url(../../images/star5.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 22px;
+    margin-right: 10px;
+  }
+
+  .reviews__container .stars {
+    margin: 0;    
+    width: 80px;
+  }
+}
+
+/* Carousel CSS */
+
+.carousel-root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+
+  @media only screen and (min-width: 600px) {
+    width: 90%;
+  }
+
+  @media only screen and (min-width: 1000px) {
+    width: 70%;
+  }
+
+  .carousel.carousel-slider {
+    padding: 0px 8%;
+
+  .slide {
+    min-width: 100%;
+    position: relative;
+    padding: 25px 50px;
+    border: solid 1px;
+    border-radius: 15px;
+
+    .review__user strong.review__user-details {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .control-prev.control-arrow:before {
+    border-right: 8px solid black;
+  }
+  .control-next.control-arrow:before {
+    border-left: 8px solid black;
+  }
+
+  .control-arrow.control-prev:hover, .control-arrow.control-next:hover {
+    background: none;
+  }
+  
+  .carousel-status {
+    display: none;
+  }
+
+  .control-dots {
+    width: 84%;
+
+    .dot {
+      background-color: $core-color-secondary;
+      box-shadow: none;
+    }
+  
+    &.selected {
+      background-color: $core-color-secondary;
+    }
+  }
+}
+  
+}
+
+// .carousel-root .carousel {
+//   display: flex;
+//   justify-content: center;
+
+//   .slide {
+//     display: flex;
+//     align-items: center;
+//   }
+
+//   .slide .legend {
+//       bottom: 0;
+//       background: none;
+//       color: $core-color-neutral;
+//       opacity: 1;
+//       transition: none;
+//       font-size: 16px;
+//       line-height: 24px;
+//       padding: 10px 10px 0;
+
+//       b {
+//           color: $core-color-secondary;
+//           font-weight: bold;
+//           letter-spacing: 1px;
+//       }
+//   }
+
+//   .control-dots {
+//       display: flex;
+//       justify-content: space-evenly;
+//       width: 88%;
+//       bottom: 20px;
+//       margin: 0;
+
+//       @media (min-width: 550px) {
+//           width: 50%;
+//           bottom: 20px;
+//       }
+
+//       @media (min-width: 992px) {
+//           width: 30%;
+//       }
+
+//       .dot {
+//           width: 25px;
+//           height: 25px;
+//           box-shadow: none;
+//           background: $core-color-neutral;
+//       }
+
+//       .dot.selected {
+//           transform: scale(1.5);
+//       }
+//   }
+
+//   .slide img {
+//       width: auto;
+//   }
+// }
