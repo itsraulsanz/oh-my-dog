@@ -33,7 +33,6 @@ const Footer = () => (
             Contact Us
           </Link>
         </li>
-        <li className='navigationItem languageSelector'><Language /></li>
       </ul>
     </nav>
   </footer>

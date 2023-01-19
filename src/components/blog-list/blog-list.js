@@ -58,8 +58,8 @@ const PaginatedPosts = ({posts, headingText, descriptionText}) => {
             nextLabel={'>'}
             containerClassName={'pagination'}
             pageLinkClassName={'page-number'}
-            previousLinkClassName={'page-number'}
-            nextLinkClassName={'page-number'}
+            previousLinkClassName={'page-prev'}
+            nextLinkClassName={'page-next'}
             activeLinkClassName={'active'}
           />
           </div>

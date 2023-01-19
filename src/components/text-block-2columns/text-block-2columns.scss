@@ -8,7 +8,11 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100vw;
-    padding: 70px 0;
+    padding: 20px 0;
+
+    @media only screen and (min-width: 600px) {
+        padding: 50px 0;
+    }
 
     .container-fluid {
         display: flex;
@@ -17,9 +21,10 @@
     }
 
     &__text {
+        display: flex;
+        flex-direction: column;
         width: 90%;
         align-items: center;
-        justify-content: center;
 
         @media only screen and (min-width: 600px) {
             display: flex;
@@ -28,16 +33,13 @@
     }
 
     &__text-heading {
-        margin: 0 0 35px;
-        line-height: 48px;
+        margin-bottom: 0;
+        font-size: 22px;
+        line-height: 28px;
 
-        @media only screen and (max-width: 399px) {
-            font-size: 22px;
-            line-height: 28px;
-        }
-
-        @media only screen and (min-width: 400px) and (max-width: 800px) {
-            font-size: 30px;
+        @media only screen and (min-width: 600px) {
+            margin-bottom: 20px;
+            font-size: 44px;
             line-height: 38px;
         }
     }
@@ -45,6 +47,7 @@
     .text-block-2columns__columns-container {
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
 
         @media only screen and (min-width: 600px) {
             flex-direction: row;
@@ -62,11 +65,11 @@
 
             p.text-block-2columns__text-description {
                 font-size: 16px;
-                padding-bottom: 15px;
                 text-align: left;
                 line-height: 28px;
                 text-align: left;
-                padding-bottom: 20px;
+                padding: 0 0 15px;
+                margin: 0;
     
                 @media (min-width: 600px) {
                     font-size: 18px;
