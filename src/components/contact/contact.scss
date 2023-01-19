@@ -8,7 +8,11 @@
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     width: 100vw;
-    padding: 50px 0 70px;
+    padding: 30px 0 50px;
+
+    @media only screen and (min-width: 600px) {
+        padding: 50px 0 70px;
+    }
 
     .container-fluid {
         flex-direction: column;
@@ -28,16 +32,13 @@
         }
 
         h2 {
+            text-align: center;
             margin-top: 0;
-            line-height: 48px;
+            font-size: 22px;
+            line-height: 28px;
 
-            @media only screen and (max-width: 399px) {
-                font-size: 22px;
-                line-height: 28px;
-            }
-
-            @media only screen and (min-width: 400px) and (max-width: 800px) {
-                font-size: 30px;
+            @media only screen and (min-width: 400px) {
+                font-size: 44px;
                 line-height: 38px;
             }
 
@@ -45,11 +46,12 @@
 
         p.contact__text-description {
             font-size: 16px;
-            padding-bottom: 40px;
+            padding-bottom: 20px;
             text-align: center;
             line-height: normal;
 
             @media (min-width: 600px) {
+                padding-bottom: 40px;
                 font-size: 18px;
             }
 
@@ -62,32 +64,65 @@
     .contact__box {
         width: 100%;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 4%;
+
+        @media (min-width: 600px) {
+            flex-direction: row;
+        }
 
         section {
             &.contact__info {
-                width: 40%;
+                width: 100%;
+                margin-bottom: 40px;
+
+                @media (min-width: 600px) {
+                    width: 40%;
+                    margin-bottom: 0;
+                }
 
                 ul {
                     display: flex;
                     flex-direction: column;
+                    margin: 0;
                     gap: 10px;
                 }
+
                 li {
                     display: flex;
+                    flex-direction: column;
                     justify-content: space-between;
                     background-color: #F0F0F0;
                     border-radius: 12px;
                     padding: 20px;
+
+                    @media (min-width: 370px) {
+                        flex-direction: row;
+                    }
+
+                    @media (min-width: 600px) {
+                        flex-direction: column;
+                    }
+
+                    @media (min-width: 900px) {
+                        flex-direction: row;
+                    }
+
+                    & span:first-child {
+                        font-weight: 500;
+                    }
                 }
             }
             
             &.contact-form__container {
-                width: 60%;
+                width: 100%;
                 background-color: #F0F0F0;
                 border-radius: 23px;
                 padding: 40px;
+
+                @media (min-width: 600px) {
+                    width: 60%;
+                }
 
                 form.contact-form__form {
                     display: flex;
