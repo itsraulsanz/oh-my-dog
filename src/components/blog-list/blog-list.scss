@@ -38,7 +38,8 @@
 
     p.article-preview__heading-description {
         font-size: 16px;
-        padding-bottom: 15px;
+        margin-bottom: 0;
+        padding-bottom: 0;
         text-align: center;
         line-height: normal;
 
@@ -52,8 +53,9 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 3.5%;
     flex-flow: row wrap;
+    margin-bottom: 0;
+    gap: 3.5%;
 
     &::after {
       content: "";
@@ -121,16 +123,22 @@
   
   ul.pagination {
     display: flex;
-    gap: 40px;
+    margin: 0;
+    gap: 5px;
     justify-content: center;
     list-style: none;
+
+    @media (min-width: 600px) {
+      gap: 30px;
+    }
 
     li.selected a.page-number {
       background-color: $core-color-primary;
       color: $core-color-light;
     }
 
-    a.page-number {
+    .page-number, .page-prev, .page-next {
+      display: block;
       background-color: $core-color-light;
       border-radius: 10px;
       cursor: pointer;
@@ -142,6 +150,14 @@
       &:hover {
         background-color: $core-color-primary;
         color: $core-color-light;
+      }
+    }
+
+    .page-number {
+      display: none;
+
+      @media (min-width: 600px) {
+        display: block;
       }
     }
   }

@@ -5,13 +5,14 @@
     background: linear-gradient(90deg, rgb(252, 238, 221) 0%, rgb(255, 248, 239) 100%);
     display: flex;
     margin-left: 50%;
-    margin-bottom: 120px;
+    margin-bottom: 50px;
     -webkit-transform: translateX(-50%);
     padding-top: 100px;
     transform: translateX(-50%);
     width: 100vw;
 
     @media (min-width: 600px) {
+        margin-bottom: 80px;
         padding-top: 20px;
     }
 

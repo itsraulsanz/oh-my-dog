@@ -14,12 +14,13 @@
 
     h2 {
         text-align: center;
-        padding-bottom: 20px;
+        padding-bottom: 0;
         line-height: 30px;
     }
 
     &__text-description {
         text-align: center;
+        margin: 10px 0 0;
     }
 
     .button-secondary {

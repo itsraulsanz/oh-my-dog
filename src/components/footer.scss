@@ -2,6 +2,7 @@
 
 footer.homepageFooter {
   display: flex;
+  flex-direction: column;
   background: $core-color-dark-background;
   width: 100%;
   padding: 23px 20px;
@@ -9,6 +10,10 @@ footer.homepageFooter {
   top: 0;
   justify-content: space-between;
   align-items: center;
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
   
   .navigationItem a {
     color: $core-color-background;
