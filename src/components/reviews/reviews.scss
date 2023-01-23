@@ -54,6 +54,8 @@
   }
   
   .review__card {
+    padding-bottom: 10px;
+
     .review__user {
       display: flex;
       align-items: center;
@@ -122,6 +124,7 @@
 
   .reviews__heading-rating {
     display: flex;
+    justify-content: center;
     gap: 25px;
   }
 
@@ -148,7 +151,7 @@
     margin-right: 10px;
   }
 
-  .reviews__container .stars {
+  .review__user-details .stars {
     margin: 0;    
     width: 80px;
   }

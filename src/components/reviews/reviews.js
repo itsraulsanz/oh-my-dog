@@ -3,27 +3,10 @@ import { graphql } from "gatsby";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import ReactDOM from 'react-dom';
-import api from '../../../api';
 
 import './reviews.scss'
 
-const ReviewsPage = ({userReviews, headingText, descriptionText}) => {
-  let [responseData, setResponseData] = React.useState('')
-  
-  const fetchData = (e) => {
-    e.preventDefault()
-    api.getData()
-    .then((response)=>{
-        setResponseData(response.data)
-        console.log(response)
-    })
-    .catch((error) => {
-        console.log(error)
-    })
-  }
-
-  fetchData();
-
+const ReviewsPage = ({userReviews, headingText, descriptionText}) => {  
   return (
     <div className='reviews'>
       <div className='container-fluid'>
@@ -52,20 +35,20 @@ const ReviewsPage = ({userReviews, headingText, descriptionText}) => {
   )
 }
 
-export const query = graphql`
-  query {
-    googlePlacesPlace {
-      name
-      rating
-      childrenGooglePlacesReview {
-        author_name
-        text
-        rating
-        profile_photo_url
-      }
-      user_ratings_total
-    }
-  }
-`;
+// export const query = graphql`
+//   query {
+//     googlePlacesPlace {
+//       name
+//       rating
+//       childrenGooglePlacesReview {
+//         author_name
+//         text
+//         rating
+//         profile_photo_url
+//       }
+//       user_ratings_total
+//     }
+//   }
+// `;
 
 export default ReviewsPage
