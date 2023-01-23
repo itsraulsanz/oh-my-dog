@@ -44,6 +44,10 @@
         "title": "Ohmydog Gallery",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     },
+    "reviews": {
+        "title": "Ohmydog Reviews",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
     "passport-banner": {
         "title": "How to check a pet Passport?",
         "description": "Feel free to check all the information regarding pet passports in the PDF by clicking the link below:",

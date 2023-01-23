@@ -22,6 +22,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-google-places`,
+      options: {
+        placeIds:  process.env.GATSBY_GOOGLE_PLACE_ID,
+        apiKey: process.env.GATSBY_GOGGLE_API_KEY,
+        language: "en-US", // optional, defaults to en-US
+      },
+    },
+    {
       resolve: `gatsby-plugin-intl`,
       options: {
         path: `${__dirname}/src/data`,
