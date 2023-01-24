@@ -28,7 +28,7 @@ const PaginatedPosts = ({posts, headingText, descriptionText}) => {
 	};
 
   return (
-    <div className='article-preview' id='blog'>
+    <div className='article-preview' id='vlog'>
       <div className='container-fluid'>
         <div className='article-preview__heading'>
         <h2 className='article-preview__heading-title'>{headingText}</h2>

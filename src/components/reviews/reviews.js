@@ -8,7 +8,7 @@ import './reviews.scss'
 
 const ReviewsPage = ({userReviews, headingText, descriptionText}) => {  
   return (
-    <div className='reviews'>
+    <div id='reviews' className='reviews'>
       <div className='container-fluid'>
         <div className='reviews__heading'>
           <h2 className='reviews__heading-title'>{headingText}</h2>
