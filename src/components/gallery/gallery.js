@@ -11,7 +11,7 @@ const ImageGallery = ({galleryImages, headingText, descriptionText}) => {
 	};
 
   return (
-    <div className='gallery'>
+    <div id='gallery' className='gallery'>
       <div className='container-fluid'>
         <div className='gallery__heading'>
           <h2 className='gallery__heading-title'>{headingText}</h2>
