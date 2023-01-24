@@ -7,8 +7,8 @@ import Language from './language'
 import './navigation.scss'
 
 function Navigation() {
-  const locationLanguage = window.location.pathname.split("/")[1];
-  console.log(locationLanguage)
+  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const locationLanguage = pathname.split("/")[1];
 
   return (
     <header>
