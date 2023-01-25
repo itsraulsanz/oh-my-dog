@@ -11,12 +11,8 @@ const Language = () => {
       <IntlContextConsumer>
         {({ languages, language: currentLocale }) =>
           languages.map(language => (
-            <a key={language} className='language' onClick={() => changeLocale(language)}
-              style={{
-                backgroundColor: currentLocale === language ? `#ED7C23` : `transparent`,
-                color: currentLocale === language ? `white` : `black`,
-              }}
-            >
+            <a key={language} className={currentLocale === language ? `language active` : `language non-active`} 
+            onClick={() => changeLocale(language)}>
               {languageName[language]}
             </a>
           ))
