@@ -93,7 +93,7 @@ function Navigation() {
                     </li>
                     <li className="navigationItem-submenu">
                       <Link to={`/${locationLanguage}/#trips`} activeClassName="active" className='navigationItem-sublist'>
-                        Schedule
+                        Calendar
                       </Link>
                     </li>
                   </ul>
@@ -112,7 +112,7 @@ function Navigation() {
             </li>
             <li className="navigationItem medium-hide">
               <Link to={`/${locationLanguage}/#trips`} activeClassName="active" className='navigationItem-main'>
-                Schedule
+                Calendar
               </Link>
             </li>
             <li className="navigationItem">
@@ -199,7 +199,7 @@ function Navigation() {
                 </li>
                 <li className="navigationItem">
                   <Link to={`/${locationLanguage}/#trips`} activeClassName="active" className='navigationItem-link'>
-                    Schedule
+                    Calendar
                   </Link>
                 </li>
                 <li className="navigationItem">

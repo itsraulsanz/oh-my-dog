@@ -1,4 +1,7 @@
 {
+    "general": {
+        "contact-us": "Contact us"
+    },
     "hero": {
         "title": "Your pets trip in First Class",
         "description": "Our goal is the comfort and Safety of your pet during The trip. We offer a luxury door-to-door service with two drivers animal welfare trained.",
@@ -7,10 +10,11 @@
     "services-block": {
         "title": "Services",
         "description": "Trust us to transport your pet safely and comfortably with the latest in pet transportation technology.",
+        "button": "Read more",
         "block-1": {
             "title": "Requirements",
-            "text": "We follow all the legally requirements to transport your pets legally and ensure their safety and comfort.",
-            "advantage1": "Highly trained team with animal welfare training.",
+            "text": "We follow all the requirements to transport your pets legally and ensure their safety and comfort.",
+            "advantage1": "Highly trained team with animal welfare certificates.",
             "advantage2": "Vehicles possessing both DEFRA (UK) and ATES (EU) licenses.",
             "advantage3": "Contingency plan in place for cases of emergency."
         },
@@ -23,7 +27,7 @@
             "advantage4": "Vet beds."
         },
         "block-3": {
-            "title": "Anti-stress technology",
+            "title": "Anti-stress tech",
             "text": "Our vans are designed with your pet's comfort and well-being in mind. The interior features:",
             "advantage1": "Antistress decor and relaxing music: keeps your pet calm and relaxed during the journey.",
             "advantage2": "Natural light cycle: helps to regulate your pet's body clock, making the trip more comfortable for them."
@@ -37,20 +41,21 @@
         }
     },
     "blog": {
-        "title": "Ohmydog Pet Travel blog!",
+        "title": "Ohmydog Pet Travel vlog!",
         "description": "Here you can find helpful information and tips about pet transportation, as well as get to know our team and company better. We will be regularly posting videos and updates to keep you informed and connected with us. Follow our blog to stay up-to-date on all things pet transportation and to learn more about how we can help you and your furry friend."
     },
     "gallery": {
         "title": "Ohmydog Gallery",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "description": "Welcome to our gallery section! Here you can see photos of our vehicles and our PAWssengers."
     },
     "reviews": {
         "title": "Ohmydog Reviews",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "reviewsText": "reviews"
     },
-    "passport-banner": {
+    "passport": {
         "title": "How to check a pet Passport?",
-        "description": "Feel free to check all the information regarding pet passports in the PDF by clicking the link below:",
+        "description1": "Feel free to check all the information regarding pet passports in the PDF by clicking the link below:",
         "button-text": "How to Complete Pet Passports.pdf"
     },
     "about-us": {
@@ -62,9 +67,10 @@
         "description5": "At Ohmydog, we go above and beyond to ensure that your pet's travels are safe and comfortable. Contact us today to learn more about how we can help you and your furry friend. So, if you need to transport your pet, whether it be for a move or a vacation, trust Ohmydog to provide the best care and service. Contact us today to learn more and start planning your pet's travels."   
     },
     "our-trips-banner": {
-        "title": "Our next Trips for 2023",
-        "description": "You can check all the information regarding our trips program for 2023 in the pdf below:",
-        "button-text": "Trips Program 2023.pdf"
+        "title": "Our next Trips for ",
+        "description1": "You can check all the information regarding our trips program for ",
+        "description2": " in the pdf below:",
+        "button-text": "Trips Program.pdf"
     },
     "contact-us": {
         "title": "Contact us",

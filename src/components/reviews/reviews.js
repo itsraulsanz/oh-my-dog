@@ -6,7 +6,7 @@ import ReactDOM from 'react-dom';
 
 import './reviews.scss'
 
-const ReviewsPage = ({userReviews, headingText, descriptionText}) => {  
+const ReviewsPage = ({userReviews, headingText, descriptionText, reviewsText}) => {  
   return (
     <div id='reviews' className='reviews'>
       <div className='container-fluid'>
@@ -14,7 +14,7 @@ const ReviewsPage = ({userReviews, headingText, descriptionText}) => {
           <h2 className='reviews__heading-title'>{headingText}</h2>
           <p className='reviews__heading-description'>{descriptionText}</p>
           <div className='reviews__heading-rating'>
-            <p className='reviews__heading-rating'><span className='bold'>{userReviews.rating}.0</span> <span className={`stars star-rating-${userReviews.rating}`}></span> {userReviews.user_ratings_total} reseñas</p></div>
+            <p className='reviews__heading-rating'><span className='bold'>{userReviews.rating}.0</span> <span className={`stars star-rating-${userReviews.rating}`}></span> {userReviews.user_ratings_total} {reviewsText}</p></div>
         </div>
         <Carousel showArrows={true}>
           {userReviews.childrenGooglePlacesReview.map((review) => {
