@@ -2,7 +2,7 @@
 @import '../../styles/fonts';
 
 .hero-with-slideshow {
-    background: linear-gradient(90deg, rgb(252, 238, 221) 0%, rgb(255, 248, 239) 100%);
+    background: $core-color-light-background;
     display: flex;
     margin-left: 50%;
     margin-bottom: 50px;
@@ -20,7 +20,7 @@
         position: absolute;
         bottom: -60px;
         width: 100%;
-        fill: linear-gradient(90deg, rgb(252, 238, 221) 0%, rgb(255, 248, 239) 100%);
+        fill: $core-color-light-background;
     }
 
     .hero-with-slideshow__text {

@@ -17,8 +17,8 @@ export default function HeroWithSlideshow(props) {
           <div className="hero-with-slideshow__text">
               <h2 className="hero-with-slideshow__text-heading">{props.headingText}</h2>
               <p className="hero-with-slideshow__text-description">{props.descriptionText}</p>
-              <a href='#contactus' className="button-primary">
-                {props.buttonText}
+              <a href='#contact-us' className="button-primary">
+                {props.buttonContact}
               </a>
           </div>
           <Swiper autoplay={{ delay: 3000, disableOnInteraction: false }} effect={"cards"} grabCursor={true} modules={[Autoplay, EffectCards]} className="mySwiper">
@@ -28,13 +28,7 @@ export default function HeroWithSlideshow(props) {
           </Swiper>
       </div>
       <svg width="500" height="80" viewBox="0 0 500 80" preserveAspectRatio="none">
-        <defs>
-          <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
-            <stop offset="0%" stop-color="#FCEEDD" stop-opacity="1" />
-            <stop offset="100%" stop-color="#FFF8EF" stop-opacity="1" />
-          </linearGradient>
-        </defs>
-        <path d="M0,0 L0,40 Q250,80 500,40 L500,0 Z" fill="url(#grad1)" />
+        <path d="M0,0 L0,40 Q250,80 500,40 L500,0 Z" fill="#FCEEDD" />
       </svg>
     </div>
   )

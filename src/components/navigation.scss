@@ -1,7 +1,7 @@
 @import '../styles/colors';
 
 header {
-  background: rgb(252, 238, 221);
+  background: $core-color-light-background;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -149,7 +149,7 @@ ul.navigation {
     width: max-content;
     position: absolute;
     padding: 5px 30px 25px;
-    background: rgb(252, 238, 221);
+    background: $core-color-light-background;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
@@ -313,7 +313,7 @@ ul.social-media {
     width: 100%;
     height: 100vh;
     z-index: 3;
-    background-color: rgb(252, 238, 221);
+    background-color: $core-color-light-background;
     overflow-x: hidden;
     padding: 10px 20px;
   
