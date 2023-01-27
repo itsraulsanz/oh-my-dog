@@ -2,6 +2,7 @@ import React from 'react'
 import './contact.scss'
 
 export default function Contact(props) {
+  const getformEndpoint = "https://getform.io/f/cc4a2a36-9ad6-4112-b183-80434526d3b7"
 
   return (
     <div className='contact' id='contact-us'>
@@ -25,8 +26,8 @@ export default function Contact(props) {
             </section>
 
             <section className='contact-form__container'>
-              <form className='contact-form__form' method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
-                <input type="hidden" name="bot-field" />
+              <form className='contact-form__form' action={getformEndpoint} method="POST">
+                <input type="hidden" name="_gotcha" />
                 <input name="name" type="text" placeholder={props.formNameText} required/>
                 <div className="fields-container">
                   <input name="email" type="email" placeholder={props.formEmailText} required/>
