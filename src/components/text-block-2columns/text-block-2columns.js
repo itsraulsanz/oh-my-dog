@@ -12,11 +12,10 @@ export default function TextBlock(props) {
                 <div className='text-block-2columns__column'>
                   <p className='text-block-2columns__text-description'>{props.bodyText1}</p>
                   <p className='text-block-2columns__text-description'>{props.bodyText2}</p>
-                  <p className='text-block-2columns__text-description'>{props.bodyText3}</p>
                 </div>
                 <div className='text-block-2columns__column'>
+                  <p className='text-block-2columns__text-description'>{props.bodyText3}</p>
                   <p className='text-block-2columns__text-description'>{props.bodyText4}</p>
-                  <p className='text-block-2columns__text-description'>{props.bodyText5}</p>
                 </div>
               </div>
               <img src={props.logo} alt='Logo Defra' width='100px' />
