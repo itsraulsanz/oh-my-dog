@@ -82,8 +82,8 @@ function Navigation() {
                 <div className='details-submenu-list more-info'>
                   <ul className="navigation-submenu-list">
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#vlog`} activeClassName="active" className='navigationItem-sublist'>
-                        Vlog
+                      <Link to={`/${locationLanguage}/#blog`} activeClassName="active" className='navigationItem-sublist'>
+                        Blog
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
@@ -101,8 +101,8 @@ function Navigation() {
               </details>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#vlog`} activeClassName="active" className='navigationItem-main'>
-                Vlog
+              <Link to={`/${locationLanguage}/#blog`} activeClassName="active" className='navigationItem-main'>
+                Blog
               </Link>
             </li>
             <li className="navigationItem medium-hide">
@@ -188,8 +188,8 @@ function Navigation() {
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#vlog`} activeClassName="active" className='navigationItem-link'>
-                    Vlog
+                  <Link to={`/${locationLanguage}/#blog`} activeClassName="active" className='navigationItem-link'>
+                    Blog
                   </Link>
                 </li>
                 <li className="navigationItem">

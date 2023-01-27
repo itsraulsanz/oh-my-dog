@@ -4,7 +4,7 @@ import './contact.scss'
 export default function Contact(props) {
 
   return (
-    <div className='contact' id={props.id}>
+    <div className='contact' id='contact-us'>
       <div className='container-fluid'>
           <div className='contact__text'>
               <h2 className='contact__text-heading'>{props.headingText}</h2>
@@ -13,20 +13,33 @@ export default function Contact(props) {
 
           <div className='contact__box'>
             <section className='contact__info'>
-              <ul>
+              <ul className='contact__info-days'>
                 <li><span>{props.openDays}</span><span>{props.openHours}</span></li>
+                <li><span>{props.openDaysFriday}</span><span>{props.openHoursFriday}</span></li>
                 <li><span>{props.closedDays}</span><span>{props.closedText}</span></li>
+              </ul>
+              <ul className='contact__info-details'>
                 <li><span>{props.callText}</span><span>{props.telephone}</span></li>
                 <li><span>{props.emailText}</span><a href={"mailto:" + props.email}>{props.email}</a></li>
               </ul>
             </section>
 
             <section className='contact-form__container'>
-              <form className='contact-form__form'>
+              <form className='contact-form__form' method="post" netlify-honeypot="bot-field" data-netlify="true" name="contact">
+                <input type="hidden" name="bot-field" />
                 <input name="name" type="text" placeholder={props.formNameText} required/>
-                <input name="email" type="email" placeholder={props.formEmailText} required/>
-                <input name="telephone" type="text" placeholder={props.formPhoneText} required/>
-                <input name="city" type="text" placeholder={props.formCityText} required/>
+                <div className="fields-container">
+                  <input name="email" type="email" placeholder={props.formEmailText} required/>
+                  <input name="telephone" type="text" placeholder={props.formPhoneText} required/>
+                </div>
+                <div className="fields-container">
+                  <input name="city-pickup" type="text" placeholder={props.formPickupCityText} required/>
+                  <input name="city-dropoff" type="text" placeholder={props.formDropoffCityText} required/>
+                </div>
+                <div className="fields-container">
+                  <input className='pet-number' name="pet-number" type="number" placeholder={props.formPetnumberText} required/>
+                  <input name="pet-info" type="text" placeholder={props.formPetinfoText} required/>
+                </div>
                 <textarea name="message"type="message" placeholder={props.formMessageText} required/>
                 <button className="button-primary" type="submit">{props.buttonText}
                   <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
