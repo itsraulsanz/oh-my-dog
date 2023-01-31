@@ -1,5 +1,14 @@
 {
     "general": {
+        "why-us": "Why us",
+        "services": "Services",
+        "about-us": "About us",
+        "gallery": "Gallery",
+        "testimonials": "Testimonials",
+        "info": "Info",
+        "blog": "Blog",
+        "pet-passport": "Pet passport",
+        "calendar": "Calendar",
         "contact-us": "Contact us"
     },
     "hero": {

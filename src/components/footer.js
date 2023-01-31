@@ -13,22 +13,22 @@ const Footer = () => (
     <nav>
       <ul className="navigation">
         <li className="navigationItem">
-          <Link to="#services" activeClassName="active">
+          <Link to="#services">
             Services
           </Link>
         </li>
         <li className="navigationItem">
-          <Link to="#blog" activeClassName="active">
+          <Link to="#blog">
             Gallery
           </Link>
         </li>
         <li className="navigationItem">
-          <Link to="#about-us" activeClassName="active">
+          <Link to="#about-us">
             About Us
           </Link>
         </li>
         <li className="navigationItem contactus">
-          <Link to="#contact-us" activeClassName="active">
+          <Link to="#contact-us">
             Contact Us
           </Link>
         </li>

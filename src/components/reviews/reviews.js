@@ -4,7 +4,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 import './reviews.scss'
 
-const ReviewsPage = ({userReviews, headingText, descriptionText, reviewsText}) => {  
+const ReviewsPage = ({userReviews, headingText, reviewsText}) => {  
   return (
     <div id='reviews' className='reviews'>
       <div className='container-fluid'>
@@ -16,12 +16,11 @@ const ReviewsPage = ({userReviews, headingText, descriptionText, reviewsText}) =
         <Carousel showArrows={true}>
           {userReviews.childrenGooglePlacesReview.map((review) => {
             return (
-              <div className='review__card'>
+              <div className='review__card' key={review.id}>
                 <div className='review__user'>
                   <img src={review.profile_photo_url} alt={review.author_name} ></img>
                   <strong className='review__user-details'>{review.author_name} <span className={`stars star-rating-${review.rating}`}></span></strong>
                 </div>
-                {/* <p>{`${review.text.substring(0, 250)} ...`}</p> */}
                 <p>{`${review.text.substring(0, 350)}...`}</p>
               </div>
             )
@@ -31,21 +30,5 @@ const ReviewsPage = ({userReviews, headingText, descriptionText, reviewsText}) =
     </div>
   )
 }
-
-// export const query = graphql`
-//   query {
-//     googlePlacesPlace {
-//       name
-//       rating
-//       childrenGooglePlacesReview {
-//         author_name
-//         text
-//         rating
-//         profile_photo_url
-//       }
-//       user_ratings_total
-//     }
-//   }
-// `;
 
 export default ReviewsPage
