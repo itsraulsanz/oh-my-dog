@@ -41,7 +41,7 @@
         }
     },
     "blog": {
-        "title": "Ohmydog Pet Travel vlog!",
+        "title": "Ohmydog Pet Travel blog!",
         "description": "Here you can find helpful information and tips about pet transportation, as well as get to know our team and company better. We will be regularly posting videos and updates to keep you informed and connected with us. Follow our blog to stay up-to-date on all things pet transportation and to learn more about how we can help you and your furry friend."
     },
     "gallery": {
@@ -50,7 +50,6 @@
     },
     "reviews": {
         "title": "Ohmydog Reviews",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "reviewsText": "reviews"
     },
     "passport": {
@@ -74,14 +73,16 @@
     "contact-us": {
         "title": "Contact us",
         "description": "If you have any enquiries regarding to our services, feel free to fill in the next section and we will get in touch with you.",
-        "open-days": "Monday - Friday",
-        "open-hours": "8:30am - 5:30pm",
+        "open-days": "Monday - Thursday",
+        "open-hours": "9:00am - 5:00pm",
+        "open-days-friday": "Friday",
+        "open-hours-friday": "9:00am - 3:00pm",
         "closed-days": "Saturday - Sunday",
         "closed-text": "(Closed)",
         "call-text": "Call us",
-        "phone": "1-659-876-768",
+        "phone": "(+34) 625106705",
         "email-text": "Email us",
-        "email": "Ohmydog@mail.com",
+        "email": "info@omdtravel.com",
         "user-name": "Name",
         "user-email": "Email address",
         "user-phone": "Telephone",
