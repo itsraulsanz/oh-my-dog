@@ -12,11 +12,11 @@ export default function ServicesBlock(props) {
         <div className="services-block__container">
           <section>
           <div className='service-block-card'>
-              <span className='card-icon transport desktop' />
+              <span className='card-icon requirements desktop' />
               <details>
                 <summary>
                   <div className='heading-container'>
-                    <span className='card-icon transport mobile' />
+                    <span className='card-icon requirements mobile' />
                     <h3 className="services-block-card__text-heading">{props.block1Title}</h3>
                   </div>
                     <p className="services-block-card__text-description">{props.block1Text}</p>
@@ -42,7 +42,7 @@ export default function ServicesBlock(props) {
               <details>
                 <summary>
                   <div className='heading-container'>
-                    <span className='card-icon map mobile' />
+                    <span className='card-icon transport mobile' />
                     <h3 className="services-block-card__text-heading">{props.block2Title}</h3>
                   </div>
                   <p className="services-block-card__text-description">{props.block2Text}</p>
