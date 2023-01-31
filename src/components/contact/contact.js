@@ -1,8 +1,85 @@
-import React from 'react'
+import React, { useState, useRef } from "react";
+import { validateEmail } from "../../utils/helpers";
+import emailjs from '@emailjs/browser';
 import './contact.scss'
 
 export default function Contact(props) {
-  const getformEndpoint = "https://getform.io/f/cc4a2a36-9ad6-4112-b183-80434526d3b7"
+  // Create state variables for the fields in the form
+  // We are also setting their initial values to an empty string
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
+  const [telephone, setTelephone] = useState("");
+  const [citypickup, setCitypickup] = useState("");
+  const [citydropoff, setCitydropoff] = useState("");
+  const [petnumber, setPetnumber] = useState("");
+  const [petinfo, setPetinfo] = useState("");
+  const [message, setMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
+
+    // Based on the input type, we set the state of either email, name, and message
+    if (inputType === "email") {
+      setEmail(inputValue);
+    } else if (inputType === "name") {
+      setName(inputValue);
+    } else if (inputType === "telephone") {
+      setTelephone(inputValue);
+    } else if (inputType === "citypickup") {
+      setCitypickup(inputValue);
+    } else if (inputType === "citydropoff") {
+      setCitydropoff(inputValue);
+    } else if (inputType === "petnumber") {
+      setPetnumber(inputValue);
+    } else if (inputType === "petinfo") {
+      setPetinfo(inputValue);
+    } else {
+      setMessage(inputValue);
+    }
+  };
+
+  const serviceID = process.env.GATSBY_APP_YOUR_SERVICE_ID
+  const templateID = process.env.GATSBY_APP_YOUR_TEMPLATE_ID
+  const publicKey = process.env.GATSBY_APP_YOUR_PUBLIC_KEY
+
+  const form = useRef();
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email)) {
+      setErrorMessage("The email is invalid");
+      return;
+    }
+    if (!name) {
+      setErrorMessage("Please enter a valid name");
+      return;
+    }
+    if (!message) {
+      setErrorMessage("Please enter a valid message");
+      return;
+    }
+    alert(`${name}, your email has been sent`);
+
+    setName("");
+    setEmail("");
+    setTelephone("");
+    setCitypickup("");
+    setCitydropoff("");
+    setPetnumber("");
+    setPetinfo("");
+    setMessage("");
+
+    emailjs.sendForm(serviceID, templateID, form.current, publicKey)
+    .then((result) => {
+        // show the user a success message
+    }, (error) => {
+        // show the user an error
+    });
+  };
 
   return (
     <div className='contact' id='contact-us'>
@@ -26,28 +103,32 @@ export default function Contact(props) {
             </section>
 
             <section className='contact-form__container'>
-              <form className='contact-form__form' action={getformEndpoint} method="POST">
-                <input type="hidden" name="_gotcha" />
-                <input name="name" type="text" placeholder={props.formNameText} required/>
+              <form className='contact-form__form' ref={form} onSubmit={handleFormSubmit}>
+                <input onChange={handleInputChange} value={name} name="name" type="text" placeholder={props.formNameText} required/>
                 <div className="fields-container">
-                  <input name="email" type="email" placeholder={props.formEmailText} required/>
-                  <input name="telephone" type="text" placeholder={props.formPhoneText} required/>
+                  <input onChange={handleInputChange} value={email} name="email" type="email" placeholder={props.formEmailText} required/>
+                  <input onChange={handleInputChange} value={telephone} name="telephone" type="text" placeholder={props.formPhoneText} required/>
                 </div>
                 <div className="fields-container">
-                  <input name="city-pickup" type="text" placeholder={props.formPickupCityText} required/>
-                  <input name="city-dropoff" type="text" placeholder={props.formDropoffCityText} required/>
+                  <input onChange={handleInputChange} value={citypickup} name="citypickup" type="text" placeholder={props.formPickupCityText} required/>
+                  <input onChange={handleInputChange} value={citydropoff} name="citydropoff" type="text" placeholder={props.formDropoffCityText} required/>
                 </div>
                 <div className="fields-container">
-                  <input className='pet-number' name="pet-number" type="number" placeholder={props.formPetnumberText} required/>
-                  <input name="pet-info" type="text" placeholder={props.formPetinfoText} required/>
+                  <input onChange={handleInputChange} value={petnumber} className='pet-number' name="petnumber" type="number" placeholder={props.formPetnumberText} required/>
+                  <input onChange={handleInputChange} value={petinfo} name="petinfo" type="text" placeholder={props.formPetinfoText} required/>
                 </div>
-                <textarea name="message"type="message" placeholder={props.formMessageText} required/>
-                <button className="button-primary" type="submit">{props.buttonText}
+                <textarea onChange={handleInputChange} value={message} name="message" type="message" placeholder={props.formMessageText} required/>
+                <button className="button-primary" value="Send" type="submit" onClick={handleFormSubmit}>{props.buttonText}
                   <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.3475 0.547943L13.4482 1.47237L17.2637 5.39431H0.679688V6.7017H17.2636L13.4482 10.6235L14.3475 11.5479L19.6984 6.04794L14.3475 0.547943Z"/>
                   </svg>
                 </button>
               </form>
+              {errorMessage && (
+                <div>
+                  <p className="error-text">{errorMessage}</p>
+                </div>
+              )}
             </section>
           </div>
       </div>
