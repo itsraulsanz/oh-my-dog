@@ -97,7 +97,7 @@ export default function Contact(props) {
                 <li><span>{props.closedDays}</span><span>{props.closedText}</span></li>
               </ul>
               <ul className='contact__info-details'>
-                <li><span>{props.callText}</span><span>{props.telephone}</span></li>
+                <li><span>{props.callText}</span><span><a href={"tel:" + props.telephone}>{props.telephone}</a></span></li>
                 <li><span>{props.emailText}</span><a href={"mailto:" + props.email}>{props.email}</a></li>
               </ul>
             </section>
