@@ -5,7 +5,7 @@ import Language from './language'
 
 import './navigation.scss'
 
-function Navigation() {
+function Navigation(props) {
   let pathname = typeof window !== "undefined" ? window.location.pathname : "";
   const locationLanguage = pathname.split("/")[1];
 
@@ -16,6 +16,8 @@ function Navigation() {
   };
 
   useEffect(() => {
+    document.getElementById("details-submenu").open = true;
+    document.getElementById("details-submenuu").open = true;
     const allDetails = document.querySelectorAll("details")
     const menuElements = document.getElementsByClassName('navigationItem')
 
@@ -29,6 +31,7 @@ function Navigation() {
       });
     }
   })
+
 
   return (
     <header>
@@ -44,30 +47,30 @@ function Navigation() {
         <div className="navigation-container desktop-menu">
           <ul className="navigation">
             <li className="navigationItem submenu">
-              <details open className='details-submenu'>
+              <details className='details-submenu' id='details-submenu'>
                 <summary className='summary-submenu'>
-                  <span className='navigationItem'>Why Us <span className="summary-submenu-arrow"></span></span>
+                  <span className='navigationItem'>{props.whyUs} <span className="summary-submenu-arrow"></span></span>
                 </summary>
                 <div className='details-submenu-list why-us'>
                   <ul className="navigation-submenu-list">
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#services`} activeClassName="active" className='navigationItem-sublist'>
-                        Services
+                      <Link to={`/${locationLanguage}/#services`} className='navigationItem-sublist'>
+                        {props.services}
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#about-us`} activeClassName="active" className='navigationItem-sublist'>
-                        About Us
+                      <Link to={`/${locationLanguage}/#about-us`} className='navigationItem-sublist'>
+                        {props.aboutUs}
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#gallery`} activeClassName="active" className='navigationItem-sublist'>
-                        Gallery
+                      <Link to={`/${locationLanguage}/#gallery`} className='navigationItem-sublist'>
+                        {props.gallery}
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#reviews`} activeClassName="active" className='navigationItem-sublist'>
-                        Testimonials
+                      <Link to={`/${locationLanguage}/#reviews`} className='navigationItem-sublist'>
+                        {props.testimonials}
                       </Link>
                     </li>
                   </ul>
@@ -75,25 +78,25 @@ function Navigation() {
               </details>
             </li>
             <li className="navigationItem submenu medium-show">
-              <details open className='details-submenu'>
+              <details className='details-submenu' id='details-submenuu'>
                 <summary className='summary-submenu'>
-                  <span className='navigationItem'>Info <span className="summary-submenu-arrow"></span></span>
+                  <span className='navigationItem'>{props.info} <span className="summary-submenu-arrow"></span></span>
                 </summary>
                 <div className='details-submenu-list more-info'>
                   <ul className="navigation-submenu-list">
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#blog`} activeClassName="active" className='navigationItem-sublist'>
-                        Blog
+                      <Link to={`/${locationLanguage}/#blog`} className='navigationItem-sublist'>
+                        {props.blog}
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#passport`} activeClassName="active" className='navigationItem-sublist'>
-                        Pet passport
+                      <Link to={`/${locationLanguage}/#passport`} className='navigationItem-sublist'>
+                        {props.petPassport}
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#trips`} activeClassName="active" className='navigationItem-sublist'>
-                        Calendar
+                      <Link to={`/${locationLanguage}/#trips`} className='navigationItem-sublist'>
+                        {props.calendar}
                       </Link>
                     </li>
                   </ul>
@@ -101,45 +104,45 @@ function Navigation() {
               </details>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#blog`} activeClassName="active" className='navigationItem-main'>
-                Blog
+              <Link to={`/${locationLanguage}/#blog`} className='navigationItem-main'>
+                {props.blog}
               </Link>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#passport`} activeClassName="active" className='navigationItem-main'>
-                Pet passport
+              <Link to={`/${locationLanguage}/#passport`} className='navigationItem-main'>
+                {props.petPassport}
               </Link>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#trips`} activeClassName="active" className='navigationItem-main'>
-                Calendar
+              <Link to={`/${locationLanguage}/#trips`} className='navigationItem-main'>
+                {props.calendar}
               </Link>
             </li>
             <li className="navigationItem">
-              <Link to={`/${locationLanguage}/#contact-us`} activeClassName="active" className='navigationItem-main'>
-                Contact Us
+              <Link to={`/${locationLanguage}/#contact-us`} className='navigationItem-main'>
+                {props.contactUs}
               </Link>
             </li>
           </ul>
           <ul className="social-media">
             <li className='navigationItem'>
-              <a href="https://instagram.com/ohmydog_pet_transport/" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item instagram">
+              <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" className="social-media-item instagram">
               </a>
             </li>
             <li className='navigationItem'>
-              <a href="https://www.facebook.com/ohmydog.pettravel" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item facebook">
+              <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" className="social-media-item facebook">
               </a>
             </li>
             <li className='navigationItem'>
-              <a href="https://www.tiktok.com/@ohmydogpettravel" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item tiktok">
+              <a href="https://www.tiktok.com/@ohmydogpettravel" target="_blank" rel="noreferrer" className="social-media-item tiktok">
               </a>
             </li>
             <li className='navigationItem'>
-              <a href="https://www.youtube.com/@ohmydogpettravel2763" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item youtube">
+              <a href="https://www.youtube.com/@ohmydogpettravel2763" target="_blank" rel="noreferrer" className="social-media-item youtube">
               </a>
             </li>
             <li className='navigationItem'>
-              <a href="facebook" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item google">
+              <a href="facebook" target="_blank" rel="noreferrer" className="social-media-item google">
               </a>
             </li>
           </ul>
@@ -168,65 +171,65 @@ function Navigation() {
               </ul>
               <ul className="mobile-navigation-menu">
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#services`} activeClassName="active" className='navigationItem-link'>
-                    Services
+                  <Link to={`/${locationLanguage}/#services`} className='navigationItem-link'>
+                    {props.services}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#about-us`} activeClassName="active" className='navigationItem-link'>
-                    About Us
+                  <Link to={`/${locationLanguage}/#about-us`} className='navigationItem-link'>
+                    {props.aboutUs}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#gallery`} activeClassName="active" className='navigationItem-link'>
-                    Gallery
+                  <Link to={`/${locationLanguage}/#gallery`} className='navigationItem-link'>
+                    {props.gallery}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#reviews`} activeClassName="active" className='navigationItem-link'>
-                    Testimonials
+                  <Link to={`/${locationLanguage}/#reviews`} className='navigationItem-link'>
+                    {props.testimonials}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#blog`} activeClassName="active" className='navigationItem-link'>
-                    Blog
+                  <Link to={`/${locationLanguage}/#blog`} className='navigationItem-link'>
+                    {props.blog}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#passport`} activeClassName="active" className='navigationItem-link'>
-                    Pet passport
+                  <Link to={`/${locationLanguage}/#passport`} className='navigationItem-link'>
+                    {props.petPassport}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#trips`} activeClassName="active" className='navigationItem-link'>
-                    Calendar
+                  <Link to={`/${locationLanguage}/#trips`} className='navigationItem-link'>
+                    {props.calendar}
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#contact-us`} activeClassName="active" className='navigationItem-link'>
-                    Contact Us
+                  <Link to={`/${locationLanguage}/#contact-us`} className='navigationItem-link'>
+                    {props.contactUs}
                   </Link>
                 </li>
               </ul>
               <ul className="social-media">
                 <li className='navigationItem'>
-                  <a href="https://instagram.com/ohmydog_pet_transport/" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item instagram">
+                  <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" className="social-media-item instagram">
                   </a>
                 </li>
                 <li className='navigationItem'>
-                  <a href="https://www.facebook.com/ohmydog.pettravel" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item facebook">
+                  <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" className="social-media-item facebook">
                   </a>
                 </li>
                 <li className='navigationItem'>
-                  <a href="https://www.tiktok.com/@ohmydogpettravel" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item tiktok">
+                  <a href="https://www.tiktok.com/@ohmydogpettravel" target="_blank" rel="noreferrer" className="social-media-item tiktok">
                   </a>
                 </li>
                 <li className='navigationItem'>
-                  <a href="https://www.youtube.com/@ohmydogpettravel2763" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item youtube">
+                  <a href="https://www.youtube.com/@ohmydogpettravel2763" target="_blank" rel="noreferrer" className="social-media-item youtube">
                   </a>
                 </li>
                 <li className='navigationItem'>
-                  <a href="facebook" activeClassName="active" target="_blank" rel="noreferrer" className="social-media-item google">
+                  <a href="facebook" target="_blank" rel="noreferrer" className="social-media-item google">
                   </a>
                 </li>
               </ul>
