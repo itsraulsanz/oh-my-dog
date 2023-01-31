@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Language from './language'
 
 import Logo from '../images/logo-footer.svg'
 
