@@ -1,61 +1,104 @@
 {
+    "general": {
+        "why-us": "Ventajas",
+        "services": "Servicios",
+        "about-us": "Sobre nosotros",
+        "gallery": "Galería",
+        "testimonials": "Testimonios",
+        "info": "Info",
+        "blog": "Blog",
+        "pet-passport": "Pasaporte",
+        "calendar": "Calendario",
+        "contact-us": "Contacto"
+    },
     "hero": {
-        "title": "Viaje para tu mascota en Primera Clase",
-        "description": "El confort y seguridad de tu mascota en el viaje son nuestra prioridad. Ofrecemos un servicio puerta a puerta con dos conductores con formación en comportamiento animal.",
+        "title": "El viaje de tu mascota en primera clase",
+        "description": "Nuestro objetivo es la comodidad y Seguridad de tu mascota durante el viaje. Ofrecemos un servicio puerta a puerta de lujo con dos conductores formados en bienestar animal.",
         "button": "Contacto"
     },
     "services-block": {
         "title": "Servicios que ofrecemos",
+        "description": "Confía en nosotros para transportar a su mascota de forma segura y cómoda con la última tecnología.",
+        "button": "Leer más",
         "block-1": {
-            "title": "Vehículos",
-            "text": "Vehicles with international pet transport license type 2 approved in the EU and the UK."
+            "title": "Requisitos",
+            "text": "Seguimos todos los requisitos legales para transportar a sus mascotas y garantizar su seguridad y comodidad.",
+            "advantage1": "Equipo altamente capacitado con cursos de bienestar animal.",
+            "advantage2": "Vehículos que posean licencias DEFRA (Reino Unido) y ATES (UE).",
+            "advantage3": "Plan de contingencia establecido en casos de emergencia."
         },
         "block-2": {
-            "title": "Temperatura",
-            "text": "Trained drivers with animal welfare courses. The best van conversions for pet travelling."
+            "title": "Vehículos",
+            "text": "Nuestros vehículos están adaptados con la última tecnología en el transporte animal, incluyendo:",
+            "advantage1": "Localizador GPS que permite ver la ubicación y temperatura.",
+            "advantage2": "Cámaras web que muestran el interior del vehículo.",
+            "advantage3": "Sistema de temperatura controlada.",
+            "advantage4": "Suelos acolchados."
         },
         "block-3": {
+            "title": "Tecnología antiestrés",
+            "text": "Nuestras furgonetas están diseñadas pensando en la comodidad y el bienestar de tu mascota. Las características interiores:",
+            "advantage1": "Decoración antiestrés y música relajante: mantiene a tu mascota tranquila y relajada durante el trayecto.",
+            "advantage2": "Ciclo de luz natural: ayuda a regular el reloj biológico de tu mascota, haciéndole más cómodo el viaje."
+        },
+        "block-4": {
             "title": "Paradas",
-            "text": "The best van conversions for pet travelling."
+            "text": "Entendemos que las mascotas necesitan descansos regulares y atención durante los viajes largos. Por eso hacemos paradas periódicas para:",
+            "advantage1": "Pasear a los perros.",
+            "advantage2": "Asegurarnos que los perros, gatos y otros animales estén hidratados, alimentados y que sus jaulas estén limpias.",
+            "advantage3": "Enviar muchas actualizaciones a sus familias con fotos y videos."
         }
     },
     "blog": {
-        "title": "Oh my dog - Blog",
-        "description": "Comprueba toda la información acerca del pasaporte de tu mascota en el PDF clicando el link"
+        "title": "¡Blog de viajes de mascotas de Ohmydog!",
+        "description": "Aquí puedes encontrar información útil y consejos sobre el transporte de mascotas, así como conocer mejor a nuestro equipo. Publicaremos regularmente videos y actualizaciones para mantenerte informado y conectado con nosotros. Sigue nuestro vlog para mantenerse actualizado sobre todo lo relacionado con el transporte de mascotas y para obtener más información sobre cómo podemos ayudarte a ti y a tu amigo peludo."
     },
-    "passport-banner": {
-        "title": "¿Cómo validar el pasaporte de tu mascota?",
-        "description": "Comprueba toda la información acerca del pasaporte de tu mascota en el PDF clicando el link",
-        "button-text": "¿Cómo completar el Pasaporte de tu Mascota.pdf"
+    "gallery": {
+        "title": "Galería Ohmydog",
+        "description": "¡Bienvenido a nuestra sección de galería! Aquí puede ver fotos de nuestros vehículos y nuestros pasajeros peludos!"
+    },
+    "reviews": {
+        "title": "Ohmydog Testimonios",
+        "reviewsText": "reseñas"
+    },
+    "passport": {
+        "title": "¿Cómo comprobar el pasaporte de una mascota?",
+        "description1": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:",
+        "button-text": "Pasaporte de tu mascota.pdf"
     },
     "about-us": {
-        "title": "Sobre nosotros",
-        "description1": "Ohmydog Pet Travel: Somos un servicio de viaje de mascotas internacional especializado en viajes cortos y seguros entre Reino Unido, Irlanda y España.",
-        "description2": "Ofrecemos un cuidad servicio de entrega puerta a puerta.",
-        "description3": "Lorem ipsum",
-        "description4": "Lorem ipsum",
-        "description5": "Lorem ipsum"
+        "title": "Acerca de nosotros",
+        "description1": "Bienvenido a Ohmydog, una empresa de transporte de mascotas confiable. Nuestra principal prioridad es la seguridad y la comodidad de tu amigo peludo. Entendemos que dejar a su mascota puede ser estresante y emotivo, por lo que nos esforzamos por hacer que el proceso de transporte sea lo más cómodo y libre de estrés posible.",
+        "description2": "Nuestro equipo de profesionales experimentados y dedicados se encargará de todos los aspectos del transporte de su mascota, desde la recogida hasta la entrega.",
+        "description3": "Nuestros vehículos de última generación están equipados con la última tecnología y recursos, que incluyen control de temperatura, suelos acolchados, música relajante y una decoración antiestrés para garantizar un viaje tranquilo y sin estrés para su mascota.",
+        "description4": "Por eso, si necesitas transportar a tu mascota, ya sea para una mudanza o para unas vacaciones, confía en Ohmydog para brindarte la mejor atención y servicio. Contáctenos hoy para obtener más información y comenzar a planificar los viajes de su mascota."   
     },
     "our-trips-banner": {
-        "title": "Nuestros viajes para 2022",
-        "description": "Puedes revisar futuras fechas de nuestros viajes en el siguiente link",
-        "button-text": "Programa de Viajes 2022.pdf"
+        "title": "Nuestros viajes para ",
+        "description1": "Puedes consultar toda la información sobre nuestro programa de viajes para ",
+        "description2": " en el siguiente pdf:",
+        "button-text": "ProgramaDeViajes.pdf"
     },
     "contact-us": {
         "title": "Contáctanos",
         "description": "Si tienes cualquier duda sobre nuestros servicios, por favor rellena el formulario y nos pondremos en contacto cuanto antes. También puedes llamarnos durante nuestras horas de apertura.",
-        "open-days": "Lunes - Viernes",
-        "open-hours": "8:30 - 17:30",
+        "open-days": "Lunes - Jueves",
+        "open-hours": "9:00h - 17:00h",
+        "open-days-friday": "Viernes",
+        "open-hours-friday": "9:00h - 15:00h",
         "closed-days": "Sábado - Domingo",
         "closed-text": "(Cerrado)",
         "call-text": "Llámanos",
-        "phone": "1-659-876-768",
+        "phone": "625106705",
         "email-text": "Envíanos un Email",
-        "email": "Ohmydog@mail.com",
+        "email": "info@omdtravel.com",
         "user-name": "Nombre",
         "user-email": "Correo electrónico",
         "user-phone": "Teléfono",
-        "user-city": "Ciudad de recogida",
+        "user-pickup-city": "Ciudad de recogida",
+        "user-dropoff-city": "Ciudad de entrega",
+        "user-pet-number": "Núm. de mascotas",
+        "user-pet-info": "Especie, raza, edad y peso",
         "user-message": "Mensaje",
         "btn-text": "Enviar mensaje"
     }
