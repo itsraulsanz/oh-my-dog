@@ -20,7 +20,7 @@ const ImageGallery = ({galleryImages, headingText, descriptionText}) => {
         <div className='gallery__container'>
           <ul className='gallery__list'>
             {galleryImages.map((galleryImage, index) => (
-              <li className={`gallery__list-image ${index}`} onClick={() => 
+              <li className={`gallery__list-image ${index}`} key={index} onClick={() => 
                 {setOpenedItem(index); setIsOpen(!isOpen);}
               }>
                 <GatsbyImage alt={galleryImage.title} image={galleryImage.image.gatsbyImage} key={index} />
