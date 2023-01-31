@@ -1,8 +1,6 @@
 import React from 'react';
-import { graphql } from "gatsby";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-import ReactDOM from 'react-dom';
 
 import './reviews.scss'
 
@@ -12,7 +10,6 @@ const ReviewsPage = ({userReviews, headingText, descriptionText, reviewsText}) =
       <div className='container-fluid'>
         <div className='reviews__heading'>
           <h2 className='reviews__heading-title'>{headingText}</h2>
-          <p className='reviews__heading-description'>{descriptionText}</p>
           <div className='reviews__heading-rating'>
             <p className='reviews__heading-rating'><span className='bold'>{userReviews.rating}.0</span> <span className={`stars star-rating-${userReviews.rating}`}></span> {userReviews.user_ratings_total} {reviewsText}</p></div>
         </div>

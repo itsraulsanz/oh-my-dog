@@ -126,12 +126,16 @@
                     height: 64px;
                 }
 
+                &.requirements {
+                    background: url(../../images/icon-pets.svg) no-repeat;
+                    background-size: cover;
+                }
                 &.transport {
                     background: url(../../images/icon-transport.svg) no-repeat;
                     background-size: cover;
                 }
                 &.map {
-                    background: url(../../images/icon-map.svg) no-repeat;
+                    background: url(../../images/icon-arrivals.svg) no-repeat;
                     background-size: cover;
                 }
                 &.relaxing {
