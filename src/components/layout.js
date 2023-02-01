@@ -30,10 +30,27 @@ class Template extends React.Component {
           blog={intl.formatMessage({ id: "general.blog" })}
           petPassport={intl.formatMessage({ id: "general.pet-passport" })}
           calendar={intl.formatMessage({ id: "general.calendar" })}
-          contactUs={intl.formatMessage({ id: "general.contact-us" })}
+          contact={intl.formatMessage({ id: "general.contact" })}
         />
         <main>{children}</main>
-        <Footer />
+        <Footer 
+          location={this.props.location} 
+          whyUs={intl.formatMessage({ id: "general.why-us" })}
+          services={intl.formatMessage({ id: "general.services" })}
+          aboutUs={intl.formatMessage({ id: "general.about-us" })}
+          gallery={intl.formatMessage({ id: "general.gallery" })}
+          testimonials={intl.formatMessage({ id: "general.testimonials" })}
+          info={intl.formatMessage({ id: "general.info" })}
+          blog={intl.formatMessage({ id: "general.blog" })}
+          petPassport={intl.formatMessage({ id: "general.pet-passport" })}
+          calendar={intl.formatMessage({ id: "general.calendar" })}
+          contact={intl.formatMessage({ id: "general.contact" })}
+          contactUs={intl.formatMessage({ id: "general.contact-us" })}
+          callText={intl.formatMessage({ id: "contact-us.user-phone" })} 
+          telephone={intl.formatMessage({ id: "contact-us.phone" })}
+          emailText={intl.formatMessage({ id: "contact-us.user-email" })} 
+          email={intl.formatMessage({ id: "contact-us.email" })}
+        />
       </>
     )
   }

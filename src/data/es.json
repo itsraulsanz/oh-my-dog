@@ -9,7 +9,8 @@
         "blog": "Blog",
         "pet-passport": "Pasaporte",
         "calendar": "Calendario",
-        "contact-us": "Contacto"
+        "contact": "Contacto",
+        "contact-us": "Contáctanos"
     },
     "hero": {
         "title": "El viaje de tu mascota en primera clase",
@@ -36,7 +37,7 @@
             "advantage4": "Suelos acolchados."
         },
         "block-3": {
-            "title": "Tecnología antiestrés",
+            "title": "Tecn. antiestrés",
             "text": "Nuestras furgonetas están diseñadas pensando en la comodidad y el bienestar de tu mascota. Las características interiores:",
             "advantage1": "Decoración antiestrés y música relajante: mantiene a tu mascota tranquila y relajada durante el trayecto.",
             "advantage2": "Ciclo de luz natural: ayuda a regular el reloj biológico de tu mascota, haciéndole más cómodo el viaje."
@@ -93,7 +94,7 @@
         "email-text": "Envíanos un Email",
         "email": "info@omdtravel.com",
         "user-name": "Nombre",
-        "user-email": "Correo electrónico",
+        "user-email": "Email",
         "user-phone": "Teléfono",
         "user-pickup-city": "Ciudad de recogida",
         "user-dropoff-city": "Ciudad de entrega",
