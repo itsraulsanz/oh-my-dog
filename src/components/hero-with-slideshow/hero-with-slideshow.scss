@@ -11,9 +11,17 @@
     transform: translateX(-50%);
     width: 100vw;
 
-    @media (min-width: 600px) {
+    @media (min-width: 650px) {
         margin-bottom: 80px;
         padding-top: 20px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+
+        @media (min-width: 650px) {
+            flex-direction: row;
+        }
     }
 
     svg {
@@ -27,7 +35,7 @@
         width: 100%;
         justify-content: center;
 
-        @media only screen and (min-width: 600px) {
+        @media only screen and (min-width: 650px) {
             display: flex;
             flex-direction: column;
             width: 40%;
@@ -37,26 +45,29 @@
             width: 50%;
         }
 
-        h2 {
+        &-heading {
             margin-top: 0;
-            line-height: 48px;
+            text-align: center;
+            font-size: 22px;
+            line-height: 28px;
 
-            @media only screen and (max-width: 399px) {
-                font-size: 22px;
-                line-height: 28px;
+            @media only screen and (min-width: 650px) {
+                text-align: left;
             }
 
-            @media only screen and (min-width: 400px) and (max-width: 800px) {
+            @media only screen and (min-width: 800px) {
                 font-size: 30px;
                 line-height: 38px;
             }
 
         }
 
-        p.hero-with-slideshow__text-description {
+        &-description {
             font-size: 16px;
+            text-align: center;
 
-            @media (min-width: 600px) {
+            @media (min-width: 650px) {
+                text-align: left;
                 font-size: 18px;
             }
 
@@ -70,7 +81,7 @@
             width: fit-content;
             margin: 30px auto;
 
-            @media (min-width: 600px) {
+            @media (min-width: 650px) {
                 margin: 30px 0;
             }
         }
@@ -86,7 +97,7 @@
             width: auto;
             max-height: 80px;
 
-            @media (min-width: 600px) {
+            @media (min-width: 650px) {
                 max-height: unset;
                 scale: 0.9;
             }
@@ -98,7 +109,7 @@
             width: 50%;
             max-height: unset;
 
-            @media (min-width: 600px) {
+            @media (min-width: 650px) {
                 max-height: unset;
                 scale: 1;
             }
@@ -108,7 +119,7 @@
             opacity: 5;
             max-height: 250px;
 
-            @media (min-width: 600px) {
+            @media (min-width: 650px) {
                 max-height: unset;
             }
         }
@@ -117,7 +128,7 @@
     .carousel-root {
         width: 100%;
 
-        @media (min-width: 600px) {
+        @media (min-width: 650px) {
             width: 50%;
         }
 
@@ -132,7 +143,7 @@
     height: auto;
     max-height: 320px;
 
-    @media (min-width: 600px) {
+    @media (min-width: 650px) {
         width: 270px;
         height: 350px;
         margin-right: 5%;
