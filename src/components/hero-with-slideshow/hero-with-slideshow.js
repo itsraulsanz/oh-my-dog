@@ -13,7 +13,7 @@ import Image3 from '../../images/img-slider-3.png'
 export default function HeroWithSlideshow(props) {
   return (
     <div className="hero-with-slideshow">
-      <div className="container-fluid">
+      <div className="container-fluid hero-container">
           <div className="hero-with-slideshow__text">
               <h2 className="hero-with-slideshow__text-heading">{props.headingText}</h2>
               <p className="hero-with-slideshow__text-description">{props.descriptionText}</p>

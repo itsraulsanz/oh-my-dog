@@ -120,14 +120,13 @@ function Navigation(props) {
             </li>
             <li className="navigationItem">
               <Link to={`/${locationLanguage}/#contact-us`} className='navigationItem-main'>
-                {props.contactUs}
+                {props.contact}
               </Link>
             </li>
           </ul>
           <ul className="social-media">
             <li className='navigationItem'>
-              <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" className="social-media-item instagram">
-              </a>
+              <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" className="social-media-item instagram"></a>
             </li>
             <li className='navigationItem'>
               <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" className="social-media-item facebook">
@@ -207,14 +206,13 @@ function Navigation(props) {
                 </li>
                 <li className="navigationItem">
                   <Link to={`/${locationLanguage}/#contact-us`} className='navigationItem-link'>
-                    {props.contactUs}
+                    {props.contact}
                   </Link>
                 </li>
               </ul>
               <ul className="social-media">
                 <li className='navigationItem'>
-                  <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" className="social-media-item instagram">
-                  </a>
+                  <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" className="social-media-item instagram"></a>
                 </li>
                 <li className='navigationItem'>
                   <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" className="social-media-item facebook">

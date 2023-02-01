@@ -9,6 +9,7 @@
         "blog": "Blog",
         "pet-passport": "Pet passport",
         "calendar": "Calendar",
+        "contact": "Contact",
         "contact-us": "Contact us"
     },
     "hero": {
@@ -93,7 +94,7 @@
         "email-text": "Email us",
         "email": "info@omdtravel.com",
         "user-name": "Name",
-        "user-email": "Email address",
+        "user-email": "Email",
         "user-phone": "Telephone",
         "user-pickup-city": "Pick up city",
         "user-dropoff-city": "Drop off city",
