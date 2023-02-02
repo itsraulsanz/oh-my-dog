@@ -6,9 +6,9 @@ import { Autoplay, EffectCards } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-cards";
 
-import Image1 from '../../images/img-slider-1.png'
-import Image2 from '../../images/img-slider-2.png'
-import Image3 from '../../images/img-slider-3.png'
+import Image1 from '../../images/img-slider-1.webp'
+import Image2 from '../../images/img-slider-2.webp'
+import Image3 from '../../images/img-slider-3.webp'
 
 export default function HeroWithSlideshow(props) {
   return (
@@ -22,9 +22,9 @@ export default function HeroWithSlideshow(props) {
               </a>
           </div>
           <Swiper autoplay={{ delay: 3000, disableOnInteraction: false }} effect={"cards"} grabCursor={true} modules={[Autoplay, EffectCards]} className="mySwiper">
-            <SwiperSlide><img src={Image1} /></SwiperSlide>
-            <SwiperSlide><img src={Image2} /></SwiperSlide>
-            <SwiperSlide><img src={Image3} /></SwiperSlide>
+            <SwiperSlide><img src={Image1} alt="Trip with a cat" width={790} height={810} /></SwiperSlide>
+            <SwiperSlide><img src={Image2} alt="Van's front view" width={1024} height={683} /></SwiperSlide>
+            <SwiperSlide><img src={Image3} alt="Trip collage" width={480} height={611} /></SwiperSlide>
           </Swiper>
       </div>
       <svg width="500" height="80" viewBox="0 0 500 80" preserveAspectRatio="none">
