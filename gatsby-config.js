@@ -5,8 +5,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "OMD Pet Travel",
-    description: "Your pets trip in First Class",
-    siteUrl: `https://www.omdtravel.com`
+    description: "Your pets trip in First Class"
+    // siteUrl: `https://www.omdtravel.com`
   },
   plugins: [
     "gatsby-transformer-sharp",
