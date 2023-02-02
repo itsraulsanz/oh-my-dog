@@ -48,7 +48,7 @@ module.exports = {
         background_color: `#FFFFFF`,
         theme_color: `#ED7C23`,
         display: `standalone`,
-        icon: `src/images/logo.svg`,
+        icon: `src/images/logo-favicon.svg`,
         icon_options: {
           purpose: `any maskable`,
         },
