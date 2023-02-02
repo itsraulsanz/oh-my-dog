@@ -14,7 +14,7 @@ export default function TextBlock(props) {
                <p className='text-block__text-description'>{props.bodyText4}</p>
                <p className='text-block__text-description'>{props.bodyText5}</p>
                <p className='text-block__text-description'>{props.bodyText6}</p>
-              <img src={props.logo} alt='Logo Defra' width='100px' />
+              <img src={props.logo} alt='Logo Defra' />
           </div>
       </div>
     </div>
