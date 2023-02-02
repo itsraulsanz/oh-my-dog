@@ -64,18 +64,13 @@
             }
 
             p.text-block-2columns__text-description {
-                font-size: 16px;
+                font-size: 14px;
                 text-align: left;
                 line-height: 28px;
-                text-align: left;
                 padding: 0 0 15px;
                 margin: 0;
     
                 @media (min-width: 600px) {
-                    font-size: 18px;
-                }
-    
-                @media (min-width: 900px) {
                     font-size: 16px;
                 }
             }
