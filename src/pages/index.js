@@ -18,7 +18,7 @@ import Contact from '../components/contact/contact'
 import Calendar from '../pdf/TripsProgram.pdf'
 import Passport from '../pdf/HowtoCompletePetPassports.pdf'
 
-import LogoDefra from '../images/logo-defra.png'
+import LogoDefra from '../images/logo-defra.webp'
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
