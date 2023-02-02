@@ -4,8 +4,9 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Contentful Starter",
-    description: "Official Contentful Gatsby Starter",
+    title: "OMD Pet Travel",
+    description: "Your pets trip in First Class",
+    siteUrl: `https://www.omdtravel.com`
   },
   plugins: [
     "gatsby-transformer-sharp",
@@ -37,6 +38,22 @@ module.exports = {
         defaultLanguage: `en`,
         redirect: true
       },
-    }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `OMD Pet Travel`,
+        short_name: `OMD`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#ED7C23`,
+        display: `standalone`,
+        icon: `src/images/logo.svg`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
+      },
+    },
+    "gatsby-plugin-offline"
   ],
 };
