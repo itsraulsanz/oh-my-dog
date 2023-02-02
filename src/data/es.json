@@ -90,7 +90,7 @@
         "closed-days": "Sábado - Domingo",
         "closed-text": "(Cerrado)",
         "call-text": "Llámanos",
-        "phone": "625106705",
+        "phone": "+656830322",
         "email-text": "Envíanos un Email",
         "email": "info@omdtravel.com",
         "user-name": "Nombre",
@@ -102,5 +102,10 @@
         "user-pet-info": "Especie, raza, edad y peso",
         "user-message": "Mensaje",
         "btn-text": "Enviar mensaje"
+    },
+    "error": {
+        "title": "¡Oops!",
+        "description1": "404 Página no encontrada.",
+        "button-text": "Volver a la home"
     }
 }

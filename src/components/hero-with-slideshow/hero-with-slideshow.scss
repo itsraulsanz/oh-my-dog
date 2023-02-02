@@ -7,13 +7,12 @@
     margin-left: 50%;
     margin-bottom: 50px;
     -webkit-transform: translateX(-50%);
-    padding-top: 100px;
+    padding-top: 20px;
     transform: translateX(-50%);
     width: 100vw;
 
     @media (min-width: 650px) {
         margin-bottom: 80px;
-        padding-top: 20px;
     }
 
     .hero-container {
@@ -171,4 +170,8 @@
     font-size: 22px;
     font-weight: bold;
     color: #fff;
+
+    img {
+        height: inherit;
+    }
 }
