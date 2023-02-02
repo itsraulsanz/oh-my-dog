@@ -23,10 +23,15 @@ export default function TextBanner(props) {
                    <span>{props.descriptionText2}</span>
                 }
               </p>
-              <a className="button-secondary" href={props.pdf} target="_blank">{props.buttonText}</a>
+              {props.pdf &&
+                <a className="button-secondary" href={props.pdf} target="_blank">{props.buttonText}</a>
+              }
+              {!props.pdf &&
+                <a className="button-secondary" href='/'>{props.buttonText}</a>
+              }
               <div className='text-banner__background'>
-                <img src={Footprint} className='footprint-left' />
-                <img src={Footprint} className='footprint-right' />
+                <img src={Footprint} className='footprint-left' alt='Footprint background' />
+                <img src={Footprint} className='footprint-right' alt='Footprint background' />
               </div>
           </div>
       </div>
