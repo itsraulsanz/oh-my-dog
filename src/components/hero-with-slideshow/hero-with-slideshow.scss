@@ -47,8 +47,7 @@
         &-heading {
             margin-top: 0;
             text-align: center;
-            font-size: 22px;
-            line-height: 28px;
+            line-height: 34px;
 
             @media only screen and (min-width: 650px) {
                 text-align: left;
@@ -138,15 +137,18 @@
 }
 
 .swiper.swiper-cards {
-    width: 60%;
-    height: auto;
-    max-height: 320px;
+    width: 228px;
+    height: 300px;
+
+    @media (min-width: 400px) {
+        width: 296px;
+        height: 400px;
+    }
 
     @media (min-width: 650px) {
         width: 270px;
         height: 350px;
         margin-right: 5%;
-        max-height: unset;
     }
 
     @media (min-width: 900px) {
