@@ -20,12 +20,12 @@ export default function ServicesBlock(props) {
                     <h3 className="services-block-card__text-heading">{props.block1Title}</h3>
                   </div>
                     <p className="services-block-card__text-description">{props.block1Text}</p>
-                  <a className='read-more_button'>
+                  <div className='read-more_button'>
                     {props.buttonText}
                     <svg xmlns="http://www.w3.org/2000/svg" width="14.995" height="14.972" className='read-more_button-arrow'>
                       <path d="M90 24.25a3.499 3.499 0 0 0-5.974-2.475L45 60.8 5.975 21.775a3.5 3.5 0 1 0-4.95 4.95l41.5 41.5a3.499 3.499 0 0 0 4.949 0l41.5-41.5A3.487 3.487 0 0 0 90 24.25Z" transform="matrix(.16667 0 0 .16667 -.002 -.014)"/>
                     </svg>
-                  </a>
+                  </div>
                 </summary>
                 <div className='details-container'>
                   <ul className='check-list'>
@@ -46,12 +46,12 @@ export default function ServicesBlock(props) {
                     <h3 className="services-block-card__text-heading">{props.block2Title}</h3>
                   </div>
                   <p className="services-block-card__text-description">{props.block2Text}</p>
-                  <a className='read-more_button'>
+                  <div className='read-more_button'>
                     {props.buttonText}
                     <svg xmlns="http://www.w3.org/2000/svg" width="14.995" height="14.972" className='read-more_button-arrow'>
                       <path d="M90 24.25a3.499 3.499 0 0 0-5.974-2.475L45 60.8 5.975 21.775a3.5 3.5 0 1 0-4.95 4.95l41.5 41.5a3.499 3.499 0 0 0 4.949 0l41.5-41.5A3.487 3.487 0 0 0 90 24.25Z" transform="matrix(.16667 0 0 .16667 -.002 -.014)"/>
                     </svg>
-                  </a>                
+                  </div>                
                 </summary>
                 <div className='details-container'>
                   <ul className='check-list'>
@@ -75,12 +75,12 @@ export default function ServicesBlock(props) {
                     <h3 className="services-block-card__text-heading">{props.block3Title}</h3>
                   </div>
                   <p className="services-block-card__text-description">{props.block3Text}</p>
-                  <a className='read-more_button'>
+                  <div className='read-more_button'>
                     {props.buttonText}
                     <svg xmlns="http://www.w3.org/2000/svg" width="14.995" height="14.972" className='read-more_button-arrow'>
                       <path d="M90 24.25a3.499 3.499 0 0 0-5.974-2.475L45 60.8 5.975 21.775a3.5 3.5 0 1 0-4.95 4.95l41.5 41.5a3.499 3.499 0 0 0 4.949 0l41.5-41.5A3.487 3.487 0 0 0 90 24.25Z" transform="matrix(.16667 0 0 .16667 -.002 -.014)"/>
                     </svg>
-                  </a>
+                  </div>
                 </summary>
                 <div className='details-container'>
                   <ul className='check-list'>
@@ -100,12 +100,12 @@ export default function ServicesBlock(props) {
                     <h3 className="services-block-card__text-heading">{props.block4Title}</h3>
                   </div>
                   <p className="services-block-card__text-description">{props.block4Text}</p>
-                  <a className='read-more_button'>
+                  <div className='read-more_button'>
                     {props.buttonText}
                     <svg xmlns="http://www.w3.org/2000/svg" width="14.995" height="14.972" className='read-more_button-arrow'>
                       <path d="M90 24.25a3.499 3.499 0 0 0-5.974-2.475L45 60.8 5.975 21.775a3.5 3.5 0 1 0-4.95 4.95l41.5 41.5a3.499 3.499 0 0 0 4.949 0l41.5-41.5A3.487 3.487 0 0 0 90 24.25Z" transform="matrix(.16667 0 0 .16667 -.002 -.014)"/>
                     </svg>
-                  </a>
+                  </div>
                 </summary>
                 <div className='details-container'>
                   <ul className='check-list'>
