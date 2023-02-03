@@ -85,7 +85,8 @@
         }
     }
 
-    .swiper.swiper-cards {
+    .swiper.swiper-cards, .swiper.swiper-cards img {
+        max-width: 300px;
         width: 230px;
         height: 240px;
     
@@ -122,9 +123,9 @@
         font-weight: bold;
         color: #fff;
 
-        img {
-            height: inherit;
-            width: auto;
-        }
+        // img {
+        //     height: inherit;
+        //     width: auto;
+        // }
     }    
 }
