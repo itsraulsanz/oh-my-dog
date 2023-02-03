@@ -95,17 +95,22 @@
                 }
             }
 
-            .read-more_button {
+            div.read-more_button {
                 display: flex;
                 align-items: center;
                 gap: 10px;
+                color: $core-color-primary;
 
                 .read-more_button-arrow {
                     fill: $core-color-primary;
                 }
 
-                &:hover .read-more_button-arrow {
-                    fill: $core-color-secondary;
+                &:hover {
+                    color: $core-color-secondary;
+
+                    .read-more_button-arrow {
+                        fill: $core-color-secondary;
+                    }
                 }
             }
 

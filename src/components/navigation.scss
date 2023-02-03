@@ -199,9 +199,9 @@ ul.navigation {
     display: flex;
   }
   
-  a.language {
+  button.language {
     margin: 0;
-    padding: 5px 8px;
+    padding: 9px 8px;
     border-radius: 18px;
     background-color: $core-color-primary;
     color: white;
