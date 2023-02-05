@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import axios from 'axios'
@@ -8,10 +7,11 @@ import './reviews.scss'
 
 const placeId = process.env.GATSBY_GOOGLE_PLACE_ID
 const apiKey = process.env.GATSBY_GOGGLE_API_KEY
-let pathname = typeof window !== "undefined" ? window.location.pathname : "";
-const locationLanguage = pathname.split("/")[1];
 
-const ReviewsPage = ({headingText, reviewsText, api}) => { 
+function ReviewsPage ({headingText, reviewsText, api}) { 
+  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const locationLanguage = pathname.split("/")[1];
+
   const fetchReviews = async () => {
     let apiReturn = await axios
       .get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,reviews,user_ratings_total&key=${apiKey}&language=${locationLanguage}`)
@@ -25,7 +25,6 @@ const ReviewsPage = ({headingText, reviewsText, api}) => {
   };
   
   const [data, setData] = useState("");
-  console.log('data', data)
 
   useEffect(() => {
     const fetchData = async api => {
@@ -48,7 +47,7 @@ const ReviewsPage = ({headingText, reviewsText, api}) => {
           <Carousel showArrows={true} showThumbs={false}>
             {data.data.result.reviews.map((review) => {
               return (
-                <div className='review__card' key={review.id}>
+                <div className='review__card' key={review.time}>
                   <div className='review__user'>
                     <img src={review.profile_photo_url} alt={review.author_name} width={50} height={50} ></img>
                     <div className='review__user-details'>
