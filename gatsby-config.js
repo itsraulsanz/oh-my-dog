@@ -5,7 +5,8 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: "OMD Pet Travel",
-    description: "Your pets trip in First Class"
+    description: "Your pets trip in First Class: dog's transport, cat's transport, rabbit's transport, pet's transport. El viaje de tu mascota en primera clase: transporte perro, transporte gato, transporte conejo, empresa de transporte de mascotas.",
+    image: 'src/images/logo-favicon.svg'
     // siteUrl: `https://www.omdtravel.com`
   },
   plugins: [
@@ -20,14 +21,6 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         host: process.env.CONTENTFUL_HOST
-      },
-    },
-    {
-      resolve: `gatsby-source-google-places`,
-      options: {
-        placeIds:  process.env.GATSBY_GOOGLE_PLACE_ID,
-        apiKey: process.env.GATSBY_GOGGLE_API_KEY,
-        language: "en-US", // optional, defaults to en-US
       },
     },
     {
