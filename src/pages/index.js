@@ -84,10 +84,10 @@ export const pageQuery = graphql`
         image {
           url
           gatsbyImage(
-            layout: FULL_WIDTH
-            placeholder: BLURRED
-            width: 424
-            height: 212
+            layout: CONSTRAINED, 
+            placeholder: BLURRED, 
+            width: 624, 
+            height: 412
           )
         }
       }
@@ -101,6 +101,7 @@ export const pageQuery = graphql`
         text
         rating
         profile_photo_url
+        time
       }
       user_ratings_total
     }
