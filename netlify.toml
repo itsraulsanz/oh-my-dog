@@ -7,13 +7,18 @@
   CONTENTFUL_PREVIEW_ACCESS_TOKEN = ""
 
 [[redirects]]
-  from = "/"
-  to = "/index.html"
+  from = "/api/*"
+  to = "https://maps.googleapis.com/maps/:splat"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
+  # Define which paths this specific [[headers]] block will cover.
   for = "/*"
-  [headers.values]
-  Access-Control-Allow-Origin = "*"
+    [headers.values]
+    Access-Control-Allow-Origin = "*"

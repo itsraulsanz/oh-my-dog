@@ -9,6 +9,10 @@ module.exports = {
     image: 'src/images/logo-favicon.svg'
     // siteUrl: `https://www.omdtravel.com`
   },
+  proxy: {
+    prefix: "/api",
+    url: "https://maps.googleapis.com",
+  },
   plugins: [
     "gatsby-transformer-sharp",
     "gatsby-plugin-react-helmet",

@@ -9,7 +9,7 @@ function Footer (props) {
   let pathname = typeof window !== "undefined" ? window.location.pathname : "";
   const locationLanguage = pathname.split("/")[1];
 
-  return(
+  return (
     <footer className='homepageFooter'>
       <div className="container-fluid">
         <section className='homepageFooter-container navigation'>

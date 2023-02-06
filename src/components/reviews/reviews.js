@@ -13,14 +13,20 @@ function ReviewsPage ({headingText, reviewsText, api}) {
   const locationLanguage = pathname.split("/")[1];
 
   const fetchReviews = async () => {
-    let apiReturn = await axios
-      .get(`https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,reviews,user_ratings_total&key=${apiKey}&language=${locationLanguage}`)
-      .then(async function(response) {
-        return response;
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+    let apiReturn = await axios({
+      method: "get",
+      url: `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,reviews,user_ratings_total&key=${apiKey}&language=${locationLanguage}`,
+      crossdomain: true,
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'      
+      },
+    })
+    .then(async function(response) {
+      return response;
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
     return apiReturn;
   };
   
