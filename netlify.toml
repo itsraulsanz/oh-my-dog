@@ -8,7 +8,7 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "https://maps.googleapis.com/:splat"
+  to = "https://maps.googleapis.com/maps/:splat"
   status = 200
   force = true
 
