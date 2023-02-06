@@ -1,3 +1,5 @@
+const { createProxyMiddleware } = require("http-proxy-middleware") //v1.x.x
+
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
@@ -8,6 +10,10 @@ module.exports = {
     description: "Your pets trip in First Class: dog's transport, cat's transport, rabbit's transport, pet's transport. El viaje de tu mascota en primera clase: transporte perro, transporte gato, transporte conejo, empresa de transporte de mascotas.",
     image: 'src/images/logo-favicon.svg'
     // siteUrl: `https://www.omdtravel.com`
+  },
+  proxy: {
+    prefix: "/api",
+    url: "https://maps.googleapis.com",
   },
   plugins: [
     "gatsby-transformer-sharp",
