@@ -10,7 +10,8 @@ module.exports = {
     // siteUrl: `https://www.omdtravel.com`
   },
   proxy: {
-    url: "https://maps.googleapis.com",
+    prefix: "/api",
+    url: "http://maps.googleapis.com",
   },
   plugins: [
     "gatsby-transformer-sharp",
