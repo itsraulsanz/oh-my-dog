@@ -11,7 +11,7 @@ module.exports = {
   },
   proxy: {
     prefix: "/api",
-    url: "http://maps.googleapis.com",
+    url: "https://maps.googleapis.com",
   },
   plugins: [
     "gatsby-transformer-sharp",
