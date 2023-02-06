@@ -1,5 +1,3 @@
-const { createProxyMiddleware } = require("http-proxy-middleware") //v1.x.x
-
 require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 });
