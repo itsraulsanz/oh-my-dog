@@ -7,11 +7,14 @@
   CONTENTFUL_PREVIEW_ACCESS_TOKEN = ""
 
 [[redirects]]
-  from = "/"
-  to = "/index.html"
+  from = "/api/*"
+  to = "https://maps.googleapis.com"
   status = 200
   force = true
-  headers = {X-From = "Netlify"}
+  conditions = {Role = ["admin", "cms"]}
+  [redirects.headers]
+      X-From = "Netlify"
+      X-Api-Key = GATSBY_GOGGLE_API_KEY
 
 [[headers]]
   for = "/*"
