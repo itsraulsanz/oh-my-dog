@@ -33,6 +33,8 @@ class IndexPage extends React.Component {
     const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes')
     const intl = this.props.intlValue;
     const currentYear = new Date().getFullYear();
+    const reviewsData = get(this, 'props.data.reviews')
+    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
 
     return (
       <Layout>
@@ -48,7 +50,7 @@ class IndexPage extends React.Component {
         <TextBlock2Columns id="about-us" headingText={intl.formatMessage({ id: "about-us.title" })} bodyText1={intl.formatMessage({ id: "about-us.description1" })} bodyText2={intl.formatMessage({ id: "about-us.description2" })} bodyText3={intl.formatMessage({ id: "about-us.description3" })} bodyText4={intl.formatMessage({ id: "about-us.description4" })} logo={LogoDefra} />
         <Gallery galleryImages={galleryImagesData} headingText={intl.formatMessage({ id: "gallery.title" })} descriptionText={intl.formatMessage({ id: "gallery.description" })} />
         <TextBanner id="trips" color="orange" pdf={Calendar} headingText={intl.formatMessage({ id: "our-trips-banner.title" })} descriptionText1={intl.formatMessage({ id: "our-trips-banner.description1" })} descriptionText2={intl.formatMessage({ id: "our-trips-banner.description2" })} buttonText={intl.formatMessage({ id: "our-trips-banner.button-text" })} year={currentYear} />
-        <Reviews headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
+        <Reviews reviews={reviews} rating={reviewsData.rating} userRating={reviewsData.userRating} headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
         <Contact headingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} openDaysFriday={intl.formatMessage({ id: "contact-us.open-days-friday" })} openHoursFriday={intl.formatMessage({ id: "contact-us.open-hours-friday" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formPickupCityText={intl.formatMessage({ id: "contact-us.user-pickup-city" })} formDropoffCityText={intl.formatMessage({ id: "contact-us.user-dropoff-city" })} formPetnumberText={intl.formatMessage({ id: "contact-us.user-pet-number" })} formPetinfoText={intl.formatMessage({ id: "contact-us.user-pet-info" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>
     )
@@ -89,6 +91,26 @@ export const pageQuery = graphql`
             height: 412
           )
         }
+      }
+    }
+    reviews {
+      rating
+      userRating
+      reviewsEn {
+        author_name
+        profile_photo_url
+        rating
+        relative_time_description
+        text
+        time
+      }
+      reviewsEs {
+        author_name
+        profile_photo_url
+        rating
+        relative_time_description
+        text
+        time
       }
     }
   }
