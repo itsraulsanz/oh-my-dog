@@ -17,12 +17,13 @@ function ReviewsPage ({headingText, reviewsText, api}) {
       method: "get",
       url: `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,reviews,user_ratings_total&key=${apiKey}&language=${locationLanguage}`,
       headers: {}
-    }).then(async function(response) {
-        return response;
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+    })
+    .then(async function(response) {
+      return response;
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
     return apiReturn;
   };
   
