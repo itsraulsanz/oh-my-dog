@@ -16,7 +16,6 @@ function ReviewsPage ({headingText, reviewsText, api}) {
     let apiReturn = await axios({
       method: "get",
       url: `https://maps.googleapis.com/maps/api/place/details/json?place_id=${placeId}&fields=rating,reviews,user_ratings_total&key=${apiKey}&language=${locationLanguage}`,
-      mode: "no-cors",
       headers: {}
     }).then(async function(response) {
         return response;
