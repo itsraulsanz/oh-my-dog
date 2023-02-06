@@ -8,13 +8,10 @@
 
 [[redirects]]
   from = "/api/*"
-  to = "/index.html"
+  to = "https://maps.googleapis.com"
   status = 200
   force = true
-  conditions = {Role = ["admin", "cms"]}
-  [redirects.headers]
-      X-From = "Netlify"
-      X-Api-Key = GATSBY_GOGGLE_API_KEY
+  headers = {X-From = "Netlify"}
 
 [[headers]]
   for = "/*"
