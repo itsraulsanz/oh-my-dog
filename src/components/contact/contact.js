@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { validateEmail } from "../../utils/helpers";
 import emailjs from '@emailjs/browser';
+import Map from '../map/map'
 import './contact.scss'
 
 export default function Contact(props) {
@@ -45,6 +46,21 @@ export default function Contact(props) {
   const serviceID = process.env.GATSBY_APP_YOUR_SERVICE_ID
   const templateID = process.env.GATSBY_APP_YOUR_TEMPLATE_ID
   const publicKey = process.env.GATSBY_APP_YOUR_PUBLIC_KEY
+
+  const center = { lat: 39.501867083198135, lng: -0.4074959442834655 }
+  const mapProps = {
+    options: {
+      center,
+      zoom: 16,
+    },
+    onMount: map => {
+      new window.google.maps.Marker({
+        position: center,
+        map,
+        title: 'OMD Pet Travel',
+      })
+    },
+  }
 
   const form = useRef();
   const handleFormSubmit = (e) => {
@@ -100,6 +116,7 @@ export default function Contact(props) {
                 <li><span>{props.callText}</span><span><a href={"tel:" + props.telephone}>{props.telephone}</a></span></li>
                 <li><span>{props.emailText}</span><a href={"mailto:" + props.email}>{props.email}</a></li>
               </ul>
+              <Map id="contactMap" {...mapProps} />
             </section>
 
             <section className='contact-form__container'>
