@@ -46,19 +46,39 @@ export default function Contact(props) {
   const serviceID = process.env.GATSBY_APP_YOUR_SERVICE_ID
   const templateID = process.env.GATSBY_APP_YOUR_TEMPLATE_ID
   const publicKey = process.env.GATSBY_APP_YOUR_PUBLIC_KEY
-
+  
   const center = { lat: 39.501867083198135, lng: -0.4074959442834655 }
   const mapProps = {
     options: {
       center,
       zoom: 16,
+      disableDefaultUI: true,
     },
     onMount: map => {
-      new window.google.maps.Marker({
+      var marker = new window.google.maps.Marker({
         position: center,
         map,
         title: 'OMD Pet Travel',
-      })
+      });
+      marker.addListener('click', function(e) {
+        const contentString =
+        `<h2 id="firstHeading" class="firstHeading">${props.companyName}</h2>` +
+        `<div id="bodyContent">` +
+        `<p><b>${props.address}:</b> ${props.location}</p>` + 
+        `<a href=${props.locationLink} target="_blank" rel="noreferrer" aria-label="Google maps location link">${props.locationLinkText}</a>` + 
+        `</div>`;
+        
+        const infowindow = new window.google.maps.InfoWindow({
+          content: contentString,
+          ariaLabel: "OMD Pet Travel",
+        });
+
+        <div id="div1">The text above has been created dynamically.</div>
+        infowindow.open({
+          anchor: marker,
+          map,
+        });
+      });
     },
   }
 

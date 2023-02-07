@@ -125,10 +125,33 @@
                         padding-bottom: 5px;
                     }
                 }
+
+                .contactMap {
+                    border-radius: 12px;
+                    margin-top: 10px;
+
+                    .firstHeading {
+                        font-size: 22px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                    }
+
+                    b {
+                        font-weight: 600;
+                    }
+
+                    a {
+                        text-decoration: underline;
+                        font-weight: 400;
+                    }
+                }
             }
             
             &.contact-form__container {
                 width: 100%;
+                height: fit-content;
                 background-color: #F0F0F0;
                 border-radius: 23px;
                 padding: 40px;
@@ -169,6 +192,10 @@
                         border: 1px solid #D6D6D6;
                         border-radius: 12px;
                         padding: 10px;
+                    }
+
+                    textarea {
+                        min-height: 120px;
                     }
                     
                     button {
