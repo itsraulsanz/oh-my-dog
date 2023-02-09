@@ -3,8 +3,6 @@ import { useIntl } from "gatsby-plugin-intl"
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import './popup.scss';
 
-console.log(getCookieConsentValue());
-
 function withMyHook(Component) {
     return function WrappedComponent(props) {
       const intlValue = useIntl();
