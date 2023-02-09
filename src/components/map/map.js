@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-
-window.initMap = function(){
-}
     
 export default class Map extends Component {
   onLoad = () => {
@@ -13,6 +10,8 @@ export default class Map extends Component {
   }
 
   componentDidMount() {
+    window.initMap = function () {
+    }
     if (!window.google) {
       const script = document.createElement('script')
       script.type = 'text/javascript'
