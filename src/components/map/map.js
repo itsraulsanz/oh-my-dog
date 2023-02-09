@@ -1,13 +1,6 @@
 import React, { Component } from 'react'
-import { isBrowser } from '../../utils/utils'; 
-
-if (!isBrowser) {
-  window.initMap = function(){
-  }
-}
     
 export default class Map extends Component {
-
   onLoad = () => {
     const map = new window.google.maps.Map(
       document.getElementById(this.props.id),
@@ -17,6 +10,8 @@ export default class Map extends Component {
   }
 
   componentDidMount() {
+    window.initMap = function () {
+    }
     if (!window.google) {
       const script = document.createElement('script')
       script.type = 'text/javascript'
