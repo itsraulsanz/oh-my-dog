@@ -1,4 +1,5 @@
 import React from 'react'
+import Cookies from './cookies'
 import Seo from './seo'
 import Navigation from './navigation'
 import Footer from './footer'
@@ -19,6 +20,7 @@ class Template extends React.Component {
     return (
       <>
         <Seo />
+        <Cookies />
         <Navigation 
           location={this.props.location} 
           whyUs={intl.formatMessage({ id: "general.why-us" })}
