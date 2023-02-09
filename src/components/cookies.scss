@@ -1,0 +1,79 @@
+@import '../styles/colors';
+
+.cookies-banner_container {
+    background: $core-color-light-background;
+    color: $core-color-secondary;
+    align-items: baseline;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    left: 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0px;
+
+    .cookies-banner_text {
+        flex: 1 0 300px;
+        margin: 15px;
+    }
+    
+    .cookies-banner_info {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    button {
+        font-size: 12px;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        text-decoration: underline;
+        cursor: pointer;
+
+        &:hover {
+            color: $core-color-primary;
+        }
+    }
+
+    .cookies-banner_buttons {
+        margin: 0 15px 15px;
+
+        .decline-button {
+            border: 1px solid rgb(193, 42, 42);
+            border-radius: 10px;
+            box-shadow: none;
+            color: rgb(193, 42, 42);
+            cursor: pointer;
+            flex: 0 0 auto;
+            padding: 5px 10px;
+            margin: 0 5px 0 0;
+            text-decoration: none;
+
+            &:hover{
+                background: rgb(193, 42, 42);
+                color: $core-color-background;
+            }
+        }
+        
+        .confirm-button {
+            border: 1px solid $core-color-primary;
+            background: $core-color-primary;
+            border-radius: 10px;
+            box-shadow: none;
+            color: $core-color-background;
+            cursor: pointer;
+            flex: 0 0 auto;
+            padding: 5px 15px;
+            margin: 0 10px 0 5px;
+            text-decoration: none;
+
+            &:hover{
+                background: none;
+                border: 1px solid $core-color-primary;
+                color: $core-color-primary;
+            }
+        }
+    }
+}

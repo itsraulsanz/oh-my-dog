@@ -1,0 +1,89 @@
+@import '../styles/colors';
+
+.popup_container {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.cookies-banner_container .popup {
+    width: 90vw;
+    height: 70vh;
+    overflow-y: scroll;
+
+    span.close {
+        position: fixed;
+        cursor: pointer;
+    }
+
+    .popup-text {
+        width: 95%;
+        padding-left: 30px;
+
+        h3 {
+            margin: 0;
+            padding: 20px 0 0px;
+            font-weight: 500;
+        }
+
+        h3:first-child  {
+            padding: 0;
+        }
+
+        h4 {
+            margin: 0;
+        }
+
+        h5 {
+            margin: 0;
+            font-style: italic;
+        }
+
+        p {
+            margin-top: 4px;
+            font-size: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            font-size: 12px;
+            margin: 5px 0 10px;
+        }
+    }
+
+    .confirm-button {
+        border: 1px solid $core-color-primary;
+        background: $core-color-primary;
+        border-radius: 10px;
+        box-shadow: none;
+        color: $core-color-background;
+        cursor: pointer;
+        flex: 0 0 auto;
+        padding: 5px 15px;
+        margin: 0 30px 30px;
+        text-decoration: none;
+
+        &:hover{
+            background: none;
+            border: 1px solid $core-color-primary;
+            color: $core-color-primary;
+        }
+    }
+}
+
+.popup-background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
