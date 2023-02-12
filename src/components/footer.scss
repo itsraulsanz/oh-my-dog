@@ -148,5 +148,13 @@ footer.homepageFooter {
 
   small {
     color: $core-color-background;
+    text-align: center;
+    margin: 40px 0;
+
+    @media (min-width: 700px) {
+      text-align: left;
+      align-items: flex-start;
+      margin: 0 0 40px;
+    }
   }
 }
