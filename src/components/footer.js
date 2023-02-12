@@ -111,6 +111,9 @@ function Footer (props) {
           </ul>
         </section>
       </div>
+      <div className="container-fluid">
+        <small>&copy; Copyright {props.year}, {props.copyright}</small>
+      </div>
     </footer>
   )
 }

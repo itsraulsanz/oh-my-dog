@@ -2,7 +2,7 @@
 
 footer.homepageFooter {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: $core-color-dark-background;
   width: 100%;
   padding: 23px 20px;
@@ -144,5 +144,9 @@ footer.homepageFooter {
         }
       }
     }
+  }
+
+  small {
+    color: $core-color-background;
   }
 }

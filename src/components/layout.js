@@ -16,6 +16,7 @@ class Template extends React.Component {
   render() {
     const { children } = this.props
     const intl = this.props.intlValue;
+    const currentYear = new Date().getFullYear();
 
     return (
       <>
@@ -52,6 +53,8 @@ class Template extends React.Component {
           telephone={intl.formatMessage({ id: "contact-us.phone" })}
           emailText={intl.formatMessage({ id: "contact-us.user-email" })} 
           email={intl.formatMessage({ id: "contact-us.email" })}
+          year={currentYear}
+          copyright={intl.formatMessage({ id: "general.copyright" })}
         />
       </>
     )
