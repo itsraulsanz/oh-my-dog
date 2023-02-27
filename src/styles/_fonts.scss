@@ -2,17 +2,17 @@
 // ---------------------------
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/museo');
 
 body {
     font-family: 'Poppins', sans-serif;
 }
 
 @mixin heading-primary {
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Museo', sans-serif;
     font-size: 42px;
     line-height: 120%;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0em;
     text-align: left;
     margin-top: 20px;
@@ -25,9 +25,9 @@ body {
 }
 
 @mixin heading-secondary {
-    font-family: 'MuseoModerno', cursive;
+    font-family: 'Museo', sans-serif;
     font-size: 32px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 44px;
     letter-spacing: 0em;
     text-align: left;
@@ -36,8 +36,8 @@ body {
 }
 
 @mixin text-banner-heading {
-    font-family: 'MuseoModerno', cursive;
-    font-weight: 400;
+    font-family: 'Museo', sans-serif;
+    font-weight: 600;
     font-size: 26px;
     line-height: 36px;
     letter-spacing: 0em;
@@ -130,7 +130,7 @@ h2 {
     font-size: 32px;
     line-height: 15px;
     
-    @media (min-width: 600px) {
+    @media (min-width: 800px) {
         font-size: 44px;
         line-height: 20px;
     }
