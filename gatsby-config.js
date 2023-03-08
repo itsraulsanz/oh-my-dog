@@ -4,10 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: "OMD Pet Travel",
-    description: "Your pets trip in First Class: dog's transport, cat's transport, rabbit's transport, pet's transport. El viaje de tu mascota en primera clase: transporte perro, transporte gato, transporte conejo, empresa de transporte de mascotas.",
-    image: 'src/images/logo-favicon.svg'
-    // siteUrl: `https://www.omdtravel.com`
+    title: `OMD Pet Travel`,
+    description: `Your pets trip in First Class: dog's transport, cat's transport, rabbit's transport, pet's transport. El viaje de tu mascota en primera clase: transporte perro, transporte gato, transporte conejo, empresa de transporte de mascotas.`,
+    image: `/logo-favicon.png`,
+    siteUrl: `https://www.omdtravel.com`
   },
   proxy: {
     prefix: "/api",
