@@ -37,15 +37,31 @@
         @media only screen and (min-width: 650px) {
             display: flex;
             flex-direction: column;
-            width: 40%;
+            width: 45%;
         }
 
         @media only screen and (min-width: 800px) {
-            width: 50%;
-            max-width: 435px;
+            width: 45%;
+            max-width: 460px;
         }
 
         &-heading {
+            margin: 0 0 10px;
+            text-align: center;
+            line-height: 34px;
+
+            @media only screen and (min-width: 650px) {
+                text-align: left;
+            }
+
+            @media only screen and (min-width: 768px) {
+                font-size: 44px;
+                line-height: 40px;
+            }
+
+        }
+
+        &-subheading {
             margin: 0;
             text-align: center;
             line-height: 34px;
@@ -54,9 +70,9 @@
                 text-align: left;
             }
 
-            @media only screen and (min-width: 800px) {
-                font-size: 44px;
-                line-height: 50px;
+            @media only screen and (min-width: 768px) {
+                font-size: 35px;
+                line-height: 45px;
             }
 
         }

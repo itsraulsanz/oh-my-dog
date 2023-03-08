@@ -38,7 +38,7 @@ class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <HeroWithSlideshow headingText={intl.formatMessage({ id: "hero.title" })} descriptionText={intl.formatMessage({ id: "hero.description" })} buttonContact={intl.formatMessage({ id: "general.contact" })} />
+        <HeroWithSlideshow titleText={intl.formatMessage({ id: "hero.title" })} subtitleText={intl.formatMessage({ id: "hero.subtitle" })} descriptionText={intl.formatMessage({ id: "hero.description" })} buttonContact={intl.formatMessage({ id: "general.contact" })} />
         <ServicesBlock headingText={intl.formatMessage({ id: "services-block.title" })} descriptionText={intl.formatMessage({ id: "services-block.description" })} buttonText={intl.formatMessage({ id: "services-block.button" })} buttonContact={intl.formatMessage({ id: "general.contact-us" })}
         block1Title={intl.formatMessage({ id: "services-block.block-1.title" })} block1Text={intl.formatMessage({ id: "services-block.block-1.text" })} block1Advantage1={intl.formatMessage({ id: "services-block.block-1.advantage1" })} block1Advantage2={intl.formatMessage({ id: "services-block.block-1.advantage2" })} block1Advantage3={intl.formatMessage({ id: "services-block.block-1.advantage3" })} 
         block2Title={intl.formatMessage({ id: "services-block.block-2.title" })} block2Text={intl.formatMessage({ id: "services-block.block-2.text" })} block2Advantage1={intl.formatMessage({ id: "services-block.block-2.advantage1" })} block2Advantage2={intl.formatMessage({ id: "services-block.block-2.advantage2" })} block2Advantage3={intl.formatMessage({ id: "services-block.block-2.advantage3" })} block2Advantage4={intl.formatMessage({ id: "services-block.block-2.advantage4" })}
