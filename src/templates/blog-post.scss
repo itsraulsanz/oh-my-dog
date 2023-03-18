@@ -3,7 +3,7 @@
 @import '../styles/resets';
 @import '../styles/fonts';
 
-.blog-post {
+.blog-post.container-fluid {
   display: flex;
   flex-direction: column;
 
@@ -40,6 +40,10 @@
         }        
       }
     }
+  }
+
+  h1.blog-post__details-title {
+    margin-bottom: 8px;
   }
   
   & .blog-post__blogNavigation {

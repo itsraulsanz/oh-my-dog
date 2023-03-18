@@ -67,22 +67,27 @@ class BlogPostTemplate extends React.Component {
           description={plainTextDescription}
           image={`http:${post.heroImage.resize.src}`}
         />
-        <Hero
+        {/* <Hero
           image={post.heroImage?.gatsbyImage}
           title={post.title}
           content={post.description}
-        />
+        /> */}
         <div className="blog-post container-fluid">
-          <span className="blog-post__meta">
-            <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
-            {timeToRead} minute read
-          </span>
+          <GatsbyImage
+            image={post.heroImage?.gatsbyImage}
+            title={post.title}
+            content={post.description}
+          />
           <div className="blog-post__details">
             <h1 className="blog-post__details-title">{post.title}</h1>
             <div className="blog-post__details-content">
               {post.content?.raw && renderRichText(post.content, renderOptions)}
             </div>
           </div>
+          <span className="blog-post__meta">
+            <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
+            {timeToRead} minute read
+          </span>
           <div className="blog-post__article">
             <div className="blog-post__article-body">
               {post.body?.raw && renderRichText(post.body, renderOptions)}
@@ -140,15 +145,13 @@ export const pageQuery = graphql`
       body {
         raw
         references {
-          ... on Node {
-            ... on ContentfulAsset {
-              contentful_id
-              __typename
-              title
-              gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
-              file {
-                url
-              }
+          ... on ContentfulAsset {
+            contentful_id
+            __typename
+            title
+            gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
+            file {
+              url
             }
           }
         }
