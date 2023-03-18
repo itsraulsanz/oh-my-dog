@@ -27,6 +27,8 @@ const PaginatedPosts = ({posts, headingText, descriptionText}) => {
 		setCurrentPage(selected + 1);
 	};
 
+  // console.log('numblogs', blogPosts.length)
+
   return (
     <div className='article-preview' id='blog'>
       <div className='container-fluid'>
@@ -51,17 +53,17 @@ const PaginatedPosts = ({posts, headingText, descriptionText}) => {
                 </li>
             ))}
           </ul>
-          <ReactPaginate
-            onPageChange={paginate}
-            pageCount={Math.ceil(blogPosts.length / postsPerPage)}
-            previousLabel={'<'}
-            nextLabel={'>'}
-            containerClassName={'pagination'}
-            pageLinkClassName={'page-number'}
-            previousLinkClassName={'page-prev'}
-            nextLinkClassName={'page-next'}
-            activeLinkClassName={'active'}
-          />
+          {/* <ReactPaginate
+              onPageChange={paginate}
+              pageCount={Math.ceil(blogPosts.length / postsPerPage)}
+              previousLabel={'<'}
+              nextLabel={'>'}
+              containerClassName={'pagination'}
+              pageLinkClassName={'page-number'}
+              previousLinkClassName={'page-prev'}
+              nextLinkClassName={'page-next'}
+              activeLinkClassName={'active'}
+          /> */}
           </div>
         ) : (
           <div className="loading">Loading...</div>
