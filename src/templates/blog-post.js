@@ -145,15 +145,13 @@ export const pageQuery = graphql`
       body {
         raw
         references {
-          ... on Node {
-            ... on ContentfulAsset {
-              contentful_id
-              __typename
-              title
-              gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
-              file {
-                url
-              }
+          ... on ContentfulAsset {
+            contentful_id
+            __typename
+            title
+            gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
+            file {
+              url
             }
           }
         }
