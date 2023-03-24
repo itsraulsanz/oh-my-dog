@@ -27,13 +27,12 @@ class BlogPostTemplate extends React.Component {
         [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
       },
       renderNode: {
-        [INLINES.HYPERLINK]: (node, children) => {
-          const { uri } = node.data
-          return (
-            <a href={uri} className="underline">
-              {children}
-            </a>
-          )
+        [INLINES.HYPERLINK]: (node) => {
+          if((node.data.uri).includes("player.vimeo.com/video")){
+            return <div className='video'><iframe title="Unique Title 001" src={node.data.uri} frameBorder="0" allowFullScreen></iframe></div>
+          } else if((node.data.uri).includes("youtube.com/embed")) {
+            return <div className='video'><iframe title="Unique Title 002" src={node.data.uri} allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" frameBorder="0" allowFullScreen></iframe></div>
+          }
         },
         [BLOCKS.HEADING_2]: (node, children) => {
           return <h2>{children}</h2>
@@ -124,6 +123,18 @@ class BlogPostTemplate extends React.Component {
 
 export default BlogPostTemplate
 
+// references {
+//   ... on ContentfulAsset {
+//     contentful_id
+//     __typename
+//     title
+//     gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
+//     file {
+//       url
+//     }
+//   }
+// }
+
 export const pageQuery = graphql`
   query BlogPostQuery(
     $slug: String
@@ -144,17 +155,6 @@ export const pageQuery = graphql`
       }
       body {
         raw
-        references {
-          ... on ContentfulAsset {
-            contentful_id
-            __typename
-            title
-            gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
-            file {
-              url
-            }
-          }
-        }
       }
       description {
         raw
