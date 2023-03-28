@@ -54,7 +54,8 @@
     },
     "blog": {
         "title": "¡Blog de viajes de mascotas de Ohmydog!",
-        "description": "Aquí puedes encontrar información útil y consejos sobre el transporte de mascotas, así como conocer mejor a nuestro equipo. Publicaremos regularmente videos y actualizaciones para mantenerte informado y conectado con nosotros. Sigue nuestro vlog para mantenerse actualizado sobre todo lo relacionado con el transporte de mascotas y para obtener más información sobre cómo podemos ayudarte a ti y a tu amigo peludo."
+        "description": "Aquí puedes encontrar información útil y consejos sobre el transporte de mascotas, así como conocer mejor a nuestro equipo. Publicaremos regularmente videos y actualizaciones para mantenerte informado y conectado con nosotros. Sigue nuestro vlog para mantenerse actualizado sobre todo lo relacionado con el transporte de mascotas y para obtener más información sobre cómo podemos ayudarte a ti y a tu amigo peludo.",
+        "time": "minutos de lectura"
     },
     "gallery": {
         "title": "Galería Ohmydog",
