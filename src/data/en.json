@@ -54,7 +54,8 @@
     },
     "blog": {
         "title": "Ohmydog Pet Travel blog!",
-        "description": "Here you can find helpful information and tips about pet transportation, as well as get to know our team and company better. We will be regularly posting videos and updates to keep you informed and connected with us. Follow our blog to stay up-to-date on all things pet transportation and to learn more about how we can help you and your furry friend."
+        "description": "Here you can find helpful information and tips about pet transportation, as well as get to know our team and company better. We will be regularly posting videos and updates to keep you informed and connected with us. Follow our blog to stay up-to-date on all things pet transportation and to learn more about how we can help you and your furry friend.",
+        "time": "minute read"
     },
     "gallery": {
         "title": "Ohmydog Gallery",
