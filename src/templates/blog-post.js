@@ -6,7 +6,6 @@ import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
 import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer'
 import { GatsbyImage } from 'gatsby-plugin-image'
 import readingTime from 'reading-time'
-import { useIntl } from "gatsby-plugin-intl"
 import './blog-post.scss'
 
 import Seo from '../components/seo'
@@ -14,16 +13,8 @@ import Layout from '../components/layout'
 import Hero from '../components/hero/hero'
 import Tags from '../components/tags'
 
-function withMyHook(Component) {
-  return function WrappedComponent(props) {
-    const intlValue = useIntl();
-    return <Component {...props} intlValue={intlValue} />;
-  }
-}
-
 class BlogPostTemplate extends React.Component {
   render() {
-    const intl = this.props.intlValue;
     const post = get(this.props, 'data.contentfulBlog')
     const previous = get(this.props, 'data.previous')
     const next = get(this.props, 'data.next')
@@ -94,7 +85,7 @@ class BlogPostTemplate extends React.Component {
           </div>
           <span className="blog-post__meta">
             <time dateTime={post.rawDate}>{post.publishDate}</time> –{' '}
-            {timeToRead} {intl.formatMessage({ id: "blog.time" })}
+            {timeToRead} minute read
           </span>
           <div className="blog-post__article">
             <div className="blog-post__article-body">
@@ -131,7 +122,7 @@ class BlogPostTemplate extends React.Component {
   }
 }
 
-export default withMyHook(BlogPostTemplate);
+export default BlogPostTemplate
 
 export const pageQuery = graphql`
   query BlogPostQuery(
@@ -143,7 +134,7 @@ export const pageQuery = graphql`
     contentfulBlog(path: { eq: $slug }, node_locale: { eq: $language }) {
       path
       title
-      publishDate(formatString: "D/MM/YYYY")
+      publishDate(formatString: "MMMM Do, YYYY")
       rawDate: publishDate
       heroImage {
         gatsbyImage(layout: FULL_WIDTH, placeholder: BLURRED, width: 1280)
