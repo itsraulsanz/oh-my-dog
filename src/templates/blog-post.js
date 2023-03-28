@@ -21,7 +21,7 @@ class BlogPostTemplate extends React.Component {
     const plainTextDescription = documentToPlainTextString(JSON.parse(post.description.raw))
     const plainTextBody = documentToPlainTextString(JSON.parse(post.body.raw))
     const { minutes: timeToRead } = readingTime(plainTextBody)
-    
+
     const renderOptions = {
       renderMark: {
         [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
@@ -91,10 +91,11 @@ class BlogPostTemplate extends React.Component {
             <div className="blog-post__article-body">
               {post.body?.raw && renderRichText(post.body, renderOptions)}
             </div>
-            <Tags tags={post.tags} />
+            {/* <Tags tags={post.tags} /> */}
           </div>
           <div className='blog-post__blogNavigation'>
-          {(previous || next) && (
+            
+          {/* {(previous || next) && (
               <nav>
                 <ul className="blog-post__articleNavigation">
                   {previous && (
@@ -113,7 +114,7 @@ class BlogPostTemplate extends React.Component {
                   )}
                 </ul>
               </nav>
-            )}
+            )} */}
           </div>
         </div>
       </Layout>
@@ -122,18 +123,6 @@ class BlogPostTemplate extends React.Component {
 }
 
 export default BlogPostTemplate
-
-// references {
-//   ... on ContentfulAsset {
-//     contentful_id
-//     __typename
-//     title
-//     gatsbyImageData(formats: AUTO, layout: FULL_WIDTH)
-//     file {
-//       url
-//     }
-//   }
-// }
 
 export const pageQuery = graphql`
   query BlogPostQuery(
