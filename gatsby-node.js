@@ -9,7 +9,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   const result = await graphql(
     `
       {
-        allContentfulBlog(sort: { fields: orderId, order: DESC }) {
+        allContentfulBlog {
           nodes {
             title
             path
@@ -34,17 +34,12 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // `context` is available in the template as a prop and as a variable in GraphQL
 
   if (posts.length > 0) {
-    posts.forEach((post, index) => {
-      const previousPostPath = index === 0 ? null : posts[index - 1].path
-      const nextPostPath = index === posts.length - 1 ? null : posts[index + 1].path
-
+    posts.forEach((post) => {
       createPage({
         path: `/blog/${post.path}/`,
         component: blogPost,
         context: {
-          slug: post.path,
-          previousPostPath,
-          nextPostPath,
+          slug: post.path
         },
       })
     })

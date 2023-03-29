@@ -31,6 +31,13 @@ class BlogPostTemplate extends React.Component {
     const { minutes: timeToRead } = readingTime(plainTextBody)
     const intl = this.props.intlValue;
 
+    const index = post.orderId - 1
+    const posts = get(this.props, 'data.allContentfulBlog')
+    const previousPost = posts.nodes[index + 1]
+    const nextPost = posts.nodes[index - 1]
+    let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+    const locationLanguage = pathname.split("/")[1];
+
     const renderOptions = {
       renderMark: {
         [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
@@ -104,26 +111,26 @@ class BlogPostTemplate extends React.Component {
           </div>
           <div className='blog-post__blogNavigation'>
             
-          {/* {(previous || next) && (
+            {(previousPost || nextPost) && (
               <nav>
-                <ul className="blog-post__articleNavigation">
-                  {previous && (
-                    <li>
-                      <Link to={`/blog/${previous.path}`} rel="prev">
-                        ← {previous.title}
-                      </Link>
-                    </li>
+                <ul className="articleNavigation">
+                  <li>
+                  {previousPost && (
+                    <Link to={`/${locationLanguage}/blog/${previousPost.path}`} rel="prev" className='button-secondary'>
+                      ← {previousPost.title}
+                    </Link>
                   )}
-                  {next && (
-                    <li>
-                      <Link to={`/blog/${next.path}`} rel="next">
-                        {next.title} →
-                      </Link>
-                    </li>
+                  </li>
+                  <li>
+                  {nextPost && (
+                    <Link to={`/${locationLanguage}/blog/${nextPost.path}`} rel="next" className='button-secondary'>
+                      {nextPost.title} →
+                    </Link>
                   )}
+                  </li>
                 </ul>
               </nav>
-            )} */}
+            )}
           </div>
         </div>
       </Layout>
@@ -137,10 +144,9 @@ export const pageQuery = graphql`
   query BlogPostQuery(
     $slug: String
     $language: String
-    $previousPostPath: String
-    $nextPostPath: String
   ) {
     contentfulBlog(path: { eq: $slug }, node_locale: { eq: $language }) {
+      orderId
       path
       title
       publishDate(formatString: "D/MM/YYYY")
@@ -158,13 +164,15 @@ export const pageQuery = graphql`
         raw
       }
     }
-    previous: contentfulBlog(path: { eq: $previousPostPath }) {
-      path
-      title
-    }
-    next: contentfulBlog(path: { eq: $nextPostPath }) {
-      path
-      title
+    allContentfulBlog(
+      sort: {fields: orderId, order: ASC}
+      filter: { node_locale: { eq: $language } }
+    ) {
+      nodes {
+        orderId
+        title
+        path
+      }
     }
   }
 `
