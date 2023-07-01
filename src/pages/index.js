@@ -78,7 +78,7 @@ export const pageQuery = graphql`
         buttonText
       }
     }
-    allContentfulGalleryImage(sort: { fields: order, order: DESC } filter: { node_locale: { eq: $language } }) {
+    allContentfulGalleryImage(sort: { fields: order, order: ASC } filter: { node_locale: { eq: $language } }) {
       nodes {
         title
         order
@@ -87,8 +87,8 @@ export const pageQuery = graphql`
           gatsbyImage(
             layout: CONSTRAINED, 
             placeholder: BLURRED, 
-            width: 624, 
-            height: 412
+            width: 1200, 
+            height: 800
           )
         }
       }
