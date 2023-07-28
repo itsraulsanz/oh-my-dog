@@ -85,7 +85,7 @@ function Footer (props) {
           </Link>
           <ul className="social-media">
             <li className='navigationItem'>
-              <a href="https://instagram.com/ohmydog_pet_transport/" target="_blank" rel="noreferrer" aria-label="Instagram link" className="social-media-item instagram"></a>
+              <a href="https://instagram.com/omdtravel/" target="_blank" rel="noreferrer" aria-label="Instagram link" className="social-media-item instagram"></a>
             </li>
             <li className='navigationItem'>
               <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" aria-label="Facebook link" className="social-media-item facebook"></a>
@@ -93,7 +93,7 @@ function Footer (props) {
             <li className='navigationItem'>
               <a href="https://www.tiktok.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Tiktok link" className="social-media-item tiktok"></a></li>
             <li className='navigationItem'>
-              <a href="https://www.youtube.com/@ohmydogpettravel2763" target="_blank" rel="noreferrer" aria-label="Youtube link" className="social-media-item youtube"></a>
+              <a href="https://www.youtube.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Youtube link" className="social-media-item youtube"></a>
             </li>
             <li className='navigationItem'>
               <a href="facebook" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google"></a>
