@@ -140,7 +140,7 @@ function Navigation(props) {
               </a>
             </li>
             <li className='navigationItem'>
-              <a href="facebook" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google">
+              <a href="https://g.co/kgs/2NGfQm" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google">
               </a>
             </li>
           </ul>
@@ -226,7 +226,7 @@ function Navigation(props) {
                   </a>
                 </li>
                 <li className='navigationItem'>
-                  <a href="facebook" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google">
+                  <a href="https://g.co/kgs/2NGfQm" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google">
                   </a>
                 </li>
               </ul>

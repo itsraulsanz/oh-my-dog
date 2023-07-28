@@ -96,7 +96,7 @@ function Footer (props) {
               <a href="https://www.youtube.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Youtube link" className="social-media-item youtube"></a>
             </li>
             <li className='navigationItem'>
-              <a href="facebook" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google"></a>
+              <a href="https://g.co/kgs/2NGfQm" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google"></a>
             </li>
           </ul>
           <ul className='contact__info-details'>
