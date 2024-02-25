@@ -103,7 +103,7 @@ function Navigation(props) {
               </details>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#blog`} className='navigationItem-main'>
+              <Link to={`/${locationLanguage}/blog`} className='navigationItem-main'>
                 {props.blog}
               </Link>
             </li>
@@ -118,7 +118,7 @@ function Navigation(props) {
               </Link>
             </li>
             <li className="navigationItem">
-              <Link to={`/${locationLanguage}/#contact-us`} className='navigationItem-main'>
+              <Link to={`/${locationLanguage}/contact`} className='navigationItem-main'>
                 {props.contact}
               </Link>
             </li>
