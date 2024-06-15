@@ -70,7 +70,7 @@ function Footer (props) {
                     {props.contact}
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#contact-us`} className='navigationItem-main'>
+                    <Link to={`/${locationLanguage}/contact`} className='navigationItem-main'>
                       {props.contactUs} <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3475 0.547943L13.4482 1.47237L17.2637 5.39431H0.679688V6.7017H17.2636L13.4482 10.6235L14.3475 11.5479L19.6984 6.04794L14.3475 0.547943Z"></path></svg>
                     </Link>
                   </li>

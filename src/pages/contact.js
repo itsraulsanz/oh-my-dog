@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { useIntl } from "gatsby-plugin-intl";
 
 import "../styles/_layout.scss";
@@ -19,7 +19,7 @@ class contactPage extends React.Component {
 
     return (
       <Layout>
-        <Seo title="Contact Page" />
+        <Seo title={intl.formatMessage({ id: "contact-us.meta-title" })} description={intl.formatMessage({ id: "contact-us.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
         <Contact
           headingText={intl.formatMessage({ id: "contact-us.title" })}
           descriptionText={intl.formatMessage({ id: "contact-us.description" })}

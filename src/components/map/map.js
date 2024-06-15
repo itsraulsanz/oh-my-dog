@@ -28,7 +28,7 @@ export default class Map extends Component {
 
   render() {
     return (
-        <div style={{ height: `50vh` }} id={this.props.id} className="contactMap">
+        <div id={this.props.id} className="contactMap">
         </div>
     )
   }

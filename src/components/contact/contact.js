@@ -16,7 +16,7 @@ export default function Contact(props) {
   const [petinfo, setPetinfo] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
-
+  
   const handleInputChange = (e) => {
     // Getting the value and name of the input which triggered the change
     const { target } = e;
@@ -121,7 +121,7 @@ export default function Contact(props) {
     <div className='contact' id='contact-us'>
       <div className='container-fluid'>
           <div className='contact__text'>
-              <h2 className='contact__text-heading'>{props.headingText}</h2>
+              <h1 className='contact__text-heading'>{props.headingText}</h1>
               <p className='contact__text-description'>{props.descriptionText}</p>
           </div>
 
@@ -141,7 +141,7 @@ export default function Contact(props) {
 
 
             <section className='contact-form__container'>
-              <div className='contact__text'>
+              <div className='contact__text form'>
                 <h2 className='contact__text-heading'>{props.formTitle}</h2>
                 <p className='contact__text-description'>{props.formDescription}</p>
               </div>
