@@ -94,7 +94,7 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#trips`} className='navigationItem-sublist'>
+                      <Link to={`/${locationLanguage}/trips`} className='navigationItem-sublist'>
                         {props.calendar}
                       </Link>
                     </li>
@@ -113,7 +113,7 @@ function Navigation(props) {
               </Link>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#trips`} className='navigationItem-main'>
+              <Link to={`/${locationLanguage}/trips`} className='navigationItem-main'>
                 {props.calendar}
               </Link>
             </li>

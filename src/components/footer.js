@@ -58,7 +58,7 @@ function Footer (props) {
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#trips`} className='navigationItem-sublist'>
+                    <Link to={`/${locationLanguage}/trips`} className='navigationItem-sublist'>
                       {props.calendar}
                     </Link>
                   </li>
