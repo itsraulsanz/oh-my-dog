@@ -1,9 +1,10 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
 import { useIntl } from "gatsby-plugin-intl"
 
+import { graphql } from 'gatsby'
+import get from 'lodash/get'
 import '../styles/_layout.scss';
+import Seo from "../components/seo";
 
 import Layout from '../components/layout'
 import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
@@ -38,6 +39,7 @@ class IndexPage extends React.Component {
 
     return (
       <Layout>
+        <Seo description={intl.formatMessage({ id: "homepage.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
         <HeroWithSlideshow titleText={intl.formatMessage({ id: "hero.title" })} subtitleText={intl.formatMessage({ id: "hero.subtitle" })} descriptionText={intl.formatMessage({ id: "hero.description" })} buttonContact={intl.formatMessage({ id: "general.contact" })} />
         <ServicesBlock headingText={intl.formatMessage({ id: "services-block.title" })} descriptionText={intl.formatMessage({ id: "services-block.description" })} buttonText={intl.formatMessage({ id: "services-block.button" })} buttonContact={intl.formatMessage({ id: "general.contact-us" })}
         block1Title={intl.formatMessage({ id: "services-block.block-1.title" })} block1Text={intl.formatMessage({ id: "services-block.block-1.text" })} block1Advantage1={intl.formatMessage({ id: "services-block.block-1.advantage1" })} block1Advantage2={intl.formatMessage({ id: "services-block.block-1.advantage2" })} block1Advantage3={intl.formatMessage({ id: "services-block.block-1.advantage3" })} 
