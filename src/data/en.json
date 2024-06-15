@@ -11,7 +11,11 @@
         "calendar": "Calendar",
         "contact": "Contact",
         "contact-us": "Contact us",
-        "copyright": "OMD Pet Travel, Inc. All rights reserved"
+        "copyright": "OMD Pet Travel, Inc. All rights reserved",
+        "locale": "en_GB"
+    },
+    "homepage": {
+        "meta-description": "Ohmydog Luxury Pet Travel is your pets trip in First Class service. Professionals with over 10 years of experience. Find out how we can help you."
     },
     "hero": {
         "title": "OMD Pet Travel",
@@ -84,6 +88,8 @@
         "button-text": "Trips Program.pdf"
     },
     "contact-us": {
+        "meta-title": "Contact Us",
+        "meta-description": "Contact Ohmydog Luxury Pet Travel for your pet trip in First Class.",
         "title": "Contact us",
         "description": "If you have any enquiries regarding to our services, feel free to fill in the next section and we will get in touch with you.",
         "open-days": "Monday - Thursday",
@@ -101,8 +107,8 @@
         "location": "Av. de las Jacarandas, 2, 46100 Burjassot, Valencia, Spain",
         "locationLinkText": "View on Google Maps",
         "locationLink": "https://www.google.com/maps/place/Ohmydog+Pet+Travel/@39.5016767,-0.4097061,17z/data=!3m2!4b1!5s0xd60455f2db5b8bd:0xfb33810320c317a2!4m5!3m4!1s0x6ae0f108b8f48f79:0x4a502b3064fe6bbc!8m2!3d39.5016767!4d-0.4075174",
-        "form-title": "Contacta mediante nuestro formulario",
-        "form-description": "Si tienes alguna duda sobre nuestros servicios, por favor rellena el formulario y te responderemos cuanto antes. También puedes llamarnos a nuestro número telefónico durante nuestras horas de apertura.",
+        "form-title": "Send us a message",
+        "form-description": "If you have any enquiries regarding to our services, feel free to fill in the next section and we will get in touch with you.",
         "user-name": "Name",
         "user-email": "Email",
         "user-phone": "Telephone",
