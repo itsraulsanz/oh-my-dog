@@ -4,9 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `OMD Pet Travel`,
+    title: `Ohmydog Luxury Pet Travel`,
     description: `Your pets trip in First Class: dog's transport, cat's transport, rabbit's transport, pet's transport. El viaje de tu mascota en primera clase: transporte perro, transporte gato, transporte conejo, empresa de transporte de mascotas.`,
-    image: `/logo-favicon.png`,
+    keywords: "Pets, Transport, Dogs",
+    robots: "index, follow",
+    image: `https://mywebsite.net/assets/opengraph/theogimage.jpg"/`,
     siteUrl: `https://www.omdtravel.com`
   },
   proxy: {
@@ -25,6 +27,13 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
         host: process.env.CONTENTFUL_HOST
+      },
+    },
+    "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://www.omdtravel.com`,
       },
     },
     {

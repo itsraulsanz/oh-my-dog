@@ -2,7 +2,7 @@ import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
 
-const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
+const Seo = ({ description = '', lang = 'en', meta = [], title, keywords, siteLocale, robots = '' }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -10,8 +10,8 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
           siteMetadata {
             title
             description
-            image
-            siteUrl
+            keywords
+            robots
           }
         }
       }
@@ -19,7 +19,12 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const metaKeywords = keywords || site.siteMetadata.keywords
+  const metaRobots = robots || site.siteMetadata.robots
   const defaultTitle = site.siteMetadata?.title
+  const defaultImage = 'https://www.omdtravel.com//static/logo-99b930d15840e2b175b2b9ed896149e6.svg'
+  const siteUrl = window.location.href
+  const siteName = 'Ohmydog Luxury Pet Travel'
 
   return (
     <Helmet
@@ -29,14 +34,19 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
       title={title}
       defaultTitle={defaultTitle}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
+      locale={`${defaultTitle}`}
       meta={[
         {
           name: `description`,
           content: metaDescription,
         },
         {
-          name: `image`,
-          content: image,
+          name: `keywords`,
+          content: metaKeywords,
+        },
+        {
+          name: `robots`,
+          content: metaRobots,
         },
         {
           property: `og:title`,
@@ -47,12 +57,28 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
           content: metaDescription,
         },
         {
+          property: `og:url`,
+          content: siteUrl,
+        },
+        {
+          property: `og:site_name`,
+          content: siteName,
+        },
+                {
+          property: `og:locale`,
+          content: siteLocale,
+        },
+        {
+          property: `og:keywords`,
+          content: metaKeywords,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
         {
           property: `og:image`,
-          content: image,
+          content: defaultImage,
         },
       ].concat(meta)}
     />
