@@ -70,9 +70,15 @@
         "reviewsText": "reviews"
     },
     "passport": {
-        "title": "How to check a pet Passport?",
+        "meta-title": "Calendario de viajes",
+        "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
+        "title": "Pet Passport",
+        "description": "A continuación os dejamos la información correspondiente al pasaporte de mascotas y los requisitos para viajar con animales de compañía en los territorios de Irlanda del Norte, Gran Bretaña y Unión Europea. 🚦",
+        "subtitle": "How to check a pet Passport?",
         "description1": "Feel free to check all the information regarding pet passports in the PDF by clicking the link below:",
-        "button-text": "How to Complete Pet Passports.pdf"
+        "button-text": "How to Complete Pet Passports.pdf",
+        "title2": "El Esquema de Viaje de Mascotas de la Unión Europea: Cómo Completar Pasaportes para Mascotas",
+        "description2": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:"
     },
     "about-us": {
         "title": "About us",
@@ -81,11 +87,15 @@
         "description3": "Our state-of-the-art vehicles are equipped with the latest technology and features, including climate control, padded floors, relaxing music, and anti-stress décor to ensure a stress-free and peaceful journey for your pet.",
         "description4": "Therefore, if you need to transport your pet, whether for a move or for a vacation, trust Ohmydog to provide you with the best care and service. Contact us today for more information and to start planning your pet's travel."   
     },
-    "our-trips-banner": {
-        "title": "Our next Trips for ",
+    "trips": {
+        "meta-title": "Calendar of trips",
+        "meta-description": "Check our calendar of trips and book your pet's transport.",
+        "title": "Our next Trips",
         "description1": "You can check all the information regarding our trips program for ",
         "description2": " in the pdf below:",
-        "button-text": "Trips Program.pdf"
+        "button-text": "Trips Program.pdf",
+        "description3": "Si el viaje de tu mascota no se encuentra dentro de los destinos ya detallados para este año, no dudes en consultarnos con respecto a otras rutas y fechas posibles hablando directamente con nosotros mediante nuestra página de contacto, ya que cubrimos muchos otros trayectos que no se encuentran en este calendario fijo.",
+        "description4": "También puedes contactar con nosotros de forma inmediata a través del botón de WhatsApp que puedes ver en la esquina inferior derecha de esta página."
     },
     "contact-us": {
         "meta-title": "Contact Us",

@@ -70,9 +70,15 @@
         "reviewsText": "reseñas"
     },
     "passport": {
-        "title": "¿Cómo comprobar el pasaporte de una mascota?",
+        "meta-title": "Calendario de viajes",
+        "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
+        "title": "Pasaporte de mascotas",
+        "description": "A continuación os dejamos la información correspondiente al pasaporte de mascotas y los requisitos para viajar con animales de compañía en los territorios de Irlanda del Norte, Gran Bretaña y Unión Europea. 🚦",
+        "subtitle": "¿Cómo comprobar el pasaporte de una mascota?",
         "description1": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:",
-        "button-text": "Pasaporte de tu mascota.pdf"
+        "button-text": "Pasaporte de tu mascota.pdf",
+        "title2": "El Esquema de Viaje de Mascotas de la Unión Europea: Cómo Completar Pasaportes para Mascotas",
+        "description2": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:"
     },
     "about-us": {
         "title": "Acerca de nosotros",
@@ -81,11 +87,15 @@
         "description3": "Nuestros vehículos de última generación están equipados con la última tecnología y recursos, que incluyen control de temperatura, suelos acolchados, música relajante y una decoración antiestrés para garantizar un viaje tranquilo y sin estrés para su mascota.",
         "description4": "Por eso, si necesitas transportar a tu mascota, ya sea para una mudanza o para unas vacaciones, confía en Ohmydog para brindarte la mejor atención y servicio. Contáctenos hoy para obtener más información y comenzar a planificar los viajes de su mascota."   
     },
-    "our-trips-banner": {
-        "title": "Nuestros viajes para ",
+    "trips": {
+        "meta-title": "Calendario de viajes",
+        "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
+        "title": "Nuestros próximos viajes",
         "description1": "Puedes consultar toda la información sobre nuestro programa de viajes para ",
         "description2": " en el siguiente pdf:",
-        "button-text": "ProgramaDeViajes.pdf"
+        "button-text": "ProgramaDeViajes.pdf",
+        "description3": "Si el viaje de tu mascota no se encuentra dentro de los destinos ya detallados para este año, no dudes en consultarnos con respecto a otras rutas y fechas posibles hablando directamente con nosotros mediante nuestra página de contacto, ya que cubrimos muchos otros trayectos que no se encuentran en este calendario fijo.",
+        "description4": "También puedes contactar con nosotros de forma inmediata a través del botón de WhatsApp que puedes ver en la esquina inferior derecha de esta página."
     },
     "contact-us": {
         "meta-title": "Contáctanos",
