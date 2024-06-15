@@ -121,10 +121,16 @@ export default function Contact(props) {
     <div className='contact' id='contact-us'>
       <div className='container-fluid'>
           <div className='contact__text'>
+            {props.headingText && 
               <h1 className='contact__text-heading'>{props.headingText}</h1>
+            }
+            {props.subHeadingText &&
+              <h2 className='contact__text-heading'>{props.subHeadingText}</h2>
+            }
+            {props.descriptionText && 
               <p className='contact__text-description'>{props.descriptionText}</p>
+            }
           </div>
-
           <div className='contact__box'>
             <section className='contact__info'>
               <ul className='contact__info-days'>
