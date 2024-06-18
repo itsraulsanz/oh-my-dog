@@ -1,26 +1,42 @@
 import React, { useState } from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image'
+import { Link } from 'gatsby'
 
 import './gallery.scss'
 
-const ImageGallery = ({galleryImages, headingText, descriptionText}) => {
+const ImageGallery = ({galleryImages, headingText, subheadingText, descriptionText, link}) => {
   const [openedItem, setOpenedItem] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
 		setIsOpen(!isOpen);
 	};
 
+  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const locationLanguage = pathname.split("/")[1];
+
   return (
     <div id='gallery' className='gallery'>
       <div className='container-fluid'>
-        <div className='gallery__heading'>
-          <h2 className='gallery__heading-title'>{headingText}</h2>
-          <p className='gallery__heading-description'>{descriptionText}</p>
-        </div>
+        {headingText || subheadingText || descriptionText ? 
+          <div className='gallery__heading'>
+            {headingText && 
+              <h2 className='gallery__heading-title'>{headingText}</h2>
+            }
+      
+            {subheadingText &&
+              <h2 className='gallery__heading-title'>{subheadingText}</h2>
+            }
+                  
+            {descriptionText &&
+              <p className='gallery__heading-description'>{descriptionText}</p>
+            }
+          </div>
+        : null}
+        
         <div className='gallery__container'>
           <ul className='gallery__list'>
-            {galleryImages.map((galleryImage, index) => (
-              <li className={`gallery__list-image ${index}`} key={index} onClick={() => 
+            {galleryImages.map((galleryImage, index, span) => (
+              <li className={`gallery__list-image ` + (galleryImage.span ? 'span-' + galleryImage.span : '')} key={index} onClick={() => 
                 {setOpenedItem(index); setIsOpen(!isOpen);}
               }>
                 <GatsbyImage alt={galleryImage.title} image={galleryImage.image.gatsbyImage} key={index} />
@@ -52,6 +68,12 @@ const ImageGallery = ({galleryImages, headingText, descriptionText}) => {
                 </div>
           )}
         </div>
+
+        {link ? 
+          <Link to={`/${locationLanguage}/gallery`} className='button-secondary center'>
+            {link}
+          </Link>
+        : null }
       </div>
     </div>
   )
