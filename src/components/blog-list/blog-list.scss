@@ -1,6 +1,8 @@
 @import '../../styles/colors';
 
 .article-preview {
+  padding: 50px 0 0;
+
   .container-fluid {
     display: flex;
     flex-direction: column;
@@ -12,6 +14,7 @@
     justify-content: center;
     align-self: center;
     margin-bottom: 25px;
+    text-align: center;
 
     @media only screen and (min-width: 600px) {
         display: flex;
@@ -19,32 +22,33 @@
         width: 70%;
     }
 
-    h2 {
+    h1 {
         margin-top: 0;
-        line-height: 48px;
         text-align: center;
 
         @media only screen and (max-width: 399px) {
             font-size: 22px;
-            line-height: 28px;
         }
 
         @media only screen and (min-width: 400px) and (max-width: 800px) {
             font-size: 30px;
-            line-height: 38px;
         }
+    }
 
+    h2 {
+      text-align: center;
     }
 
     p.article-preview__heading-description {
-        font-size: 16px;
+        font-size: 20px;
+        margin-top: 0;
         margin-bottom: 0;
         padding-bottom: 0;
         text-align: center;
         line-height: normal;
 
         @media (min-width: 600px) {
-            font-size: 17px;
+          font-size: 18px;
         }
     }
   }
@@ -160,5 +164,9 @@
         display: block;
       }
     }
+  }
+
+  .button-secondary {
+    align-self: center;
   }
 }

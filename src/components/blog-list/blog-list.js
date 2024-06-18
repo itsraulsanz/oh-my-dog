@@ -7,7 +7,7 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text'
 
 import './blog-list.scss'
 
-const PaginatedPosts = ({posts, headingText, descriptionText}) => {
+const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, link}) => {
 	const [blogPosts, setBlogPosts] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [postsPerPage] = useState(3);
@@ -27,15 +27,28 @@ const PaginatedPosts = ({posts, headingText, descriptionText}) => {
 		setCurrentPage(selected + 1);
 	};
 
-  // console.log('numblogs', blogPosts.length)
+  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  const locationLanguage = pathname.split("/")[1];
 
   return (
     <div className='article-preview' id='blog'>
       <div className='container-fluid'>
-        <div className='article-preview__heading'>
-        <h2 className='article-preview__heading-title'>{headingText}</h2>
-        <p className='article-preview__heading-description'>{descriptionText}</p>
-      </div>
+        {headingText || subheadingText || descriptionText ? 
+          <div className='article-preview__heading'>
+            {headingText && 
+              <h1 className='article-preview__heading-title'>{headingText}</h1>
+            }
+      
+            {subheadingText &&
+              <h2 className='article-preview__heading-title'>{subheadingText}</h2>
+            }
+                  
+            {descriptionText &&
+              <p className='article-preview__heading-description'>{descriptionText}</p>
+            }
+          </div>
+        : null}
+
         {blogPosts ? (
           <div>
           <ul className='article-list'>
@@ -68,6 +81,12 @@ const PaginatedPosts = ({posts, headingText, descriptionText}) => {
         ) : (
           <div className="loading">Loading...</div>
         )}
+
+        {link ? 
+          <Link to={`/${locationLanguage}/blog`} className='button-secondary'>
+            {link}
+          </Link>
+        : null }
       </div>
     </div>
   )
