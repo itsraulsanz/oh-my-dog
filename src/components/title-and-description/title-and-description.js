@@ -10,6 +10,10 @@ export default function TitleAndDescription(props) {
               <h1 className='contact__text-heading'>{props.headingText}</h1>
             }
 
+            {props.subheadingText && 
+              <h2 className='contact__text-heading'>{props.subheadingText}</h2>
+            }
+
             {props.descriptionText && 
               <p className='contact__text-description'>{props.descriptionText}</p>
             }     
