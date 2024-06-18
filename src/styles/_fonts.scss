@@ -128,11 +128,9 @@ h1 {
 h2 {
     @include heading-secondary;
     font-size: 32px;
-    line-height: 15px;
     
     @media (min-width: 800px) {
         font-size: 44px;
-        line-height: 20px;
     }
 }
 
