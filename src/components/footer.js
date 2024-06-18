@@ -31,7 +31,7 @@ function Footer (props) {
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#gallery`} className='navigationItem-sublist'>
+                    <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist'>
                       {props.gallery}
                     </Link>
                   </li>
@@ -53,7 +53,7 @@ function Footer (props) {
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#passport`} className='navigationItem-sublist'>
+                    <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist'>
                       {props.petPassport}
                     </Link>
                   </li>

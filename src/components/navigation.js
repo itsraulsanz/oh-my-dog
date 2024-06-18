@@ -63,7 +63,7 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#gallery`} className='navigationItem-sublist'>
+                      <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist'>
                         {props.gallery}
                       </Link>
                     </li>
@@ -89,7 +89,7 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#passport`} className='navigationItem-sublist'>
+                      <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist'>
                         {props.petPassport}
                       </Link>
                     </li>
@@ -108,7 +108,7 @@ function Navigation(props) {
               </Link>
             </li>
             <li className="navigationItem medium-hide">
-              <Link to={`/${locationLanguage}/#passport`} className='navigationItem-main'>
+              <Link to={`/${locationLanguage}/passport`} className='navigationItem-main'>
                 {props.petPassport}
               </Link>
             </li>
@@ -179,7 +179,7 @@ function Navigation(props) {
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#gallery`} className='navigationItem-link'>
+                  <Link to={`/${locationLanguage}/gallery`} className='navigationItem-link'>
                     {props.gallery}
                   </Link>
                 </li>
@@ -194,7 +194,7 @@ function Navigation(props) {
                   </Link>
                 </li>
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#passport`} className='navigationItem-link'>
+                  <Link to={`/${locationLanguage}/passport`} className='navigationItem-link'>
                     {props.petPassport}
                   </Link>
                 </li>
