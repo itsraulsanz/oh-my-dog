@@ -3,22 +3,16 @@ import './text-banner.scss'
 
 import Footprint from "../../images/footprint.svg"
 
-export default function TextBanner({id, color, headingText, subHeadingText, year, descriptionText1, descriptionText2, pdf, buttonText, pdfCalendar}) {  return (
+export default function TextBanner({id, color, headingText, subheadingText, year, descriptionText1, descriptionText2, pdf, buttonText, pdfCalendar}) {  return (
     <div className='text-banner' id={id}>
       <div className='container-fluid'>
           <div className='text-banner__text' id={color}>
-              <h2 className='text-banner__text-heading'>
                 {headingText && 
-                  <h1 className='contact__text-heading'>{headingText}</h1>
+                  <h1 className='text-banner__text-heading'>{headingText} {year && <span>{year}</span>} </h1>
                 }
-                {subHeadingText &&
-                  <h2 className='contact__text-heading'>{subHeadingText}</h2>
+                {subheadingText &&
+                  <h2 className='text-banner__text-heading'>{subheadingText} {year && <span>{year}</span>}</h2>
                 }
-                
-                {year &&
-                  <span>{year}</span>
-                }
-              </h2>
               <p className='text-banner__text-description'>
                 {descriptionText1}
                 {year &&
