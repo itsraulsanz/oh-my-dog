@@ -15,7 +15,11 @@
         "locale": "es_ES"
     },
     "homepage": {
-        "meta-description": "Ohmydog Luxury Pet Travel es el servicio de transporte en primera clase para tu mascota. Profesionales con mas de 10 años de experiencia. Descúbre cómo podemos ayudarte."
+        "meta-description": "Ohmydog Luxury Pet Travel es el servicio de transporte en primera clase para tu mascota. Profesionales con mas de 10 años de experiencia. Descúbre cómo podemos ayudarte.",
+        "gallery": {
+            "title": "Nuestra furgoneta",
+            "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota."
+        }
     },
     "hero": {
         "title": "OMD Pet Travel",
@@ -62,6 +66,8 @@
         "time": "minutos de lectura"
     },
     "gallery": {
+        "meta-title": "Galería - Ohmydog Pet Travel",
+        "meta-description": "Conoce más a fondo Ohmydog Pet Travel: nuestros vehículos adaptados para transportar mascotas y nuestro equipo especializado.",
         "title": "Galería Ohmydog",
         "description": "¡Bienvenido a nuestra sección de galería! Aquí puede ver fotos de nuestros vehículos y nuestros pasajeros peludos!"
     },
@@ -90,7 +96,7 @@
     "trips": {
         "meta-title": "Calendario de viajes",
         "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
-        "title": "Nuestros próximos viajes",
+        "title": "Próximos viajes",
         "description1": "Puedes consultar toda la información sobre nuestro programa de viajes para ",
         "description2": " en el siguiente pdf:",
         "button-text": "ProgramaDeViajes.pdf",

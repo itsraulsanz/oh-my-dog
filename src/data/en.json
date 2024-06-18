@@ -15,7 +15,11 @@
         "locale": "en_GB"
     },
     "homepage": {
-        "meta-description": "Ohmydog Luxury Pet Travel is your pets trip in First Class service. Professionals with over 10 years of experience. Find out how we can help you."
+        "meta-description": "Ohmydog Luxury Pet Travel is your pets trip in First Class service. Professionals with over 10 years of experience. Find out how we can help you.",
+        "gallery": {
+            "title": "Our van",
+            "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota."
+        }
     },
     "hero": {
         "title": "OMD Pet Travel",
@@ -62,6 +66,8 @@
         "time": "minute read"
     },
     "gallery": {
+        "meta-title": "Galería - Ohmydog Pet Travel",
+        "meta-description": "Conoce más a fondo Ohmydog Pet Travel: nuestros vehículos adaptados para transportar mascotas y nuestro equipo especializado.",
         "title": "Ohmydog Gallery",
         "description": "Welcome to our gallery section! Here you can see photos of our vehicles and our PAWssengers."
     },
