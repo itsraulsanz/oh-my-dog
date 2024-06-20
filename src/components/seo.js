@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Helmet } from 'react-helmet'
 import { useStaticQuery, graphql } from 'gatsby'
+import omdLogo from "../images/logo.svg"
 
 const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
   const { site } = useStaticQuery(
@@ -32,7 +33,7 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: {description},
         },
         {
           name: `image`,
@@ -40,11 +41,11 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: {title},
         },
         {
           property: `og:description`,
-          content: metaDescription,
+          content: {description},
         },
         {
           property: `og:type`,
@@ -52,7 +53,7 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, image }) => {
         },
         {
           property: `og:image`,
-          content: image,
+          content: {omdLogo},
         },
       ].concat(meta)}
     />
