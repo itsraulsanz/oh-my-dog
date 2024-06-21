@@ -21,7 +21,7 @@ function Footer (props) {
                     {props.whyUs}
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#services`} className='navigationItem-sublist'>
+                    <Link to={`/${locationLanguage}/services`} className='navigationItem-sublist'>
                       {props.services}
                     </Link>
                   </li>

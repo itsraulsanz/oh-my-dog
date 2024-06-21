@@ -21,6 +21,27 @@
             "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota."
         }
     },
+    "services": {
+        "meta-title": "Transporte de Mascotas",
+        "meta-description": "Somos especialistas en transporte de mascotas. Responsabilidad, seguridad, empatía y transparencia total en su viaje.",
+        "title": "Transporte de Mascotas",
+        "description1": "Ofrecemos un servicio de transporte de mascotas que va más allá de un simple traslado: nos comprometemos a garantizar el bienestar físico y emocional de tu animal querido durante todo el viaje. No somos una simple empresa de envíos…somos especialistas en transportar mascotas, animales vivos con necesidades y emociones de todo tipo.",
+        "description2": "En Ohmydog Pet Travel, entendemos de sobra que las mascotas no son simples «cosas», sino miembros importantes de tu familia. Comparten contigo alegrías, tristezas y momentos inolvidables. Por este motivo, se merecen lo mejor.",
+        "section1-title": "Compromiso con la Seguridad y el Bienestar",
+        "section1-description": "Sabemos lo importante que es para ti que tu mascota viaje de manera segura y cómoda, ya sea a nivel local o internacional. En Ohmydog Pet Travel, nos aseguramos de que todos los trámites de transporte internacional estén correctamente realizados, evitando demoras innecesarias. Nuestro equipo de expertos conoce a la perfección las regulaciones y requisitos específicos para el transporte de mascotas, lo que te da la tranquilidad de saber que tu compañero animal estará en las mejores manos.",
+        "section2-title": "La Furgoneta Perfecta para tu Mascota",
+        "section2-description": "Contamos con una furgoneta especialmente diseñada y equipada para el transporte de mascotas. Nuestra furgoneta cumple con todos los requisitos y certificaciones necesarias para garantizar la comodidad y seguridad de tu mascota durante el viaje. Cuentan con sistemas de ventilación, temperatura controlada y espacios diseñados para que tu mascota adorada viaje de manera segura y confortable.",
+        "section3-title": "Conexión Permanente con tu Mascota",
+        "section3-description1": "En Ohmydog Pet Travel, nos preocupamos profundamente por el bienestar de tu fiel compañero durante su traslado. Hemos desarrollado un sistema de comunicación continua con los dueños de los animalitos, para mantenerlos al tanto del progreso y bienestar de sus adoradas mascotas mientras viajan con nosotros.",
+        "section3-description2": "Durante todo el trayecto, te brindaremos actualizaciones regulares sobre el estado y comodidad de tu mascota. Queremos que te sientas seguro y confiado en nuestro servicio, por eso estamos comprometidos en ofrecerte la tranquilidad de saber que tu compañero peludo está siendo cuidado y atendido como merece durante el viaje.",
+        "section4-title": "Sigue los Pasos de tu Mascota en Tiempo Real",
+        "section4-description": "Como especialistas en el transporte de mascotas, nos apoyamos en la última tecnología para garantizar la máxima tranquilidad de nuestros queridos clientes. Empleamos sistemas de rastreo GPS de vanguardia instalados en nuestra furgoneta, lo que posibilita un seguimiento preciso y en tiempo real de todo el viaje. Esto significa que podrás conocer la ubicación exacta de tu mascota en cualquier momento del trayecto. Asimismo, disponemos de cámaras web que te permiten observar el bienestar de tu animal durante todo el recorrido. Esta conexión continua te ofrece la tranquilidad de saber que tu mascota está bajo cuidado experto, al mismo tiempo que te brinda la sensación de tenerla más cerca de ti en todo momento.",
+        "section5-title": "Profesionales Formados en Bienestar Animal Físico y Emocional",
+        "section5-description": "Nuestro personal está especialmente formado en bienestar animal, y es conocedor de técnicas de primeros auxilios veterinarios. Estamos preparados para actuar de manera inmediata y brindar los cuidados iniciales necesarios en situaciones de emergencia, hasta que se pueda proporcionar la atención veterinaria profesional requerida. Puedes confiar en que tu mascota estará en manos expertas, cariñosas y cuidadosas durante toda la travesía.",
+        "section6-title": "Confía en Ohmydog Pet Travel",
+        "section6-description1": "Al optar por nosotros para transportar a tu mascota, eliges un servicio de excelencia, comprometido con el bienestar y la seguridad de tu amigo peludo. Ya sea un viaje corto o largo, nacional o internacional, nuestro compromiso es cuidarlos como si fueran parte de nuestra propia familia.",
+        "section6-description2": "En Ohmydog Pet Travel, tu mascota recibirá siempre el amor y el cuidado que se merece. Nos esforzamos constantemente por ofrecer un servicio de calidad para garantizar que tu mascota llegue a su destino feliz y saludable. Tu tranquilidad es nuestra máxima prioridad."
+    },
     "hero": {
         "title": "OMD Pet Travel",
         "subtitle": "Your pets trip in First Class",

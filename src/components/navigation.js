@@ -53,7 +53,7 @@ function Navigation(props) {
                 <div className='details-submenu-list why-us'>
                   <ul className="navigation-submenu-list">
                     <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/#services`} className='navigationItem-sublist'>
+                      <Link to={`/${locationLanguage}/services`} className='navigationItem-sublist'>
                         {props.services}
                       </Link>
                     </li>
@@ -169,7 +169,7 @@ function Navigation(props) {
               </ul>
               <ul className="mobile-navigation-menu">
                 <li className="navigationItem">
-                  <Link to={`/${locationLanguage}/#services`} className='navigationItem-link'>
+                  <Link to={`/${locationLanguage}/services`} className='navigationItem-link'>
                     {props.services}
                   </Link>
                 </li>
