@@ -16,7 +16,11 @@ export default function TitleAndDescription(props) {
 
             {props.descriptionText && 
               <p className='contact__text-description'>{props.descriptionText}</p>
-            }     
+            }
+
+            {props.descriptionText2 && 
+              <p className='contact__text-description'>{props.descriptionText2}</p>
+            }   
           </div>
       </div>
     </div>
