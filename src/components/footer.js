@@ -26,7 +26,7 @@ function Footer (props) {
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#about-us`} className='navigationItem-sublist'>
+                    <Link to={`/${locationLanguage}/about-us`} className='navigationItem-sublist'>
                       {props.aboutUs}
                     </Link>
                   </li>
