@@ -1,15 +1,53 @@
 @import '../../styles/colors';
 
 .reviews {
-  margin-bottom: 30px;
+  &.padding {
+    padding: 30px 0 50px;
+  }
+
+  &.padding-top {
+      padding: 30px 0 0;
+  }
+
+  &.padding-bottom {
+      padding: 0 0 50px;
+  }
+
+  &.non-padding {
+      padding: 0;
+  }
 
   @media only screen and (min-width: 600px) {
-    margin-bottom: 50px;
+    &.padding {
+      padding: 50px 0 50px;
+    }
+  
+    &.padding-top {
+        padding: 50px 0 0;
+    }
+  
+    &.padding-bottom {
+        padding: 0 0 50px;
+    }
+  
+    &.non-padding {
+        padding: 0;
+    }
   }
 
   .container-fluid {
     display: flex;
     flex-direction: column;
+    
+    &.border-top {
+      padding-top: 50px;
+      border-top: 1px solid #ED7C23;
+    }
+
+    &.border-bottom {
+      padding-bottom: 50px;
+      border-bottom: 1px solid #ED7C23;
+    }
   }
 
   .reviews__heading {
@@ -17,6 +55,7 @@
     align-items: center;
     justify-content: center;
     align-self: center;
+    
     margin-bottom: 50px;
 
     @media only screen and (min-width: 600px) {

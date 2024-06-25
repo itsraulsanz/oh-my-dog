@@ -77,7 +77,6 @@ class petPassport extends React.Component {
   }
 }
 
-
 export const pageQuery = graphql`
   query HomeQuery($language: String) {
     allContentfulTextContent(filter: { node_locale: { eq: $language } }) {

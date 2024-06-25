@@ -4,10 +4,10 @@ import { Carousel } from 'react-responsive-carousel';
 
 import './reviews.scss'
 
-function ReviewsPage ({headingText, reviewsText, reviews, rating, userRating}) { 
+function ReviewsPage ({headingText, reviewsText, reviews, rating, userRating, padding, color, border}) { 
   return (
-    <div id='reviews' className='reviews'>
-        <div className='container-fluid'>
+    <div id='reviews' className={`reviews ${ padding }`} style={{ background: color }}>
+        <div className={`container-fluid ${ border }`} >
           <div className='reviews__heading'>
             <h2 className='reviews__heading-title'>{headingText}</h2>
             <div className='reviews__heading-rating'>
@@ -28,7 +28,8 @@ function ReviewsPage ({headingText, reviewsText, reviews, rating, userRating}) {
                       </div>
                     </div>
                   </div>
-                  <p>{`${review.text.substring(0, 350)}...`}</p>
+                  {/* <p>{`${review.text.substring(0, 350)}...`}</p> */}
+                  <p>{review.text}</p>
                 </div>
               )
             })}

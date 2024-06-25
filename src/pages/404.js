@@ -18,7 +18,7 @@ class Error extends React.Component {
     return (
       <Layout location={this.props.location}>
         <Seo title="Page not found" />
-            <TextBanner color="orange" headingText={intl.formatMessage({ id: "error.title" })} descriptionText1={intl.formatMessage({ id: "error.description1" })} descriptionText2={intl.formatMessage({ id: "error.description2" })} buttonText={intl.formatMessage({ id: "error.button-text" })} />
+            <TextBanner color="orange" headingText={intl.formatMessage({ id: "error.title" })} descriptionText1={intl.formatMessage({ id: "error.description1" })} buttonText={intl.formatMessage({ id: "error.button-text" })} />
       </Layout>
     )
   }

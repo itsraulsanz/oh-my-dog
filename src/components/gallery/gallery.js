@@ -4,7 +4,7 @@ import { Link } from 'gatsby'
 
 import './gallery.scss'
 
-const ImageGallery = ({galleryImages, headingText, subheadingText, descriptionText, link}) => {
+const ImageGallery = ({galleryImages, headingText, subheadingText, descriptionText, link, color}) => {
   const [openedItem, setOpenedItem] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => {
@@ -15,7 +15,7 @@ const ImageGallery = ({galleryImages, headingText, subheadingText, descriptionTe
   const locationLanguage = pathname.split("/")[1];
 
   return (
-    <div id='gallery' className='gallery'>
+    <div id='gallery' className='gallery' style={{ background: color }}>
       <div className='container-fluid'>
         {headingText || subheadingText || descriptionText ? 
           <div className='gallery__heading'>

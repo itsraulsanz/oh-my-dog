@@ -4,10 +4,17 @@ import './text-block-2columns.scss'
 export default function TextBlock(props) {
 
   return (
-    <div className='text-block-2columns' id={props.id}>
+    <div id={props.id} className={`text-block-2columns ${ props.padding }`} style={{ background: props.color }}>
       <div className='container-fluid'>
           <div className='text-block-2columns__text'>
-              <h2 className='text-block-2columns__text-heading'>{props.headingText}</h2>
+            {props.headingText && 
+              <h1 className='contact__text-heading'>{props.headingText}</h1>
+            }
+
+            {props.subheadingText && 
+              <h2 className='contact__text-heading'>{props.subheadingText}</h2>
+            }
+
               <div className='text-block-2columns__columns-container'>
                 <div className='text-block-2columns__column'>
                   <p className='text-block-2columns__text-description'>{props.bodyText1}</p>
@@ -18,7 +25,10 @@ export default function TextBlock(props) {
                   <p className='text-block-2columns__text-description'>{props.bodyText4}</p>
                 </div>
               </div>
-              <img src={props.logo} alt='Logo Defra' width={100} height={62} />
+
+              {props.image && 
+                <img src={props.image} alt='Logo Defra' width={100} height={62} />
+              }
           </div>
       </div>
     </div>

@@ -19,6 +19,18 @@
         "gallery": {
             "title": "Nuestra furgoneta",
             "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota."
+        },
+        "services": {
+            "title": "Servicios que ofrecemos",
+            "description1": "Confía en nosotros para transportar a su mascota de forma segura y cómoda con la última tecnología.",
+            "description2": "Sabemos por experiencia propia que las mascotas son parte de la familia. Por eso brindamos transparencia, empatía, calidad y tranquilidad a las personas que confían en nuestro servicio de transporte. Garantizamos que tu mascota será transportada en un entorno de seguridad absoluta, comodidad, mimos y atención dedicada."
+        },  
+        "about-us": {
+            "title": "Acerca de nosotros",
+            "description1": "Bienvenido a Ohmydog, una empresa de transporte de mascotas confiable. Nuestra principal prioridad es la seguridad y la comodidad de tu amigo peludo. Entendemos que dejar a su mascota puede ser estresante y emotivo, por lo que nos esforzamos por hacer que el proceso de transporte sea lo más cómodo y libre de estrés posible.",
+            "description2": "Nuestro equipo de profesionales experimentados y dedicados se encargará de todos los aspectos del transporte de su mascota, desde la recogida hasta la entrega.",
+            "description3": "Nuestros vehículos de última generación están equipados con la última tecnología y recursos, que incluyen control de temperatura, suelos acolchados, música relajante y una decoración antiestrés para garantizar un viaje tranquilo y sin estrés para su mascota.",
+            "description4": "Por eso, si necesitas transportar a tu mascota, ya sea para una mudanza o para unas vacaciones, confía en Ohmydog para brindarte la mejor atención y servicio. Contáctenos hoy para obtener más información y comenzar a planificar los viajes de su mascota."   
         }
     },
     "services": {
@@ -108,6 +120,8 @@
         "description2": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:"
     },
     "about-us": {
+        "meta-title": "Especializados en el transporte de animales",
+        "meta-description": "Tu mascota es uno mas en la familia. Garantizamos seguridad, empatía y transparencia en el transporte de tu mascota.",
         "title": "Acerca de nosotros",
         "description1": "Bienvenido a Ohmydog, una empresa de transporte de mascotas confiable. Nuestra principal prioridad es la seguridad y la comodidad de tu amigo peludo. Entendemos que dejar a su mascota puede ser estresante y emotivo, por lo que nos esforzamos por hacer que el proceso de transporte sea lo más cómodo y libre de estrés posible.",
         "description2": "Nuestro equipo de profesionales experimentados y dedicados se encargará de todos los aspectos del transporte de su mascota, desde la recogida hasta la entrega.",
