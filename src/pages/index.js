@@ -1,24 +1,27 @@
-import React from 'react'
-import { useIntl } from "gatsby-plugin-intl"
+import React from 'react';
+import { useIntl } from 'gatsby-plugin-intl';
 
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
 import '../styles/_layout.scss';
 import Seo from "../components/seo";
 
-import Layout from '../components/layout'
-import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow'
-import ServicesBlock from '../components/services-block/services-block'
+import Layout from '../components/layout';
+import HeroWithSlideshow from '../components/hero-with-slideshow/hero-with-slideshow';
+import Banners from '../components/banners/banners';
+import TitleAndDescription from '../components/title-and-description/title-and-description';
+import ServicesBlock from '../components/services-block/services-block';
 import BlogList from '../components/blog-list/blog-list';
 import Gallery from '../components/gallery/gallery';
-import TextBlock2Columns from '../components/text-block-2columns/text-block-2columns'
-import TextBanner from '../components/text-banner/text-banner'
-import Reviews from '../components/reviews/reviews'
-import Contact from '../components/contact/contact'
+import TextBlock2Columns from '../components/text-block-2columns/text-block-2columns';
+import TextBanner from '../components/text-banner/text-banner';
+import Reviews from '../components/reviews/reviews';
+import Contact from '../components/contact/contact';
 
-import Passport from '../pdf/HowtoCompletePetPassports.pdf'
+import Passport from '../pdf/HowtoCompletePetPassports.pdf';
 
-import LogoDefra from '../images/logo-defra.webp'
+import LogoDefra from '../images/logo-defra.webp';
+import CitySelector from '../components/city-selector/city-selector';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
@@ -34,26 +37,37 @@ class IndexPage extends React.Component {
     const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url')
     const intl = this.props.intlValue;
     const currentYear = new Date().getFullYear();
+    const bannersData = get(this, 'props.data.allContentfulBanner.nodes');
     const reviewsData = get(this, 'props.data.reviews')
     const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
+    const cityOptions = get(this, 'props.data.allContentfulCity.nodes')
+
+    console.log('cityOptions', cityOptions);
 
     return (
       <Layout>
         <Seo description={intl.formatMessage({ id: "homepage.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
         <HeroWithSlideshow titleText={intl.formatMessage({ id: "hero.title" })} subtitleText={intl.formatMessage({ id: "hero.subtitle" })} descriptionText={intl.formatMessage({ id: "hero.description" })} buttonContact={intl.formatMessage({ id: "general.contact" })} />
-        <ServicesBlock headingText={intl.formatMessage({ id: "services-block.title" })} descriptionText={intl.formatMessage({ id: "services-block.description" })} buttonText={intl.formatMessage({ id: "services-block.button" })} buttonContact={intl.formatMessage({ id: "general.contact-us" })}
+        <TitleAndDescription color="#ffffff" padding="non-padding" subheadingText={intl.formatMessage({ id: "homepage.services.title" })} />
+        <Banners color="#ffffff" banners={bannersData} />
+        <TitleAndDescription color="#ffffff" padding="padding-bottom" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} />
+        
+        <Gallery color="#FCEEDD" galleryImages={galleryImagesData} subheadingText={intl.formatMessage({ id: "homepage.gallery.title" })} descriptionText={intl.formatMessage({ id: "homepage.gallery.description" })} link={intl.formatMessage({ id: "homepage.gallery.title" })} />
+
+        {/* <ServicesBlock headingText={intl.formatMessage({ id: "services-block.title" })} descriptionText={intl.formatMessage({ id: "services-block.description" })} buttonText={intl.formatMessage({ id: "services-block.button" })} buttonContact={intl.formatMessage({ id: "general.contact-us" })}
         block1Title={intl.formatMessage({ id: "services-block.block-1.title" })} block1Text={intl.formatMessage({ id: "services-block.block-1.text" })} block1Advantage1={intl.formatMessage({ id: "services-block.block-1.advantage1" })} block1Advantage2={intl.formatMessage({ id: "services-block.block-1.advantage2" })} block1Advantage3={intl.formatMessage({ id: "services-block.block-1.advantage3" })} 
         block2Title={intl.formatMessage({ id: "services-block.block-2.title" })} block2Text={intl.formatMessage({ id: "services-block.block-2.text" })} block2Advantage1={intl.formatMessage({ id: "services-block.block-2.advantage1" })} block2Advantage2={intl.formatMessage({ id: "services-block.block-2.advantage2" })} block2Advantage3={intl.formatMessage({ id: "services-block.block-2.advantage3" })} block2Advantage4={intl.formatMessage({ id: "services-block.block-2.advantage4" })}
         block3Title={intl.formatMessage({ id: "services-block.block-3.title" })} block3Text={intl.formatMessage({ id: "services-block.block-3.text" })} block3Advantage1={intl.formatMessage({ id: "services-block.block-3.advantage1" })} block3Advantage2={intl.formatMessage({ id: "services-block.block-3.advantage2" })} 
         block4Title={intl.formatMessage({ id: "services-block.block-4.title" })} block4Text={intl.formatMessage({ id: "services-block.block-4.text" })} block4Advantage1={intl.formatMessage({ id: "services-block.block-4.advantage1" })} block4Advantage2={intl.formatMessage({ id: "services-block.block-4.advantage2" })} block4Advantage3={intl.formatMessage({ id: "services-block.block-4.advantage3" })}
-        />
+        /> */}
+        <Reviews color="#FCEEDD" border="border-top" padding="padding" reviews={reviews} rating={reviewsData.rating} userRating={reviewsData.userRating} headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
+        
+        <CitySelector color="#ffffff" padding="padding" cityOptions={cityOptions} subheadingText="Select your pet travel" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} />
+
         <BlogList posts={postsData} subheadingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} link={intl.formatMessage({ id: "blog.title" })} />
         {/* <TextBanner id="passport" color="green" pdf={Passport} headingText={intl.formatMessage({ id: "passport.title" })} descriptionText1={intl.formatMessage({ id: "passport.description1" })} buttonText={intl.formatMessage({ id: "passport.button-text" })} /> */}
-        <TextBlock2Columns id="about-us" headingText={intl.formatMessage({ id: "about-us.title" })} bodyText1={intl.formatMessage({ id: "about-us.description1" })} bodyText2={intl.formatMessage({ id: "about-us.description2" })} bodyText3={intl.formatMessage({ id: "about-us.description3" })} bodyText4={intl.formatMessage({ id: "about-us.description4" })} logo={LogoDefra} />
-        <Gallery galleryImages={galleryImagesData} subheadingText={intl.formatMessage({ id: "homepage.gallery.title" })} descriptionText={intl.formatMessage({ id: "homepage.gallery.description" })} link={intl.formatMessage({ id: "homepage.gallery.title" })} />
         {/* <Gallery galleryImages={galleryImagesData} headingText={intl.formatMessage({ id: "gallery.title" })} descriptionText={intl.formatMessage({ id: "gallery.description" })} /> */}
         {/* <TextBanner id="trips" color="orange" pdfCalendar={pdfCalendar} headingText={intl.formatMessage({ id: "trips.title" })} descriptionText1={intl.formatMessage({ id: "trips.description1" })} descriptionText2={intl.formatMessage({ id: "trips.description2" })} buttonText={intl.formatMessage({ id: "trips.button-text" })} year={currentYear} /> */}
-        <Reviews reviews={reviews} rating={reviewsData.rating} userRating={reviewsData.userRating} headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
         <Contact subheadingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} openDaysFriday={intl.formatMessage({ id: "contact-us.open-days-friday" })} openHoursFriday={intl.formatMessage({ id: "contact-us.open-hours-friday" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} companyName={intl.formatMessage({ id: "contact-us.companyName" })} address={intl.formatMessage({ id: "contact-us.address" })} location={intl.formatMessage({ id: "contact-us.location" })} locationLinkText={intl.formatMessage({ id: "contact-us.locationLinkText" })} locationLink={intl.formatMessage({ id: "contact-us.locationLink" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formPickupCityText={intl.formatMessage({ id: "contact-us.user-pickup-city" })} formDropoffCityText={intl.formatMessage({ id: "contact-us.user-dropoff-city" })} formPetnumberText={intl.formatMessage({ id: "contact-us.user-pet-number" })} formPetinfoText={intl.formatMessage({ id: "contact-us.user-pet-info" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>
     )
@@ -102,6 +116,31 @@ export const pageQuery = graphql`
         pdfFile {
           file {
             url
+          }
+        }
+      }
+    }
+    allContentfulBanner(sort: { fields: orderId, order: ASC } filter: { section: {eq: "services"}, node_locale: { eq: $language } }) {
+      nodes {
+        section
+        url
+        title
+        image {
+          url
+          gatsbyImage(
+            layout: CONSTRAINED, 
+            placeholder: BLURRED, 
+            width: 1200, 
+            height: 800
+          )
+        }
+      }
+    }
+    allContentfulCity(filter: { node_locale: { eq: $language } }) {
+      nodes {
+        cities_list {
+          cities {
+            city
           }
         }
       }

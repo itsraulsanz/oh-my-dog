@@ -1,10 +1,11 @@
-const path = require('path')
+const path = require('path');
 
-exports.createPages = async ({ graphql, actions, reporter }) => {
+exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   // Define a template for blog post
   const blogPost = path.resolve('./src/templates/blog-post.js')
+  const cityTemplate = path.resolve('./src/templates/city.js')
 
   const result = await graphql(
     `
@@ -13,6 +14,15 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           nodes {
             title
             path
+          }
+        }
+        allContentfulCity {
+          nodes {
+            cities_list {
+              cities {
+                city
+              }
+            }
           }
         }
       }
@@ -44,6 +54,32 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  const cities = result.data.allContentfulCity.nodes
+
+  // Create city pages
+
+  // EN
+  cities[0].cities_list.cities.forEach((city) => {
+    createPage({
+      path: `/en/${city.city}/`,
+      component: cityTemplate,
+      context: {
+        slug: city.city
+      },
+    })
+  })
+
+  // ES
+  cities[1].cities_list.cities.forEach((city) => {
+    createPage({
+      path: `/es/${city.city}/`,
+      component: cityTemplate,
+      context: {
+        slug: city.city
+      },
+    })
+  })
 }
 
 const fetch = (...args) =>
