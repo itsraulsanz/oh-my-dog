@@ -44,10 +44,10 @@ export default withMyHook(CityTemplate);
 
 export const pageQuery = graphql`
   query CityQuery(
-    $value: String
+    $slug: String
     $language: String
   ) {
-    contentfulCityServices(value: { eq: $value }, node_locale: { eq: $language }) {
+    contentfulCityServices(slug: { eq: $slug }, node_locale: { eq: $language }) {
       cityName
       country
       location {

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby'
-import Select from 'react-select';
+import { useIntl } from "gatsby-plugin-intl"
 import transportOptions from '../../data/transportOptions';
 import './city-selector.scss'
 
@@ -8,47 +7,79 @@ let pathname = typeof window !== "undefined" ? window.location.pathname : "";
 const locationLanguage = pathname.split("/")[1];
 console.log('locationLanguage', locationLanguage);
 
-export default function CitySelector(props) {
-  const [selectedOption, setSelectedOption] = useState(null);
+function withMyHook(Component) {
+  return function WrappedComponent(props) {
+    const intlValue = useIntl();
+    return <Component {...props} intlValue={intlValue} />;
+  }
+}
 
-  console.log('selectedOption', selectedOption);
+class CitySelector extends React.Component {
+  state = {
+    selectedOption: null,
+  };
+
+  handleChange = (selectedOption) => {
+    window.location = selectedOption.target.value;
+  };
+
+  render() {
+    const { selectedOption } = this.state;
 
     return (
-      <div className={`city-selector ${ props.padding }`} style={{ background: props.color }}>
+      <div className={`city-selector ${ this.props.padding }`} style={{ background: this.props.color }}>
         <div className='container-fluid'>
             <div className='city__text'>
-              {props.headingText && 
-                <h1 className='contact__text-heading'>{props.headingText}</h1>
+              {this.props.headingText && 
+                <h1 className='contact__text-heading'>{this.props.headingText}</h1>
               }
 
-              {props.subheadingText && 
-                <h2 className='contact__text-heading'>{props.subheadingText}</h2>
+              {this.props.subheadingText && 
+                <h2 className='contact__text-heading'>{this.props.subheadingText}</h2>
               }
 
-              {props.descriptionText && 
-                <p className='contact__text-description'>{props.descriptionText}</p>
+              {this.props.descriptionText && 
+                <p className='contact__text-description'>{this.props.descriptionText}</p>
               }
 
-              {props.descriptionText2 && 
-                <p className='contact__text-description'>{props.descriptionText2}</p>
+              {this.props.descriptionText2 && 
+                <p className='contact__text-description'>{this.props.descriptionText2}</p>
               }   
             </div>
 
             <div className="city__list">
+              <h3 className='contact__text-heading'>{this.props.servicesFromSpain}</h3>
               <ul className="selector">
-                {props.cities.map((city, index) => (
-                  <li className='navigationItem' key={index}>
-                    <Select
-                      // value={selectedOption}
-                      className="basic-single"
-                      classNamePrefix="select"
-                      placeholder={city.cityName}
-                      options={transportOptions[locationLanguage]}
-                      onChange={setSelectedOption}
-                      />
-                    {/* <Link to={`/${city.label}-${transportOptions}`} >
-                      {city.label}
-                    </Link> */}
+                {this.props.citiesSpain.map((city, index) => (
+                  <li className='navigationItem' value={city.slug} key={index}>
+                    <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
+                      <option disabled selected value className="service-option"> {city.cityName} </option>
+                      {transportOptions[locationLanguage].map((service) => (
+                        <option value={city.slug + "-" + service.value} className="service-option">
+                          <a href={"/" + city.slug + "-" + service.value } >
+                            {service.label}
+                          </a>
+                        </option>
+                      ))}
+                    </select>
+                  </li>
+                ))}
+              </ul>
+
+              <h3 className='contact__text-heading'>{this.props.servicesFromUk}</h3>
+              <ul className="selector">
+                {this.props.citiesUk.map((city, index) => (
+                  <li className='navigationItem' value={city.slug} key={index}>
+                    <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
+                      <option disabled selected value className="service-option"> {city.cityName} </option>
+                      {transportOptions[locationLanguage].map((service) => (
+                        <option value={city.slug + "-" + service.value} className="service-option">
+                          <a href={"/" + city.slug + "-" + service.value } >
+                            {service.label}
+                          </a>
+                        </option>
+                      ))}
+                    </select>
                   </li>
                 ))}
               </ul>
@@ -57,3 +88,6 @@ export default function CitySelector(props) {
       </div>
     );
   }
+}
+
+export default withMyHook(CitySelector);

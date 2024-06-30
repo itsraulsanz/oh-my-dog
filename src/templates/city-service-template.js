@@ -66,9 +66,9 @@ export const pageQuery = graphql`
     $serviceSlugOrder: Int
     $language: String
   ) {
-    contentfulCityServices(value: { eq: $slug }, node_locale: { eq: $language }) {
+    contentfulCityServices(slug: { eq: $slug }, node_locale: { eq: $language }) {
       cityName
-      value
+      slug
       country
       location {
         lat

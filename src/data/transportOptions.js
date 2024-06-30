@@ -1,6 +1,6 @@
 const transportOptions = {
   en: [
-    { value: 'pets-transport', label: 'Pet transport' },
+    { value: 'pets-transport', label: 'Pets transport' },
     { value: 'animals-transport', label: 'Animals transport' },
     { value: 'dogs-transport', label: 'Dogs transport' },
     { value: 'cats-transport', label: 'Cats transport' },

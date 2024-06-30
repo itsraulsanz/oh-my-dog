@@ -76,10 +76,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
     services.forEach((service) => {
       createPage({
-        path: `/service/${city.value + '-' + service.slug}/`,
+        path: `/${city.slug + '-' + service.slug}/`,
         component: cityServiceTemplate,
         context: {
-          slug: city.value,
+          slug: city.slug,
           serviceSlug: service.slug,
           serviceSlugOrder: service.order
         },

@@ -40,7 +40,8 @@ class IndexPage extends React.Component {
     const bannersData = get(this, 'props.data.allContentfulBanner.nodes');
     const reviewsData = get(this, 'props.data.reviews')
     const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
-    const cities = get(this, 'props.data.allContentfulCityServices.nodes')
+    const citiesSpain = get(this, 'props.data.cities_spain.nodes')
+    const citiesUk = get(this, 'props.data.cities_uk.nodes')
     const services = get(this, 'props.data.allContentfulServices.nodes')
 
     return (
@@ -61,7 +62,7 @@ class IndexPage extends React.Component {
         /> */}
         <Reviews color="#FCEEDD" border="border-top" padding="padding" reviews={reviews} rating={reviewsData.rating} userRating={reviewsData.userRating} headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
         
-        <CitySelector color="#ffffff" padding="padding" cities={cities} services={services} subheadingText="Select your pet travel" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} />
+        <CitySelector color="#ffffff" padding="padding" citiesSpain={citiesSpain} citiesUk={citiesUk} services={services} subheadingText="Select your pet travel" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} servicesFromSpain={intl.formatMessage({ id: "homepage.services.services-spain" })} servicesFromUk={intl.formatMessage({ id: "homepage.services.services-uk" })} />
 
         <BlogList posts={postsData} subheadingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} link={intl.formatMessage({ id: "blog.title" })} />
         {/* <TextBanner id="passport" color="green" pdf={Passport} headingText={intl.formatMessage({ id: "passport.title" })} descriptionText1={intl.formatMessage({ id: "passport.description1" })} buttonText={intl.formatMessage({ id: "passport.button-text" })} /> */}
@@ -135,10 +136,17 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulCityServices(filter: { node_locale: { eq: $language } }) {
+    cities_spain: allContentfulCityServices(filter: {country: {eq: "Spain"}, node_locale: { eq: $language }}) {
       nodes {
         cityName
-        value
+        slug
+        country
+      }
+    }
+    cities_uk: allContentfulCityServices(filter: {country: {eq: "UK"}, node_locale: { eq: $language }}) {
+      nodes {
+        cityName
+        slug
         country
       }
     }
