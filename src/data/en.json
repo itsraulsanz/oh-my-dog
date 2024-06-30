@@ -138,6 +138,45 @@
         "description3": "Si el viaje de tu mascota no se encuentra dentro de los destinos ya detallados para este año, no dudes en consultarnos con respecto a otras rutas y fechas posibles hablando directamente con nosotros mediante nuestra página de contacto, ya que cubrimos muchos otros trayectos que no se encuentran en este calendario fijo.",
         "description4": "También puedes contactar con nosotros de forma inmediata a través del botón de WhatsApp que puedes ver en la esquina inferior derecha de esta página."
     },
+    "cities": {
+        "pet-transport": {
+            "meta-title1": "Pets transport ",
+            "meta-title2": " | Pets delivery ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "animal-transport": {
+            "meta-title1": "Animals transport ",
+            "meta-title2": " | Animals delivery ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "cat-transport": {
+            "meta-title1": "Cats transport ",
+            "meta-title2": " | Cats delivery ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "dog-transport": {
+            "meta-title1": "Dogs transport ",
+            "meta-title2": " | Dogs delivery ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "rabit-transport": {
+            "meta-title1": "Rabits transport ",
+            "meta-title2": " | Rabits delivery ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "dog-and-cat": {
+            "meta-title1": "Dogs and cats transport ",
+            "meta-title2": " | Dogs and cats delivery ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "title-connector": "from"
+    },
     "contact-us": {
         "meta-title": "Contact Us",
         "meta-description": "Contact Ohmydog Luxury Pet Travel for your pet trip in First Class.",

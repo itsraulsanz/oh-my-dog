@@ -5,7 +5,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   // Define a template for blog post
   const blogPost = path.resolve('./src/templates/blog-post.js')
-  const cityTemplate = path.resolve('./src/templates/city.js')
+  const cityTemplate = path.resolve('./src/templates/city-template.js')
+  const cityServiceTemplate = path.resolve('./src/templates/city-service-template.js')
 
   const result = await graphql(
     `
@@ -16,13 +17,18 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             path
           }
         }
-        allContentfulCity {
+        allContentfulCityServices {
           nodes {
-            cities_list {
-              cities {
-                city
-              }
-            }
+            cityName
+            slug
+            country
+          }
+        }
+        allContentfulServices {
+          nodes {
+            serviceName
+            slug
+            order
           }
         }
       }
@@ -55,29 +61,29 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   }
 
-  const cities = result.data.allContentfulCity.nodes
+  const cities = result.data.allContentfulCityServices.nodes
+  const services = result.data.allContentfulServices.nodes
 
   // Create city pages
 
-  // EN
-  cities[0].cities_list.cities.forEach((city) => {
+  cities.forEach((city) => {
     createPage({
-      path: `/en/${city.city}/`,
+      path: `/${city.slug}/`,
       component: cityTemplate,
       context: {
-        slug: city.city
+        slug: city.slug,
       },
     })
-  })
-
-  // ES
-  cities[1].cities_list.cities.forEach((city) => {
-    createPage({
-      path: `/es/${city.city}/`,
-      component: cityTemplate,
-      context: {
-        slug: city.city
-      },
+    services.forEach((service) => {
+      createPage({
+        path: `/service/${city.value + '-' + service.slug}/`,
+        component: cityServiceTemplate,
+        context: {
+          slug: city.value,
+          serviceSlug: service.slug,
+          serviceSlugOrder: service.order
+        },
+      })
     })
   })
 }

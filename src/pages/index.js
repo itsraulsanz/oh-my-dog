@@ -40,9 +40,8 @@ class IndexPage extends React.Component {
     const bannersData = get(this, 'props.data.allContentfulBanner.nodes');
     const reviewsData = get(this, 'props.data.reviews')
     const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
-    const cityOptions = get(this, 'props.data.allContentfulCity.nodes')
-
-    console.log('cityOptions', cityOptions);
+    const cities = get(this, 'props.data.allContentfulCityServices.nodes')
+    const services = get(this, 'props.data.allContentfulServices.nodes')
 
     return (
       <Layout>
@@ -62,7 +61,7 @@ class IndexPage extends React.Component {
         /> */}
         <Reviews color="#FCEEDD" border="border-top" padding="padding" reviews={reviews} rating={reviewsData.rating} userRating={reviewsData.userRating} headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
         
-        <CitySelector color="#ffffff" padding="padding" cityOptions={cityOptions} subheadingText="Select your pet travel" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} />
+        <CitySelector color="#ffffff" padding="padding" cities={cities} services={services} subheadingText="Select your pet travel" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} />
 
         <BlogList posts={postsData} subheadingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} link={intl.formatMessage({ id: "blog.title" })} />
         {/* <TextBanner id="passport" color="green" pdf={Passport} headingText={intl.formatMessage({ id: "passport.title" })} descriptionText1={intl.formatMessage({ id: "passport.description1" })} buttonText={intl.formatMessage({ id: "passport.button-text" })} /> */}
@@ -120,7 +119,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulBanner(sort: { fields: orderId, order: ASC } filter: { section: {eq: "services"}, node_locale: { eq: $language } }) {
+    allContentfulBanner(sort: { fields: orderId, order: ASC } filter: { section: {eq: "pet-transport"}, node_locale: { eq: $language } }) {
       nodes {
         section
         url
@@ -131,18 +130,23 @@ export const pageQuery = graphql`
             layout: CONSTRAINED, 
             placeholder: BLURRED, 
             width: 1200, 
-            height: 800
+            height: 1200
           )
         }
       }
     }
-    allContentfulCity(filter: { node_locale: { eq: $language } }) {
+    allContentfulCityServices(filter: { node_locale: { eq: $language } }) {
       nodes {
-        cities_list {
-          cities {
-            city
-          }
-        }
+        cityName
+        value
+        country
+      }
+    }
+    allContentfulServices(filter: { node_locale: { eq: $language } }) {
+      nodes {
+        serviceName
+        slug
+        id
       }
     }
     reviews {

@@ -7,7 +7,20 @@ const languageName = {
 }
 
 const Language = () => {
-  return (
+  if (window.location.pathname.includes('/service/')) {
+    // return (
+    //   <IntlContextConsumer>
+    //     {({ languages, language: currentLocale }) =>
+    //       languages.map(language => (
+    //         <button key={language} className={currentLocale === language ? `language active` : `language non-active`} onClick={() => changeLocale(language.url)}>
+    //           {languageName[language]}
+    //         </button>
+    //       ))
+    //     }
+    //   </IntlContextConsumer>
+    // )
+  } else {
+    return (
       <IntlContextConsumer>
         {({ languages, language: currentLocale }) =>
           languages.map(language => (
@@ -17,7 +30,8 @@ const Language = () => {
           ))
         }
       </IntlContextConsumer>
-  )
+    )
+  }
 }
 
 export default Language

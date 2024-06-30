@@ -138,6 +138,45 @@
         "description3": "Si el viaje de tu mascota no se encuentra dentro de los destinos ya detallados para este año, no dudes en consultarnos con respecto a otras rutas y fechas posibles hablando directamente con nosotros mediante nuestra página de contacto, ya que cubrimos muchos otros trayectos que no se encuentran en este calendario fijo.",
         "description4": "También puedes contactar con nosotros de forma inmediata a través del botón de WhatsApp que puedes ver en la esquina inferior derecha de esta página."
     },
+    "cities": {
+        "transporte-de-mascotas": {
+            "meta-title1": "Transporte de mascotas desde ",
+            "meta-title2": " | Envío de mascotas desde ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-animales": {
+            "meta-title1": "Transporte de animales en ",
+            "meta-title2": " | Envío de animales en ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-gatos": {
+            "meta-title1": "Transporte de gatos en ",
+            "meta-title2": " | Envío de gatos en ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-perros": {
+            "meta-title1": "Transporte de perros en ",
+            "meta-title2": " | Envío de perros en ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-conejos": {
+            "meta-title1": "Transporte de conejos en ",
+            "meta-title2": " | Envío de conejos en ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-perros-y-gatos": {
+            "meta-title1": "Transporte de perros y gatos en ",
+            "meta-title2": " | Envío de perros y gatos en ",
+            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "title-connector": "desde"
+    },
     "contact-us": {
         "meta-title": "Contáctanos",
         "meta-description": "Contact Ohmydog Luxury Pet Travel for your pet trip in First Class.",
