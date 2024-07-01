@@ -62,7 +62,7 @@ class IndexPage extends React.Component {
         /> */}
         <Reviews color="#FCEEDD" border="border-top" padding="padding" reviews={reviews} rating={reviewsData.rating} userRating={reviewsData.userRating} headingText={intl.formatMessage({ id: "reviews.title" })} reviewsText={intl.formatMessage({ id: "reviews.reviewsText" })} />
         
-        <CitySelector color="#ffffff" padding="padding" citiesSpain={citiesSpain} citiesUk={citiesUk} services={services} subheadingText="Select your pet travel" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} servicesFromSpain={intl.formatMessage({ id: "homepage.services.services-spain" })} servicesFromUk={intl.formatMessage({ id: "homepage.services.services-uk" })} />
+        <CitySelector color="#ffffff" padding="padding" citiesSpain={citiesSpain} citiesUk={citiesUk} services={services} subheadingText={intl.formatMessage({ id: "homepage.services.subheadingText" })} descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} servicesFromSpain={intl.formatMessage({ id: "homepage.services.services-spain" })} servicesFromUk={intl.formatMessage({ id: "homepage.services.services-uk" })} />
 
         <BlogList posts={postsData} subheadingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} link={intl.formatMessage({ id: "blog.title" })} />
         {/* <TextBanner id="passport" color="green" pdf={Passport} headingText={intl.formatMessage({ id: "passport.title" })} descriptionText1={intl.formatMessage({ id: "passport.description1" })} buttonText={intl.formatMessage({ id: "passport.button-text" })} /> */}
