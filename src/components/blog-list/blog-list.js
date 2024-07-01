@@ -32,7 +32,7 @@ const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, li
 
   return (
     <div className='article-preview' id='blog'>
-      <div className='container-fluid'>
+      <div className='container-fluid border-top'>
         {headingText || subheadingText || descriptionText ? 
           <div className='article-preview__heading'>
             {headingText && 

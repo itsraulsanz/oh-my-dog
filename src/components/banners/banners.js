@@ -2,10 +2,7 @@ import React, { useState, useRef } from "react";
 import { GatsbyImage } from 'gatsby-plugin-image'
 import './banners.scss'
 
-const Banners = ({banners, padding, color}) => {
-
-  console.log('Banners', banners);
-  
+const Banners = ({banners, padding, color}) => {  
   return (
     <div className={`banners ${ padding }`} style={{ background: color }}>
       <div className='container-fluid'>

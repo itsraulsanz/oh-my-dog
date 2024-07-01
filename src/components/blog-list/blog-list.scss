@@ -1,11 +1,16 @@
 @import '../../styles/colors';
 
 .article-preview {
-  padding: 50px 0 0;
+  padding: 0;
 
   .container-fluid {
     display: flex;
     flex-direction: column;
+
+    &.border-top {
+      padding-top: 50px;
+      border-top: 1px solid #ED7C23;
+  }
   }
 
   .article-preview__heading {
