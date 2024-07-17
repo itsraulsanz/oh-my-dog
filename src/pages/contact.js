@@ -44,8 +44,6 @@ class contactPage extends React.Component {
             id: "contact-us.locationLinkText",
           })}
           locationLink={intl.formatMessage({ id: "contact-us.locationLink" })}
-          formTitle={intl.formatMessage({ id: "contact-us.form-title" })}
-          formDescription={intl.formatMessage({ id: "contact-us.form-description" })}
 
           formNameText={intl.formatMessage({ id: "contact-us.user-name" })}
           formEmailText={intl.formatMessage({ id: "contact-us.user-email" })}

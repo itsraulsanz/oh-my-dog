@@ -145,12 +145,13 @@ export default function Contact(props) {
               <Map id="contactMap" {...mapProps} />
             </section>
 
-
             <section className='contact-form__container'>
-              <div className='contact__text form'>
-                <h2 className='contact__text-heading'>{props.formTitle}</h2>
-                <p className='contact__text-description'>{props.formDescription}</p>
-              </div>
+              {props.formTitle || props.formDescription && 
+                <div className='contact__text form'>
+                  <h3 className='contact__text-heading'>{props.formTitle}</h3>
+                  <p className='contact__text-description'>{props.formDescription}</p>
+                </div>
+              }
               <form className='contact-form__form' ref={form} onSubmit={handleFormSubmit}>
                 <input onChange={handleInputChange} value={name} name="name" type="text" placeholder={props.formNameText} required/>
                 <div className="fields-container">

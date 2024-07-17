@@ -42,14 +42,30 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        &.border-top {
+            padding-top: 50px;
+            border-top: 1px solid #ED7C23;
+        }
+      
+        &.border-bottom {
+            padding-bottom: 50px;
+            border-bottom: 1px solid #ED7C23;
+        }
     }
 
     .city__text {
-        width: 90%;
+        width: 100%;
         align-items: center;
         justify-content: center;
 
         @media only screen and (min-width: 600px) {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+
+        @media only screen and (min-width: 800px) {
             display: flex;
             flex-direction: column;
             width: 70%;
@@ -100,15 +116,19 @@
 
 
     .city__list {
-        width: 90%;
+        display: flex;
+        width: 100%;
         align-items: center;
         justify-content: center;
         margin-top: 50px;
         gap: 20px;
 
         @media only screen and (min-width: 600px) {
-            display: flex;
             flex-direction: column;
+            width: 90%;
+        }
+
+        @media only screen and (min-width: 800px) {
             width: 70%;
         }
 
@@ -126,10 +146,18 @@
             gap: 20px;
             width: 100%;
             display: grid;
-            grid-template-columns: 32% 32% 32%;
+            grid-template-columns: 100%;
             justify-content: space-between;
             column-gap: 10px;
             row-gap: 20px;
+
+            @media only screen and (min-width: 400px) {
+                grid-template-columns: 48% 48%;
+            }
+
+            @media only screen and (min-width: 600px) {
+                grid-template-columns: 32% 32% 32%;
+            }
 
             li {
                 list-style: none;

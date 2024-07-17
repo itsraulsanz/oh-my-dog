@@ -1,10 +1,10 @@
 import React, { useState, useRef } from "react";
-import { GatsbyImage } from 'gatsby-plugin-image'
 import { renderRichText } from 'gatsby-source-contentful/rich-text'
 import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
-import './title-and-description.scss'
+import { GatsbyImage } from 'gatsby-plugin-image'
+import './img-and-text-block.scss'
 
-export default function ImageAndTextBlock(props) {
+export default function ImgAndTextBlock(props) {
   const renderOptions = {
     renderMark: {
       [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
@@ -49,30 +49,33 @@ export default function ImageAndTextBlock(props) {
   }
 
   return (
-    <div className={`title-and-description ${ props.padding ? `${props.padding}` : '' } ${ props.align ? `${props.align}` : '' }`} style={{ background: props.color }}>
-      <div className={`container-fluid ${ props.border }`}> 
-        {props.image &&
-          <div className={`image ${ props.imgFormat ? `${props.imgFormat}` : '' }`} >
-            <GatsbyImage image={props.image.gatsbyImageData} />
-          </div>
-        }
-          <div className='title-and-description__text'>
-            {props.headingText && 
-              <h1 className='title-and-description__text-heading'>{props.headingText}</h1>
-            }
+    <div className={`img-and-text ${ props.padding ? `${props.padding}` : '' } ${ props.align ? `${props.align}` : '' }`} style={{ background: props.color }}>
+      <div className={`container-fluid ${ props.border }`}>
+        <div className="blocks">
+          {props.blocks.map((block, index) => (
+            <div className='block' key={index}>
+              {block.image &&
+                <div className={`image ${ block.imgFormat ? `${block.imgFormat}` : '' }`} >
+                  <GatsbyImage alt={block.title} image={block.image.gatsbyImage} key={index} />
+                </div>
+              }
+              
+              <div className='img-and-text__text'>
+                {block.title && 
+                  <h3 className='img-and-text__text-heading'>{block.title}</h3>
+                }
 
-            {props.subheadingText && 
-              <h2 className='title-and-description__text-heading'>{props.subheadingText}</h2>
-            }
+                {block.textContent && 
+                  <p className='img-and-text__text-description'>{block.textContent.raw && renderRichText(block.textContent, renderOptions)}</p>
+                }
 
-            {props.descriptionText && 
-              <p className='title-and-description__text-description'>{props.descriptionText}</p>
-            }
-
-            {props.descriptionText2 && 
-              <p className='title-and-description__text-description'>{props.descriptionText2}</p>
-            }
-          </div>
+                {block.descriptionText2 && 
+                  <p className='img-and-text__text-description'>{block.descriptionText2}</p>
+                }   
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   )

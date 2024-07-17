@@ -99,8 +99,11 @@
   }
   
   .review__card {
-    padding-bottom: 10px;
-
+    margin: 0 20px;
+    padding: 20px 30px;
+    border-left: solid 1px;
+    border-right: solid 1px;
+    
     .review__user {
       display: flex;
       align-items: center;
@@ -252,11 +255,10 @@
     padding: 0px 8%;
 
     .slide {
+      display: flex;
+      justify-content: center;
       min-width: 100%;
       position: relative;
-      padding: 25px 50px;
-      border: solid 1px;
-      border-radius: 15px;
 
       .review__user .review__user-details {
         text-align: left;

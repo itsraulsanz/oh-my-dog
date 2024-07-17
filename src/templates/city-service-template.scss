@@ -3,221 +3,25 @@
 @import '../styles/resets';
 @import '../styles/fonts';
 
-.city-template.container-fluid {
-  display: flex;
-  flex-direction: column;
-  
-  @media (min-width: 768px) {
-    padding: 12px 80px;
-  }
-
-  h1.city-template__details-title {
-    margin-bottom: 8px;
-    padding-bottom: 0;
-    line-height: inherit;
-  }
-
-  .city-template {
+.city-service-template {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
-    &__meta {
-    font-size: var(--text-lg);
-    font-style: italic;
-    padding-bottom: 20px;
+    @media (min-width: 768px) {
+      padding: 12px 80px;
     }
   
-    &__article {
-      display: grid;
-      font-size: var(--text-prose);
-      gap: var(--space-xl);
-      letter-spacing: var(--text-prose-tracking);
-      line-height: var(--loose);
-      padding: var(--size-gutter) var(--size-gutter) calc(var(--size-gutter) * 2);
-
-      .city-template__article-body {
-        & .gatsby-image-wrapper, & .article-body-video {
-          margin: 15px 0;
-        }
-
-        .video {
-          padding: 20px 0px;
-
-          iframe {
-            width: 100%;
-            min-height: 50vw;
-          }
-        }
-      }
+    .city-service-template__details-title {
+      margin-bottom: 8px;
+      padding-bottom: 0;
+      line-height: inherit;
+      text-align: center;
     }
-
-    &__blogNavigation {
-      margin-bottom: 30px;
   
-      ul {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        list-style: none;
-        margin: 0;
-        gap: 15px;
-
-        @media (min-width: 300px) {
-          flex-direction: row;
-        }
-
-        li {
-          width: 100%;
-          margin: 0;
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-
-          @media (min-width: 300px) {
-            width: 45%;
-            max-width: 350px;
-          }
-
-          a {
-            color: $core-color-primary;
-            min-height: 60px;
-            margin: 0;
-            padding: 10px;
-            font-size: small;
-
-            @media (min-width: 300px) {
-              width: 45%;
-              padding: 15px;
-            }
-
-            @media (min-width: 768px) {
-              min-height: unset;
-              font-size: 15px;
-            }
-
-            &:hover {
-              color: $core-color-secondary;
-            }
-          }
-        }
-      }
-
-      .articleNavigation .button-secondary {
-        width: 100%;
-      }
+    .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
+      margin: 30px 0px 50px 0px;
     }
-  }
-
-  &__date {
-    font-size: 14px;
-
-    & li {
-      margin-bottom: 10px;
-    }
-
-    & time {
-    font-weight: bold;
-    }
-  }
-
-  .overlay-block__box {
-    top: 190px;
-    border: 3px solid $core-color-secondary;
-    box-shadow: 10px 10px;
-  }
-
-  &__body {
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-
-  a {
-    color: $core-color-secondary;
-    font-weight: bold;
-
-    &:hover {
-      color: $core-color-primary;
-    }
-  }
-
-  b {
-    font-weight: bold;
-  }
-
-  i {
-    font-style: italic;
-  }
-
-  small {
-    font-size: 14px;
-  }
-
-  h1, h2, h3, h4, h5, h6 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  h1 {
-    font-size: 30px;
-    line-height: 0;
-  }
-
-  h2 {
-    font-size: 25px;
-  }
-
-  h3 {
-    font-family: "Poppins", sans-serif;
-    font-size: 22px;
-    padding: 0;
-    margin: 0;
-  }
-
-  h4 {
-    font-size: 20px;
-  }
-
-  h5 {
-    font-size: 18px;
-  }
-
-  h6 {
-    font-size: 16px;
-    font-weight: bold;
-    padding-bottom: 0;
-  }
-
-  ol {
-    margin-left: 15px;
-
-    li {
-      &:last-child {
-        margin-bottom: 30px;
-      }
-
-      p {
-        line-height: auto;
-        margin-bottom: 5px;
-      }
-    }
-  }
-
-  ul {
-    margin-left: 15px;
-
-    li {
-      p {
-        margin: 15px 0;
-        line-height: normal;
-      }
-
-      &:last-child {
-        margin-bottom: 30px;
-      }
-    }
-  }
-
-  .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
-    margin: 30px 0px 50px 0px;
   }
 }

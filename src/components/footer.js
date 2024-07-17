@@ -17,44 +17,17 @@ function Footer (props) {
             <ul className="navigation">
               <li className='details-submenu-list why-us'>
                 <ul className="navigation-submenu-list">
-                  <li className="navigationItem-submenu">
-                    {props.whyUs}
+                  <li className="navigationItem-submenu title">
+                    {props.services}
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/services`} className='navigationItem-sublist'>
-                      {props.services}
+                    <Link to={`/${locationLanguage}/shared-transport`} className='navigationItem-sublist child'>
+                      {props.sharedTransport}
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/about-us`} className='navigationItem-sublist'>
-                      {props.aboutUs}
-                    </Link>
-                  </li>
-                  <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist'>
-                      {props.gallery}
-                    </Link>
-                  </li>
-                  <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#reviews`} className='navigationItem-sublist'>
-                      {props.testimonials}
-                    </Link>
-                  </li>
-                </ul>
-              </li>
-              <li className='details-submenu-list why-us'>
-                <ul className="navigation-submenu-list">
-                  <li className="navigationItem-submenu">
-                    {props.info}
-                  </li>
-                  <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/#blog`} className='navigationItem-sublist'>
-                      {props.blog}
-                    </Link>
-                  </li>
-                  <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist'>
-                      {props.petPassport}
+                    <Link to={`/${locationLanguage}/private-transport`} className='navigationItem-sublist child'>
+                      {props.privateTransport}
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
@@ -66,12 +39,47 @@ function Footer (props) {
               </li>
               <li className='details-submenu-list why-us'>
                 <ul className="navigation-submenu-list">
-                  <li className="navigationItem-submenu">
-                    {props.contact}
+                  <li className="navigationItem-submenu title">
+                    <Link to={`/${locationLanguage}/why-us`} className='navigationItem-main'>
+                      {props.whyUs} <span className="summary-submenu-arrow"></span>
+                    </Link>
                   </li>
                   <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/about-us`} className='navigationItem-sublist child'>
+                      {props.aboutUs}
+                    </Link>
+                  </li>
+                  <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist child'>
+                      {props.gallery}
+                    </Link>
+                  </li>
+                  <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/reviews`} className='navigationItem-sublist child'>
+                      {props.testimonials}
+                    </Link>
+                  </li>
+                </ul>
+              </li>
+              <li className='details-submenu-list why-us'>
+                <ul className="navigation-submenu-list">
+                  <li className="navigationItem-submenu title">
                     <Link to={`/${locationLanguage}/contact`} className='navigationItem-main'>
                       {props.contactUs} <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3475 0.547943L13.4482 1.47237L17.2637 5.39431H0.679688V6.7017H17.2636L13.4482 10.6235L14.3475 11.5479L19.6984 6.04794L14.3475 0.547943Z"></path></svg>
+                    </Link>
+                  </li>
+
+                  <li className="navigationItem-submenu title">
+                    {props.info}
+                  </li>
+                  <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/blog`} className='navigationItem-sublist child'>
+                      {props.blog}
+                    </Link>
+                  </li>
+                  <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist child'>
+                      {props.petPassport}
                     </Link>
                   </li>
                 </ul>

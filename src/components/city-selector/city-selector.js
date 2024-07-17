@@ -28,8 +28,8 @@ class CitySelector extends React.Component {
     
     return (
       <div className={`city-selector ${ this.props.padding }`} style={{ background: this.props.color }}>
-        <div className='container-fluid'>
-            <div className='city__text'>
+        <div className={`container-fluid ${ this.props.border }`}>
+          <div className='city__text'>
               {this.props.headingText && 
                 <h1 className='contact__text-heading'>{this.props.headingText}</h1>
               }
@@ -72,6 +72,26 @@ class CitySelector extends React.Component {
                 <h3 className='city__list-heading'>{this.props.servicesFromUk}</h3>
                 <ul className="selector">
                   {this.props.citiesUk.map((city, index) => (
+                    <li className='navigationItem' value={city.slug} key={index}>
+                      <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
+                        <option disabled selected value className="service-option"> {city.cityName} </option>
+                        {transportOptions[locationLanguage].map((service) => (
+                          <option value={city.slug + "-" + service.value} className="service-option">
+                            <a href={"/" + city.slug + "-" + service.value } >
+                              {service.label}
+                            </a>
+                          </option>
+                        ))}
+                      </select>
+                    </li>
+                  ))}
+                </ul>       
+              </div>
+
+              <div className="countries">
+                <h3 className='city__list-heading'>{this.props.servicesFromIreland}</h3>
+                <ul className="selector">
+                  {this.props.citiesIreland.map((city, index) => (
                     <li className='navigationItem' value={city.slug} key={index}>
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>

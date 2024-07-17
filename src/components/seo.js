@@ -23,7 +23,7 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, keywords, siteLo
   const metaRobots = robots || site.siteMetadata.robots
   const defaultTitle = site.siteMetadata?.title
   const defaultImage = 'https://www.omdtravel.com//static/logo-99b930d15840e2b175b2b9ed896149e6.svg'
-  const siteUrl = window.location.href
+  let siteUrl = typeof window !== "undefined" ? window.location.href : "";
   const siteName = 'Ohmydog Luxury Pet Travel'
 
   return (

@@ -25,7 +25,10 @@ class Template extends React.Component {
         <Navigation 
           location={this.props.location} 
           whyUs={intl.formatMessage({ id: "general.why-us" })}
+          ourCommitment={intl.formatMessage({ id: "general.our-commitment" })}
           services={intl.formatMessage({ id: "general.services" })}
+          sharedTransport={intl.formatMessage({ id: "general.shared-transport" })}
+          privateTransport={intl.formatMessage({ id: "general.private-transport" })}
           aboutUs={intl.formatMessage({ id: "general.about-us" })}
           gallery={intl.formatMessage({ id: "general.gallery" })}
           testimonials={intl.formatMessage({ id: "general.testimonials" })}
@@ -39,7 +42,10 @@ class Template extends React.Component {
         <Footer 
           location={this.props.location} 
           whyUs={intl.formatMessage({ id: "general.why-us" })}
+          ourCommitment={intl.formatMessage({ id: "general.our-commitment" })}
           services={intl.formatMessage({ id: "general.services" })}
+          sharedTransport={intl.formatMessage({ id: "general.shared-transport" })}
+          privateTransport={intl.formatMessage({ id: "general.private-transport" })}
           aboutUs={intl.formatMessage({ id: "general.about-us" })}
           gallery={intl.formatMessage({ id: "general.gallery" })}
           testimonials={intl.formatMessage({ id: "general.testimonials" })}

@@ -58,6 +58,20 @@
 
         }
 
+        h3 {
+            text-align: center;
+            margin: 0 0 10px;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: auto;
+
+            @media only screen and (min-width: 400px) {
+                font-size: 32px;
+                line-height: auto;
+            }
+
+        }
+
         p.contact__text-description {
             font-size: 16px;
             padding-bottom: 20px;

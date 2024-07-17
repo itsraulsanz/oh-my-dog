@@ -1,7 +1,10 @@
 {
     "general": {
         "why-us": "Ventajas",
+        "our-commitment": "Nuestro compromiso",
         "services": "Servicios",
+        "shared-transport": "Viajes compartidos",
+        "private-transport": "Viajes privados",
         "about-us": "Sobre nosotros",
         "gallery": "Galería",
         "testimonials": "Testimonios",
@@ -17,50 +20,61 @@
     "homepage": {
         "meta-description": "Ohmydog Luxury Pet Travel es el servicio de transporte en primera clase para tu mascota. Profesionales con mas de 10 años de experiencia. Descúbre cómo podemos ayudarte.",
         "gallery": {
-            "title": "Nuestra furgoneta",
-            "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota."
+            "title": "Nuestro vehículo",
+            "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota.",
+            "button": "Ver más fotos"
+        },
+        "why-us": {
+            "title": "Comodidad y seguridad para tu mascota",
+            "description": "Contamos con una furgoneta equipada y pensada para tu tranquilidad y la seguridad y confort de tu mascota."
         },
         "services": {
             "title": "Servicios que ofrecemos",
             "subheadingText": "Selecciona el viaje de tu mascota",
-            "description1": "Confía en nosotros para transportar a su mascota de forma segura y cómoda con la última tecnología.",
-            "description2": "Sabemos por experiencia propia que las mascotas son parte de la familia. Por eso brindamos transparencia, empatía, calidad y tranquilidad a las personas que confían en nuestro servicio de transporte. Garantizamos que tu mascota será transportada en un entorno de seguridad absoluta, comodidad, mimos y atención dedicada.",
+            "description1": "¿Necesitas llevar a tu mascota a España, Reino Unido o Irlanda? Te ofrecemos 2 tipos de servicios diferentes para el viaje de tu perro o gato.",
             "services-spain": "Ciudades de España - Elige el origen y el servicio.",
-            "services-uk": "Ciudades de Reino Unido - Elige el origen y el servicio."
+            "services-uk": "Ciudades de Reino Unido - Elige el origen y el servicio.",
+            "services-ireland": "Ciudades de Irlanda - Elige el origen y el servicio."
         },  
-        "about-us": {
-            "title": "Acerca de nosotros",
-            "description1": "Bienvenido a Ohmydog, una empresa de transporte de mascotas confiable. Nuestra principal prioridad es la seguridad y la comodidad de tu amigo peludo. Entendemos que dejar a su mascota puede ser estresante y emotivo, por lo que nos esforzamos por hacer que el proceso de transporte sea lo más cómodo y libre de estrés posible.",
-            "description2": "Nuestro equipo de profesionales experimentados y dedicados se encargará de todos los aspectos del transporte de su mascota, desde la recogida hasta la entrega.",
-            "description3": "Nuestros vehículos de última generación están equipados con la última tecnología y recursos, que incluyen control de temperatura, suelos acolchados, música relajante y una decoración antiestrés para garantizar un viaje tranquilo y sin estrés para su mascota.",
-            "description4": "Por eso, si necesitas transportar a tu mascota, ya sea para una mudanza o para unas vacaciones, confía en Ohmydog para brindarte la mejor atención y servicio. Contáctenos hoy para obtener más información y comenzar a planificar los viajes de su mascota."   
+        "intro": {
+            "description1": "¡Bienvenido a Ohmydog Pet Travel, tu empresa confiable para el transporte de mascotas entre España, Reino Unido e Irlanda! Con 8 años de experiencia especializada, somos líderes en brindar viajes cortos y seguros para tus adorables compañeros de cuatro patas.",
+            "description2": "Nuestro vehículo, equipado con las adaptaciones más pioneras del sector, garantiza el bienestar de tus mascotas en cada kilómetro del trayecto. Desde cámaras web que te permiten seguir su viaje en tiempo real hasta música relajante para mantenerlos tranquilos, cada detalle está pensado para hacer que el transporte sea una experiencia cómoda y placentera.",
+            "description3": "La temperatura controlada asegura un ambiente óptimo, mientras que el ciclo natural de luz proporciona un entorno similar al hogar. Nuestros suelos acolchados ofrecen comodidad adicional, y el enlace GPS te mantiene informado sobre la ubicación exacta de tus seres queridos peludos en todo momento.",
+            "description4": "Confía en Ohmydog Pet Travel para llevar a tus perros y gatos de forma segura y cómoda entre España, Reino Unido e Irlanda. ¡Haz que cada viaje sea una experiencia feliz para tus mascotas con nosotros!"   
         }
+    },
+    "why-us": {
+        "meta-title": "Transporte de Mascotas",
+        "meta-description": "Somos especialistas en transporte de mascotas. Responsabilidad, seguridad, empatía y transparencia total en su viaje.",
+        "title": "Nuestro compromiso",
+        "description": "Depositamos nuestro compromiso en brindarte un transporte seguro y cómodo para tu mascota, utilizando la última tecnología disponible para el transporte animal."
     },
     "services": {
         "meta-title": "Transporte de Mascotas",
         "meta-description": "Somos especialistas en transporte de mascotas. Responsabilidad, seguridad, empatía y transparencia total en su viaje.",
-        "title": "Transporte de Mascotas",
-        "description1": "Ofrecemos un servicio de transporte de mascotas que va más allá de un simple traslado: nos comprometemos a garantizar el bienestar físico y emocional de tu animal querido durante todo el viaje. No somos una simple empresa de envíos…somos especialistas en transportar mascotas, animales vivos con necesidades y emociones de todo tipo.",
-        "description2": "En Ohmydog Pet Travel, entendemos de sobra que las mascotas no son simples «cosas», sino miembros importantes de tu familia. Comparten contigo alegrías, tristezas y momentos inolvidables. Por este motivo, se merecen lo mejor.",
-        "section1-title": "Compromiso con la Seguridad y el Bienestar",
-        "section1-description": "Sabemos lo importante que es para ti que tu mascota viaje de manera segura y cómoda, ya sea a nivel local o internacional. En Ohmydog Pet Travel, nos aseguramos de que todos los trámites de transporte internacional estén correctamente realizados, evitando demoras innecesarias. Nuestro equipo de expertos conoce a la perfección las regulaciones y requisitos específicos para el transporte de mascotas, lo que te da la tranquilidad de saber que tu compañero animal estará en las mejores manos.",
-        "section2-title": "La Furgoneta Perfecta para tu Mascota",
-        "section2-description": "Contamos con una furgoneta especialmente diseñada y equipada para el transporte de mascotas. Nuestra furgoneta cumple con todos los requisitos y certificaciones necesarias para garantizar la comodidad y seguridad de tu mascota durante el viaje. Cuentan con sistemas de ventilación, temperatura controlada y espacios diseñados para que tu mascota adorada viaje de manera segura y confortable.",
-        "section3-title": "Conexión Permanente con tu Mascota",
-        "section3-description1": "En Ohmydog Pet Travel, nos preocupamos profundamente por el bienestar de tu fiel compañero durante su traslado. Hemos desarrollado un sistema de comunicación continua con los dueños de los animalitos, para mantenerlos al tanto del progreso y bienestar de sus adoradas mascotas mientras viajan con nosotros.",
-        "section3-description2": "Durante todo el trayecto, te brindaremos actualizaciones regulares sobre el estado y comodidad de tu mascota. Queremos que te sientas seguro y confiado en nuestro servicio, por eso estamos comprometidos en ofrecerte la tranquilidad de saber que tu compañero peludo está siendo cuidado y atendido como merece durante el viaje.",
-        "section4-title": "Sigue los Pasos de tu Mascota en Tiempo Real",
-        "section4-description": "Como especialistas en el transporte de mascotas, nos apoyamos en la última tecnología para garantizar la máxima tranquilidad de nuestros queridos clientes. Empleamos sistemas de rastreo GPS de vanguardia instalados en nuestra furgoneta, lo que posibilita un seguimiento preciso y en tiempo real de todo el viaje. Esto significa que podrás conocer la ubicación exacta de tu mascota en cualquier momento del trayecto. Asimismo, disponemos de cámaras web que te permiten observar el bienestar de tu animal durante todo el recorrido. Esta conexión continua te ofrece la tranquilidad de saber que tu mascota está bajo cuidado experto, al mismo tiempo que te brinda la sensación de tenerla más cerca de ti en todo momento.",
-        "section5-title": "Profesionales Formados en Bienestar Animal Físico y Emocional",
-        "section5-description": "Nuestro personal está especialmente formado en bienestar animal, y es conocedor de técnicas de primeros auxilios veterinarios. Estamos preparados para actuar de manera inmediata y brindar los cuidados iniciales necesarios en situaciones de emergencia, hasta que se pueda proporcionar la atención veterinaria profesional requerida. Puedes confiar en que tu mascota estará en manos expertas, cariñosas y cuidadosas durante toda la travesía.",
-        "section6-title": "Confía en Ohmydog Pet Travel",
-        "section6-description1": "Al optar por nosotros para transportar a tu mascota, eliges un servicio de excelencia, comprometido con el bienestar y la seguridad de tu amigo peludo. Ya sea un viaje corto o largo, nacional o internacional, nuestro compromiso es cuidarlos como si fueran parte de nuestra propia familia.",
-        "section6-description2": "En Ohmydog Pet Travel, tu mascota recibirá siempre el amor y el cuidado que se merece. Nos esforzamos constantemente por ofrecer un servicio de calidad para garantizar que tu mascota llegue a su destino feliz y saludable. Tu tranquilidad es nuestra máxima prioridad."
+        "title": "Nuestros servicios",
+        "description": "¿Necesitas llevar a tu mascota a España, Reino Unido o Irlanda? Te ofrecemos 2 tipos de servicios diferentes para el viaje de tu perro o gato.",
+        "private-transport": {
+            "meta-title": "Transporte de mascotas privado",
+            "meta-description": "Transporte de mascotas privado: perros, gatos, conejos, animales exóticos, etc.",    
+            "title": "Transporte de mascotas privado",
+            "description": "En Ohmydog Pet Travel ofrecemos un servicio excepcional de transporte de mascotas privado, garantizando los más altos estándares de seguridad, bienestar animal y comunicación constante que nos caracterizan. Nuestro compromiso es brindar un viaje seguro y confortable para tu mascota en cada trayecto realizado en España."
+        },
+        "shared-transport": {
+            "meta-title": "Transporte de mascotas compartido",
+            "meta-description": "Transporte de mascotas compartido. Haz que tu mascota viaje segura, atendida y mimada.",    
+            "title": "Transporte de mascotas compartido",
+            "description": "En Ohmydog Pet Travel, nos destacamos como empresa con gran experiencia en el transporte de mascotas compartido, ofreciendo un servicio que va más allá de las simples fronteras."
+        },
+        "contact-us": {
+            "title": "Reserva con OhMyDog",
+            "description": "Reserva la plaza para tu mascota o consultanos cualquier duda sobre nuestros servicios de transporte de mascotas."
+        }    
     },
     "hero": {
         "title": "OMD Pet Travel",
-        "subtitle": "El viaje de tu mascota en primera clase",
-        "description": "Nuestro objetivo es la comodidad y Seguridad de tu mascota durante el viaje. Ofrecemos un servicio puerta a puerta de lujo con dos conductores formados en bienestar animal.",
+        "subtitle": "El viaje de tu mascota entre España, Reino Unido e Irlanda.",
+        "description": "Somos una empresa de transporte de mascotas con unos de los mejores feedbacks del sector, siendo especialistas en el transporte de perros y gatos desde España a Reino Unido e Irlanda y viceversa.  Nuestro objetivo es la comodidad y seguridad de tu mascota durante el viaje. Ofrecemos un servicio puerta a puerta de lujo con dos conductores formados en bienestar animal.",
         "button": "Contacto"
     },
     "services-block": {
@@ -97,8 +111,8 @@
         }
     },
     "blog": {
-        "title": "¡Blog de viajes de mascotas de Ohmydog!",
-        "description": "Aquí puedes encontrar información útil y consejos sobre el transporte de mascotas, así como conocer mejor a nuestro equipo. Publicaremos regularmente videos y actualizaciones para mantenerte informado y conectado con nosotros. Sigue nuestro vlog para mantenerse actualizado sobre todo lo relacionado con el transporte de mascotas y para obtener más información sobre cómo podemos ayudarte a ti y a tu amigo peludo.",
+        "title": "¡Vlog de viajes con Ohmydog!",
+        "description": "Aquí puedes encontrar información útil y consejos sobre el transporte de mascotas a España, Reino Unido o Irlanda, así como conocer mejor a nuestro equipo. Publicaremos regularmente videos y actualizaciones para mantenerte informado y conectado con nosotros. Sigue nuestro vlog para mantenerte actualizado sobre todo lo relacionado con el transporte de mascotas y para obtener más información sobre cómo podemos ayudarte a ti y a tu amigo peludo.",
         "time": "minutos de lectura"
     },
     "gallery": {
@@ -114,32 +128,28 @@
     "passport": {
         "meta-title": "Calendario de viajes",
         "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
-        "title": "Pasaporte de mascotas",
+        "title": "Pasaporte europeo de mascotas",
         "description": "A continuación os dejamos la información correspondiente al pasaporte de mascotas y los requisitos para viajar con animales de compañía en los territorios de Irlanda del Norte, Gran Bretaña y Unión Europea. 🚦",
         "subtitle": "¿Cómo comprobar el pasaporte de una mascota?",
-        "description1": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:",
-        "button-text": "Pasaporte de tu mascota.pdf",
-        "title2": "El Esquema de Viaje de Mascotas de la Unión Europea: Cómo Completar Pasaportes para Mascotas",
-        "description2": "Puedes consultar toda la información sobre pasaportes para mascotas en el PDF haciendo clic en el siguiente enlace:"
+        "description1": "Haciendo click en el siguiente PDF, encontrarás información útil acerca de la manera correcta para rellenar un pasaporte europeo de mascotas.",
+        "button-text": "Pasaporte de tu mascota.pdf"
     },
     "about-us": {
         "meta-title": "Especializados en el transporte de animales",
         "meta-description": "Tu mascota es uno mas en la familia. Garantizamos seguridad, empatía y transparencia en el transporte de tu mascota.",
-        "title": "Acerca de nosotros",
-        "description1": "Bienvenido a Ohmydog, una empresa de transporte de mascotas confiable. Nuestra principal prioridad es la seguridad y la comodidad de tu amigo peludo. Entendemos que dejar a su mascota puede ser estresante y emotivo, por lo que nos esforzamos por hacer que el proceso de transporte sea lo más cómodo y libre de estrés posible.",
-        "description2": "Nuestro equipo de profesionales experimentados y dedicados se encargará de todos los aspectos del transporte de su mascota, desde la recogida hasta la entrega.",
-        "description3": "Nuestros vehículos de última generación están equipados con la última tecnología y recursos, que incluyen control de temperatura, suelos acolchados, música relajante y una decoración antiestrés para garantizar un viaje tranquilo y sin estrés para su mascota.",
-        "description4": "Por eso, si necesitas transportar a tu mascota, ya sea para una mudanza o para unas vacaciones, confía en Ohmydog para brindarte la mejor atención y servicio. Contáctenos hoy para obtener más información y comenzar a planificar los viajes de su mascota."   
+        "title": "Sobre nosotros",
+        "description1": "¡Bienvenido a Ohmydog Pet Travel, tu empresa confiable para el transporte de mascotas entre España, Reino Unido e Irlanda! Con 8 años de experiencia especializada, somos líderes en brindar viajes cortos y seguros para tus adorables compañeros de cuatro patas.",
+        "description2": "Nuestro vehículo, equipado con las adaptaciones más pioneras del sector, garantiza el bienestar de tus mascotas en cada kilómetro del trayecto. Desde cámaras web que te permiten seguir su viaje en tiempo real hasta música relajante para mantenerlos tranquilos, cada detalle está pensado para hacer que el transporte sea una experiencia cómoda y placentera.",
+        "description3": "La temperatura controlada asegura un ambiente óptimo, mientras que el ciclo natural de luz proporciona un entorno similar al hogar. Nuestros suelos acolchados ofrecen comodidad adicional, y el enlace GPS te mantiene informado sobre la ubicación exacta de tus seres queridos peludos en todo momento.",
+        "description4": "Confía en Ohmydog Pet Travel para llevar a tus perros y gatos de forma segura y cómoda entre España, Reino Unido e Irlanda. ¡Haz que cada viaje sea una experiencia feliz para tus mascotas con nosotros!"   
     },
     "trips": {
         "meta-title": "Calendario de viajes",
         "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
         "title": "Próximos viajes",
-        "description1": "Puedes consultar toda la información sobre nuestro programa de viajes para ",
-        "description2": " en el siguiente pdf:",
+        "description1": "Consulta en el PDF nuestros próximos viajes con mascotas a España, Reino Unido e Irlanda.",
         "button-text": "ProgramaDeViajes.pdf",
-        "description3": "Si el viaje de tu mascota no se encuentra dentro de los destinos ya detallados para este año, no dudes en consultarnos con respecto a otras rutas y fechas posibles hablando directamente con nosotros mediante nuestra página de contacto, ya que cubrimos muchos otros trayectos que no se encuentran en este calendario fijo.",
-        "description4": "También puedes contactar con nosotros de forma inmediata a través del botón de WhatsApp que puedes ver en la esquina inferior derecha de esta página."
+        "description3": "Si no encuentras las fechas que deseas en nuestro calendario, contáctanos!"
     },
     "cities": {
         "transporte-de-mascotas": {
@@ -180,11 +190,17 @@
         },
         "title-connector": "desde"
     },
+    "city-page": {
+        "contact-us": {
+            "form-title": "Reserva plaza para tu mascota",
+            "form-description": "Completa el siguiente formulario para hacer una reserva o hacer cualquier consulta."
+        }
+    },
     "contact-us": {
         "meta-title": "Contáctanos",
         "meta-description": "Contact Ohmydog Luxury Pet Travel for your pet trip in First Class.",
         "title": "Contáctanos",
-        "description": "Si tienes cualquier duda sobre nuestros servicios, por favor rellena el formulario y nos pondremos en contacto cuanto antes. También puedes llamarnos durante nuestras horas de apertura.",
+        "description": "Para obtener un presupuesto y más información sobre nuestros servicios de transporte de mascotas, por favor rellena el formulario y nos pondremos en contacto cuanto antes. También puedes llamarnos durante nuestro horario de apertura.",
         "open-days": "Lunes - Jueves",
         "open-hours": "9:00h - 17:00h",
         "open-days-friday": "Viernes",
@@ -192,7 +208,7 @@
         "closed-days": "Sábado - Domingo",
         "closed-text": "(Cerrado)",
         "call-text": "Llámanos",
-        "phone": "+34 656830322",
+        "phone": "+34 656 830 322",
         "email-text": "Envíanos un Email",
         "email": "info@omdtravel.com",
         "companyName": "OMD Pet Travel",
@@ -200,14 +216,13 @@
         "location": "Av. de las Jacarandas, 2, 46100 Burjassot, Valencia, España",
         "locationLinkText": "Ver en Google Maps",
         "locationLink": "https://www.google.com/maps/place/Ohmydog+Pet+Travel/@39.5016767,-0.4097061,17z/data=!3m2!4b1!5s0xd60455f2db5b8bd:0xfb33810320c317a2!4m5!3m4!1s0x6ae0f108b8f48f79:0x4a502b3064fe6bbc!8m2!3d39.5016767!4d-0.4075174",
-        "form-title": "Escríbenos",
         "form-description": "Si tienes alguna duda sobre nuestros servicios, por favor rellena el formulario y te responderemos cuanto antes. También puedes llamarnos a nuestro número telefónico durante nuestras horas de apertura.",
         "user-name": "Nombre",
         "user-email": "Email",
         "user-phone": "Teléfono",
-        "user-pickup-city": "Ciudad de recogida",
-        "user-dropoff-city": "Ciudad de entrega",
-        "user-pet-number": "Núm. de mascotas",
+        "user-pickup-city": "Código postal de ciudad de recogida",
+        "user-dropoff-city": "Código postal de ciudad de entrega",
+        "user-pet-number": "Nº de mascotas",
         "user-pet-info": "Especie, raza, edad y peso",
         "user-message": "Mensaje",
         "btn-text": "Enviar mensaje"

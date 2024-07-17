@@ -67,10 +67,9 @@ class petPassport extends React.Component {
     return (
       <Layout>
         <Seo title={intl.formatMessage({ id: "passport.meta-title" })} description={intl.formatMessage({ id: "passport.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
-        <TitleAndDescription headingText={intl.formatMessage({ id: "passport.title" })} descriptionText={intl.formatMessage({ id: "passport.description" })} color="#ffffff" padding="padding-top" />
+        <TitleAndDescription headingText={intl.formatMessage({ id: "passport.title" })} color="#ffffff" padding="padding-top" />
+        <TitleAndDescription subheadingText={textContent.title} descriptionText={textContent.textContent?.raw && renderRichText(textContent.textContent, renderOptions)} />
         <TextBanner id="passport" color="green" pdf={Passport} subheadingText={intl.formatMessage({ id: "passport.subtitle" })} descriptionText1={intl.formatMessage({ id: "passport.description1" })} buttonText={intl.formatMessage({ id: "passport.button-text" })} />
-        <TitleAndDescription subheadingText={textContent.title} descriptionText={textContent.textContent?.raw && renderRichText(textContent.textContent, renderOptions)} padding="padding-bottom" />
-        {/* <TitleAndDescription descriptionText={intl.formatMessage({ id: "trips.description4" })}  padding="padding-bottom" /> */}
         <Contact subheadingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} openDaysFriday={intl.formatMessage({ id: "contact-us.open-days-friday" })} openHoursFriday={intl.formatMessage({ id: "contact-us.open-hours-friday" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} companyName={intl.formatMessage({ id: "contact-us.companyName" })} address={intl.formatMessage({ id: "contact-us.address" })} location={intl.formatMessage({ id: "contact-us.location" })} locationLinkText={intl.formatMessage({ id: "contact-us.locationLinkText" })} locationLink={intl.formatMessage({ id: "contact-us.locationLink" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formPickupCityText={intl.formatMessage({ id: "contact-us.user-pickup-city" })} formDropoffCityText={intl.formatMessage({ id: "contact-us.user-dropoff-city" })} formPetnumberText={intl.formatMessage({ id: "contact-us.user-pet-number" })} formPetinfoText={intl.formatMessage({ id: "contact-us.user-pet-info" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>
     );
@@ -79,7 +78,7 @@ class petPassport extends React.Component {
 
 export const pageQuery = graphql`
   query HomeQuery($language: String) {
-    allContentfulTextContent(filter: { node_locale: { eq: $language } }) {
+    allContentfulTextContent(filter: { node_locale: { eq: $language }, entryTitle: {eq: "how-to-complete-a-passport"} }) {
       nodes {
         title
         textContent {
