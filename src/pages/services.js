@@ -44,10 +44,9 @@ export const pageQuery = graphql`
         }
         image {
           gatsbyImage(
-            layout: CONSTRAINED, 
-            placeholder: BLURRED, 
-            width: 1200, 
-            height: 1200
+            layout: FULL_WIDTH
+            width: 424
+            height: 212
           )
         }
       }
