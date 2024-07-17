@@ -31,11 +31,11 @@ class CityTemplate extends React.Component {
     
     const serviceSlugTranslation = (locationLanguage + '/' + city.slug + '-' + get(this.props, 'data.allContentfulServices.nodes[0].slug'))
 
-    console.log('serviceSlugTranslation: ', serviceSlugTranslation)
-    console.log('service: ', service)
+    // const seoTitle = intl.formatMessage({ id: "cities." + service.slug + ".meta-title1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-title2" })  + ' ' + city.cityName;
+    // const seoDescription = intl.formatMessage({ id: "cities." + service.slug + ".meta-description1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-description2" });
 
-    const seoTitle = intl.formatMessage({ id: "cities." + service.slug + ".meta-title1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-title2" })  + ' ' + city.cityName;
-    const seoDescription = intl.formatMessage({ id: "cities." + service.slug + ".meta-description1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-description2" });
+    const seoTitle = service.slug + city.cityName;
+    const seoDescription = service.slug + city.cityName;
 
     return (
       <Layout location={this.props.location}>
