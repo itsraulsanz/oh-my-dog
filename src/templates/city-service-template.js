@@ -34,8 +34,13 @@ class CityTemplate extends React.Component {
     // const seoTitle = intl.formatMessage({ id: "cities." + service.slug + ".meta-title1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-title2" })  + ' ' + city.cityName;
     // const seoDescription = intl.formatMessage({ id: "cities." + service.slug + ".meta-description1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-description2" });
 
-    const seoTitle = service.slug + city.cityName;
-    const seoDescription = service.slug + city.cityName;
+    console.log('city.slug: ', city.slug);
+    console.log('service.slug: ', service.slug);
+
+    console.log('MIX: ', (service.slug + ' - ' + city.cityName));
+
+    const seoTitle = (service.slug + ' - ' + city.cityName);
+    const seoDescription = (service.slug + ' - ' + city.cityName);
 
     return (
       <Layout location={this.props.location}>
