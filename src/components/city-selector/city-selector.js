@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import { useIntl } from "gatsby-plugin-intl"
-import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl";
 
 import transportOptions from '../../data/transportOptions';
-import './city-selector.scss'
+import './city-selector.scss';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
@@ -25,7 +24,7 @@ class CitySelector extends React.Component {
     const { selectedOption } = this.state;
     let pathname = typeof window !== "undefined" ? window.location.pathname : "";
     const locationLanguage = pathname.split("/")[1];
-    
+
     return (
       <div className={`city-selector ${ this.props.padding }`} style={{ background: this.props.color }}>
         <div className={`container-fluid ${ this.props.border }`}>
@@ -55,10 +54,10 @@ class CitySelector extends React.Component {
                     <li className='navigationItem' value={city.slug} key={index}>
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>
-                        {transportOptions[locationLanguage].map((service) => (
-                          <option value={city.slug + "-" + service.value} className="service-option">
-                            <a href={"/" + city.slug + "-" + service.value } >
-                              {service.label}
+                        {this.props.services.map((service, index) => (
+                          <option value={city.slug + "-" + service.slug} className="service-option">
+                            <a href={"/" + city.slug + "-" + service.slug } key={index}>
+                              {service.service}
                             </a>
                           </option>
                         ))}
@@ -75,16 +74,16 @@ class CitySelector extends React.Component {
                     <li className='navigationItem' value={city.slug} key={index}>
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>
-                        {transportOptions[locationLanguage].map((service) => (
-                          <option value={city.slug + "-" + service.value} className="service-option">
-                            <a href={"/" + city.slug + "-" + service.value } >
-                              {service.label}
+                        {this.props.services.map((service, index) => (
+                          <option value={city.slug + "-" + service.slug} className="service-option">
+                            <a href={"/" + city.slug + "-" + service.slug } key={index}>
+                              {service.service}
                             </a>
                           </option>
                         ))}
                       </select>
                     </li>
-                  ))}
+                  ))};
                 </ul>       
               </div>
 
@@ -95,10 +94,10 @@ class CitySelector extends React.Component {
                     <li className='navigationItem' value={city.slug} key={index}>
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>
-                        {transportOptions[locationLanguage].map((service) => (
-                          <option value={city.slug + "-" + service.value} className="service-option">
-                            <a href={"/" + city.slug + "-" + service.value } >
-                              {service.label}
+                        {this.props.services.map((service, index) => (
+                          <option value={city.slug + "-" + service.slug} className="service-option">
+                            <a href={"/" + city.slug + "-" + service.slug } key={index}>
+                              {service.service}
                             </a>
                           </option>
                         ))}

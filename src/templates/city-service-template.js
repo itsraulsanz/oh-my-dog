@@ -22,25 +22,28 @@ class CityTemplate extends React.Component {
   render() {
     const intl = this.props.intlValue;
 
-    const city = get(this.props, 'data.contentfulCityServices')
-    const service = get(this.props, 'data.contentfulServices')
+    const city = get(this.props, 'data.contentfulCityServices');
+    const service = get(this.props, 'data.contentfulServices');
     const bannersServices = get(this, 'props.data.banners_services.nodes');
 
     let pathname = typeof window !== "undefined" ? window.location.pathname : "";
     const locationLanguage = pathname.split("/")[1];
+
+    console.log('city.slug: ', city.slug);
+    //console.log('service.slug: ', service.slug);
     
-    const serviceSlugTranslation = (locationLanguage + '/' + city.slug + '-' + get(this.props, 'data.allContentfulServices.nodes[0].slug'))
+    // const serviceSlugTranslation = (locationLanguage + '/' + city.slug + '-' + get(this.props, 'data.allContentfulServices.nodes[0].slug'))
 
     // const seoTitle = intl.formatMessage({ id: "cities." + service.slug + ".meta-title1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-title2" })  + ' ' + city.cityName;
     // const seoDescription = intl.formatMessage({ id: "cities." + service.slug + ".meta-description1" }) + ' ' + city.cityName + ' ' + intl.formatMessage({ id: "cities." + service.slug + ".meta-description2" });
 
-    console.log('city.slug: ', city.slug);
-    console.log('service.slug: ', service.slug);
+    // console.log('city.slug: ', city);
+    // console.log('service.slug: ', service);
 
-    console.log('MIX: ', (service.slug + ' - ' + city.cityName));
+    // console.log('MIX: ', (service.slug + ' - ' + city.cityName));
 
-    const seoTitle = (service.slug + ' - ' + city.cityName);
-    const seoDescription = (service.slug + ' - ' + city.cityName);
+    const seoTitle = "city.cityName";
+    const seoDescription = "city.cityName";
 
     return (
       <Layout location={this.props.location}>
@@ -51,13 +54,13 @@ class CityTemplate extends React.Component {
         <div className="city-service-template">
           <div className="container-fluid">
             <div className="city-service-template__details">
-              <h1 className="city-service-template__details-title">{service.serviceName} {intl.formatMessage({ id: "cities.title-connector" })} {city.cityName}</h1>
+              {/* <h1 className="city-service-template__details-title">{service.serviceName} {intl.formatMessage({ id: "cities.title-connector" })} {city.cityName}</h1> */}
             </div>
           </div>
         </div>
 
         <Banners color="#ffffff" banners={bannersServices} />
-        <TitleAndDescription color="#ffffff" padding="padding-bottom" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} />
+        {/* <TitleAndDescription color="#ffffff" padding="padding-bottom" descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} /> */}
         
         <Contact subheadingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} formTitle={intl.formatMessage({ id: "city-page.contact-us.form-title" })} formDescription={intl.formatMessage({ id: "city-page.contact-us.form-description" })}openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} openDaysFriday={intl.formatMessage({ id: "contact-us.open-days-friday" })} openHoursFriday={intl.formatMessage({ id: "contact-us.open-hours-friday" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} companyName={intl.formatMessage({ id: "contact-us.companyName" })} address={intl.formatMessage({ id: "contact-us.address" })} location={intl.formatMessage({ id: "contact-us.location" })} locationLinkText={intl.formatMessage({ id: "contact-us.locationLinkText" })} locationLink={intl.formatMessage({ id: "contact-us.locationLink" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formPickupCityText={intl.formatMessage({ id: "contact-us.user-pickup-city" })} formDropoffCityText={intl.formatMessage({ id: "contact-us.user-dropoff-city" })} formPetnumberText={intl.formatMessage({ id: "contact-us.user-pet-number" })} formPetinfoText={intl.formatMessage({ id: "contact-us.user-pet-info" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>

@@ -67,13 +67,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   // Create city pages
 
   cities.forEach((city) => {
-    createPage({
-      path: `/${city.slug}/`,
-      component: cityTemplate,
-      context: {
-        slug: city.slug,
-      },
-    })
     services.forEach((service) => {
       createPage({
         path: `/${city.slug + '-' + service.slug}/`,

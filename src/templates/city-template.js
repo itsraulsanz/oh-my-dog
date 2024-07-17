@@ -19,8 +19,6 @@ class CityTemplate extends React.Component {
     const city = get(this.props, 'data.contentfulCityServices')
     const intl = this.props.intlValue;
 
-    console.log('cityTEST', city);
-
     let pathname = typeof window !== "undefined" ? window.location.pathname : "";
     const locationLanguage = pathname.split("/")[1];
 

@@ -27,10 +27,6 @@ class internationalTransport extends React.Component {
     const titleText = get(this, 'props.data.allContentfulTextContent.nodes[0].title');
     const descriptionText = get(this, 'props.data.allContentfulTextContent.nodes[0].textContent');
 
-    console.log('heroImage:', heroImage);
-    console.log('titleText:', titleText);
-    console.log('descriptionText:', descriptionText);
-
     const renderOptions = {
       renderMark: {
         [MARKS.BOLD]: (text) => <b className="font-bold">{text}</b>,
