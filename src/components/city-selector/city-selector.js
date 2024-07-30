@@ -55,7 +55,7 @@ class CitySelector extends React.Component {
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>
                         {this.props.services.map((service, index) => (
-                          <option value={city.slug + "-" + service.slug} className="service-option">
+                          <option value={"/" + city.slug + "-" + service.slug} className="service-option">
                             <a href={"/" + city.slug + "-" + service.slug } key={index}>
                               {service.service}
                             </a>
@@ -75,7 +75,7 @@ class CitySelector extends React.Component {
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>
                         {this.props.services.map((service, index) => (
-                          <option value={city.slug + "-" + service.slug} className="service-option">
+                          <option value={"/" + city.slug + "-" + service.slug} className="service-option">
                             <a href={"/" + city.slug + "-" + service.slug } key={index}>
                               {service.service}
                             </a>
@@ -83,7 +83,7 @@ class CitySelector extends React.Component {
                         ))}
                       </select>
                     </li>
-                  ))};
+                  ))}
                 </ul>       
               </div>
 
@@ -95,7 +95,7 @@ class CitySelector extends React.Component {
                       <select label={city.cityName} name={city.cityName} onChange={this.handleChange} value={this.state.value} className="basic-single">
                         <option disabled selected value className="service-option"> {city.cityName} </option>
                         {this.props.services.map((service, index) => (
-                          <option value={city.slug + "-" + service.slug} className="service-option">
+                          <option value={"/" + city.slug + "-" + service.slug} className="service-option">
                             <a href={"/" + city.slug + "-" + service.slug } key={index}>
                               {service.service}
                             </a>

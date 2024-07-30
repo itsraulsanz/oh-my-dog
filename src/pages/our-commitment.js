@@ -34,15 +34,12 @@ class WhyUs extends React.Component {
   render() {
     const intl = this.props.intlValue;
 
-    const citiesSpain = get(this, 'props.data.cities_spain.nodes')
-    const citiesUk = get(this, 'props.data.cities_uk.nodes')
-    const citiesIreland = get(this, 'props.data.cities_ireland.nodes')
-    //const services = get(this, 'props.data.allContentfulServices.nodes')
-    const services = get(this, 'props.data.allContentfulTransportOptions.nodes')
+    const citiesSpain = get(this, 'props.data.cities_spain.nodes');
+    const citiesUk = get(this, 'props.data.cities_uk.nodes');
+    const citiesIreland = get(this, 'props.data.cities_ireland.nodes');
+    const services = get(this, 'props.data.allContentfulTransportOptions.nodes');
 
     const blocksCommitment = get(this, 'props.data.allContentfulTextContent.nodes');
-
-    const heroImage = get(this, 'props.data.heroImage')
 
     return (
       <Layout>
@@ -52,7 +49,7 @@ class WhyUs extends React.Component {
         
         <ImgAndText color="#ffffff" padding="padding-bottom" blocks={blocksCommitment} />
 
-        <CitySelector border="border-top" color="#ffffff" padding="padding-bottom" services={services} citiesSpain={citiesSpain} citiesUk={citiesUk} citiesIreland={citiesIreland} subheadingText={intl.formatMessage({ id: "homepage.services.subheadingText" })} descriptionText={intl.formatMessage({ id: "homepage.services.description2" })} servicesFromSpain={intl.formatMessage({ id: "homepage.services.services-spain" })} servicesFromUk={intl.formatMessage({ id: "homepage.services.services-uk" })} servicesFromIreland={intl.formatMessage({ id: "homepage.services.services-ireland" })} />
+        {/* <CitySelector border="border-top" color="#ffffff" padding="padding-bottom" services={services} citiesSpain={citiesSpain} citiesUk={citiesUk} citiesIreland={citiesIreland} subheadingText={intl.formatMessage({ id: "homepage.services.subheadingText" })} servicesFromSpain={intl.formatMessage({ id: "homepage.services.services-spain" })} servicesFromUk={intl.formatMessage({ id: "homepage.services.services-uk" })} servicesFromIreland={intl.formatMessage({ id: "homepage.services.services-ireland" })} /> */}
 
         <Contact subheadingText={intl.formatMessage({ id: "contact-us.title" })} descriptionText={intl.formatMessage({ id: "contact-us.description" })} openDays={intl.formatMessage({ id: "contact-us.open-days" })} openHours={intl.formatMessage({ id: "contact-us.open-hours" })} openDaysFriday={intl.formatMessage({ id: "contact-us.open-days-friday" })} openHoursFriday={intl.formatMessage({ id: "contact-us.open-hours-friday" })} closedDays={intl.formatMessage({ id: "contact-us.closed-days" })} closedText={intl.formatMessage({ id: "contact-us.closed-text" })} callText={intl.formatMessage({ id: "contact-us.call-text" })} telephone={intl.formatMessage({ id: "contact-us.phone" })} emailText={intl.formatMessage({ id: "contact-us.email-text" })} email={intl.formatMessage({ id: "contact-us.email" })} companyName={intl.formatMessage({ id: "contact-us.companyName" })} address={intl.formatMessage({ id: "contact-us.address" })} location={intl.formatMessage({ id: "contact-us.location" })} locationLinkText={intl.formatMessage({ id: "contact-us.locationLinkText" })} locationLink={intl.formatMessage({ id: "contact-us.locationLink" })} formNameText={intl.formatMessage({ id: "contact-us.user-name" })} formEmailText={intl.formatMessage({ id: "contact-us.user-email" })} formPhoneText={intl.formatMessage({ id: "contact-us.user-phone" })} formPickupCityText={intl.formatMessage({ id: "contact-us.user-pickup-city" })} formDropoffCityText={intl.formatMessage({ id: "contact-us.user-dropoff-city" })} formPetnumberText={intl.formatMessage({ id: "contact-us.user-pet-number" })} formPetinfoText={intl.formatMessage({ id: "contact-us.user-pet-info" })} formMessageText={intl.formatMessage({ id: "contact-us.user-message" })} buttonText={intl.formatMessage({ id: "contact-us.btn-text" })} />
       </Layout>
@@ -113,10 +110,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    allContentfulTransportOptions(filter: {node_locale: { eq: $language }}) {
+    allContentfulTransportOptions(filter: {node_locale: { eq: $language }}, sort: { service: ASC }) {
       nodes {
         slug
         service
+        metaDescription1
+        metaDescription2
+        metaTitle1
+        metaTitle2
       }
     }
   }

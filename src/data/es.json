@@ -32,9 +32,9 @@
             "title": "Servicios que ofrecemos",
             "subheadingText": "Selecciona el viaje de tu mascota",
             "description1": "¿Necesitas llevar a tu mascota a España, Reino Unido o Irlanda? Te ofrecemos 2 tipos de servicios diferentes para el viaje de tu perro o gato.",
-            "services-spain": "Ciudades de España - Elige el origen y el servicio.",
-            "services-uk": "Ciudades de Reino Unido - Elige el origen y el servicio.",
-            "services-ireland": "Ciudades de Irlanda - Elige el origen y el servicio."
+            "services-spain": "Ciudades de España - Elige la ciudad y el servicio.",
+            "services-uk": "Ciudades de Reino Unido - Elige la ciudad y el servicio.",
+            "services-ireland": "Ciudades de Irlanda - Elige la ciudad y el servicio."
         },  
         "intro": {
             "description1": "¡Bienvenido a Ohmydog Pet Travel, tu empresa confiable para el transporte de mascotas entre España, Reino Unido e Irlanda! Con 8 años de experiencia especializada, somos líderes en brindar viajes cortos y seguros para tus adorables compañeros de cuatro patas.",
@@ -154,15 +154,59 @@
     "cities": {
         "transporte-de-mascotas": {
             "meta-title1": "Transporte de mascotas desde ",
-            "meta-title2": " | Envío de mascotas desde ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-title2": " | Envío de mascotas",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de transporte de mascotas desde ",
             "meta-description2": " con el mayor confort y seguridad."
         },
-        "transporte-de-animales": {
-            "meta-title1": "Transporte de animales en ",
-            "meta-title2": " | Envío de animales en ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+        "transporte-de-mascotas-a-uk": {
+            "meta-title1": "Transporte de mascotas desde ",
+            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de transporte de mascotas desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "viaje-con-mascotas": {
+            "meta-title1": "Viaje con mascotas desde ",
+            "meta-title2": " | Envío de mascotas",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de viaje con mascotas desde ",
             "meta-description2": " con el mayor confort y seguridad."
+        },
+        "viaje-con-mascotas-a-uk": {
+            "meta-title1": "Viaje con mascotas desde ",
+            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de viaje con mascotas desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "llevar-mascota": {
+            "meta-title1": "Llevar mascota a ",
+            "meta-title2": " | Envío de mascotas",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para llevar a tu mascota desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "llevar-mascota-a-uk": {
+            "meta-title1": "Llevar mascota desde ",
+            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para llevar a tu mascota desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "traer-mascota": {
+            "meta-title1": "Traer mascota desde ",
+            "meta-title2": " | Envío de mascotas",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para traer a tu mascota desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "traer-mascota-a-uk": {
+            "meta-title1": "Traer mascota desde ",
+            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para traer a tu mascota desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
         "transporte-de-gatos": {
             "meta-title1": "Transporte de gatos en ",
@@ -188,7 +232,10 @@
             "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
             "meta-description2": " con el mayor confort y seguridad."
         },
-        "title-connector": "desde"
+        "title-connector": "desde",
+        "contact-us": {
+            "title": "Reserva una plaza para tu mascota"
+        }
     },
     "city-page": {
         "contact-us": {

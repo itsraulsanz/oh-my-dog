@@ -5,8 +5,12 @@
 @import 'colors';
 @import 'fonts';
 
-main {
-    margin-top: 88px;
+header {
+    margin-bottom: 114px;
+}
+
+#gatsby-focus-wrapper main {
+    padding-top: 114px;
 }
 
 body {
