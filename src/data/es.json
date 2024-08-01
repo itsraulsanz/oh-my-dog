@@ -152,6 +152,35 @@
         "description3": "Si no encuentras las fechas que deseas en nuestro calendario, contáctanos!"
     },
     "cities": {
+        // ** Mascota **
+        "llevar-mascota": {
+            "meta-title1": "Llevar mascota a ",
+            "meta-title2": " | Envío de mascotas",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para llevar a tu mascota desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "llevar-mascota-a-uk": {
+            "meta-title1": "Llevar mascota desde ",
+            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para llevar a tu mascota desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "traer-mascota": {
+            "meta-title1": "Traer mascota desde ",
+            "meta-title2": " | Envío de mascotas",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para traer a tu mascota desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "traer-mascota-desde-uk": {
+            "meta-title1": "Traer mascota desde ",
+            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para traer a tu mascota desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
         "transporte-de-mascotas": {
             "meta-title1": "Transporte de mascotas desde ",
             "meta-title2": " | Envío de mascotas",
@@ -180,58 +209,181 @@
             "meta-description1": "Servicio exclusivo de viaje con mascotas desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        "llevar-mascota": {
-            "meta-title1": "Llevar mascota a ",
-            "meta-title2": " | Envío de mascotas",
+        // ** Fin Mascota **
+        // ** Animal **
+        "llevar-animal": {
+            "meta-title1": "Llevar animal a ",
+            "meta-title2": " | Envío de animales",
             "title2": " ",
-            "meta-description1": "Servicio exclusivo para llevar a tu mascota desde ",
+            "meta-description1": "Servicio exclusivo para llevar a tu animal desde ",
             "meta-description2": " con el mayor confort y seguridad."
         },
-        "llevar-mascota-a-uk": {
-            "meta-title1": "Llevar mascota desde ",
-            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+        "llevar-animal-a-uk": {
+            "meta-title1": "Llevar animal desde ",
+            "meta-title2": " a UK o Irlanda | Envío de animales a UK o Irlanda",
             "title2": " a UK o Irlanda",
-            "meta-description1": "Servicio exclusivo para llevar a tu mascota desde ",
+            "meta-description1": "Servicio exclusivo para llevar a tu animal desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        "traer-mascota": {
-            "meta-title1": "Traer mascota desde ",
-            "meta-title2": " | Envío de mascotas",
+        "traer-animal": {
+            "meta-title1": "Traer animal desde ",
+            "meta-title2": " | Envío de animales",
             "title2": " ",
-            "meta-description1": "Servicio exclusivo para traer a tu mascota desde ",
+            "meta-description1": "Servicio exclusivo para traer a tu animal desde ",
             "meta-description2": " con el mayor confort y seguridad."
         },
-        "traer-mascota-a-uk": {
-            "meta-title1": "Traer mascota desde ",
-            "meta-title2": " a UK o Irlanda | Envío de mascotas a UK o Irlanda",
+        "traer-animal-desde-uk": {
+            "meta-title1": "Traer animal desde ",
+            "meta-title2": " a UK o Irlanda | Envío de animales a UK o Irlanda",
             "title2": " a UK o Irlanda",
-            "meta-description1": "Servicio exclusivo para traer a tu mascota desde ",
+            "meta-description1": "Servicio exclusivo para traer a tu animal desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "transporte-de-animales": {
+            "meta-title1": "Transporte de animales desde ",
+            "meta-title2": " | Envío de animales",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de transporte de animales desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-animales-a-uk": {
+            "meta-title1": "Transporte de animales desde ",
+            "meta-title2": " a UK o Irlanda | Envío de animales a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de transporte de animales desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "viaje-con-animales": {
+            "meta-title1": "Viaje con animales desde ",
+            "meta-title2": " | Envío de animales",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de viaje con animales desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "viaje-con-animales-a-uk": {
+            "meta-title1": "Viaje con animales desde ",
+            "meta-title2": " a UK o Irlanda | Envío de animales a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de viaje con animales desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        // ** Fin Animal **
+        // ** Perro **
+        "llevar-perro": {
+            "meta-title1": "Llevar perro a ",
+            "meta-title2": " | Envío de perros",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para llevar a tu perro desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "llevar-perro-a-uk": {
+            "meta-title1": "Llevar perro desde ",
+            "meta-title2": " a UK o Irlanda | Envío de perros a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para llevar a tu perro desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "traer-perro": {
+            "meta-title1": "Traer perro desde ",
+            "meta-title2": " | Envío de perros",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para traer a tu perro desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "traer-perro-desde-uk": {
+            "meta-title1": "Traer perro desde ",
+            "meta-title2": " a UK o Irlanda | Envío de perros a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para traer a tu perro desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "transporte-de-perros": {
+            "meta-title1": "Transporte de perros desde ",
+            "meta-title2": " | Envío de perros",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de transporte de perros desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "transporte-de-perros-a-uk": {
+            "meta-title1": "Transporte de perros desde ",
+            "meta-title2": " a UK o Irlanda | Envío de perros a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de transporte de perros desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "viaje-con-perros": {
+            "meta-title1": "Viaje con perros desde ",
+            "meta-title2": " | Envío de perros",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de viaje con perros desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "viaje-con-perros-a-uk": {
+            "meta-title1": "Viaje con perros desde ",
+            "meta-title2": " a UK o Irlanda | Envío de perros a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de viaje con perros desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        // ** Fin Perro **
+        // ** Gato **
+        "llevar-gato": {
+            "meta-title1": "Llevar gato a ",
+            "meta-title2": " | Envío de gatos",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para llevar a tu gato desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "llevar-gato-a-uk": {
+            "meta-title1": "Llevar gato desde ",
+            "meta-title2": " a UK o Irlanda | Envío de gatos a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para llevar a tu gato desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "traer-gato": {
+            "meta-title1": "Traer gato desde ",
+            "meta-title2": " | Envío de gatos",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo para traer a tu gato desde ",
+            "meta-description2": " con el mayor confort y seguridad."
+        },
+        "traer-gato-desde-uk": {
+            "meta-title1": "Traer gato desde ",
+            "meta-title2": " a UK o Irlanda | Envío de gatos a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo para traer a tu gato desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
         "transporte-de-gatos": {
-            "meta-title1": "Transporte de gatos en ",
-            "meta-title2": " | Envío de gatos en ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+            "meta-title1": "Transporte de gatos desde ",
+            "meta-title2": " | Envío de gatos",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de transporte de gatos desde ",
             "meta-description2": " con el mayor confort y seguridad."
         },
-        "transporte-de-perros": {
-            "meta-title1": "Transporte de perros en ",
-            "meta-title2": " | Envío de perros en ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
+        "transporte-de-gatos-a-uk": {
+            "meta-title1": "Transporte de gatos desde ",
+            "meta-title2": " a UK o Irlanda | Envío de gatos a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de transporte de gatos desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
+        },
+        "viaje-con-gatos": {
+            "meta-title1": "Viaje con gatos desde ",
+            "meta-title2": " | Envío de gatos",
+            "title2": " ",
+            "meta-description1": "Servicio exclusivo de viaje con gatos desde ",
             "meta-description2": " con el mayor confort y seguridad."
         },
-        "transporte-de-conejos": {
-            "meta-title1": "Transporte de conejos en ",
-            "meta-title2": " | Envío de conejos en ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
-            "meta-description2": " con el mayor confort y seguridad."
+        "viaje-con-gatos-a-uk": {
+            "meta-title1": "Viaje con gatos desde ",
+            "meta-title2": " a UK o Irlanda | Envío de gatos a UK o Irlanda",
+            "title2": " a UK o Irlanda",
+            "meta-description1": "Servicio exclusivo de viaje con gatos desde ",
+            "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        "transporte-de-perros-y-gatos": {
-            "meta-title1": "Transporte de perros y gatos en ",
-            "meta-title2": " | Envío de perros y gatos en ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
-            "meta-description2": " con el mayor confort y seguridad."
-        },
+        // ** Fin Gato **
         "title-connector": "desde",
         "contact-us": {
             "title": "Reserva una plaza para tu mascota"

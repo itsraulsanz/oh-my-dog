@@ -153,6 +153,21 @@
         "description3": "If you can find your desired dates in the pdf, just contact us!"
     },
     "cities": {
+        // ** Pet **
+        "bring-pet": {
+            "meta-title1": "Bring pet from ",
+            "meta-title2": " | Pets delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to bring your pet from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "bring-pet-from-spain": {
+            "meta-title1": "Bring pet from ",
+            "meta-title2": "  to Spain or Ireland | Pets delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to bring your pet from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
         "pet-transport": {
             "meta-title1": "Pets transport from ",
             "meta-title2": " | Pets delivery",
@@ -195,44 +210,181 @@
             "meta-description1": "Exclusive service to send your pet from ",
             "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
-        "bring-pet": {
-            "meta-title1": "Bring pet from ",
-            "meta-title2": " | Pets delivery",
+        // ** End Pet **
+        // ** Animal **
+        "bring-animal": {
+            "meta-title1": "Bring animal from ",
+            "meta-title2": " | Animals delivery",
             "title2": " ",
-            "meta-description1": "Exclusive service to bring your pet from ",
+            "meta-description1": "Exclusive service to bring your animal from ",
             "meta-description2": " with fully comfort and security."
         },
-        "bring-pet-from-spain": {
-            "meta-title1": "Bring pet from ",
-            "meta-title2": "  to Spain or Ireland | Pets delivery to Spain or Ireland",
+        "bring-animal-from-spain": {
+            "meta-title1": "Bring animal from ",
+            "meta-title2": "  to Spain or Ireland | Animals delivery to Spain or Ireland",
             "title2": " to Spain or Ireland",
-            "meta-description1": "Exclusive service to bring your pet from ",
+            "meta-description1": "Exclusive service to bring your animal from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        "animal-transport": {
+            "meta-title1": "Animals transport from ",
+            "meta-title2": " | Animals delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to transport your animal from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "animal-transport-to-spain": {
+            "meta-title1": "Animals transport from ",
+            "meta-title2": "  to Spain or Ireland | Animals delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to transport your animal from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        "animal-travel": {
+            "meta-title1": "Animals travel from ",
+            "meta-title2": " | Animals delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive animal travel service from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "animal-travel-to-spain": {
+            "meta-title1": "Animals travel from ",
+            "meta-title2": "  to Spain or Ireland | Animals delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive animal travel service from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },    
+        "send-animal": {
+            "meta-title1": "Send animal from ",
+            "meta-title2": " | Animals delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to send your animal from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "send-animal-to-spain": {
+            "meta-title1": "Send animal from ",
+            "meta-title2": "  to Spain or Ireland | Animals delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to send your animal from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        // ** End Animal **
+        // ** Dog **
+        "bring-dog": {
+            "meta-title1": "Bring dog from ",
+            "meta-title2": " | Dog delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to bring your dog from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "bring-dog-from-spain": {
+            "meta-title1": "Bring dog from ",
+            "meta-title2": "  to Spain or Ireland | Dogs delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to bring your dog from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        "dog-transport": {
+            "meta-title1": "Dogs transport from ",
+            "meta-title2": " | Dogs delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to transport your dog from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "dog-transport-to-spain": {
+            "meta-title1": "Dogs transport from ",
+            "meta-title2": "  to Spain or Ireland | Dogs delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to transport your dog from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        "dog-travel": {
+            "meta-title1": "Dogs travel from ",
+            "meta-title2": " | Dogs delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive dog travel service from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "dog-travel-to-spain": {
+            "meta-title1": "Dogs travel from ",
+            "meta-title2": "  to Spain or Ireland | Dogs delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive dog travel service from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },    
+        "send-dog": {
+            "meta-title1": "Send dog from ",
+            "meta-title2": " | Dogs delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to send your dog from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "send-dog-to-spain": {
+            "meta-title1": "Send dog from ",
+            "meta-title2": "  to Spain or Ireland | Dogs delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to send your dog from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        // ** End Dog **
+        // ** Cat **
+        "bring-cat": {
+            "meta-title1": "Bring cat from ",
+            "meta-title2": " | Cat delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to bring your cat from ",
+            "meta-description2": " with fully comfort and security."
+        },
+        "bring-cat-from-spain": {
+            "meta-title1": "Bring cat from ",
+            "meta-title2": "  to Spain or Ireland | Cats delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to bring your cat from ",
             "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
         "cat-transport": {
-            "meta-title1": "Cats transport ",
-            "meta-title2": " | Cats delivery ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
-            "meta-description2": " con el mayor confort y seguridad."
+            "meta-title1": "Cats transport from ",
+            "meta-title2": " | Cats delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to transport your cat from ",
+            "meta-description2": " with fully comfort and security."
         },
-        "dog-transport": {
-            "meta-title1": "Dogs transport ",
-            "meta-title2": " | Dogs delivery ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
-            "meta-description2": " con el mayor confort y seguridad."
+        "cat-transport-to-spain": {
+            "meta-title1": "Cats transport from ",
+            "meta-title2": "  to Spain or Ireland | Cats delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to transport your cat from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
-        "rabit-transport": {
-            "meta-title1": "Rabits transport ",
-            "meta-title2": " | Rabits delivery ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
-            "meta-description2": " con el mayor confort y seguridad."
+        "cat-travel": {
+            "meta-title1": "Cats travel from ",
+            "meta-title2": " | Cats delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive cat travel service from ",
+            "meta-description2": " with fully comfort and security."
         },
-        "dog-and-cat": {
-            "meta-title1": "Dogs and cats transport ",
-            "meta-title2": " | Dogs and cats delivery ",
-            "meta-description1": "Exclusivo servicio de transporte nacional e interacional de mascotas desde ",
-            "meta-description2": " con el mayor confort y seguridad."
+        "cat-travel-to-spain": {
+            "meta-title1": "Cats travel from ",
+            "meta-title2": "  to Spain or Ireland | Cats delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive cat travel service from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },    
+        "send-cat": {
+            "meta-title1": "Send cat from ",
+            "meta-title2": " | Cats delivery",
+            "title2": " ",
+            "meta-description1": "Exclusive service to send your cat from ",
+            "meta-description2": " with fully comfort and security."
         },
+        "send-cat-to-spain": {
+            "meta-title1": "Send cat from ",
+            "meta-title2": "  to Spain or Ireland | Cats delivery to Spain or Ireland",
+            "title2": " to Spain or Ireland",
+            "meta-description1": "Exclusive service to send your cat from ",
+            "meta-description2": " to Spain or Ireland with fully comfort and security."
+        },
+        // ** End Cat **
         "title-connector": "from",
         "contact-us": {
             "title": "Book a spot for your pet"
