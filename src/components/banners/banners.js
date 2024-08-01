@@ -10,7 +10,7 @@ const Banners = ({banners, padding, color, border}) => {
             {banners.map((banner, index) => (
               <li className='navigationItem' key={index}>
                 {banner.url ? 
-                    <a href={banner.url} rel="noreferrer" aria-label="Instagram link">
+                    <a href={'/' + banner.url} rel="noreferrer" aria-label="Instagram link">
                       <GatsbyImage alt={banner.title} image={banner.image.gatsbyImage} key={index} />
                       {banner.title}
                     </a> 

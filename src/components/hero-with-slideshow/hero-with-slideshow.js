@@ -15,7 +15,7 @@ export default function HeroWithSlideshow(props) {
               <h1 className="hero-with-slideshow__text-heading">{props.titleText}</h1>
               <h2 className="hero-with-slideshow__text-subheading">{props.subtitleText}</h2>
               <p className="hero-with-slideshow__text-description">{props.descriptionText}</p>
-              <a href='#contact-us' className="button-primary">
+              <a href='contact' className="button-primary">
                 {props.buttonContact}
               </a>
           </div>

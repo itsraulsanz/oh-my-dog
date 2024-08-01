@@ -3,7 +3,7 @@
 @import '../styles/resets';
 @import '../styles/fonts';
 
-.city-service-template {
+.title-and-description {
   .container-fluid {
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
       padding: 12px 80px;
     }
   
-    .city-service-template__details-title {
+    h1.city-service-template__details-title {
       margin-bottom: 8px;
       padding-bottom: 0;
       line-height: inherit;

@@ -22,14 +22,14 @@
         "gallery": {
             "title": "Our vehicle",
             "description": "Conoce nuestra furgoneta equipada y pensada al detalle para un viaje cómodo y seguro para tu mascota.",
-            "button": "Ver más fotos"
+            "button": "More pictures"
         },
         "why-us": {
             "title": "Comfort and safety for your pet",
             "description": "We have a fully equipped van designed for the safety and comfort of your pet."
         },
         "services": {
-            "title": "Servicios que ofrecemos",
+            "title": "Services",
             "subheadingText": "Select your pet travel",
             "description1": "Are you looking to transport your pet to Spain, the United Kingdom, or Ireland? We offer two different types of services for your dog or cat's journey.",
             "services-spain": "Spanish cities - Select a city and service.",

@@ -7,7 +7,7 @@ import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
 import './blog-list.scss';
 
-const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, link, padding}) => {
+const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, link, padding, color}) => {
 	const [blogPosts, setBlogPosts] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
 	const [postsPerPage] = useState(3);
@@ -31,7 +31,7 @@ const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, li
   const locationLanguage = pathname.split("/")[1];
 
   return (
-    <div className={`article-preview ${ padding }`} id='blog'>
+    <div className={`article-preview ${ padding }`} id='blog' style={{ background: color }}>
       <div className='container-fluid'>
         {headingText || subheadingText || descriptionText ? 
           <div className='article-preview__heading'>

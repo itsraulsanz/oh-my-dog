@@ -43,19 +43,14 @@ class CityTemplate extends React.Component {
           title={metaTitle} 
           description={metaDescription}
         />
-        <div className="city-service-template">
+        <div className="title-and-description padding-top">
           <div className="container-fluid">
-            <div className="city-service-template__details">
-              {/* <span style={{fontStyle: 'italic'}}>
-                <h3 className="city-service-template__details-title">metaTitle: {metaTitle}</h3>
-                <h3 className="city-service-template__details-title">metaDescription: {metaDescription}</h3>
-              </span> */}
+            <div className='title-and-description__text'>
               <h1 className="city-service-template__details-title">{title} {city.cityName}{title2}</h1>
+              <p className='title-and-description__text-description'>{metaDescription}</p>
             </div>
           </div>
         </div>
-
-        <TitleAndDescription color="#ffffff" descriptionText={metaDescription} />
 
         <TitleAndDescription color="#ffffff" padding="padding-top" border="border-top" subheadingText={intl.formatMessage({ id: "homepage.services.title" }) + ' ' + intl.formatMessage({ id: "cities.title-connector" }) + ' ' + city.cityName} descriptionText={intl.formatMessage({ id: "homepage.services.description1" })} />
         <Banners color="#ffffff" padding="padding-bottom" banners={bannersServices} />
