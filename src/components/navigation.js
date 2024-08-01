@@ -78,14 +78,19 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem">
-                      <Link to={`/${locationLanguage}/shared-transport`} className='navigationItem-sublist child'>
+                      <Link to={`/${locationLanguage}/shared-transport`} className='navigationItem-sublist'>
                         {props.sharedTransport}
                       </Link>
                     </li>
                     <li className="navigationItem">
-                      <Link to={`/${locationLanguage}/private-transport`} className='navigationItem-sublist child'>
+                      <Link to={`/${locationLanguage}/private-transport`} className='navigationItem-sublist'>
                         {props.privateTransport}
                       </Link>
+                    </li>
+                    <li className="navigationItem">
+                      <span className='navigationItem-link non-link'>
+                        {props.whyUs}
+                      </span>
                     </li>
                     <li className="navigationItem">
                       <Link to={`/${locationLanguage}/our-commitment`} className='navigationItem-sublist'>
@@ -93,17 +98,17 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem">
-                      <Link to={`/${locationLanguage}/about-us`} className='navigationItem-link'>
+                      <Link to={`/${locationLanguage}/about-us`} className='navigationItem-sublist'>
                         {props.aboutUs}
                       </Link>
                     </li>
                     <li className="navigationItem">
-                      <Link to={`/${locationLanguage}/gallery`} className='navigationItem-link'>
+                      <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist'>
                         {props.gallery}
                       </Link>
                     </li>
                     <li className="navigationItem">
-                      <Link to={`/${locationLanguage}/reviews`} className='navigationItem-link'>
+                      <Link to={`/${locationLanguage}/reviews`} className='navigationItem-sublist'>
                         {props.testimonials}
                       </Link>
                     </li>
@@ -189,32 +194,6 @@ function Navigation(props) {
                     <li className="navigationItem-submenu">
                       <Link to={`/${locationLanguage}/reviews`} className='navigationItem-sublist'>
                         {props.testimonials}
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </details>
-            </li>
-            <li className="navigationItem submenu medium-show">
-              <details className='details-submenu' id='details-submenuu'>
-                <summary className='summary-submenu'>
-                  <span className='navigationItem'>{props.info} <span className="summary-submenu-arrow"></span></span>
-                </summary>
-                <div className='details-submenu-list more-info'>
-                  <ul className="navigation-submenu-list">
-                    <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/blog`} className='navigationItem-sublist'>
-                        {props.blog}
-                      </Link>
-                    </li>
-                    <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist'>
-                        {props.petPassport}
-                      </Link>
-                    </li>
-                    <li className="navigationItem-submenu">
-                      <Link to={`/${locationLanguage}/trips`} className='navigationItem-sublist'>
-                        {props.calendar}
                       </Link>
                     </li>
                   </ul>
