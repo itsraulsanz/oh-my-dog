@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'gatsby'
-import Logo from '../images/logo.svg'
-import Language from './language'
+import { Link } from 'gatsby';
+import Logo from '../images/logo.svg';
+import Language from './language';
 
-import './navigation.scss'
+import './navigation.scss';
 
 function Navigation(props) {
   let pathname = typeof window !== "undefined" ? window.location.pathname : "";
@@ -29,25 +29,25 @@ function Navigation(props) {
             </ul>
 
             <ul className="social-media desktop">
-            <li className='navigationItem'>
-              <a href="https://instagram.com/omdtravel/" target="_blank" rel="noreferrer" aria-label="Instagram link" className="social-media-item instagram"></a>
-            </li>
-            <li className='navigationItem'>
-              <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" aria-label="Facebook link" className="social-media-item facebook">
-              </a>
-            </li>
-            <li className='navigationItem'>
-              <a href="https://www.tiktok.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Tiktok link" className="social-media-item tiktok">
-              </a>
-            </li>
-            <li className='navigationItem'>
-              <a href="https://www.youtube.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Youtube link" className="social-media-item youtube">
-              </a>
-            </li>
-            <li className='navigationItem'>
-              <a href="https://g.co/kgs/2NGfQm" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google">
-              </a>
-            </li>
+              <li className='navigationItem'>
+                <a href="https://instagram.com/omdtravel/" target="_blank" rel="noreferrer" aria-label="Instagram link" className="social-media-item instagram"></a>
+              </li>
+              <li className='navigationItem'>
+                <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" aria-label="Facebook link" className="social-media-item facebook">
+                </a>
+              </li>
+              <li className='navigationItem'>
+                <a href="https://www.tiktok.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Tiktok link" className="social-media-item tiktok">
+                </a>
+              </li>
+              <li className='navigationItem'>
+                <a href="https://www.youtube.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Youtube link" className="social-media-item youtube">
+                </a>
+              </li>
+              <li className='navigationItem'>
+                <a href="https://g.co/kgs/2NGfQm" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google">
+                </a>
+              </li>
             </ul>
 
             <div className="navigation-container mobile-menu">
@@ -75,6 +75,21 @@ function Navigation(props) {
                     <li className="navigationItem">
                       <Link to={`/${locationLanguage}/services`} className='navigationItem-link'>
                         {props.services}
+                      </Link>
+                    </li>
+                    <li className="navigationItem">
+                      <Link to={`/${locationLanguage}/shared-transport`} className='navigationItem-sublist child'>
+                        {props.sharedTransport}
+                      </Link>
+                    </li>
+                    <li className="navigationItem">
+                      <Link to={`/${locationLanguage}/private-transport`} className='navigationItem-sublist child'>
+                        {props.privateTransport}
+                      </Link>
+                    </li>
+                    <li className="navigationItem">
+                      <Link to={`/${locationLanguage}/our-commitment`} className='navigationItem-sublist'>
+                        {props.ourCommitment}
                       </Link>
                     </li>
                     <li className="navigationItem">

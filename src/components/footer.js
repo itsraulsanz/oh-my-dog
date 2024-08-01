@@ -1,9 +1,9 @@
-import React from 'react'
-import { Link } from 'gatsby'
+import React from 'react';
+import { Link } from 'gatsby';
 
-import Logo from '../images/logo-footer.svg'
+import Logo from '../images/logo-footer.svg';
 
-import './footer.scss'
+import './footer.scss';
 
 function Footer (props) {
   let pathname = typeof window !== "undefined" ? window.location.pathname : "";
@@ -18,7 +18,9 @@ function Footer (props) {
               <li className='details-submenu-list why-us'>
                 <ul className="navigation-submenu-list">
                   <li className="navigationItem-submenu title">
-                    {props.services}
+                    <Link to={`/${locationLanguage}/services`} className='navigationItem-main'>
+                      {props.services}
+                    </Link>
                   </li>
                   <li className="navigationItem-submenu">
                     <Link to={`/${locationLanguage}/shared-transport`} className='navigationItem-sublist child'>
@@ -40,22 +42,27 @@ function Footer (props) {
               <li className='details-submenu-list why-us'>
                 <ul className="navigation-submenu-list">
                   <li className="navigationItem-submenu title">
-                    <Link to={`/${locationLanguage}/why-us`} className='navigationItem-main'>
-                      {props.whyUs} <span className="summary-submenu-arrow"></span>
+                    <span className='navigationItem-main'>
+                      {props.whyUs}
+                    </span>
+                  </li>
+                  <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/our-commitment`} className='navigationItem-sublist'>
+                      {props.ourCommitment}
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/about-us`} className='navigationItem-sublist child'>
+                    <Link to={`/${locationLanguage}/about-us`} className='navigationItem-sublist'>
                       {props.aboutUs}
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist child'>
+                    <Link to={`/${locationLanguage}/gallery`} className='navigationItem-sublist'>
                       {props.gallery}
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/reviews`} className='navigationItem-sublist child'>
+                    <Link to={`/${locationLanguage}/reviews`} className='navigationItem-sublist'>
                       {props.testimonials}
                     </Link>
                   </li>
@@ -68,17 +75,13 @@ function Footer (props) {
                       {props.contactUs} <svg width="20" height="12" viewBox="0 0 20 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.3475 0.547943L13.4482 1.47237L17.2637 5.39431H0.679688V6.7017H17.2636L13.4482 10.6235L14.3475 11.5479L19.6984 6.04794L14.3475 0.547943Z"></path></svg>
                     </Link>
                   </li>
-
-                  <li className="navigationItem-submenu title">
-                    {props.info}
-                  </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/blog`} className='navigationItem-sublist child'>
+                    <Link to={`/${locationLanguage}/blog`} className='navigationItem-sublist'>
                       {props.blog}
                     </Link>
                   </li>
                   <li className="navigationItem-submenu">
-                    <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist child'>
+                    <Link to={`/${locationLanguage}/passport`} className='navigationItem-sublist'>
                       {props.petPassport}
                     </Link>
                   </li>
