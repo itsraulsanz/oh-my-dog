@@ -57,7 +57,7 @@
 
             @media only screen and (min-width: 400px) {
                 font-size: 44px;
-                line-height: 38px;
+                line-height: normal;
             }
 
         }
@@ -67,11 +67,11 @@
             margin: 0 0 10px;
             font-size: 22px;
             font-weight: 600;
-            line-height: auto;
+            line-height: normal;
 
             @media only screen and (min-width: 400px) {
                 font-size: 32px;
-                line-height: auto;
+                line-height: normal;
             }
 
         }

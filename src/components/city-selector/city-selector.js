@@ -47,7 +47,7 @@ class CitySelector extends React.Component {
             </div>
 
             <div className={`city__list ` + locationLanguage}>
-              <div className="countries">
+              <div className="countries spain">
                 <h3 className='city__list-heading'>{this.props.servicesFromSpain}</h3>
                 <ul className="selector">
                   {this.props.citiesSpain.map((city, index) => (
@@ -67,7 +67,7 @@ class CitySelector extends React.Component {
                 </ul>
               </div>
 
-              <div className="countries">
+              <div className="countries uk">
                 <h3 className='city__list-heading'>{this.props.servicesFromUk}</h3>
                 <ul className="selector">
                   {this.props.citiesUk.map((city, index) => (
@@ -87,7 +87,7 @@ class CitySelector extends React.Component {
                 </ul>       
               </div>
 
-              <div className="countries">
+              <div className="countries ireland">
                 <h3 className='city__list-heading'>{this.props.servicesFromIreland}</h3>
                 <ul className="selector">
                   {this.props.citiesIreland.map((city, index) => (
