@@ -14,7 +14,7 @@
         "calendar": "Calendar",
         "contact": "Contact",
         "contact-us": "Contact us",
-        "copyright": "OMD Pet Travel, Inc. All rights reserved",
+        "copyright": "OMD Pet Travel. All rights reserved",
         "locale": "en_GB"
     },
     "homepage": {
@@ -26,7 +26,7 @@
         },
         "why-us": {
             "title": "Comfort and safety for your pet",
-            "description": "Contamos con una furgoneta equipada y pensada para tu tranquilidad y la seguridad y confort de tu mascota."
+            "description": "We have a fully equipped van designed for the safety and comfort of your pet."
         },
         "services": {
             "title": "Servicios que ofrecemos",
@@ -123,6 +123,7 @@
     },
     "reviews": {
         "title": "Ohmydog Reviews",
+        "description": "We always try to offer the best service for your pet and your trust. With more than 150 positive reviews that support and back our work and our clients happiness.",
         "reviewsText": "reviews"
     },
     "passport": {
@@ -153,7 +154,6 @@
         "description3": "If you can find your desired dates in the pdf, just contact us!"
     },
     "cities": {
-        // ** Pet **
         "bring-pet": {
             "meta-title1": "Bring pet from ",
             "meta-title2": " | Pets delivery",
@@ -210,8 +210,6 @@
             "meta-description1": "Exclusive service to send your pet from ",
             "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
-        // ** End Pet **
-        // ** Animal **
         "bring-animal": {
             "meta-title1": "Bring animal from ",
             "meta-title2": " | Animals delivery",
@@ -268,8 +266,6 @@
             "meta-description1": "Exclusive service to send your animal from ",
             "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
-        // ** End Animal **
-        // ** Dog **
         "bring-dog": {
             "meta-title1": "Bring dog from ",
             "meta-title2": " | Dog delivery",
@@ -326,8 +322,6 @@
             "meta-description1": "Exclusive service to send your dog from ",
             "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
-        // ** End Dog **
-        // ** Cat **
         "bring-cat": {
             "meta-title1": "Bring cat from ",
             "meta-title2": " | Cat delivery",
@@ -384,7 +378,6 @@
             "meta-description1": "Exclusive service to send your cat from ",
             "meta-description2": " to Spain or Ireland with fully comfort and security."
         },
-        // ** End Cat **
         "title-connector": "from",
         "contact-us": {
             "title": "Book a spot for your pet"

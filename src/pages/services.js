@@ -85,10 +85,6 @@ export const pageQuery = graphql`
       nodes {
         slug
         service
-        metaDescription1
-        metaDescription2
-        metaTitle1
-        metaTitle2
       }
     }
   }

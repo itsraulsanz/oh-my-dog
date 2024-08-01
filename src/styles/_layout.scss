@@ -10,7 +10,11 @@ header {
 }
 
 #gatsby-focus-wrapper main {
-    padding-top: 114px;
+    padding-top: 88px;
+
+    @media (min-width: 800px) {
+        padding-top: 114px;
+    }
 }
 
 body {

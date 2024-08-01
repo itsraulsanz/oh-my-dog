@@ -14,7 +14,7 @@
         "calendar": "Calendario",
         "contact": "Contacto",
         "contact-us": "Contáctanos",
-        "copyright": "OMD Pet Travel, Inc. Todos los derechos reservados.",
+        "copyright": "OMD Pet Travel. Todos los derechos reservados.",
         "locale": "es_ES"
     },
     "homepage": {
@@ -123,6 +123,7 @@
     },
     "reviews": {
         "title": "Ohmydog Testimonios",
+        "description": "Siempre tratamos de ofrecer el mejor servicio para tu mascota y tu tranquilidad. Con más de 150 reviews positivas que avalan nuestro trabajo y la satisfacción de nuestros clientes.",
         "reviewsText": "reseñas"
     },
     "passport": {
@@ -152,7 +153,6 @@
         "description3": "Si no encuentras las fechas que deseas en nuestro calendario, contáctanos!"
     },
     "cities": {
-        // ** Mascota **
         "llevar-mascota": {
             "meta-title1": "Llevar mascota a ",
             "meta-title2": " | Envío de mascotas",
@@ -209,8 +209,6 @@
             "meta-description1": "Servicio exclusivo de viaje con mascotas desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        // ** Fin Mascota **
-        // ** Animal **
         "llevar-animal": {
             "meta-title1": "Llevar animal a ",
             "meta-title2": " | Envío de animales",
@@ -267,8 +265,6 @@
             "meta-description1": "Servicio exclusivo de viaje con animales desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        // ** Fin Animal **
-        // ** Perro **
         "llevar-perro": {
             "meta-title1": "Llevar perro a ",
             "meta-title2": " | Envío de perros",
@@ -325,8 +321,6 @@
             "meta-description1": "Servicio exclusivo de viaje con perros desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        // ** Fin Perro **
-        // ** Gato **
         "llevar-gato": {
             "meta-title1": "Llevar gato a ",
             "meta-title2": " | Envío de gatos",
@@ -383,7 +377,6 @@
             "meta-description1": "Servicio exclusivo de viaje con gatos desde ",
             "meta-description2": " a UK o Irlanda con el mayor confort y seguridad."
         },
-        // ** Fin Gato **
         "title-connector": "desde",
         "contact-us": {
             "title": "Reserva una plaza para tu mascota"
