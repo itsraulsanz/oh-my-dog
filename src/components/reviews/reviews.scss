@@ -55,8 +55,10 @@
     align-items: center;
     justify-content: center;
     align-self: center;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ED7C23;
     
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 
     @media only screen and (min-width: 600px) {
         display: flex;
@@ -96,13 +98,34 @@
             font-size: 17px;
         }
     }
+
+    .reviews__text-description {
+      font-size: 16px;
+      text-align: center;
+      line-height: normal;
+      margin: 0;
+      padding-bottom: 20px;
+  
+      @media (min-width: 600px) {
+          font-size: 18px;
+      }
+  
+      @media (min-width: 900px) {
+          font-size: 20px;
+      }
+  
+      p {
+          font-size: 16px;
+          line-height: 28px;
+      }
+    }
   }
   
   .review__card {
     margin: 0 20px;
-    padding: 20px 30px;
-    border-left: solid 1px #f2c7a5;
-    border-right: solid 1px #f2c7a5;
+    padding: 20px 60px;
+    // border-left: solid 1px #f2c7a5;
+    // border-right: solid 1px #f2c7a5;
     
     .review__user {
       display: flex;
@@ -110,7 +133,7 @@
       gap: 15px;
 
       img {
-        width: 50px;
+        display: none;
       }
     }
   }
