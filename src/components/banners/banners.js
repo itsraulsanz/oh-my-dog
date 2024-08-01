@@ -1,6 +1,6 @@
 import React, { useState, useRef } from "react";
-import { GatsbyImage } from 'gatsby-plugin-image'
-import './banners.scss'
+import { GatsbyImage } from 'gatsby-plugin-image';
+import './banners.scss';
 
 const Banners = ({banners, padding, color, border}) => {  
   return (
@@ -26,6 +26,6 @@ const Banners = ({banners, padding, color, border}) => {
       </div>
     </div>
   )
-}
+};
 
 export default Banners

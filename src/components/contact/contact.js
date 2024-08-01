@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
 import { validateEmail } from "../../utils/helpers";
 import emailjs from '@emailjs/browser';
-import Map from '../map/map'
-import './contact.scss'
+import Map from '../map/map';
+import './contact.scss';
 
 export default function Contact(props) {
   // Create state variables for the fields in the form
@@ -43,11 +43,11 @@ export default function Contact(props) {
     }
   };
 
-  const serviceID = process.env.GATSBY_APP_YOUR_SERVICE_ID
-  const templateID = process.env.GATSBY_APP_YOUR_TEMPLATE_ID
-  const publicKey = process.env.GATSBY_APP_YOUR_PUBLIC_KEY
+  const serviceID = process.env.GATSBY_APP_YOUR_SERVICE_ID;
+  const templateID = process.env.GATSBY_APP_YOUR_TEMPLATE_ID;
+  const publicKey = process.env.GATSBY_APP_YOUR_PUBLIC_KEY;
   
-  const center = { lat: 39.501867083198135, lng: -0.4074959442834655 }
+  const center = { lat: 39.501867083198135, lng: -0.4074959442834655 };
   const mapProps = {
     options: {
       center,
@@ -80,7 +80,7 @@ export default function Contact(props) {
         });
       });
     },
-  }
+  };
 
   const form = useRef();
   const handleFormSubmit = (e) => {

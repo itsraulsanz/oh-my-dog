@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIntl } from "gatsby-plugin-intl";
 
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import "../styles/_layout.scss";
 import Seo from "../components/seo";
@@ -9,7 +9,7 @@ import Layout from "../components/layout";
 import ImgAndText from '../components/img-and-text-block/img-and-text-block';
 import TitleAndDescription from '../components/title-and-description/title-and-description';
 import CitySelector from '../components/city-selector/city-selector';
-import Contact from '../components/contact/contact'
+import Contact from '../components/contact/contact';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {

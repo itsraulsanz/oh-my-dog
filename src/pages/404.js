@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 import Seo from '../components/seo';
 import Layout from '../components/layout';
-import TextBanner from "../components/text-banner/text-banner"
-import { useIntl } from "gatsby-plugin-intl"
+import TextBanner from "../components/text-banner/text-banner";
+import { useIntl } from "gatsby-plugin-intl";
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {

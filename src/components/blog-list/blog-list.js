@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import ReactPaginate from 'react-paginate';
 
-import { Link } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import { renderRichText } from 'gatsby-source-contentful/rich-text'
+import { Link } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
 
-import './blog-list.scss'
+import './blog-list.scss';
 
 const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, link, padding}) => {
 	const [blogPosts, setBlogPosts] = useState([]);
@@ -90,6 +90,6 @@ const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, li
       </div>
     </div>
   )
-}
+};
 
 export default PaginatedPosts

@@ -1,19 +1,19 @@
 import React from 'react';
 import { useIntl } from "gatsby-plugin-intl";
 
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
-import { renderRichText } from 'gatsby-source-contentful/rich-text'
-import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
-import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer';
+import { GatsbyImage } from 'gatsby-plugin-image';
 import "../styles/_layout.scss";
 import Seo from "../components/seo";
 import Layout from "../components/layout";
 import TextBanner from '../components/text-banner/text-banner';
 import TitleAndDescription from '../components/title-and-description/title-and-description';
-import Contact from '../components/contact/contact'
-import Passport from '../pdf/HowtoCompletePetPassports.pdf'
+import Contact from '../components/contact/contact';
+import Passport from '../pdf/HowtoCompletePetPassports.pdf';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
@@ -25,7 +25,7 @@ function withMyHook(Component) {
 class petPassport extends React.Component {
   render() {
     const intl = this.props.intlValue;
-    const textContent = get(this, 'props.data.allContentfulTextContent.nodes[0]')
+    const textContent = get(this, 'props.data.allContentfulTextContent.nodes[0]');
 
     const renderOptions = {
       renderMark: {
@@ -62,7 +62,7 @@ class petPassport extends React.Component {
           }        
         },
       },
-    }
+    };
 
     return (
       <Layout>

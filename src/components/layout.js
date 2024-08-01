@@ -1,9 +1,9 @@
-import React from 'react'
-import Cookies from './cookies'
-import Seo from './seo'
-import Navigation from './navigation'
-import Footer from './footer'
-import { useIntl } from "gatsby-plugin-intl"
+import React from 'react';
+import Cookies from './cookies';
+import Seo from './seo';
+import Navigation from './navigation';
+import Footer from './footer';
+import { useIntl } from "gatsby-plugin-intl";
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
@@ -14,7 +14,7 @@ function withMyHook(Component) {
 
 class Template extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     const intl = this.props.intlValue;
     const currentYear = new Date().getFullYear();
 

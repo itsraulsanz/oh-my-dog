@@ -1,10 +1,10 @@
-import React from "react"
-import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
+import React from "react";
+import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl";
 
 const languageName = {
   en: "EN",
   es: "ES",
-}
+};
 
 const Language = () => {
   // if (window.location.pathname.includes('/service/')) {

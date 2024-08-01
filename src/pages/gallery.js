@@ -1,9 +1,9 @@
 import React from 'react';
 import { useIntl } from "gatsby-plugin-intl";
 
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image';
 import "../styles/_layout.scss";
 import Seo from "../components/seo";
 import Layout from "../components/layout";
@@ -20,7 +20,7 @@ function withMyHook(Component) {
 class gallery extends React.Component {
   render() {
     const intl = this.props.intlValue;
-    const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes')
+    const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes');
 
     return (
       <Layout>

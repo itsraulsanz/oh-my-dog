@@ -1,11 +1,11 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import get from 'lodash/get'
-import { useIntl } from "gatsby-plugin-intl"
+import React from 'react';
+import { graphql } from 'gatsby';
+import get from 'lodash/get';
+import { useIntl } from "gatsby-plugin-intl";
 
 import '../styles/_layout.scss';
 
-import Layout from '../components/layout'
+import Layout from '../components/layout';
 import BlogList from '../components/blog-list/blog-list';
 
 function withMyHook(Component) {
@@ -17,13 +17,13 @@ function withMyHook(Component) {
 
 class blogPage extends React.Component {
   render() {
-    const postsData = get(this, 'props.data.allContentfulBlog.nodes')
-    const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes')
-    const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url')
+    const postsData = get(this, 'props.data.allContentfulBlog.nodes');
+    const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes');
+    const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url');
     const intl = this.props.intlValue;
     const currentYear = new Date().getFullYear();
-    const reviewsData = get(this, 'props.data.reviews')
-    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
+    const reviewsData = get(this, 'props.data.reviews');
+    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs;
 
     return (
       <Layout>

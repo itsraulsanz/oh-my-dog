@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { GatsbyImage } from 'gatsby-plugin-image'
-import { Link } from 'gatsby'
+import { GatsbyImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 
-import './gallery.scss'
+import './gallery.scss';
 
 const ImageGallery = ({galleryImages, headingText, subheadingText, descriptionText, link, color}) => {
   const [openedItem, setOpenedItem] = useState(null);

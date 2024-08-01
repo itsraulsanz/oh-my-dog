@@ -1,5 +1,5 @@
-import React from 'react'
-import './text-block-2columns.scss'
+import React from 'react';
+import './text-block-2columns.scss';
 
 export default function TextBlock(props) {
 

@@ -1,7 +1,7 @@
-import React from 'react'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
-import './hero.scss'
+import './hero.scss';
 
 const Hero = ({ image, title, content }) => (
   <div className="hero">

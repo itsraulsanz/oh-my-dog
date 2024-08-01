@@ -1,6 +1,6 @@
-import * as React from 'react'
-import { Helmet } from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
+import * as React from 'react';
+import { Helmet } from 'react-helmet';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Seo = ({ description = '', lang = 'en', meta = [], title, keywords, siteLocale, robots = '' }) => {
   const { site } = useStaticQuery(
@@ -16,15 +16,15 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, keywords, siteLo
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
-  const metaKeywords = keywords || site.siteMetadata.keywords
-  const metaRobots = robots || site.siteMetadata.robots
-  const defaultTitle = site.siteMetadata?.title
-  const defaultImage = 'https://www.omdtravel.com//static/logo-99b930d15840e2b175b2b9ed896149e6.svg'
+  const metaDescription = description || site.siteMetadata.description;
+  const metaKeywords = keywords || site.siteMetadata.keywords;
+  const metaRobots = robots || site.siteMetadata.robots;
+  const defaultTitle = site.siteMetadata?.title;
+  const defaultImage = 'https://www.omdtravel.com//static/logo-99b930d15840e2b175b2b9ed896149e6.svg';
   let siteUrl = typeof window !== "undefined" ? window.location.href : "";
-  const siteName = 'Ohmydog Luxury Pet Travel'
+  const siteName = 'Ohmydog Luxury Pet Travel';
 
   return (
     <Helmet

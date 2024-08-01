@@ -1,8 +1,8 @@
 import React, { useState, useRef } from "react";
-import { renderRichText } from 'gatsby-source-contentful/rich-text'
-import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import './img-and-text-block.scss'
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import './img-and-text-block.scss';
 
 export default function ImgAndTextBlock(props) {
   const renderOptions = {
@@ -11,7 +11,7 @@ export default function ImgAndTextBlock(props) {
     },
     renderNode: {
       "embedded-asset-block": node => {
-        const { gatsbyImageData } = node.data.target
+        const { gatsbyImageData } = node.data.target;
         if (!gatsbyImageData) {
           // asset is not an image
           return null
@@ -27,8 +27,8 @@ export default function ImgAndTextBlock(props) {
         return <h2>{children}</h2>
       },
       [BLOCKS.EMBEDDED_ASSET]: (node, children) => {
-        const gatsbyImageData = node.data.target.gatsbyImageData
-        const postGatsbyImageDescription = node.data.target.title
+        const gatsbyImageData = node.data.target.gatsbyImageData;
+        const postGatsbyImageDescription = node.data.target.title;
 
         if (node.data.target.gatsbyImageData) {
           return (
@@ -46,7 +46,7 @@ export default function ImgAndTextBlock(props) {
         }        
       },
     },
-  }
+  };
 
   return (
     <div className={`img-and-text ${ props.padding ? `${props.padding}` : '' } ${ props.align ? `${props.align}` : '' }`} style={{ background: props.color }}>

@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import { useIntl } from "gatsby-plugin-intl"
-import './city-template.scss'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import { useIntl } from "gatsby-plugin-intl";
+import './city-template.scss';
 
-import Seo from '../components/seo'
-import Layout from '../components/layout'
+import Seo from '../components/seo';
+import Layout from '../components/layout';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
@@ -16,7 +16,7 @@ function withMyHook(Component) {
 
 class CityTemplate extends React.Component {
   render() {
-    const city = get(this.props, 'data.contentfulCityServices')
+    const city = get(this.props, 'data.contentfulCityServices');
     const intl = this.props.intlValue;
 
     let pathname = typeof window !== "undefined" ? window.location.pathname : "";

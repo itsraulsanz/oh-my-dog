@@ -21,8 +21,8 @@ class ReviewsPage extends React.Component {
   render() {
     const intl = this.props.intlValue;
 
-    const reviewsData = get(this, 'props.data.reviews')
-    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
+    const reviewsData = get(this, 'props.data.reviews');
+    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs;
 
     return (
       <Layout>

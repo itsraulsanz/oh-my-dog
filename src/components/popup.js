@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { useIntl } from "gatsby-plugin-intl"
+import { useIntl } from "gatsby-plugin-intl";
 import CookieConsent, { Cookies, getCookieConsentValue } from "react-cookie-consent";
 import './popup.scss';
 
@@ -16,7 +16,7 @@ class PopUp extends React.Component {
   };
 
     render() {
-      const { children } = this.props
+      const { children } = this.props;
       const intl = this.props.intlValue;
 
   return (

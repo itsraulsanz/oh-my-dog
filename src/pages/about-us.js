@@ -1,16 +1,16 @@
 import React from 'react';
 import { useIntl } from "gatsby-plugin-intl";
 
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import "../styles/_layout.scss";
 import Seo from "../components/seo";
 import Layout from "../components/layout";
 import TitleAndDescription from '../components/title-and-description/title-and-description';
 import ImgAndText from '../components/img-and-text-block/img-and-text-block';
-import TextBlock2Columns from '../components/text-block-2columns/text-block-2columns'
-import Contact from '../components/contact/contact'
-import LogoDefra from '../images/logo-defra.webp'
+import TextBlock2Columns from '../components/text-block-2columns/text-block-2columns';
+import Contact from '../components/contact/contact';
+import LogoDefra from '../images/logo-defra.webp';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {

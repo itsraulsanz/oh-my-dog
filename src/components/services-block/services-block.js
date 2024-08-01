@@ -1,7 +1,7 @@
-import React from 'react'
-import './services-block.scss'
+import React from 'react';
+import './services-block.scss';
 
-import OhMyDogVideo from '../../images/ohmydogvideo.mp4'
+import OhMyDogVideo from '../../images/ohmydogvideo.mp4';
 
 export default function ServicesBlock(props) {
   return (

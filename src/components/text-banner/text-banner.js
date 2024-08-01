@@ -1,7 +1,7 @@
-import React from 'react'
-import './text-banner.scss'
+import React from 'react';
+import './text-banner.scss';
 
-import Footprint from "../../images/footprint.svg"
+import Footprint from "../../images/footprint.svg";
 
 export default function TextBanner({id, color, headingText, subheadingText, year, descriptionText1, descriptionText2, pdf, buttonText, pdfCalendar}) {  return (
     <div className='text-banner' id={id}>

@@ -32,20 +32,20 @@ function withMyHook(Component) {
 
 class IndexPage extends React.Component {
   render() {
-    const postsData = get(this, 'props.data.allContentfulBlog.nodes')
-    const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes')
-    const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url')
+    const postsData = get(this, 'props.data.allContentfulBlog.nodes');
+    const galleryImagesData = get(this, 'props.data.allContentfulGalleryImage.nodes');
+    const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url');
     const intl = this.props.intlValue;
     const currentYear = new Date().getFullYear();
 
     const bannersAdvantages = get(this, 'props.data.banners_advantages.nodes');
     const bannersServices = get(this, 'props.data.banners_services.nodes');
-    const reviewsData = get(this, 'props.data.reviews')
-    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs
-    const citiesSpain = get(this, 'props.data.cities_spain.nodes')
-    const citiesUk = get(this, 'props.data.cities_uk.nodes')
-    const citiesIreland = get(this, 'props.data.cities_ireland.nodes')
-    const services = get(this, 'props.data.allContentfulServices.nodes')
+    const reviewsData = get(this, 'props.data.reviews');
+    const reviews = intl.locale === 'en' ? reviewsData.reviewsEn : reviewsData.reviewsEs;
+    const citiesSpain = get(this, 'props.data.cities_spain.nodes');
+    const citiesUk = get(this, 'props.data.cities_uk.nodes');
+    const citiesIreland = get(this, 'props.data.cities_ireland.nodes');
+    const services = get(this, 'props.data.allContentfulServices.nodes');
 
     return (
       <Layout>

@@ -1,11 +1,11 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import { useIntl } from "gatsby-plugin-intl"
-import './city-service-template.scss'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import { useIntl } from "gatsby-plugin-intl";
+import './city-service-template.scss';
 
-import Seo from '../components/seo'
-import Layout from '../components/layout'
+import Seo from '../components/seo';
+import Layout from '../components/layout';
 
 import TitleAndDescription from '../components/title-and-description/title-and-description';
 import Banners from '../components/banners/banners';

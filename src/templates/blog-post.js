@@ -1,18 +1,18 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import get from 'lodash/get'
-import { renderRichText } from 'gatsby-source-contentful/rich-text'
-import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types'
-import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer'
-import { GatsbyImage } from 'gatsby-plugin-image'
-import readingTime from 'reading-time'
-import { useIntl } from "gatsby-plugin-intl"
-import './blog-post.scss'
+import React from 'react';
+import { Link, graphql } from 'gatsby';
+import get from 'lodash/get';
+import { renderRichText } from 'gatsby-source-contentful/rich-text';
+import { INLINES, BLOCKS, MARKS } from '@contentful/rich-text-types';
+import { documentToPlainTextString } from '@contentful/rich-text-plain-text-renderer';
+import { GatsbyImage } from 'gatsby-plugin-image';
+import readingTime from 'reading-time';
+import { useIntl } from "gatsby-plugin-intl";
+import './blog-post.scss';
 
-import Seo from '../components/seo'
-import Layout from '../components/layout'
-import Hero from '../components/hero/hero'
-import Tags from '../components/tags'
+import Seo from '../components/seo';
+import Layout from '../components/layout';
+import Hero from '../components/hero/hero';
+import Tags from '../components/tags';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {

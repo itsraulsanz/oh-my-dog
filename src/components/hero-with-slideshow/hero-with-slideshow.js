@@ -1,7 +1,7 @@
-import React from 'react'
-import './hero-with-slideshow.scss'
+import React from 'react';
+import './hero-with-slideshow.scss';
 
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage } from "gatsby-plugin-image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, EffectCards } from "swiper";
 import "swiper/css";

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useIntl } from "gatsby-plugin-intl";
 
-import { graphql } from 'gatsby'
+import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import "../styles/_layout.scss";
 import Seo from "../components/seo";
 import Layout from "../components/layout";
 import TextBanner from '../components/text-banner/text-banner';
 import TitleAndDescription from '../components/title-and-description/title-and-description';
-import Contact from '../components/contact/contact'
+import Contact from '../components/contact/contact';
 
 function withMyHook(Component) {
   return function WrappedComponent(props) {
@@ -20,7 +20,7 @@ function withMyHook(Component) {
 class tripsPage extends React.Component {
   render() {
     const intl = this.props.intlValue;
-    const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url')
+    const pdfCalendar = get(this, 'props.data.allContentfulCalendar.nodes[0].pdfFile.file.url');
     const currentYear = new Date().getFullYear();
 
     return (

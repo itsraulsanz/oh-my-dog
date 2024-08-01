@@ -1,5 +1,5 @@
-import React from 'react'
-import { useIntl } from "gatsby-plugin-intl"
+import React from 'react';
+import { useIntl } from "gatsby-plugin-intl";
 import CookieConsent, { Cookies } from "react-cookie-consent";
 import PopUp from "./popup";
 import './cookies.scss';
@@ -22,7 +22,7 @@ class CookiesBanner extends React.Component {
     };
 
     render() {
-      const { children } = this.props
+      const { children } = this.props;
       const intl = this.props.intlValue;
   
       return (
