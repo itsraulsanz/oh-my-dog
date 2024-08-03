@@ -10,7 +10,7 @@ import './blog-list.scss';
 const PaginatedPosts = ({posts, headingText, subheadingText, descriptionText, link, padding, color}) => {
 	const [blogPosts, setBlogPosts] = useState([]);
 	const [currentPage, setCurrentPage] = useState(1);
-	const [postsPerPage] = useState(3);
+	const [postsPerPage] = useState(6);
 
   useEffect(() => {
     const fetchBlogPosts = async () => {
