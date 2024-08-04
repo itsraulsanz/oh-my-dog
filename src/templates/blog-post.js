@@ -45,9 +45,9 @@ class BlogPostTemplate extends React.Component {
       renderNode: {
         [INLINES.HYPERLINK]: (node) => {
           if((node.data.uri).includes("player.vimeo.com/video")){
-            return <div className='video'><iframe title="Unique Title 001" src={node.data.uri} frameBorder="0" allowFullScreen></iframe></div>
+            return <div className='video'><iframe title="Unique Title 001" src={node.data.uri} frameBorder="0" allowFullScreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
           } else if((node.data.uri).includes("youtube.com/embed")) {
-            return <div className='video'><iframe title="Unique Title 002" src={node.data.uri} allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" frameBorder="0" allowFullScreen></iframe></div>
+            return <div className='video'><iframe title="Unique Title 002" src={node.data.uri} allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" frameBorder="0" allowFullScreen referrerpolicy="no-referrer-when-downgrade"></iframe></div>
           }
         },
         [BLOCKS.HEADING_2]: (node, children) => {
