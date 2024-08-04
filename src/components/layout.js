@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Cookies from './cookies';
 import Seo from './seo';
 import Navigation from './navigation';
@@ -13,6 +13,26 @@ function withMyHook(Component) {
 }
 
 class Template extends React.Component {
+  componentDidMount() {
+    var imageNodes = document.getElementsByTagName('img');
+    for (var i=0; i<imageNodes.length; i++) {
+      imageNodes[i].addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+      });
+    }
+
+    var pictureNodes = document.getElementsByTagName('picture');
+    for (var i=0; i<pictureNodes.length; i++) {
+      pictureNodes[i].addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+      });
+    }
+
+    // document.addEventListener('contextmenu', (e) => {
+    //   e.preventDefault();
+    // });
+  };
+  
   render() {
     const { children } = this.props;
     const intl = this.props.intlValue;
