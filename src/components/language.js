@@ -7,9 +7,9 @@ const languageName = {
 };
 
 const Language = () => {
-  const path = window.location.pathname;
+  let pathname = typeof window !== "undefined" ? window.location.pathname : "";
 
-  if (path.includes('/services/') && path.length > 13) {
+  if (pathname.includes('/services/') && pathname.length > 13) {
     // return (
     //   <IntlContextConsumer>
     //     {({ languages, language: currentLocale }) =>
