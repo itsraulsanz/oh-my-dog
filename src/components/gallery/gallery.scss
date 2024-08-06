@@ -126,6 +126,11 @@
         border-radius: 20px;
         width: 100%;
         height: -webkit-fill-available;
+
+        img {
+          border-radius: 20px;
+          height: 100%;
+        }
       }  
 
       & img {

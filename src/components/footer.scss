@@ -15,6 +15,7 @@ footer.homepageFooter {
     flex-direction: column-reverse;
     padding: 0;
     gap: 20px;
+    flex-wrap: wrap;
 
     @media (min-width: 700px) {
       padding: 12px 20px;
@@ -28,7 +29,6 @@ footer.homepageFooter {
   }
 
   .homepageFooter-container {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -58,6 +58,7 @@ footer.homepageFooter {
   .social-media {
     padding-top: 30px;
     margin: 0;
+    align-self: center;
 
     .navigationItem a {
       filter: invert(100%);
@@ -84,6 +85,10 @@ footer.homepageFooter {
 
       svg {
         fill: $core-color-background;
+      }
+
+      .social-media {
+        display: none;
       }
 
       @media (min-width: 700px) {
@@ -163,6 +168,100 @@ footer.homepageFooter {
       text-align: left;
       align-items: flex-start;
       margin: 0 0 40px;
+    }
+  }
+}
+
+// MEDIA QUERIES
+
+@media(max-width: 991px) {
+  footer.homepageFooter {
+    .main-container {
+      flex-direction: column-reverse;
+
+      .homepageFooter-container {
+        &.navigation {
+          width: 100%;
+        }
+  
+        &.logo {
+          width: 100%;
+          flex-direction: row;
+          align-self: flex-end;
+          justify-content: space-between;
+          margin-bottom: 30px;
+
+          .social-media {
+            padding: 0;
+          }
+
+          ul.contact__info-details {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  footer.homepageFooter {
+    .main-container {
+      .homepageFooter-container {  
+        &.logo {
+          align-items: start;
+
+          .social-media {
+            display: none;
+          }
+
+          ul.contact__info-details {
+            .social-media {
+              display: flex;
+              margin-top: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 599px) {
+  footer.homepageFooter {
+    .main-container {
+      .homepageFooter-container {
+        &.navigation {
+          ul.navigation {
+            justify-content: space-evenly;
+
+            .details-submenu-list {
+              width: auto;
+            }
+          }
+        }
+
+        &.logo {
+          flex-direction: column;
+          align-items: center;
+          gap: 20px;
+
+          .social-media {
+            display: flex;
+            width: 80%;
+            justify-content: space-between;
+            order: 3;
+          }
+
+          ul.contact__info-details {
+            order: 2;
+            
+            .social-media {
+              display: none;
+            }
+          }
+        }
+      }
     }
   }
 }

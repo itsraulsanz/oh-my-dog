@@ -11,7 +11,7 @@ function Footer (props) {
 
   return (
     <footer className='homepageFooter'>
-      <div className="container-fluid">
+      <div className="container-fluid main-container">
         <section className='homepageFooter-container navigation'>
           <nav>
             <ul className="navigation">
@@ -85,6 +85,11 @@ function Footer (props) {
                       {props.petPassport}
                     </Link>
                   </li>
+                  <li className="navigationItem-submenu">
+                    <Link to={`/${locationLanguage}/faq`} className='navigationItem-sublist'>
+                      {props.faq}
+                    </Link>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -118,6 +123,24 @@ function Footer (props) {
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" width="22.119" height="22.119"><path fillRule="evenodd" d="M4.078 5.539H18.04l-6.98 6.035Zm14.332 11.04a.307.307 0 0 0 .306-.31V6.402l-7.299 6.31a.543.543 0 0 1-.715 0l-7.3-6.31v9.869a.308.308 0 0 0 .308.308Zm-14.7 1.094H18.41a1.403 1.403 0 0 0 1.4-1.403V5.847a1.404 1.404 0 0 0-1.4-1.401H3.71a1.404 1.404 0 0 0-1.4 1.401V16.27a1.402 1.402 0 0 0 1.4 1.403z"/></svg>
               <a href={"mailto:" + props.email}>{props.email}</a>
+            </li>
+            <li>
+              <ul className="social-media">
+                <li className='navigationItem'>
+                  <a href="https://instagram.com/omdtravel/" target="_blank" rel="noreferrer" aria-label="Instagram link" className="social-media-item instagram"></a>
+                </li>
+                <li className='navigationItem'>
+                  <a href="https://www.facebook.com/ohmydog.pettravel" target="_blank" rel="noreferrer" aria-label="Facebook link" className="social-media-item facebook"></a>
+                </li>
+                <li className='navigationItem'>
+                  <a href="https://www.tiktok.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Tiktok link" className="social-media-item tiktok"></a></li>
+                <li className='navigationItem'>
+                  <a href="https://www.youtube.com/@ohmydogpettravel" target="_blank" rel="noreferrer" aria-label="Youtube link" className="social-media-item youtube"></a>
+                </li>
+                <li className='navigationItem'>
+                  <a href="https://g.co/kgs/2NGfQm" target="_blank" rel="noreferrer" aria-label="Google link" className="social-media-item google"></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </section>
