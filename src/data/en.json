@@ -12,6 +12,7 @@
         "blog": "Blog",
         "pet-passport": "Pet passport",
         "calendar": "Calendar",
+        "faq": "FAQ",
         "contact": "Contact",
         "contact-us": "Contact us",
         "copyright": "OMD Pet Travel. All rights reserved",
@@ -56,13 +57,13 @@
         "description": "Are you looking to transport your pet to Spain, the United Kingdom, or Ireland? We offer two different types of services for your dog or cat's journey.",
         "private-transport": {
             "meta-title": "Private pets transport",
-            "meta-description": "Transporte de mascotas privado: perros, gatos, conejos, animales exóticos, etc.",    
+            "meta-description": "We offer a private pets transport. Your pet/s will have the full attention from our team, reduced timeframe and you'll be able to get more flexibility with our dates.",    
             "title": "Private pets transport",
             "description": "En Ohmydog Pet Travel ofrecemos un servicio excepcional de transporte de mascotas privado, garantizando los más altos estándares de seguridad, bienestar animal y comunicación constante que nos caracterizan. Nuestro compromiso es brindar un viaje seguro y confortable para tu mascota en cada trayecto realizado en España."
         },
         "shared-transport": {
             "meta-title": "Shared pets transport",
-            "meta-description": "Shared pets transport. Haz que tu mascota viaje segura, atendida y mimada.",    
+            "meta-description": "We offer a shared pets transport. Your pet will have a safe journey with our experienced and dedicated professional team.",    
             "title": "Shared pets transport",
             "description": "En Ohmydog Pet Travel, nos destacamos como empresa con gran experiencia en el Shared pets transport, ofreciendo un servicio que va más allá de las simples fronteras."
         },
@@ -70,6 +71,10 @@
             "title": "Make a booking with OhMyDog",
             "description": "Reserva la plaza para tu mascota o consultanos cualquier duda sobre nuestros servicios de transporte de mascotas."
         }  
+    },
+    "our-commitment": {
+        "meta-title": "Our commitment with the clients and their pets",
+        "meta-description": "We are dedicated to ensuring safe and comfortable transportation for your pet, utilizing the latest technology available for animal transport."
     },
     "hero": {
         "title": "OMD Pet Travel",
@@ -111,33 +116,42 @@
         }
     },
     "blog": {
+        "meta-title": "Pet Travel Vlog with Ohmydog!",
+        "meta-description": "Discover valuable information and tips on transporting pets to Spain, the United Kingdom, or Ireland, and get to know our team better.",
         "title": "Pet Travel Vlog with Ohmydog!",
         "description": "Here, you can discover valuable information and tips on transporting pets to Spain, the United Kingdom, or Ireland, and get to know our team better. We'll regularly share videos and updates to keep you informed and connected with us. Follow our vlog to stay updated on everything related to pet transportation and learn more about how we can assist you and your furry friend.",
         "time": "minute read"
     },
     "gallery": {
-        "meta-title": "Galería - Ohmydog Pet Travel",
-        "meta-description": "Conoce más a fondo Ohmydog Pet Travel: nuestros vehículos adaptados para transportar mascotas y nuestro equipo especializado.",
+        "meta-title": "Ohmydog Gallery: get to know our services",
+        "meta-description": "Have a look to our vehicles and our furry passengers.",
         "title": "Ohmydog Gallery",
         "description": "Welcome to our gallery section! Here you can see photos of the fantastic vehicle we use to transport pets between Spain, the United Kingdom, and Ireland."
     },
     "reviews": {
+        "meta-title": "Check our reviews and trust in our pet transport service",
+        "meta-description": "We always try to offer the best service for your pet and your trust. With more than 150 positive reviews that support and back our work and our clients happiness.",
         "title": "Ohmydog Reviews",
         "description": "We always try to offer the best service for your pet and your trust. With more than 150 positive reviews that support and back our work and our clients happiness.",
         "reviewsText": "reviews"
     },
     "passport": {
-        "meta-title": "Calendario de viajes",
-        "meta-description": "Consulta nuestro calendario de viajes, para programar el viaje de tu mascota con tiempo y tranquilamente.",
+        "meta-title": "European pet's passport",
+        "meta-description": "Information and requirements for your pet's passport. Guide for pet owners traveling with their pets",
         "title": "European pet's passport",
         "description": "A continuación os dejamos la información correspondiente al pasaporte de mascotas y los requisitos para viajar con animales de compañía en los territorios de Irlanda del Norte, Gran Bretaña y Unión Europea. 🚦",
         "subtitle": "How to check a pet Passport?",
         "description1": "Clicking on the following PDF, you will find useful information about how to correctly fill out a European pet passport.",
         "button-text": "How to Complete Pet Passports.pdf"
     },
+    "faq": {
+        "meta-title": "Frequently asked questions",
+        "meta-description": "Some frequently asked questions about pet travels, dogs and cats behaviour, pet luggage, pet documents and requirements, etc",
+        "title": "Frequently asked questions"
+    },
     "about-us": {
-        "meta-title": "Especializados en el transporte de animales",
-        "meta-description": "Tu mascota es uno mas en la familia. Garantizamos seguridad, empatía y transparencia en el transporte de tu mascota.",
+        "meta-title": "Experienced and qualified on animals care and transport",
+        "meta-description": "Trust Ohmydog to provide you with the best care and service for dogs and cats. We guarantee safety, sympathy and transparency during your pets travel.",
         "title": "About us",
         "description1": "Welcome to Ohmydog, a trusted pet transport company. Our priority is the safety and comfort of your furry friend. We understand that leaving your pet behind can be stressful and emotional, so we strive to make the transportation process as comfortable and stress-free as possible.",
         "description2": "Our team of experienced and dedicated professionals will handle all aspects of your pet's transportation, from pickup to delivery.",

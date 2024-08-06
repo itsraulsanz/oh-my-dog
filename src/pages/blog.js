@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import get from 'lodash/get';
 import { useIntl } from "gatsby-plugin-intl";
+import Seo from "../components/seo";
 
 import '../styles/_layout.scss';
 
@@ -27,6 +28,7 @@ class blogPage extends React.Component {
 
     return (
       <Layout>
+        <Seo title={intl.formatMessage({ id: "blog.meta-title" })} description={intl.formatMessage({ id: "blog.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
         <BlogList posts={postsData} headingText={intl.formatMessage({ id: "blog.title" })} descriptionText={intl.formatMessage({ id: "blog.description" })} />
       </Layout>
     )
