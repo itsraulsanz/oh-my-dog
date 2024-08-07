@@ -92,14 +92,15 @@
             }
 
             p.text-block-2columns__text-description {
-                font-size: 14px;
-                text-align: left;
-                line-height: 28px;
+                font-size: 15px;
+                text-align: center;
+                line-height: 30px;
                 padding: 0 0 15px;
                 margin: 0;
     
                 @media (min-width: 600px) {
                     font-size: 16px;
+                    text-align: left;
                 }
             }
         }

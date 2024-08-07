@@ -49,7 +49,7 @@ class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <Seo description={intl.formatMessage({ id: "homepage.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
+        <Seo title={intl.formatMessage({ id: "homepage.meta-title" })} description={intl.formatMessage({ id: "homepage.meta-description" })} siteLocale={intl.formatMessage({ id: "general.locale" })} />
         <HeroWithSlideshow titleText={intl.formatMessage({ id: "hero.title" })} subtitleText={intl.formatMessage({ id: "hero.subtitle" })} descriptionText={intl.formatMessage({ id: "hero.description" })} buttonContact={intl.formatMessage({ id: "general.contact" })} />
         
         <TextBlock2Columns color="#ffffff" padding="padding-top" bodyText1={intl.formatMessage({ id: "homepage.intro.description1" })} bodyText2={intl.formatMessage({ id: "homepage.intro.description2" })} bodyText3={intl.formatMessage({ id: "homepage.intro.description3" })} bodyText4={intl.formatMessage({ id: "homepage.intro.description4" })} />

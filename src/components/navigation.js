@@ -128,7 +128,7 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem">
-                      <Link to={`/${locationLanguage}/contact-us`} className='navigationItem-link'>
+                      <Link to={`/${locationLanguage}/contact`} className='navigationItem-link'>
                         {props.contact}
                       </Link>
                     </li>

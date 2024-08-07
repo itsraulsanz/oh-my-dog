@@ -186,6 +186,29 @@
                         flex: 1;
                         aspect-ratio: unset;
                     }
+
+                    .gm-style-iw.gm-style-iw-c {
+                        padding: 15px;
+
+                        h2, p {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        #bodyContent {
+                            display: flex;
+                            flex-direction: column;
+
+                            a {
+                                margin-top: 10px;
+                            }
+                        }
+
+                        .gm-style-iw-chr {
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
                 }
             }
             

@@ -19,6 +19,7 @@
         "locale": "en_GB"
     },
     "homepage": {
+        "meta-title": "Pet Travel | Animal transport",
         "meta-description": "Ohmydog Luxury Pet Travel is your pets trip in First Class service. Professionals with over 10 years of experience. Find out how we can help you.",
         "gallery": {
             "title": "Our vehicle",
@@ -94,8 +95,8 @@
             "advantage3": "Contingency plan in place for cases of emergency."
         },
         "block-2": {
-            "title": "Vehicles",
-            "text": "Our vehicles are equipped with top-of-the-line van conversions featuring state-of-the-art technology, including:",
+            "title": "Vehicle",
+            "text": "Our vehicle is equipped with top-of-the-line van conversions featuring state-of-the-art technology, including:",
             "advantage1": "GPS tracker that shows temperatures and locations.",
             "advantage2": "Live webcams.",
             "advantage3": "Temperature controlled system.",
@@ -124,7 +125,7 @@
     },
     "gallery": {
         "meta-title": "Ohmydog Gallery | Get to know our services",
-        "meta-description": "Have a look to our vehicles and our furry passengers.",
+        "meta-description": "Have a look to our vehicle and our furry passengers.",
         "title": "Ohmydog Gallery",
         "description": "Welcome to our gallery section! Here you can see photos of the fantastic vehicle we use to transport pets between Spain, the United Kingdom, and Ireland."
     },
@@ -155,7 +156,7 @@
         "title": "About us",
         "description1": "Welcome to Ohmydog, a trusted pet transport company. Our priority is the safety and comfort of your furry friend. We understand that leaving your pet behind can be stressful and emotional, so we strive to make the transportation process as comfortable and stress-free as possible.",
         "description2": "Our team of experienced and dedicated professionals will handle all aspects of your pet's transportation, from pickup to delivery.",
-        "description3": "Our state-of-the-art vehicles are equipped with the latest technology and features, including climate control, padded floors, relaxing music, and anti-stress décor to ensure a stress-free and peaceful journey for your pet.",
+        "description3": "Our state-of-the-art vehicle is equipped with the latest technology and features, including climate control, padded floors, relaxing music, and anti-stress décor to ensure a stress-free and peaceful journey for your pet.",
         "description4": "Therefore, if you need to transport your pet, whether for a move or for a vacation, trust Ohmydog to provide you with the best care and service. Contact us today for more information and to start planning your pet's travel."   
     },
     "trips": {

@@ -19,6 +19,7 @@
         "locale": "es_ES"
     },
     "homepage": {
+        "meta-title": "Expertos en Viajes de Mascotas",
         "meta-description": "Ohmydog Luxury Pet Travel es el servicio de transporte en primera clase para tu mascota. Profesionales con mas de 10 años de experiencia. Descúbre cómo podemos ayudarte.",
         "gallery": {
             "title": "Nuestro vehículo",
@@ -124,9 +125,9 @@
     },
     "gallery": {
         "meta-title": "Galería Ohmydog | Conoce a fondo nuestros servicios",
-        "meta-description": "Echa un vistazo a nuestros vehículos adaptados para transportar mascotas y a nuestros pasajeros peludos.",
+        "meta-description": "Echa un vistazo a nuestro vehículo adaptado para transportar mascotas y a nuestros pasajeros peludos.",
         "title": "Galería Ohmydog",
-        "description": "¡Bienvenido a nuestra sección de galería! Aquí puede ver fotos de nuestros vehículos y nuestros pasajeros peludos!"
+        "description": "¡Bienvenido a nuestra sección de galería! Aquí puede ver fotos de nuestro vehículo y nuestros pasajeros peludos!"
     },
     "reviews": {
         "meta-title": "Testimonios | Revisa nuestras reviewsy confía en nuestro servicio de transporte de animales",
