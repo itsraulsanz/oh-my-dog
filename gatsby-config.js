@@ -8,7 +8,7 @@ module.exports = {
     description: `Your pets trip in First Class: dog's transport, cat's transport, rabbit's transport, pet's transport. El viaje de tu mascota en primera clase: transporte perro, transporte gato, transporte conejo, empresa de transporte de mascotas.`,
     keywords: "Pets, Transport, Dogs",
     robots: "index, follow",
-    image: `https://mywebsite.net/assets/opengraph/theogimage.jpg"/`,
+    image: `src/images/logo-favicon.svg/`,
     siteUrl: `https://www.omdtravel.com`
   },
   proxy: {

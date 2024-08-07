@@ -33,6 +33,7 @@ const Seo = ({ description = '', lang = 'en', meta = [], title, keywords, siteLo
       }}
       title={title}
       defaultTitle={defaultTitle}
+      defaultImage={defaultImage}
       titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}
       locale={`${defaultTitle}`}
       meta={[
