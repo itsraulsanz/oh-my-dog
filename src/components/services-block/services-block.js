@@ -116,14 +116,10 @@ export default function ServicesBlock(props) {
                 </div>
               </details>
             </div>
-
-            {/* <div className='service-block-card video'>
-              <video src={OhMyDogVideo} playsInline loop muted autoPlay />
-            </div> */}
           </section>
         </div>
 
-        <a href='#contact-us' className="button-secondary">
+        <a href='contact' className="button-secondary">
           {props.buttonContact}
         </a>
       </div>

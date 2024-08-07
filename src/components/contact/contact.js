@@ -47,7 +47,7 @@ export default function Contact(props) {
   const templateID = process.env.GATSBY_APP_YOUR_TEMPLATE_ID;
   const publicKey = process.env.GATSBY_APP_YOUR_PUBLIC_KEY;
   
-  const center = { lat: 39.501867083198135, lng: -0.4074959442834655 };
+  const center = { lat: 39.485810838955324, lng: -0.4038645608807983 };
   const mapProps = {
     options: {
       center,
