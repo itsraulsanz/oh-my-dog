@@ -56,6 +56,7 @@ class Template extends React.Component {
           blog={intl.formatMessage({ id: "general.blog" })}
           petPassport={intl.formatMessage({ id: "general.pet-passport" })}
           calendar={intl.formatMessage({ id: "general.calendar" })}
+          faq={intl.formatMessage({ id: "general.faq" })}
           contact={intl.formatMessage({ id: "general.contact" })}
         />
         <main>{children}</main>
@@ -73,6 +74,7 @@ class Template extends React.Component {
           blog={intl.formatMessage({ id: "general.blog" })}
           petPassport={intl.formatMessage({ id: "general.pet-passport" })}
           calendar={intl.formatMessage({ id: "general.calendar" })}
+          faq={intl.formatMessage({ id: "general.faq" })}
           contact={intl.formatMessage({ id: "general.contact" })}
           contactUs={intl.formatMessage({ id: "general.contact-us" })}
           callText={intl.formatMessage({ id: "contact-us.user-phone" })} 

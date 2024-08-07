@@ -128,6 +128,11 @@ function Navigation(props) {
                       </Link>
                     </li>
                     <li className="navigationItem">
+                      <Link to={`/${locationLanguage}/faq`} className='navigationItem-link'>
+                        {props.faq}
+                      </Link>
+                    </li>
+                    <li className="navigationItem">
                       <Link to={`/${locationLanguage}/contact-us`} className='navigationItem-link'>
                         {props.contact}
                       </Link>
@@ -213,6 +218,11 @@ function Navigation(props) {
             <li className="navigationItem">
               <Link to={`/${locationLanguage}/trips`} className='navigationItem-main'>
                 {props.calendar}
+              </Link>
+            </li>
+            <li className="navigationItem">
+              <Link to={`/${locationLanguage}/faq`} className='navigationItem-main'>
+                {props.faq}
               </Link>
             </li>
             <li className="navigationItem">
